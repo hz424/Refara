@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "exact_repeat_exports": 5,
+  "sha256": {
+    "figures/Figure_5.pdf": "68b551e1f851cd8fadcdf969fafc36382f54fceb5cc73f7ebd2ed726c82916f8",
+    "figures/Figure_5.svg": "4c655452b6c63cf402fa6e27ebc6ef6e22fc3e4646c9d921fa1f5041ea6ddc7a",
+    "figures/Figure_5.png": "9e7798e5b9e2697f055c00d71160d15b9c1b5a28fc3db4ad7ba88199d08b3a33",
+    "figures/Figure_5.tiff": "15f2b320f68a00a12b23395f7b7ae8977062f9da837b298df950275e9b66389b",
+    "source_data/Figure_5_Source_Data.xlsx": "674c7f38c45b7b427a29295ce988a9c5b6e3c4b8bdec42897ca51ba9da82b3d6"
+  }
+}

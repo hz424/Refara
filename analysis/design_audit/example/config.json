@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0.0",
+  "audit_id": "SYNTHETIC_REFERENCE_ALLOCATION_EXAMPLE_V1",
+  "dataset_ids": [
+    "DEMO_DATASET"
+  ],
+  "configurations": [
+    {
+      "configuration_id": "METHOD_A",
+      "implementation_identity": "SYNTHETIC_METHOD_A_IMPLEMENTATION_V1",
+      "terminal_state_identity": "DETERMINISTIC_SYNTHETIC_STATE_A_V1",
+      "output_semantics": "DIRECT_EFFECT",
+      "active_reference_roles": [
+        "observed_effect"
+      ],
+      "training_evaluation_separation": {
+        "status": "NOT_APPLICABLE",
+        "basis": "SYNTHETIC_PREAGGREGATED_UTILITY_WITH_NO_TRAINING_STAGE",
+        "assertion_authority": "SYNTHETIC_EXAMPLE_AUTHOR",
+        "machine_verified": false
+      }
+    },
+    {
+      "configuration_id": "METHOD_B",
+      "implementation_identity": "SYNTHETIC_METHOD_B_IMPLEMENTATION_V1",
+      "terminal_state_identity": "DETERMINISTIC_SYNTHETIC_STATE_B_V1",
+      "output_semantics": "ABSOLUTE_STATE",
+      "active_reference_roles": [
+        "observed_effect",
+        "prediction_reference",
+        "model_conditioning"
+      ],
+      "training_evaluation_separation": {
+        "status": "NOT_APPLICABLE",
+        "basis": "SYNTHETIC_PREAGGREGATED_UTILITY_WITH_NO_TRAINING_STAGE",
+        "assertion_authority": "SYNTHETIC_EXAMPLE_AUTHOR",
+        "machine_verified": false
+      }
+    },
+    {
+      "configuration_id": "METHOD_C",
+      "implementation_identity": "SYNTHETIC_METHOD_C_IMPLEMENTATION_V1",
+      "terminal_state_identity": "DETERMINISTIC_SYNTHETIC_STATE_C_V1",
+      "output_semantics": "DIRECT_EFFECT",
+      "active_reference_roles": [
+        "observed_effect"
+      ],
+      "training_evaluation_separation": {
+        "status": "NOT_APPLICABLE",
+        "basis": "SYNTHETIC_PREAGGREGATED_UTILITY_WITH_NO_TRAINING_STAGE",
+        "assertion_authority": "SYNTHETIC_EXAMPLE_AUTHOR",
+        "machine_verified": false
+      }
+    }
+  ],
+  "reference_declaration": {
+    "mapping_scope": "DECLARED_BLOCK_ABSTRACTION_NO_CELL_MEMBERSHIP_VERIFICATION",
+    "block_label_semantics": "SYNTHETIC_BLOCK_LABELS_DECLARE_ROLE_POOLS_WITHOUT_CELL_RECORDS"
+  },
+  "reference_roles": [
+    "observed_effect",
+    "prediction_reference",
+    "model_conditioning"
+  ],
+  "allocations": [
+    {
+      "allocation_id": "shared_D",
+      "reference_depth_label": "D",
+      "reference_depth_unit": "SYNTHETIC_REFERENCE_OBJECTS",
+      "aggregation_order": "SCORE_WITHIN_ROTATION_THEN_EQUAL_WEIGHT_ROTATIONS",
+      "rotations": [
+        {
+          "rotation_id": "B1",
+          "observed_effect": "B1",
+          "prediction_reference": "B1",
+          "model_conditioning": "B1",
+          "role_depth_labels": {
+            "observed_effect": "D",
+            "prediction_reference": "D",
+            "model_conditioning": "D"
+          },
+          "expected_overlap_pattern": "ALL_THREE_ROLES_SHARE_ONE_BLOCK"
+        }
+      ]
+    },
+    {
+      "allocation_id": "disjoint_D",
+      "reference_depth_label": "D",
+      "reference_depth_unit": "SYNTHETIC_REFERENCE_OBJECTS",
+      "aggregation_order": "SCORE_WITHIN_ROTATION_THEN_EQUAL_WEIGHT_ROTATIONS",
+      "rotations": [
+        {
+          "rotation_id": "R0",
+          "observed_effect": "B1",
+          "prediction_reference": "B2",
+          "model_conditioning": "B3",
+          "role_depth_labels": {
+            "observed_effect": "D",
+            "prediction_reference": "D",
+            "model_conditioning": "D"
+          },
+          "expected_overlap_pattern": "ALL_THREE_ROLES_USE_DISTINCT_BLOCKS"
+        }
+      ]
+    },
+    {
+      "allocation_id": "crossfit_D",
+      "reference_depth_label": "D",
+      "reference_depth_unit": "SYNTHETIC_REFERENCE_OBJECTS",
+      "aggregation_order": "SCORE_WITHIN_ROTATION_THEN_EQUAL_WEIGHT_ROTATIONS",
+      "rotations": [
+        {
+          "rotation_id": "R0",
+          "observed_effect": "B1",
+          "prediction_reference": "B2",
+          "model_conditioning": "B3",
+          "role_depth_labels": {
+            "observed_effect": "D",
+            "prediction_reference": "D",
+            "model_conditioning": "D"
+          },
+          "expected_overlap_pattern": "ALL_THREE_ROLES_USE_DISTINCT_BLOCKS"
+        },
+        {
+          "rotation_id": "R1",
+          "observed_effect": "B2",
+          "prediction_reference": "B3",
+          "model_conditioning": "B1",
+          "role_depth_labels": {
+            "observed_effect": "D",
+            "prediction_reference": "D",
+            "model_conditioning": "D"
+          },
+          "expected_overlap_pattern": "ALL_THREE_ROLES_USE_DISTINCT_BLOCKS"
+        },
+        {
+          "rotation_id": "R2",
+          "observed_effect": "B3",
+          "prediction_reference": "B1",
+          "model_conditioning": "B2",
+          "role_depth_labels": {
+            "observed_effect": "D",
+            "prediction_reference": "D",
+            "model_conditioning": "D"
+          },
+          "expected_overlap_pattern": "ALL_THREE_ROLES_USE_DISTINCT_BLOCKS"
+        }
+      ]
+    }
+  ],
+  "unit_contract": {
+    "dataset_column": "dataset_id",
+    "object_id_column": "object_id",
+    "unit_id_column": "unit_id",
+    "declared_unit_columns": [
+      "donor_id",
+      "plate_id"
+    ],
+    "candidate_acquisition_group_columns": [
+      "completion_date",
+      "library_batch",
+      "producer_replicate"
+    ],
+    "independence_justification": {
+      "status": "ESTABLISHED_BY_EXPERT_ASSERTION",
+      "basis": "SYNTHETIC_UNITS_DECLARED_INDEPENDENT_BY_CONSTRUCTION",
+      "assertion_authority": "SYNTHETIC_EXAMPLE_AUTHOR",
+      "machine_verified": false
+    }
+  },
+  "utility_input_contract": {
+    "input_columns": [
+      "dataset_id",
+      "allocation_id",
+      "unit_id",
+      "method_id",
+      "utility"
+    ],
+    "dataset_id_column": "dataset_id",
+    "allocation_id_column": "allocation_id",
+    "unit_id_column": "unit_id",
+    "method_id_column": "method_id",
+    "utility_column": "utility",
+    "required_constant_values": {},
+    "expected_input_sha256": null,
+    "provenance_scope": "PREAGGREGATED_UNIT_UTILITIES_NO_UPSTREAM_CELL_OR_MODEL_PROVENANCE_VERIFICATION"
+  },
+  "analysis_timing": {
+    "evidence_timing_label": "SYNTHETIC_NO_EMPIRICAL_OUTCOME",
+    "configuration_fixed_before_utility_access": true,
+    "outcome_access_status_at_configuration_fix": "SYNTHETIC_NO_EMPIRICAL_OUTCOME"
+  },
+  "comparison_family": {
+    "allocation_order": [
+      "shared_D",
+      "disjoint_D",
+      "crossfit_D"
+    ],
+    "method_order": [
+      "METHOD_A",
+      "METHOD_B",
+      "METHOD_C"
+    ],
+    "directionality": "ordered",
+    "utility_orientation": "higher_is_better"
+  },
+  "inference": {
+    "decision_rule_id": "EXACT_ONE_SIDED_SIGN_HOLM_COMPLETE_ORDERED_V1",
+    "alpha": 0.05,
+    "fair_binomial_probability": 0.5,
+    "tie_rule": "LITERAL_IEEE754_BINARY64_ZERO",
+    "missing_unit_rule": "FAIL_CLOSED_COMPLETE_UNIT_BY_METHOD_SUPPORT",
+    "holm_scope": "WITHIN_DATASET_AND_ALLOCATION_COMPLETE_ORDERED_METHOD_FAMILY"
+  }
+}

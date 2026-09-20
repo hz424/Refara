@@ -1,0 +1,18 @@
+{
+  "purpose": "Show whether the development-frozen reference design changes model selection and clears the prespecified external 5% loss-reduction criterion.",
+  "archetype": "quantitative grid",
+  "backend": "python",
+  "width_mm": 183,
+  "height_mm": 85,
+  "exports": ["pdf", "svg", "png", "tiff"],
+  "minimum_text_pt": 5,
+  "panels": {
+    "a": "Model selection ranks for all six candidate designs at the primary total budget of 16 controls, using all 16 selection donors; one global family per design.",
+    "b": "Paired independent assessment losses for every eligible donor under the shared-selected and recommended-selected family, using identical deployment inputs and measured targets.",
+    "c": "Paired-donor t and studentized-bootstrap intervals for the prespecified practical margin, with zero marking the 5% benefit threshold. Both methods must clear zero."
+  },
+  "uncertainty": "Panel a describes the single fixed selection split, with no resampling-based inference. Panel b shows all individual donor losses without aggregate error bars. Panel c reports both prespecified two-sided 95% intervals, with donor as unit and 19999 bootstrap draws.",
+  "scope": "Adapted fixed models, 1968 common genes and observed acquisition pools. Held-out measurement loss retains finite-cell noise and between-pool differences.",
+  "exclusions": "No primary assessment donor or task is removed. Secondary budgets, deployment16, treated-state loss and overlap diagnostics remain in the accompanying numerical replay tables.",
+  "guidance": "https://research-figure-guide.nature.com/figures/preparing-figures-our-specifications/"
+}

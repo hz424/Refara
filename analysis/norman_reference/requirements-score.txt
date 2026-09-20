@@ -1,0 +1,5 @@
+# Full-score reference environment: Python 3.10.17.
+# Install separately from the data-preparation and CPA training environments.
+numpy==1.23.5
+pandas==2.3.3
+scipy==1.12.0

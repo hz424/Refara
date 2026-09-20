@@ -1,0 +1,13 @@
+cell_id	stratum	gene1	gene2	gene3	gene4
+cell01	capture1	0.2	0.4	0.1	0.3
+cell02	capture1	1.4	0.8	0.7	1.2
+cell03	capture1	0.8	1.1	0.2	0.5
+cell04	capture1	1.8	0.3	1.2	0.8
+cell05	capture1	0.4	1.6	0.5	1.6
+cell06	capture1	1.1	0.6	0.9	0.1
+cell07	capture2	1.3	0.7	0.8	1.1
+cell08	capture2	0.5	1.2	0.3	0.4
+cell09	capture2	1.7	0.5	1.0	0.7
+cell10	capture2	0.3	1.7	0.4	1.5
+cell11	capture2	1.0	0.9	0.6	0.2
+cell12	capture2	0.7	1.4	0.2	0.9

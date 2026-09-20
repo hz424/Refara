@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "families": [
+    "NC",
+    "CM",
+    "TW",
+    "PCA",
+    "RBF",
+    "scGen",
+    "CPA",
+    "CellOT"
+  ],
+  "regimes": [
+    "original8",
+    "cap48"
+  ],
+  "policies": [
+    "S",
+    "O",
+    "D"
+  ],
+  "tie_tolerance": 1e-12,
+  "replay_numeric_atol": 2e-14,
+  "bundled_sha256": {
+    "inputs/selection_root_utilities.tsv": "2266dc5006e110df9565a0d720df815837b59590f786f0c7fb52362bd8c55058",
+    "selection_expected.json": "fbf7b7c5c87665c57a4576319c81f59b7aa0ef76d841a8d0e4655695fe962b3c"
+  },
+  "model_identities": {
+    "original8": {
+      "NC": {
+        "candidate_id": "NC_a0_r0_g0",
+        "semantics": "effect",
+        "fits": [
+          {
+            "seed": null,
+            "model_artifact_sha256": "84a042779c2c2528a21f09f1117258cf801dd12e19bf0fafff6b74728a1a40bd",
+            "fit_completion_sha256": "bef2694223d0a3bb56b8821a7b3af1f0f9873e930bac3be9e9b86e0593c1f3d8"
+          }
+        ],
+        "model_identity_sha256": "2a40d3a4db39fd8ba122b1e8587839bcc478edcee6a23abe41ca259aff4b73ca"
+      },
+      "CM": {
+        "candidate_id": "CM_a0_r0_g0",
+        "semantics": "effect",
+        "fits": [
+          {
+            "seed": null,
+            "model_artifact_sha256": "ee4ee8247db1e45e05823fb50bc240b37e18136d3ef51827c9856cac8052515b",
+            "fit_completion_sha256": "bef2694223d0a3bb56b8821a7b3af1f0f9873e930bac3be9e9b86e0593c1f3d8"
+          }
+        ],
+        "model_identity_sha256": "10253cfd0f00b27bbc0f3c528c2efb781e520c8ac336094febdc73034f6b01ca"
+      },
+      "TW": {
+        "candidate_id": "TW_a10_r0_g0",
+        "semantics": "effect",
+        "fits": [
+          {
+            "seed": null,
+            "model_artifact_sha256": "16556448a63ec7f52750b94e401aac352fe3d99d42450e31b4f2681735e88173",
+            "fit_completion_sha256": "bef2694223d0a3bb56b8821a7b3af1f0f9873e930bac3be9e9b86e0593c1f3d8"
+          }
+        ],
+        "model_identity_sha256": "653e34a3e527a21e2f6e21223989e3a10f34614fac3c73fcca901fcf59a3c770"
+      },
+      "PCA": {
+        "candidate_id": "PCA_a1_r8_g0",
+        "semantics": "effect",
+        "fits": [
+          {
+            "seed": null,
+            "model_artifact_sha256": "18e27ca9123f273229c0e2fdab27f31f19fe8c5f538acd683e91ed07a385ab21",
+            "fit_completion_sha256": "bef2694223d0a3bb56b8821a7b3af1f0f9873e930bac3be9e9b86e0593c1f3d8"
+          }
+        ],
+        "model_identity_sha256": "4f59a39b8c36962e7d21f51e7c80d9bc9a25157d825a787829bbc9fa7764e8d7"
+      },
+      "RBF": {
+        "candidate_id": "RBF_a1_r0_g0.1",
+        "semantics": "effect",
+        "fits": [
+          {
+            "seed": null,
+            "model_artifact_sha256": "eff8096b8985da9d1e043886dc9c0d0455885c5eae91ab454a0806cbf38ad210",
+            "fit_completion_sha256": "bef2694223d0a3bb56b8821a7b3af1f0f9873e930bac3be9e9b86e0593c1f3d8"
+          }
+        ],
+        "model_identity_sha256": "a5746c82d62ef0e00edc8cedc3ce0a5555c98bc42685a90f89be3a16acc5ca18"
+      },
+      "scGen": {
+        "candidate_id": "scGen_lr0.0003_epoch160",
+        "semantics": "state",
+        "fits": [
+          {
+            "seed": 17,
+            "model_artifact_sha256": "b5ad8d5e931e731aca8daa5c90c2e66064b10ae3b26e3e8effbcd1de716f3ba6",
+            "fit_completion_sha256": "f7981a055e780f1a330d8dfeea069e3c93f58ade52d57bbe5f0c28e690413bca"
+          },
+          {
+            "seed": 29,
+            "model_artifact_sha256": "d6d465a9fea4d3cc52dd9b8f2785a3237e01f3572e74d78e6366101418c248a9",
+            "fit_completion_sha256": "d8a5e559dbdeed7e721ad2223df47189f976cc8283540735b4e6c75c84be40de"
+          },
+          {
+            "seed": 43,
+            "model_artifact_sha256": "b61d5caa3fa42f07164411aabf47f187c4afaebc7cdea8e974551fdc6f545260",
+            "fit_completion_sha256": "1d0ec64b064a0ecbf9221c304c7bd3d05918b21368b2524cf458c1227f95db62"
+          }
+        ],
+        "model_identity_sha256": "27f16aa68d7a2854bbb8e7459fe40d6e0cfab730091a3dd87f1e03f027091fe1"
+      },
+      "CPA": {
+        "candidate_id": "CPA_lr0.0003_adv10_epoch2560",
+        "semantics": "state",
+        "fits": [
+          {
+            "seed": 17,
+            "model_artifact_sha256": "0c64ca522fa8f863ccc35ceb02ead28e09170e4e306c5172287c6ff6dbe707a5",
+            "fit_completion_sha256": "e1c80a94582dbb625b7ffad55aaf80fc523ab329b7d64567499ec5e728f317f9"
+          },
+          {
+            "seed": 29,
+            "model_artifact_sha256": "80488d20c236f72ebf5dab7f7858330a795de750385e03163f8671edea7e59f5",
+            "fit_completion_sha256": "3ed66e6df588bc528827484333d031a5d2cab0de0754bed01543de3459fe478b"
+          },
+          {
+            "seed": 43,
+            "model_artifact_sha256": "62952801f9cb96860ebb6bd41007e3570aa96a4be6601ce370e8127cda5b11a9",
+            "fit_completion_sha256": "61f6af8803200b8d05a84ae41760a2fcf6ff6a743559defec6b0cd58465ac2b3"
+          }
+        ],
+        "model_identity_sha256": "763ea3e8e69fd0d49b4017dc78e1e1db280578ceffb6dc98c26e81a0de719f6b"
+      },
+      "CellOT": {
+        "candidate_id": "CellOT_native_AE50_outer100000",
+        "semantics": "state",
+        "fits": [
+          {
+            "seed": 17,
+            "model_artifact_sha256": "1f5d08cd83b20cf1a13e35a3107ff72e2410a604952870d70afa61d534dff170",
+            "fit_completion_sha256": "d6a8a084e3a90a319a79392532539b4fc9ea7e5f818adbc548387ca85cf4fa63"
+          },
+          {
+            "seed": 29,
+            "model_artifact_sha256": "2d62c53dca4823e03dd4ff7b3663947a40f844d29a0fad2f2d6eb1badb5ec8bb",
+            "fit_completion_sha256": "35582928a8e063accd1d57a3c907412dba5758d1881822bc6cf11d5fc9980df7"
+          },
+          {
+            "seed": 43,
+            "model_artifact_sha256": "884c10c593efe91f8dca5f0a8fb59a010ffd1d5f349a7a1971a1d8f517a3a513",
+            "fit_completion_sha256": "c8ef3a5d4d1da4bb174f91548cccddab4d23e656ec3a6f62f9e712595b387ad4"
+          }
+        ],
+        "model_identity_sha256": "e7f358613333f5f15a85b0032ffe8364f473ed5f3d1d91528e7b2f880df712bc"
+      }
+    },
+    "cap48": {
+      "NC": {
+        "candidate_id": "NC_a0_r0_g0",
+        "semantics": "effect",
+        "fits": [
+          {
+            "seed": null,
+            "model_artifact_sha256": "84a042779c2c2528a21f09f1117258cf801dd12e19bf0fafff6b74728a1a40bd",
+            "fit_completion_sha256": "1fc8714aa2c6235a1c8aef50e3e22dcd7ead2cb4b6cf0b61ec1865eccca9e938"
+          }
+        ],
+        "model_identity_sha256": "6745aa1a4ffe9ca49d2c9df26f28f354af7662fe72423174d496ab8a89257938"
+      },
+      "CM": {
+        "candidate_id": "CM_a0_r0_g0",
+        "semantics": "effect",
+        "fits": [
+          {
+            "seed": null,
+            "model_artifact_sha256": "1d0985cb394b16f6cb60c4021262eb252ca15146fc2867d8706af22198665729",
+            "fit_completion_sha256": "1fc8714aa2c6235a1c8aef50e3e22dcd7ead2cb4b6cf0b61ec1865eccca9e938"
+          }
+        ],
+        "model_identity_sha256": "bf7ec0bdaf6f93ab37194d2073a2db0047e2a2f836c8ab5fb67641be77454068"
+      },
+      "TW": {
+        "candidate_id": "TW_a1_r0_g0",
+        "semantics": "effect",
+        "fits": [
+          {
+            "seed": null,
+            "model_artifact_sha256": "d575fb801f5edde4934c29e8cf87acda37a13fc255d5cd32820fe31b87bc0f17",
+            "fit_completion_sha256": "1fc8714aa2c6235a1c8aef50e3e22dcd7ead2cb4b6cf0b61ec1865eccca9e938"
+          }
+        ],
+        "model_identity_sha256": "19a9adc123db110be622cfda7fc22897bf9d9b06c19f40bd18940f9ef001f072"
+      },
+      "PCA": {
+        "candidate_id": "PCA_a1_r8_g0",
+        "semantics": "effect",
+        "fits": [
+          {
+            "seed": null,
+            "model_artifact_sha256": "04834a21e4c37b28cf0b711df700ac8efdae0a7b9111afa458b7ca1ba7b2f4c6",
+            "fit_completion_sha256": "1fc8714aa2c6235a1c8aef50e3e22dcd7ead2cb4b6cf0b61ec1865eccca9e938"
+          }
+        ],
+        "model_identity_sha256": "fbe735cd70bc9078293efb909bef911e40f5102f4e0cda47b6013740f3d12d74"
+      },
+      "RBF": {
+        "candidate_id": "RBF_a1_r0_g0.5",
+        "semantics": "effect",
+        "fits": [
+          {
+            "seed": null,
+            "model_artifact_sha256": "54a37db87821489b476093fc99ad49073e047e1bc1f33ffde1221fbaffd9f027",
+            "fit_completion_sha256": "1fc8714aa2c6235a1c8aef50e3e22dcd7ead2cb4b6cf0b61ec1865eccca9e938"
+          }
+        ],
+        "model_identity_sha256": "6b6fde6048a6883a0e37abc6d90d5f0f329cc181b2aa6048c5207281c7721546"
+      },
+      "scGen": {
+        "candidate_id": "scGen_lr0.0003_epoch320",
+        "semantics": "state",
+        "fits": [
+          {
+            "seed": 17,
+            "model_artifact_sha256": "27fee9c0511700d7e93cd3b22bb9f2bb829285c1668c146d9688e5aabfbbaadd",
+            "fit_completion_sha256": "2124166eacd48ccef88361955bc15d5e47ae018254f092dcc1be2ba0f718fb8a"
+          },
+          {
+            "seed": 29,
+            "model_artifact_sha256": "77565840836bfc99d562b2cade0fda90c4cee00da49c9ab843099f2b5c1c0acc",
+            "fit_completion_sha256": "7c896f1712c4f46a12a717cccff5845b28099c13dde85d6644e3653109c9f6d7"
+          },
+          {
+            "seed": 43,
+            "model_artifact_sha256": "e8a06f9d0a4f169dd1681495431d300e62991eb32b0eea68c92f063bfd37d5c7",
+            "fit_completion_sha256": "d61364da8eee763efb45d1a38c48f7cb50999ad1e0e892c42bb46dcc763906fd"
+          }
+        ],
+        "model_identity_sha256": "ac5453cbadf90ee26e6e606c47ed6871a8318cbc239dd61fb3fbcc985412e56e"
+      },
+      "CPA": {
+        "candidate_id": "CPA_lr0.0003_adv10_epoch2560",
+        "semantics": "state",
+        "fits": [
+          {
+            "seed": 17,
+            "model_artifact_sha256": "8c1346129278963a6c5adc4ee49595c38c1d832d2fb4711b5fe024baaa130336",
+            "fit_completion_sha256": "b2a85e439ae9fc38c3f331fb3dd60e5d161af56ce1d80e4a4fed3b36251b5896"
+          },
+          {
+            "seed": 29,
+            "model_artifact_sha256": "00dac1cb69b2433287601d1185001d33d2b15a2ab619a8073b59bcef06e73254",
+            "fit_completion_sha256": "44decf20c91067ea324ee3e84f7463a2cf339b7c78317b25253e3f9d52e759f1"
+          },
+          {
+            "seed": 43,
+            "model_artifact_sha256": "14c5caaa23028779ba0777b1092531a32147f8e76fb553bc8beb3dd07e730e5e",
+            "fit_completion_sha256": "f6faa89054c76dc73a117927c5a9e2bf2fcd4b0d7924fcf52bb9f009fe44f116"
+          }
+        ],
+        "model_identity_sha256": "ae955f91368d814f000d5fbb86576b8e691941726609658637f7ad8af870a16c"
+      },
+      "CellOT": {
+        "candidate_id": "CellOT_native_AE50_outer100000",
+        "semantics": "state",
+        "fits": [
+          {
+            "seed": 17,
+            "model_artifact_sha256": "ad97c4a6ff16fe77adafd1c403ad8d7520e3eae80f78a35465090609d50d5c40",
+            "fit_completion_sha256": "6fad496728c011a84cc1172456ee80e8b9341b30570df6dc5f418e73ce5d311e"
+          },
+          {
+            "seed": 29,
+            "model_artifact_sha256": "cda7fcdbf84816fba3a1df6b1ed56849a5b787215045b90b3d85857e0813d9d2",
+            "fit_completion_sha256": "a92b440d272743b7f2f66e424f4c7f017d586ee96bca8054bf179a3fc7190b8d"
+          },
+          {
+            "seed": 43,
+            "model_artifact_sha256": "272a337a64ee97ba792d45269067b7af0f28fef3aec292584032ea3be383ef98",
+            "fit_completion_sha256": "c83beecc44616d9f2e551ac06fae30546703bb49b0eef11937f201062573fe1c"
+          }
+        ],
+        "model_identity_sha256": "c922c3bea8a0152251e8ad74918d2f2a260181e7b45bf1331bcf63e2d3f96d3b"
+      }
+    }
+  },
+  "provenance": [
+    {
+      "source": "submission/CURRENT/05_SOURCE_DATA/CPA2560_selected/selected_2560/all_policy_tables/gse162632/original8/ALL_POLICY_ROOT_SEED_MODELS.tsv",
+      "sha256": "ead343d55ea3903938694685f7bc1957fcbb6fc470928c5fc6a74d2e89b33f92",
+      "role": "complete current per-root already-scored utility table"
+    },
+    {
+      "source": "submission/CURRENT/05_SOURCE_DATA/CPA2560_selected/selected_2560/all_policy_tables/gse162632/cap48/ALL_POLICY_ROOT_SEED_MODELS.tsv",
+      "sha256": "9d3807795e0f3c38a44dd011228ae351f8cdef3fbd10928da2d422ae5f40b34a",
+      "role": "complete current per-root already-scored utility table"
+    },
+    {
+      "source": "submission/work/s_vs_o_revision_20260920_v1/results/selection/roster/FAMILY_SELECTION.json",
+      "sha256": "d173d1288eff897255e440dd5b741bb3227edfac3770f46d7a50d9d5aa522e3b",
+      "role": "independently reconstructed selection and model identity record"
+    },
+    {
+      "source": "submission/work/s_vs_o_revision_20260920_v1/results/selection/roster/prediction_asset_roster.json",
+      "sha256": "631bea07ab533fb0be178215f00c0cfd4b2e228647ce44a8ce1ff01d58847a09",
+      "role": "independently reconstructed selection and model identity record"
+    },
+    {
+      "source": "submission/work/s_vs_o_revision_20260920_v1/results/selection/roster/selection_roster.tsv",
+      "sha256": "dd2549455f45fb279fb2ae57743fee35de42e6ba2dd9c99238b3daf7f8cb8426",
+      "role": "independently reconstructed selection and model identity record"
+    }
+  ],
+  "aggregation": {
+    "input": "primary panel, depth 8 controls per role, per-root utility averaged from separately scored seeds 17/29/43 and 1000 balanced reference allocations",
+    "within_donor": "equal five cell types and uniform 2000 training-standardized gene MSE; utility is negative MSE",
+    "replay": "equal seven-root mean for leave-one-donor-out selection; equal eight-root mean for additional-donor selection; frozen family order resolves ties within 1e-12",
+    "arithmetic": "Bundled tables average allocations then seeds; historical selector averages seeds then allocations. Utility and margin comparison allows absolute rounding error 2e-14; selected identities and tie sets must match exactly.",
+    "experimental_units": "eight original donors reused across allocations and seeds; 39 additional donors come from the same study and share acquisition batches"
+  },
+  "interpretation": "Recomputes family choices from supplied candidate utilities, after fitting and cell-level scoring. Matching choices and artifact identities do not establish independent generalization, biological superiority, calibrated uncertainty or a reporting-rule advantage. The existing program-response replay retains the historical S/D numerical record.",
+  "licenses": "Locally authored GSE162632-derived numerical summaries under CC BY 4.0; underlying GEO data and third-party model implementations retain their original terms."
+}

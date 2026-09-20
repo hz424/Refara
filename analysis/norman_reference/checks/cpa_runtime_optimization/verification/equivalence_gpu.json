@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": {
+    "trace": true,
+    "terminal_model": true,
+    "terminal_plan": true,
+    "terminal_optimizer": true,
+    "terminal_rng": true
+  },
+  "original_seconds": 7.7890292457304895,
+  "optimized_seconds": 3.2325113569386303,
+  "speedup": 2.4095906821831363,
+  "data": "synthetic only",
+  "epochs": 12,
+  "cells": 976,
+  "genes": 2000,
+  "conditions": 61,
+  "backward_events": 36,
+  "batch_events": 24,
+  "gpu": true,
+  "driver_sha256": "9962863665959945c4536842548efafe7c7f15c3a1345ffb48fbf4d8c45048c8",
+  "original_r2_source": "CPA 0.8.8 CPAModule.r2_metric",
+  "optimization": "Replace unused per-batch R2 logging calculation with zero sentinels, omitting those columns from published training history; reconstruction/adversarial diagnostics retained."
+}

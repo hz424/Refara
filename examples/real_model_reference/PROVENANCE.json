@@ -1,0 +1,55 @@
+{
+  "schema": "REFARA_REAL_MODEL_PROVENANCE_V1",
+  "model": {
+    "family": "PCA ridge native direct effect",
+    "candidate_id": "PCA_a100_r128_g0",
+    "original_checkpoint_sha256": "c0016e968678b358dad919d8d721d49725575a0aa9d71724a88c6aba60e4e8b4",
+    "training_profile_count": 722,
+    "alpha": 100.0,
+    "retained_components": 128,
+    "original_runner_sha256": "ae9363ee36ba408b23996f3bde8988514ff2833a0d2006fa5bcd4cb2d3bb0018",
+    "native_design_code_sha256": "86069b860e3626a64cecf689e86580a57a74d7afd7793e56794fcbdb6332ea89",
+    "training_bundle_manifest_sha256": "d4f273e2263eda3a73588a6bdf18fc811dc7d586b059fa08be4ff078428e54ba",
+    "training_cells": 140736,
+    "training_donor_count": 4,
+    "training_regime": "common48: at most48 cells per training donor/context/condition stratum",
+    "estimator": "Fit PCA on equal-donor context-condition effect profiles; ridge on context and condition/unit-dose indicators; alpha100, rank128. Intercept unpenalized.",
+    "selected_primary": "Frozen O-selected completed328 Parse common48 primary panel",
+    "selection_binding_sha256": "16879272d9719a4122a87f9e8034abbb4ce1e13c2116f3d4b931acfde728cb2e",
+    "output_kind": "effect",
+    "uses_control_cells": false,
+    "supports_unseen_context_or_condition": false
+  },
+  "features": {
+    "source_count": 40352,
+    "scored_count": 2000,
+    "source_axis_sha256": "21b8c463a4813b56c5035742791bb4b6273e27f4fedb452546a272ea84d20368",
+    "panel_source_indices_sha256": "06e17e701b0113126dd5b544bf66ba5b2790ca3d67612a920ffeacfabcc80f94",
+    "scales_sha256": "e7bc089264233af42bc282614c77862d8df7eb7defe6e1dcb0b0da1bc8dee047",
+    "normalization": "Full40352-source-axis library sum, CP10K float64, natural log1p, select fitted2000-axis, float32. Fixed training-derived positive scoring scales."
+  },
+  "fixture": {
+    "control_cells": 24,
+    "treated_cells": 8,
+    "units": 1,
+    "context": "CD4 Naive",
+    "condition": "IFN-gamma",
+    "selection": "First24 controls and first8 treated ordered by SHA256(fixed salt + source cell identifier), within one declared original training donor and context; selected without expression or score inspection.",
+    "selection_salt": "REFARA_REAL_MODEL_USAGE_V1",
+    "all_cells_reused_from_model_training": true,
+    "normalization_checked_against_original_training_rows": "byte-identical float32 panel values",
+    "new_cell_aliases_only": true,
+    "source_barcodes_or_private_correspondence_included": false,
+    "purpose": "Usage demonstration on previously used data, not independent validation or a performance claim"
+  },
+  "source": {
+    "dataset": "Parse Biosciences 10 million human PBMC cytokine dataset",
+    "url": "https://www.parsebiosciences.com/datasets/10-million-human-pbmcs-in-a-single-experiment/",
+    "terms": "CC BY-NC 4.0; no broader rights granted",
+    "prepared_counts_source": "Original frozen training pool CSR; only the32 selected source rows copied",
+    "training_cell_metadata_sha256": "0c3c5139ebc90ffad6d78d0afde7087f441200519664ce53a97b83dbd05ec558",
+    "source_train_row_mapping_sha256": "465bab632faca18b61c2296c0991511ee802f70b613b34c9800c513b62ef46a4"
+  },
+  "code_license": "BSD-3-Clause; model/data retain the Parse noncommercial scope",
+  "default_entry": "python examples/real_model_reference/run.py --input examples/real_model_reference/data/input.json --output outputs/real_model_reference"
+}

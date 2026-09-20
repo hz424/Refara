@@ -1,0 +1,312 @@
+{
+  "schema_version": "1.0.0",
+  "audit_id": "GSE162632_RELEASED_UTILITY_LEVEL_SUPPORT_AUDIT_V1",
+  "dataset_ids": [
+    "GSE162632_FIXED_IAV_6H"
+  ],
+  "configurations": [
+    {
+      "configuration_id": "NO_CHANGE_DIRECT_V1",
+      "implementation_identity": "ANALYTIC_ZERO_EFFECT_V1",
+      "terminal_state_identity": "DETERMINISTIC_NO_CHECKPOINT",
+      "output_semantics": "DIRECT_EFFECT",
+      "active_reference_roles": [
+        "observed_effect"
+      ],
+      "training_evaluation_separation": {
+        "status": "NOT_APPLICABLE",
+        "basis": "NO_TRAINING_STAGE_FOR_ANALYTIC_ZERO_EFFECT",
+        "assertion_authority": "RELEASE_AUTHOR_DECLARATION",
+        "machine_verified": false
+      }
+    },
+    {
+      "configuration_id": "CONTEXT_MEAN_EFFECT_DIRECT_V1",
+      "implementation_identity": "EQUAL_TRAINING_DONOR_CONTEXT_MEAN_EFFECT_V1",
+      "terminal_state_identity": "DETERMINISTIC_ANALYTIC_MEAN_NO_CHECKPOINT",
+      "output_semantics": "DIRECT_EFFECT",
+      "active_reference_roles": [
+        "observed_effect"
+      ],
+      "training_evaluation_separation": {
+        "status": "ESTABLISHED_BY_EXPERT_ASSERTION",
+        "basis": "RELEASE_AUTHORS_DECLARE_TRAINING_AND_EVALUATION_DISJOINT_IN_DONOR_BATCH_AND_CAPTURE_POOL",
+        "assertion_authority": "RELEASE_AUTHOR_DECLARATION",
+        "machine_verified": false
+      }
+    },
+    {
+      "configuration_id": "TWO_WAY_ADDITIVE_RIDGE_DIRECT_V1",
+      "implementation_identity": "TWO_WAY_ADDITIVE_RIDGE_LAMBDA_1_FLOAT64_V1",
+      "terminal_state_identity": "ANALYTIC_FLOAT64_SOLUTION_NO_CHECKPOINT",
+      "output_semantics": "DIRECT_EFFECT",
+      "active_reference_roles": [
+        "observed_effect"
+      ],
+      "training_evaluation_separation": {
+        "status": "ESTABLISHED_BY_EXPERT_ASSERTION",
+        "basis": "RELEASE_AUTHORS_DECLARE_TRAINING_AND_EVALUATION_DISJOINT_IN_DONOR_BATCH_AND_CAPTURE_POOL",
+        "assertion_authority": "RELEASE_AUTHOR_DECLARATION",
+        "machine_verified": false
+      }
+    },
+    {
+      "configuration_id": "PCA64_ADDITIVE_RIDGE_DIRECT_V1",
+      "implementation_identity": "PCA64_ADDITIVE_RIDGE_LAMBDA_1_FLOAT64_V1",
+      "terminal_state_identity": "ANALYTIC_FLOAT64_SOLUTION_NO_CHECKPOINT",
+      "output_semantics": "DIRECT_EFFECT",
+      "active_reference_roles": [
+        "observed_effect"
+      ],
+      "training_evaluation_separation": {
+        "status": "ESTABLISHED_BY_EXPERT_ASSERTION",
+        "basis": "RELEASE_AUTHORS_DECLARE_TRAINING_AND_EVALUATION_DISJOINT_IN_DONOR_BATCH_AND_CAPTURE_POOL",
+        "assertion_authority": "RELEASE_AUTHOR_DECLARATION",
+        "machine_verified": false
+      }
+    },
+    {
+      "configuration_id": "RBF_KERNEL_RIDGE_DIRECT_V1",
+      "implementation_identity": "RBF_KERNEL_RIDGE_GAMMA_0_5_LAMBDA_1_FLOAT64_V1",
+      "terminal_state_identity": "ANALYTIC_FLOAT64_SOLUTION_NO_CHECKPOINT",
+      "output_semantics": "DIRECT_EFFECT",
+      "active_reference_roles": [
+        "observed_effect"
+      ],
+      "training_evaluation_separation": {
+        "status": "ESTABLISHED_BY_EXPERT_ASSERTION",
+        "basis": "RELEASE_AUTHORS_DECLARE_TRAINING_AND_EVALUATION_DISJOINT_IN_DONOR_BATCH_AND_CAPTURE_POOL",
+        "assertion_authority": "RELEASE_AUTHOR_DECLARATION",
+        "machine_verified": false
+      }
+    },
+    {
+      "configuration_id": "CPA_0_8_8_ABSOLUTE_V1",
+      "implementation_identity": "CPA_0_8_8_SEED_17_EPOCH_24_V1",
+      "terminal_state_identity": "TERMINAL_IN_MEMORY_STATE_AFTER_EPOCH_24",
+      "output_semantics": "ABSOLUTE_STATE",
+      "active_reference_roles": [
+        "observed_effect",
+        "prediction_reference",
+        "model_conditioning"
+      ],
+      "training_evaluation_separation": {
+        "status": "ESTABLISHED_BY_EXPERT_ASSERTION",
+        "basis": "RELEASE_AUTHORS_DECLARE_TRAINING_AND_EVALUATION_DISJOINT_IN_DONOR_BATCH_AND_CAPTURE_POOL",
+        "assertion_authority": "RELEASE_AUTHOR_DECLARATION",
+        "machine_verified": false
+      }
+    },
+    {
+      "configuration_id": "SCGEN_2_1_1_ABSOLUTE_V1",
+      "implementation_identity": "SCGEN_2_1_1_SEED_17_EPOCH_80_V1",
+      "terminal_state_identity": "TERMINAL_STATE_AFTER_EPOCH_80",
+      "output_semantics": "ABSOLUTE_STATE",
+      "active_reference_roles": [
+        "observed_effect",
+        "prediction_reference",
+        "model_conditioning"
+      ],
+      "training_evaluation_separation": {
+        "status": "ESTABLISHED_BY_EXPERT_ASSERTION",
+        "basis": "RELEASE_AUTHORS_DECLARE_TRAINING_AND_EVALUATION_DISJOINT_IN_DONOR_BATCH_AND_CAPTURE_POOL",
+        "assertion_authority": "RELEASE_AUTHOR_DECLARATION",
+        "machine_verified": false
+      }
+    },
+    {
+      "configuration_id": "CELLOT_522D2B9_ABSOLUTE_V1",
+      "implementation_identity": "CELLOT_COMMIT_522D2B953DA8AD244FCF36F64521487FDF763788_V1",
+      "terminal_state_identity": "TERMINAL_STATE_AFTER_100000_OUTER_UPDATES",
+      "output_semantics": "ABSOLUTE_STATE",
+      "active_reference_roles": [
+        "observed_effect",
+        "prediction_reference",
+        "model_conditioning"
+      ],
+      "training_evaluation_separation": {
+        "status": "ESTABLISHED_BY_EXPERT_ASSERTION",
+        "basis": "RELEASE_AUTHORS_DECLARE_TRAINING_AND_EVALUATION_DISJOINT_IN_DONOR_BATCH_AND_CAPTURE_POOL",
+        "assertion_authority": "RELEASE_AUTHOR_DECLARATION",
+        "machine_verified": false
+      }
+    }
+  ],
+  "reference_declaration": {
+    "mapping_scope": "DECLARED_BLOCK_ABSTRACTION_NO_CELL_MEMBERSHIP_VERIFICATION",
+    "block_label_semantics": "PSEUDONYMIZED_DECLARATION_ONLY; PRODUCTION_CELL_MEMBERSHIPS_AND_BLOCK_HASHES_ARE_NOT_RELEASED"
+  },
+  "reference_roles": [
+    "observed_effect",
+    "prediction_reference",
+    "model_conditioning"
+  ],
+  "allocations": [
+    {
+      "allocation_id": "NAIVE_SHARED",
+      "reference_depth_label": "DECLARED_FIXED_SHARED_COMPOSITE_DEPTH",
+      "reference_depth_unit": "REFERENCE_CELL_COUNT_NOT_PUBLICLY_VERIFIABLE",
+      "aggregation_order": "SCORE_WITHIN_ROTATION_THEN_EQUAL_WEIGHT_ROTATIONS",
+      "rotations": [
+        {
+          "rotation_id": "SHARED_R0",
+          "observed_effect": "SHARED_BLOCK",
+          "prediction_reference": "SHARED_BLOCK",
+          "model_conditioning": "SHARED_BLOCK",
+          "role_depth_labels": {
+            "observed_effect": "DECLARED_EQUAL_DEPTH",
+            "prediction_reference": "DECLARED_EQUAL_DEPTH",
+            "model_conditioning": "DECLARED_EQUAL_DEPTH"
+          },
+          "expected_overlap_pattern": "ALL_THREE_ROLES_SHARE_ONE_BLOCK"
+        }
+      ]
+    },
+    {
+      "allocation_id": "INDEPENDENT_SPLIT",
+      "reference_depth_label": "DECLARED_FIXED_ROLE_DISJOINT_DEPTH",
+      "reference_depth_unit": "REFERENCE_CELL_COUNT_NOT_PUBLICLY_VERIFIABLE",
+      "aggregation_order": "SCORE_WITHIN_ROTATION_THEN_EQUAL_WEIGHT_ROTATIONS",
+      "rotations": [
+        {
+          "rotation_id": "SPLIT_R0",
+          "observed_effect": "SPLIT_BLOCK_1",
+          "prediction_reference": "SPLIT_BLOCK_2",
+          "model_conditioning": "SPLIT_BLOCK_3",
+          "role_depth_labels": {
+            "observed_effect": "DECLARED_EQUAL_ROLE_DEPTH",
+            "prediction_reference": "DECLARED_EQUAL_ROLE_DEPTH",
+            "model_conditioning": "DECLARED_EQUAL_ROLE_DEPTH"
+          },
+          "expected_overlap_pattern": "ALL_THREE_ROLES_USE_DISTINCT_BLOCKS"
+        }
+      ]
+    },
+    {
+      "allocation_id": "UNIT_AWARE_CROSSFIT",
+      "reference_depth_label": "DECLARED_FIXED_ROLE_DISJOINT_ROTATION_DEPTH",
+      "reference_depth_unit": "REFERENCE_CELL_COUNT_NOT_PUBLICLY_VERIFIABLE",
+      "aggregation_order": "SCORE_WITHIN_ROTATION_THEN_EQUAL_WEIGHT_ROTATIONS",
+      "rotations": [
+        {
+          "rotation_id": "CROSSFIT_R0",
+          "observed_effect": "CROSSFIT_BLOCK_1",
+          "prediction_reference": "CROSSFIT_BLOCK_2",
+          "model_conditioning": "CROSSFIT_BLOCK_3",
+          "role_depth_labels": {
+            "observed_effect": "DECLARED_EQUAL_ROLE_DEPTH",
+            "prediction_reference": "DECLARED_EQUAL_ROLE_DEPTH",
+            "model_conditioning": "DECLARED_EQUAL_ROLE_DEPTH"
+          },
+          "expected_overlap_pattern": "ALL_THREE_ROLES_USE_DISTINCT_BLOCKS"
+        },
+        {
+          "rotation_id": "CROSSFIT_R1",
+          "observed_effect": "CROSSFIT_BLOCK_2",
+          "prediction_reference": "CROSSFIT_BLOCK_3",
+          "model_conditioning": "CROSSFIT_BLOCK_1",
+          "role_depth_labels": {
+            "observed_effect": "DECLARED_EQUAL_ROLE_DEPTH",
+            "prediction_reference": "DECLARED_EQUAL_ROLE_DEPTH",
+            "model_conditioning": "DECLARED_EQUAL_ROLE_DEPTH"
+          },
+          "expected_overlap_pattern": "ALL_THREE_ROLES_USE_DISTINCT_BLOCKS"
+        },
+        {
+          "rotation_id": "CROSSFIT_R2",
+          "observed_effect": "CROSSFIT_BLOCK_3",
+          "prediction_reference": "CROSSFIT_BLOCK_1",
+          "model_conditioning": "CROSSFIT_BLOCK_2",
+          "role_depth_labels": {
+            "observed_effect": "DECLARED_EQUAL_ROLE_DEPTH",
+            "prediction_reference": "DECLARED_EQUAL_ROLE_DEPTH",
+            "model_conditioning": "DECLARED_EQUAL_ROLE_DEPTH"
+          },
+          "expected_overlap_pattern": "ALL_THREE_ROLES_USE_DISTINCT_BLOCKS"
+        }
+      ]
+    }
+  ],
+  "unit_contract": {
+    "dataset_column": "dataset_id",
+    "object_id_column": "object_id",
+    "unit_id_column": "unit_id",
+    "declared_unit_columns": [
+      "released_root_code"
+    ],
+    "candidate_acquisition_group_columns": [],
+    "independence_justification": {
+      "status": "ESTABLISHED_BY_EXPERT_ASSERTION",
+      "basis": "RELEASE_AUTHORS_DECLARE_EIGHT_REALIZED_DONOR_PROCESSING_BATCH_ROOTS; PUBLIC_CODES_DO_NOT_EXPOSE_OR_VERIFY_THE_SOURCE_MAPPING",
+      "assertion_authority": "RELEASE_AUTHOR_DECLARATION",
+      "machine_verified": false
+    }
+  },
+  "utility_input_contract": {
+    "input_columns": [
+      "dataset_id",
+      "dataset_role",
+      "source_report_sha256",
+      "public_root_code",
+      "root_order",
+      "scheme_id",
+      "scheme_order",
+      "method_id",
+      "panel_order",
+      "root_count",
+      "task_count",
+      "root_utility",
+      "utility_metric",
+      "larger_is_better",
+      "analysis_role"
+    ],
+    "dataset_id_column": "dataset_id",
+    "allocation_id_column": "scheme_id",
+    "unit_id_column": "public_root_code",
+    "method_id_column": "method_id",
+    "utility_column": "root_utility",
+    "required_constant_values": {
+      "dataset_role": "FORMAL_HELD_OUT_WITHIN_STUDY_CONDITIONAL_APPLICATION",
+      "source_report_sha256": "1a297a99c03985493aa4156eaa89fafe0cbd89a32950745399ef427bd9ae923c",
+      "root_count": "8",
+      "task_count": "5",
+      "utility_metric": "oriented_standardized_squared_perturbation_effect_error",
+      "larger_is_better": "true",
+      "analysis_role": "ALGEBRAIC_RECONSTRUCTION_FROM_FROZEN_LEAVE_ONE_ROOT_POINTS__NOT_NEW_INFERENCE"
+    },
+    "expected_input_sha256": "802766638793ab1d374a0f0198a905acde7739819f5b96626967435eb17584e8",
+    "provenance_scope": "PREAGGREGATED_UNIT_UTILITIES_NO_UPSTREAM_CELL_OR_MODEL_PROVENANCE_VERIFICATION"
+  },
+  "analysis_timing": {
+    "evidence_timing_label": "PUBLIC_DOWNSTREAM_AUDIT_ASSEMBLED_AFTER_RELEASED_UTILITY_ACCESS",
+    "configuration_fixed_before_utility_access": false,
+    "outcome_access_status_at_configuration_fix": "ACCESSED"
+  },
+  "comparison_family": {
+    "allocation_order": [
+      "NAIVE_SHARED",
+      "INDEPENDENT_SPLIT",
+      "UNIT_AWARE_CROSSFIT"
+    ],
+    "method_order": [
+      "NO_CHANGE_DIRECT_V1",
+      "CONTEXT_MEAN_EFFECT_DIRECT_V1",
+      "TWO_WAY_ADDITIVE_RIDGE_DIRECT_V1",
+      "PCA64_ADDITIVE_RIDGE_DIRECT_V1",
+      "RBF_KERNEL_RIDGE_DIRECT_V1",
+      "CPA_0_8_8_ABSOLUTE_V1",
+      "SCGEN_2_1_1_ABSOLUTE_V1",
+      "CELLOT_522D2B9_ABSOLUTE_V1"
+    ],
+    "directionality": "ordered",
+    "utility_orientation": "higher_is_better"
+  },
+  "inference": {
+    "decision_rule_id": "EXACT_ONE_SIDED_SIGN_HOLM_COMPLETE_ORDERED_V1",
+    "alpha": 0.05,
+    "fair_binomial_probability": 0.5,
+    "tie_rule": "LITERAL_IEEE754_BINARY64_ZERO",
+    "missing_unit_rule": "FAIL_CLOSED_COMPLETE_UNIT_BY_METHOD_SUPPORT",
+    "holm_scope": "WITHIN_DATASET_AND_ALLOCATION_COMPLETE_ORDERED_METHOD_FAMILY"
+  }
+}

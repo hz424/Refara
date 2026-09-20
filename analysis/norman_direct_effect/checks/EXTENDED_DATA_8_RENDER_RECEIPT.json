@@ -1,0 +1,1232 @@
+{
+  "status": "PASS",
+  "canvas_mm": [
+    180.0,
+    168.0
+  ],
+  "layout": {
+    "status": "PASS",
+    "out_of_canvas_text": [],
+    "text_box_collisions": [],
+    "checked_text_boxes": 97,
+    "minimum_x_tick_clearance_mm": 2.433736842105251,
+    "axes_bounds": [
+      [
+        0.09,
+        0.675,
+        0.375,
+        0.17999999999999994
+      ],
+      [
+        0.585,
+        0.675,
+        0.375,
+        0.17999999999999994
+      ],
+      [
+        0.09,
+        0.405,
+        0.375,
+        0.15500000000000003
+      ],
+      [
+        0.585,
+        0.405,
+        0.375,
+        0.15500000000000003
+      ],
+      [
+        0.09,
+        0.105,
+        0.24999999999999997,
+        0.17000000000000004
+      ],
+      [
+        0.4,
+        0.105,
+        0.25,
+        0.17000000000000004
+      ],
+      [
+        0.71,
+        0.105,
+        0.25,
+        0.17000000000000004
+      ]
+    ]
+  },
+  "plot_rows": {
+    "a": 60,
+    "b": 6,
+    "c": 12,
+    "d": 18
+  },
+  "complete_models": 5,
+  "complete_primary_pairs": 3,
+  "source_files_sha256": {
+    "Extended_Data_Figure_8_Source_Data.xlsx": "c98364c3175af7b1b24b2aebe1ff276056272984c31390581456a48a39b63f91",
+    "a_allocations.tsv": "81f769adca4764051f51657ceefed7902ea635ae056771ebdb9af4af9d25fabf",
+    "a_summary.tsv": "ea5ba76e6e0770dd32d92edb0c889929e00de35419600f7bfd387092ea44da7b",
+    "all_depth_pair_summary.tsv": "06ed5ee3265a0f19ff13333276f762af7866c546257b53a11999a63a22172c07",
+    "all_task_pair_summary.tsv": "d27f369ffad25b177c9f6d88790971437a1d97eee073a08cdfc8833f89f77b67",
+    "b_allocations.tsv": "dfb8b17014e2e113ca29e9ae30924bd1b34e0c7cae437a4e60c329daeda67361",
+    "b_summary.tsv": "ab9463a71284902a7533c943a2631f77bf01d67701dfed1f5c59f2aa3cbb4101",
+    "c_allocations.tsv": "5ecdd6bd1c44cf957efac4ed693634f2304e85e73d786b95f36327fbd1c71602",
+    "c_summary.tsv": "f3fa1fbd7e3bc32c496ff15847b16b237a148938cd1d28abe0bec1d53cec76e4",
+    "crossings_after_mean.tsv": "bf9aee934c092a15b100474ea134a73e713f3f6cdc6234b1de98c07fcd8f868d",
+    "d_allocation_mean_pairs.tsv": "6285ce75a3fa9997111c9c52d434b490f41763ddf77a384d795ff9dd642f3511",
+    "d_overall_pairs.tsv": "9c2bd828668dac1464809b0b9e5bb5b9ef1d93403560cfdb0c75081fefb184de",
+    "d_summary.tsv": "1f310d195ecb112a5645c3ee2fbf2ad4b4d33bd3e7a6223732a33abfe59d7e26",
+    "d_task_mean_pairs.tsv": "39ef967dff59ba1f11b986d3db1bc1b82d3fef42a75c1b7388c3de62fbbabaa4"
+  },
+  "result_files_sha256": {
+    "utilities.npz": "c247e264a78ba6f6db78d62b879a0a81765f55dbe90174da5501cec4ddcea640",
+    "score_report.json": "9e6d9c43955b491b93e74b83a5cd55a0f8c8401c5d8213becae59609de966949"
+  },
+  "aggregation": {
+    "a": "mean of 55 task errors, then mean and finite range of 30 allocations",
+    "b": "RMS across tasks, genes and ordered block pairs within allocation, then allocation mean/range",
+    "c": "count crossings among 165 original state-model task-pairs within each allocation, then allocation mean/range",
+    "d": "ratio of d_S to V after averaging all 55 tasks and 30 allocations"
+  },
+  "plotted_values": {
+    "a": [
+      {
+        "depth_per_gemgroup": 8,
+        "cells_per_reference": 64,
+        "model": "additive",
+        "pattern": "S",
+        "mean": 0.026195167136201958,
+        "allocation_min": 0.026195167136201958,
+        "allocation_max": 0.026195167136201958
+      },
+      {
+        "depth_per_gemgroup": 8,
+        "cells_per_reference": 64,
+        "model": "additive",
+        "pattern": "D",
+        "mean": 0.0569662637177467,
+        "allocation_min": 0.054722179714505326,
+        "allocation_max": 0.06022454419042066
+      },
+      {
+        "depth_per_gemgroup": 8,
+        "cells_per_reference": 64,
+        "model": "compositional_ridge",
+        "pattern": "S",
+        "mean": 0.025403931071276635,
+        "allocation_min": 0.025403931071276635,
+        "allocation_max": 0.025403931071276635
+      },
+      {
+        "depth_per_gemgroup": 8,
+        "cells_per_reference": 64,
+        "model": "compositional_ridge",
+        "pattern": "D",
+        "mean": 0.056175027652821376,
+        "allocation_min": 0.053930943649580045,
+        "allocation_max": 0.05943330812549532
+      },
+      {
+        "depth_per_gemgroup": 8,
+        "cells_per_reference": 64,
+        "model": "CPA_0.8.8",
+        "pattern": "S",
+        "mean": 0.09425551140901113,
+        "allocation_min": 0.08723939902214671,
+        "allocation_max": 0.10268752843340502
+      },
+      {
+        "depth_per_gemgroup": 8,
+        "cells_per_reference": 64,
+        "model": "CPA_0.8.8",
+        "pattern": "D",
+        "mean": 0.12502660799055587,
+        "allocation_min": 0.1166140124754865,
+        "allocation_max": 0.13424728370503516
+      },
+      {
+        "depth_per_gemgroup": 8,
+        "cells_per_reference": 64,
+        "model": "zero_effect",
+        "pattern": "S",
+        "mean": 0.11820850686066035,
+        "allocation_min": 0.11094839173997537,
+        "allocation_max": 0.12720414693120913
+      },
+      {
+        "depth_per_gemgroup": 8,
+        "cells_per_reference": 64,
+        "model": "zero_effect",
+        "pattern": "D",
+        "mean": 0.11820850686066037,
+        "allocation_min": 0.11094839173997537,
+        "allocation_max": 0.12720414693120916
+      },
+      {
+        "depth_per_gemgroup": 16,
+        "cells_per_reference": 128,
+        "model": "additive",
+        "pattern": "S",
+        "mean": 0.026195167136201958,
+        "allocation_min": 0.026195167136201958,
+        "allocation_max": 0.026195167136201958
+      },
+      {
+        "depth_per_gemgroup": 16,
+        "cells_per_reference": 128,
+        "model": "additive",
+        "pattern": "D",
+        "mean": 0.04153598983231959,
+        "allocation_min": 0.0401587986234217,
+        "allocation_max": 0.042703787866181134
+      },
+      {
+        "depth_per_gemgroup": 16,
+        "cells_per_reference": 128,
+        "model": "compositional_ridge",
+        "pattern": "S",
+        "mean": 0.025403931071276635,
+        "allocation_min": 0.025403931071276635,
+        "allocation_max": 0.025403931071276635
+      },
+      {
+        "depth_per_gemgroup": 16,
+        "cells_per_reference": 128,
+        "model": "compositional_ridge",
+        "pattern": "D",
+        "mean": 0.040744753767394275,
+        "allocation_min": 0.03936756255849639,
+        "allocation_max": 0.041912551801255804
+      },
+      {
+        "depth_per_gemgroup": 16,
+        "cells_per_reference": 128,
+        "model": "CPA_0.8.8",
+        "pattern": "S",
+        "mean": 0.09373184952489007,
+        "allocation_min": 0.08899891472877826,
+        "allocation_max": 0.10109707276688475
+      },
+      {
+        "depth_per_gemgroup": 16,
+        "cells_per_reference": 128,
+        "model": "CPA_0.8.8",
+        "pattern": "D",
+        "mean": 0.10907267222100771,
+        "allocation_min": 0.10458668841527981,
+        "allocation_max": 0.1158841970362642
+      },
+      {
+        "depth_per_gemgroup": 16,
+        "cells_per_reference": 128,
+        "model": "zero_effect",
+        "pattern": "S",
+        "mean": 0.11076536903327518,
+        "allocation_min": 0.10625501477008828,
+        "allocation_max": 0.11837380253338349
+      },
+      {
+        "depth_per_gemgroup": 16,
+        "cells_per_reference": 128,
+        "model": "zero_effect",
+        "pattern": "D",
+        "mean": 0.11076536903327518,
+        "allocation_min": 0.10625501477008828,
+        "allocation_max": 0.11837380253338349
+      },
+      {
+        "depth_per_gemgroup": 32,
+        "cells_per_reference": 256,
+        "model": "additive",
+        "pattern": "S",
+        "mean": 0.026195167136201958,
+        "allocation_min": 0.026195167136201958,
+        "allocation_max": 0.026195167136201958
+      },
+      {
+        "depth_per_gemgroup": 32,
+        "cells_per_reference": 256,
+        "model": "additive",
+        "pattern": "D",
+        "mean": 0.0339291776991865,
+        "allocation_min": 0.03330732746083776,
+        "allocation_max": 0.03459517566025449
+      },
+      {
+        "depth_per_gemgroup": 32,
+        "cells_per_reference": 256,
+        "model": "compositional_ridge",
+        "pattern": "S",
+        "mean": 0.025403931071276635,
+        "allocation_min": 0.025403931071276635,
+        "allocation_max": 0.025403931071276635
+      },
+      {
+        "depth_per_gemgroup": 32,
+        "cells_per_reference": 256,
+        "model": "compositional_ridge",
+        "pattern": "D",
+        "mean": 0.03313794163426118,
+        "allocation_min": 0.032516091395912446,
+        "allocation_max": 0.03380393959532915
+      },
+      {
+        "depth_per_gemgroup": 32,
+        "cells_per_reference": 256,
+        "model": "CPA_0.8.8",
+        "pattern": "S",
+        "mean": 0.09274593840396306,
+        "allocation_min": 0.08868012976531658,
+        "allocation_max": 0.0965663662784486
+      },
+      {
+        "depth_per_gemgroup": 32,
+        "cells_per_reference": 256,
+        "model": "CPA_0.8.8",
+        "pattern": "D",
+        "mean": 0.10047994896694762,
+        "allocation_min": 0.09708013828936912,
+        "allocation_max": 0.10398708870988452
+      },
+      {
+        "depth_per_gemgroup": 32,
+        "cells_per_reference": 256,
+        "model": "zero_effect",
+        "pattern": "S",
+        "mean": 0.10632175391652536,
+        "allocation_min": 0.10208774926458339,
+        "allocation_max": 0.11024015001015931
+      },
+      {
+        "depth_per_gemgroup": 32,
+        "cells_per_reference": 256,
+        "model": "zero_effect",
+        "pattern": "D",
+        "mean": 0.10632175391652536,
+        "allocation_min": 0.10208774926458339,
+        "allocation_max": 0.11024015001015931
+      },
+      {
+        "depth_per_gemgroup": 64,
+        "cells_per_reference": 512,
+        "model": "additive",
+        "pattern": "S",
+        "mean": 0.026195167136201958,
+        "allocation_min": 0.026195167136201958,
+        "allocation_max": 0.026195167136201958
+      },
+      {
+        "depth_per_gemgroup": 64,
+        "cells_per_reference": 512,
+        "model": "additive",
+        "pattern": "D",
+        "mean": 0.03003416272060467,
+        "allocation_min": 0.02976316696889231,
+        "allocation_max": 0.030359837072232224
+      },
+      {
+        "depth_per_gemgroup": 64,
+        "cells_per_reference": 512,
+        "model": "compositional_ridge",
+        "pattern": "S",
+        "mean": 0.025403931071276635,
+        "allocation_min": 0.025403931071276635,
+        "allocation_max": 0.025403931071276635
+      },
+      {
+        "depth_per_gemgroup": 64,
+        "cells_per_reference": 512,
+        "model": "compositional_ridge",
+        "pattern": "D",
+        "mean": 0.029242926655679354,
+        "allocation_min": 0.028971930903966995,
+        "allocation_max": 0.029568601007306898
+      },
+      {
+        "depth_per_gemgroup": 64,
+        "cells_per_reference": 512,
+        "model": "CPA_0.8.8",
+        "pattern": "S",
+        "mean": 0.09236645893794392,
+        "allocation_min": 0.09075798596628191,
+        "allocation_max": 0.09593021974533757
+      },
+      {
+        "depth_per_gemgroup": 64,
+        "cells_per_reference": 512,
+        "model": "CPA_0.8.8",
+        "pattern": "D",
+        "mean": 0.09620545452234665,
+        "allocation_min": 0.09459612816805694,
+        "allocation_max": 0.09957259495182788
+      },
+      {
+        "depth_per_gemgroup": 64,
+        "cells_per_reference": 512,
+        "model": "zero_effect",
+        "pattern": "S",
+        "mean": 0.10416566998074096,
+        "allocation_min": 0.10252134725090015,
+        "allocation_max": 0.10790309054873151
+      },
+      {
+        "depth_per_gemgroup": 64,
+        "cells_per_reference": 512,
+        "model": "zero_effect",
+        "pattern": "D",
+        "mean": 0.10416566998074095,
+        "allocation_min": 0.10252134725090012,
+        "allocation_max": 0.10790309054873151
+      },
+      {
+        "depth_per_gemgroup": 128,
+        "cells_per_reference": 1024,
+        "model": "additive",
+        "pattern": "S",
+        "mean": 0.026195167136201958,
+        "allocation_min": 0.026195167136201958,
+        "allocation_max": 0.026195167136201958
+      },
+      {
+        "depth_per_gemgroup": 128,
+        "cells_per_reference": 1024,
+        "model": "additive",
+        "pattern": "D",
+        "mean": 0.028112564795395263,
+        "allocation_min": 0.027981185867986303,
+        "allocation_max": 0.028354995313651744
+      },
+      {
+        "depth_per_gemgroup": 128,
+        "cells_per_reference": 1024,
+        "model": "compositional_ridge",
+        "pattern": "S",
+        "mean": 0.025403931071276635,
+        "allocation_min": 0.025403931071276635,
+        "allocation_max": 0.025403931071276635
+      },
+      {
+        "depth_per_gemgroup": 128,
+        "cells_per_reference": 1024,
+        "model": "compositional_ridge",
+        "pattern": "D",
+        "mean": 0.027321328730469947,
+        "allocation_min": 0.027189949803060998,
+        "allocation_max": 0.027563759248726415
+      },
+      {
+        "depth_per_gemgroup": 128,
+        "cells_per_reference": 1024,
+        "model": "CPA_0.8.8",
+        "pattern": "S",
+        "mean": 0.0924165026399535,
+        "allocation_min": 0.0913347316910704,
+        "allocation_max": 0.09334493640070249
+      },
+      {
+        "depth_per_gemgroup": 128,
+        "cells_per_reference": 1024,
+        "model": "CPA_0.8.8",
+        "pattern": "D",
+        "mean": 0.0943339002991468,
+        "allocation_min": 0.09326231134075572,
+        "allocation_max": 0.09522761303530183
+      },
+      {
+        "depth_per_gemgroup": 128,
+        "cells_per_reference": 1024,
+        "model": "zero_effect",
+        "pattern": "S",
+        "mean": 0.10337293805400867,
+        "allocation_min": 0.10226445598301483,
+        "allocation_max": 0.10432719372603638
+      },
+      {
+        "depth_per_gemgroup": 128,
+        "cells_per_reference": 1024,
+        "model": "zero_effect",
+        "pattern": "D",
+        "mean": 0.10337293805400867,
+        "allocation_min": 0.10226445598301483,
+        "allocation_max": 0.10432719372603638
+      },
+      {
+        "depth_per_gemgroup": 135,
+        "cells_per_reference": 1080,
+        "model": "additive",
+        "pattern": "S",
+        "mean": 0.026195167136201958,
+        "allocation_min": 0.026195167136201958,
+        "allocation_max": 0.026195167136201958
+      },
+      {
+        "depth_per_gemgroup": 135,
+        "cells_per_reference": 1080,
+        "model": "additive",
+        "pattern": "D",
+        "mean": 0.0280166618584415,
+        "allocation_min": 0.027889682034660402,
+        "allocation_max": 0.02822705038539438
+      },
+      {
+        "depth_per_gemgroup": 135,
+        "cells_per_reference": 1080,
+        "model": "compositional_ridge",
+        "pattern": "S",
+        "mean": 0.025403931071276635,
+        "allocation_min": 0.025403931071276635,
+        "allocation_max": 0.025403931071276635
+      },
+      {
+        "depth_per_gemgroup": 135,
+        "cells_per_reference": 1080,
+        "model": "compositional_ridge",
+        "pattern": "D",
+        "mean": 0.027225425793516184,
+        "allocation_min": 0.027098445969735086,
+        "allocation_max": 0.027435814320469064
+      },
+      {
+        "depth_per_gemgroup": 135,
+        "cells_per_reference": 1080,
+        "model": "CPA_0.8.8",
+        "pattern": "S",
+        "mean": 0.09230763978047168,
+        "allocation_min": 0.09164933247524666,
+        "allocation_max": 0.0928811202220657
+      },
+      {
+        "depth_per_gemgroup": 135,
+        "cells_per_reference": 1080,
+        "model": "CPA_0.8.8",
+        "pattern": "D",
+        "mean": 0.09412913450271124,
+        "allocation_min": 0.0934378674957122,
+        "allocation_max": 0.0947579602871112
+      },
+      {
+        "depth_per_gemgroup": 135,
+        "cells_per_reference": 1080,
+        "model": "zero_effect",
+        "pattern": "S",
+        "mean": 0.10321169051557444,
+        "allocation_min": 0.102567922411659,
+        "allocation_max": 0.10377728402331596
+      },
+      {
+        "depth_per_gemgroup": 135,
+        "cells_per_reference": 1080,
+        "model": "zero_effect",
+        "pattern": "D",
+        "mean": 0.10321169051557443,
+        "allocation_min": 0.102567922411659,
+        "allocation_max": 0.10377728402331596
+      },
+      {
+        "depth_per_gemgroup": 8,
+        "cells_per_reference": 64,
+        "model": "direct_effect_ridge",
+        "pattern": "S",
+        "mean": 0.036761218126020005,
+        "allocation_min": 0.0355303207830086,
+        "allocation_max": 0.03771570267295315
+      },
+      {
+        "depth_per_gemgroup": 8,
+        "cells_per_reference": 64,
+        "model": "direct_effect_ridge",
+        "pattern": "D",
+        "mean": 0.036761218126020005,
+        "allocation_min": 0.0355303207830086,
+        "allocation_max": 0.03771570267295315
+      },
+      {
+        "depth_per_gemgroup": 16,
+        "cells_per_reference": 128,
+        "model": "direct_effect_ridge",
+        "pattern": "S",
+        "mean": 0.029016597034167247,
+        "allocation_min": 0.028420743647246435,
+        "allocation_max": 0.029594656910770286
+      },
+      {
+        "depth_per_gemgroup": 16,
+        "cells_per_reference": 128,
+        "model": "direct_effect_ridge",
+        "pattern": "D",
+        "mean": 0.029016597034167247,
+        "allocation_min": 0.028420743647246435,
+        "allocation_max": 0.02959465691077029
+      },
+      {
+        "depth_per_gemgroup": 32,
+        "cells_per_reference": 256,
+        "model": "direct_effect_ridge",
+        "pattern": "S",
+        "mean": 0.02527927915981806,
+        "allocation_min": 0.02488232626175713,
+        "allocation_max": 0.025858639473587602
+      },
+      {
+        "depth_per_gemgroup": 32,
+        "cells_per_reference": 256,
+        "model": "direct_effect_ridge",
+        "pattern": "D",
+        "mean": 0.02527927915981806,
+        "allocation_min": 0.02488232626175713,
+        "allocation_max": 0.025858639473587602
+      },
+      {
+        "depth_per_gemgroup": 64,
+        "cells_per_reference": 512,
+        "model": "direct_effect_ridge",
+        "pattern": "S",
+        "mean": 0.023352500308107524,
+        "allocation_min": 0.023144463080997654,
+        "allocation_max": 0.023520490711091923
+      },
+      {
+        "depth_per_gemgroup": 64,
+        "cells_per_reference": 512,
+        "model": "direct_effect_ridge",
+        "pattern": "D",
+        "mean": 0.023352500308107524,
+        "allocation_min": 0.023144463080997654,
+        "allocation_max": 0.02352049071109192
+      },
+      {
+        "depth_per_gemgroup": 128,
+        "cells_per_reference": 1024,
+        "model": "direct_effect_ridge",
+        "pattern": "S",
+        "mean": 0.022380424845421635,
+        "allocation_min": 0.022333316225809516,
+        "allocation_max": 0.022470309822650268
+      },
+      {
+        "depth_per_gemgroup": 128,
+        "cells_per_reference": 1024,
+        "model": "direct_effect_ridge",
+        "pattern": "D",
+        "mean": 0.022380424845421635,
+        "allocation_min": 0.022333316225809505,
+        "allocation_max": 0.022470309822650268
+      },
+      {
+        "depth_per_gemgroup": 135,
+        "cells_per_reference": 1080,
+        "model": "direct_effect_ridge",
+        "pattern": "S",
+        "mean": 0.02233448706127499,
+        "allocation_min": 0.02228347392482395,
+        "allocation_max": 0.0224105997464137
+      },
+      {
+        "depth_per_gemgroup": 135,
+        "cells_per_reference": 1080,
+        "model": "direct_effect_ridge",
+        "pattern": "D",
+        "mean": 0.02233448706127499,
+        "allocation_min": 0.02228347392482395,
+        "allocation_max": 0.0224105997464137
+      }
+    ],
+    "b": [
+      {
+        "depth_per_gemgroup": 8,
+        "cells_per_reference": 64,
+        "mean": 0.05452115934023356,
+        "allocation_min": 0.04089163235047541,
+        "allocation_max": 0.07795189128408775
+      },
+      {
+        "depth_per_gemgroup": 16,
+        "cells_per_reference": 128,
+        "mean": 0.03788515429801549,
+        "allocation_min": 0.023776559183633587,
+        "allocation_max": 0.05292216394299692
+      },
+      {
+        "depth_per_gemgroup": 32,
+        "cells_per_reference": 256,
+        "mean": 0.027304698752491967,
+        "allocation_min": 0.016528569705791137,
+        "allocation_max": 0.03724807869150833
+      },
+      {
+        "depth_per_gemgroup": 64,
+        "cells_per_reference": 512,
+        "mean": 0.01863874055962427,
+        "allocation_min": 0.010989035654388501,
+        "allocation_max": 0.024547401068575295
+      },
+      {
+        "depth_per_gemgroup": 128,
+        "cells_per_reference": 1024,
+        "mean": 0.013105732747718297,
+        "allocation_min": 0.009444798477695972,
+        "allocation_max": 0.01998441333985366
+      },
+      {
+        "depth_per_gemgroup": 135,
+        "cells_per_reference": 1080,
+        "mean": 0.012887070826415725,
+        "allocation_min": 0.009273246662040992,
+        "allocation_max": 0.01920278779889204
+      }
+    ],
+    "c": [
+      {
+        "depth_per_gemgroup": 8,
+        "cells_per_reference": 64,
+        "pattern": "P",
+        "mean": 1.6666666666666667,
+        "allocation_min": 0,
+        "allocation_max": 3
+      },
+      {
+        "depth_per_gemgroup": 8,
+        "cells_per_reference": 64,
+        "pattern": "O",
+        "mean": 0.9333333333333333,
+        "allocation_min": 0,
+        "allocation_max": 3
+      },
+      {
+        "depth_per_gemgroup": 16,
+        "cells_per_reference": 128,
+        "pattern": "P",
+        "mean": 0.5333333333333333,
+        "allocation_min": 0,
+        "allocation_max": 3
+      },
+      {
+        "depth_per_gemgroup": 16,
+        "cells_per_reference": 128,
+        "pattern": "O",
+        "mean": 0.5333333333333333,
+        "allocation_min": 0,
+        "allocation_max": 2
+      },
+      {
+        "depth_per_gemgroup": 32,
+        "cells_per_reference": 256,
+        "pattern": "P",
+        "mean": 0.2,
+        "allocation_min": 0,
+        "allocation_max": 1
+      },
+      {
+        "depth_per_gemgroup": 32,
+        "cells_per_reference": 256,
+        "pattern": "O",
+        "mean": 0.36666666666666664,
+        "allocation_min": 0,
+        "allocation_max": 1
+      },
+      {
+        "depth_per_gemgroup": 64,
+        "cells_per_reference": 512,
+        "pattern": "P",
+        "mean": 0.1,
+        "allocation_min": 0,
+        "allocation_max": 1
+      },
+      {
+        "depth_per_gemgroup": 64,
+        "cells_per_reference": 512,
+        "pattern": "O",
+        "mean": 0.2,
+        "allocation_min": 0,
+        "allocation_max": 1
+      },
+      {
+        "depth_per_gemgroup": 128,
+        "cells_per_reference": 1024,
+        "pattern": "P",
+        "mean": 0.0,
+        "allocation_min": 0,
+        "allocation_max": 0
+      },
+      {
+        "depth_per_gemgroup": 128,
+        "cells_per_reference": 1024,
+        "pattern": "O",
+        "mean": 0.0,
+        "allocation_min": 0,
+        "allocation_max": 0
+      },
+      {
+        "depth_per_gemgroup": 135,
+        "cells_per_reference": 1080,
+        "pattern": "P",
+        "mean": 0.0,
+        "allocation_min": 0,
+        "allocation_max": 0
+      },
+      {
+        "depth_per_gemgroup": 135,
+        "cells_per_reference": 1080,
+        "pattern": "O",
+        "mean": 0.0,
+        "allocation_min": 0,
+        "allocation_max": 0
+      }
+    ],
+    "d": [
+      {
+        "depth_per_gemgroup": 8,
+        "cells_per_role": 64,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "additive",
+        "d_S": -0.010566050989818054,
+        "V": 0.030771096581544737,
+        "d_D": 0.020205045591726686,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 1334,
+        "d_D_predicted": 0.020205045591726683,
+        "identity_residual": 3.469446951953614e-18,
+        "condition_strict_raw": true,
+        "expected_crossing": true,
+        "observed_crossing": true,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "state_to_effect",
+        "d_S_over_V": -0.34337583523608145,
+        "inside_reversal_interval": true
+      },
+      {
+        "depth_per_gemgroup": 8,
+        "cells_per_role": 64,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "compositional_ridge",
+        "d_S": -0.011357287054743372,
+        "V": 0.030771096581544737,
+        "d_D": 0.01941380952680137,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 1249,
+        "d_D_predicted": 0.019413809526801364,
+        "identity_residual": 6.938893903907228e-18,
+        "condition_strict_raw": true,
+        "expected_crossing": true,
+        "observed_crossing": true,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "state_to_effect",
+        "d_S_over_V": -0.36908944810094985,
+        "inside_reversal_interval": true
+      },
+      {
+        "depth_per_gemgroup": 8,
+        "cells_per_role": 64,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "CPA_0.8.8",
+        "d_S": 0.05749429328299111,
+        "V": 0.030771096581544737,
+        "d_D": 0.08826538986453586,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 167,
+        "d_D_predicted": 0.08826538986453585,
+        "identity_residual": 1.3877787807814457e-17,
+        "condition_strict_raw": false,
+        "expected_crossing": false,
+        "observed_crossing": false,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "effect_preferred_both",
+        "d_S_over_V": 1.8684512308694865,
+        "inside_reversal_interval": false
+      },
+      {
+        "depth_per_gemgroup": 16,
+        "cells_per_role": 128,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "additive",
+        "d_S": -0.002821429897965291,
+        "V": 0.015340822696117636,
+        "d_D": 0.012519392798152349,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 1115,
+        "d_D_predicted": 0.012519392798152345,
+        "identity_residual": 3.469446951953614e-18,
+        "condition_strict_raw": true,
+        "expected_crossing": true,
+        "observed_crossing": true,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "state_to_effect",
+        "d_S_over_V": -0.18391646614097962,
+        "inside_reversal_interval": true
+      },
+      {
+        "depth_per_gemgroup": 16,
+        "cells_per_role": 128,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "compositional_ridge",
+        "d_S": -0.0036126659628906077,
+        "V": 0.015340822696117636,
+        "d_D": 0.011728156733227028,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 995,
+        "d_D_predicted": 0.011728156733227028,
+        "identity_residual": 0.0,
+        "condition_strict_raw": true,
+        "expected_crossing": true,
+        "observed_crossing": true,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "state_to_effect",
+        "d_S_over_V": -0.23549362602338658,
+        "inside_reversal_interval": true
+      },
+      {
+        "depth_per_gemgroup": 16,
+        "cells_per_role": 128,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "CPA_0.8.8",
+        "d_S": 0.06471525249072282,
+        "V": 0.015340822696117636,
+        "d_D": 0.08005607518684046,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 61,
+        "d_D_predicted": 0.08005607518684046,
+        "identity_residual": 0.0,
+        "condition_strict_raw": false,
+        "expected_crossing": false,
+        "observed_crossing": false,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "effect_preferred_both",
+        "d_S_over_V": 4.218499475070563,
+        "inside_reversal_interval": false
+      },
+      {
+        "depth_per_gemgroup": 32,
+        "cells_per_role": 256,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "additive",
+        "d_S": 0.0009158879763838948,
+        "V": 0.0077340105629845465,
+        "d_D": 0.008649898539368442,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 550,
+        "d_D_predicted": 0.008649898539368442,
+        "identity_residual": 0.0,
+        "condition_strict_raw": false,
+        "expected_crossing": false,
+        "observed_crossing": false,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "effect_preferred_both",
+        "d_S_over_V": 0.11842341937925342,
+        "inside_reversal_interval": false
+      },
+      {
+        "depth_per_gemgroup": 32,
+        "cells_per_role": 256,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "compositional_ridge",
+        "d_S": 0.00012465191145857776,
+        "V": 0.0077340105629845465,
+        "d_D": 0.007858662474443124,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 805,
+        "d_D_predicted": 0.007858662474443124,
+        "identity_residual": 0.0,
+        "condition_strict_raw": false,
+        "expected_crossing": false,
+        "observed_crossing": false,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "effect_preferred_both",
+        "d_S_over_V": 0.016117370210892847,
+        "inside_reversal_interval": false
+      },
+      {
+        "depth_per_gemgroup": 32,
+        "cells_per_role": 256,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "CPA_0.8.8",
+        "d_S": 0.06746665924414501,
+        "V": 0.0077340105629845465,
+        "d_D": 0.07520066980712956,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 48,
+        "d_D_predicted": 0.07520066980712956,
+        "identity_residual": 0.0,
+        "condition_strict_raw": false,
+        "expected_crossing": false,
+        "observed_crossing": false,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "effect_preferred_both",
+        "d_S_over_V": 8.723373041025392,
+        "inside_reversal_interval": false
+      },
+      {
+        "depth_per_gemgroup": 64,
+        "cells_per_role": 512,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "additive",
+        "d_S": 0.002842666828094431,
+        "V": 0.003838995584402715,
+        "d_D": 0.006681662412497147,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 298,
+        "d_D_predicted": 0.0066816624124971455,
+        "identity_residual": 1.734723475976807e-18,
+        "condition_strict_raw": false,
+        "expected_crossing": false,
+        "observed_crossing": false,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "effect_preferred_both",
+        "d_S_over_V": 0.7404715024012468,
+        "inside_reversal_interval": false
+      },
+      {
+        "depth_per_gemgroup": 64,
+        "cells_per_role": 512,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "compositional_ridge",
+        "d_S": 0.0020514307631691138,
+        "V": 0.003838995584402715,
+        "d_D": 0.005890426347571828,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 463,
+        "d_D_predicted": 0.005890426347571829,
+        "identity_residual": -8.673617379884035e-19,
+        "condition_strict_raw": false,
+        "expected_crossing": false,
+        "observed_crossing": false,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "effect_preferred_both",
+        "d_S_over_V": 0.5343665336589031,
+        "inside_reversal_interval": false
+      },
+      {
+        "depth_per_gemgroup": 64,
+        "cells_per_role": 512,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "CPA_0.8.8",
+        "d_S": 0.0690139586298364,
+        "V": 0.003838995584402715,
+        "d_D": 0.07285295421423911,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 2,
+        "d_D_predicted": 0.07285295421423912,
+        "identity_residual": -1.3877787807814457e-17,
+        "condition_strict_raw": false,
+        "expected_crossing": false,
+        "observed_crossing": false,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "effect_preferred_both",
+        "d_S_over_V": 17.977087264760126,
+        "inside_reversal_interval": false
+      },
+      {
+        "depth_per_gemgroup": 128,
+        "cells_per_role": 1024,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "additive",
+        "d_S": 0.003814742290780321,
+        "V": 0.0019173976591933103,
+        "d_D": 0.005732139949973632,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 121,
+        "d_D_predicted": 0.005732139949973632,
+        "identity_residual": 0.0,
+        "condition_strict_raw": false,
+        "expected_crossing": false,
+        "observed_crossing": false,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "effect_preferred_both",
+        "d_S_over_V": 1.9895415395392022,
+        "inside_reversal_interval": false
+      },
+      {
+        "depth_per_gemgroup": 128,
+        "cells_per_role": 1024,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "compositional_ridge",
+        "d_S": 0.0030235062258550036,
+        "V": 0.0019173976591933103,
+        "d_D": 0.004940903885048313,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 330,
+        "d_D_predicted": 0.004940903885048314,
+        "identity_residual": -8.673617379884035e-19,
+        "condition_strict_raw": false,
+        "expected_crossing": false,
+        "observed_crossing": false,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "effect_preferred_both",
+        "d_S_over_V": 1.5768801069294391,
+        "inside_reversal_interval": false
+      },
+      {
+        "depth_per_gemgroup": 128,
+        "cells_per_role": 1024,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "CPA_0.8.8",
+        "d_S": 0.07003607779453187,
+        "V": 0.0019173976591933103,
+        "d_D": 0.07195347545372517,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 0,
+        "d_D_predicted": 0.07195347545372519,
+        "identity_residual": -1.3877787807814457e-17,
+        "condition_strict_raw": false,
+        "expected_crossing": false,
+        "observed_crossing": false,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "effect_preferred_both",
+        "d_S_over_V": 36.52663153036159,
+        "inside_reversal_interval": false
+      },
+      {
+        "depth_per_gemgroup": 135,
+        "cells_per_role": 1080,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "additive",
+        "d_S": 0.003860680074926967,
+        "V": 0.0018214947222395463,
+        "d_D": 0.005682174797166513,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 111,
+        "d_D_predicted": 0.005682174797166513,
+        "identity_residual": 0.0,
+        "condition_strict_raw": false,
+        "expected_crossing": false,
+        "observed_crossing": false,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "effect_preferred_both",
+        "d_S_over_V": 2.119512084108716,
+        "inside_reversal_interval": false
+      },
+      {
+        "depth_per_gemgroup": 135,
+        "cells_per_role": 1080,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "compositional_ridge",
+        "d_S": 0.0030694440100016494,
+        "V": 0.0018214947222395463,
+        "d_D": 0.004890938732241195,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 317,
+        "d_D_predicted": 0.004890938732241196,
+        "identity_residual": -8.673617379884035e-19,
+        "condition_strict_raw": false,
+        "expected_crossing": false,
+        "observed_crossing": false,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "effect_preferred_both",
+        "d_S_over_V": 1.6851237461878215,
+        "inside_reversal_interval": false
+      },
+      {
+        "depth_per_gemgroup": 135,
+        "cells_per_role": 1080,
+        "effect_model": "direct_effect_ridge",
+        "state_model": "CPA_0.8.8",
+        "d_S": 0.0699731527191967,
+        "V": 0.0018214947222395463,
+        "d_D": 0.07179464744143625,
+        "n_task_allocation_pairs": 1650,
+        "crossing_unit_count": 0,
+        "d_D_predicted": 0.07179464744143625,
+        "identity_residual": 0.0,
+        "condition_strict_raw": false,
+        "expected_crossing": false,
+        "observed_crossing": false,
+        "S_tie": false,
+        "D_tie": false,
+        "classification": "effect_preferred_both",
+        "d_S_over_V": 38.41523769729291,
+        "inside_reversal_interval": false
+      }
+    ]
+  },
+  "panel_b_plotted_values": [
+    {
+      "depth_per_gemgroup": 8,
+      "cells_per_reference": 64,
+      "mean": 0.05452115934023356,
+      "allocation_min": 0.04089163235047541,
+      "allocation_max": 0.07795189128408775
+    },
+    {
+      "depth_per_gemgroup": 16,
+      "cells_per_reference": 128,
+      "mean": 0.03788515429801549,
+      "allocation_min": 0.023776559183633587,
+      "allocation_max": 0.05292216394299692
+    },
+    {
+      "depth_per_gemgroup": 32,
+      "cells_per_reference": 256,
+      "mean": 0.027304698752491967,
+      "allocation_min": 0.016528569705791137,
+      "allocation_max": 0.03724807869150833
+    },
+    {
+      "depth_per_gemgroup": 64,
+      "cells_per_reference": 512,
+      "mean": 0.01863874055962427,
+      "allocation_min": 0.010989035654388501,
+      "allocation_max": 0.024547401068575295
+    },
+    {
+      "depth_per_gemgroup": 128,
+      "cells_per_reference": 1024,
+      "mean": 0.013105732747718297,
+      "allocation_min": 0.009444798477695972,
+      "allocation_max": 0.01998441333985366
+    },
+    {
+      "depth_per_gemgroup": 135,
+      "cells_per_reference": 1080,
+      "mean": 0.012887070826415725,
+      "allocation_min": 0.009273246662040992,
+      "allocation_max": 0.01920278779889204
+    }
+  ],
+  "panel_d_y_ranges": {
+    "additive": [
+      -1.15,
+      2.4
+    ],
+    "compositional_ridge": [
+      -1.15,
+      2.4
+    ],
+    "CPA_0.8.8": [
+      -1.5,
+      42
+    ]
+  },
+  "panel_d_reversal_interval": [
+    -1,
+    0
+  ],
+  "panel_d_interval_is_strict": true,
+  "panel_d_all_pairs_retained": true,
+  "panel_d_crossings": 4,
+  "renderer_sha256": "292b3e0f813313d8f5fe538f56c14915cc17510944f183584d030ad936aa6734",
+  "x_axis": "six ordered control-depth categories; model and pattern marks slightly offset within depth",
+  "uncertainty": "a-c: finite full allocation range, not confidence intervals; d: no interval, complete finite aggregate comparisons",
+  "output_sha256": {
+    "Extended_Data_Figure_8.pdf": "b3ca889a487b1b65036f4e63a37efa33661be84f58e9b5a991f93b9fab6e56cb",
+    "Extended_Data_Figure_8.svg": "d1596ae0b602dc10bcd6c83fdb10cee9f604247b732de43638f6a2e5d1c3abc1",
+    "Extended_Data_Figure_8.png": "54e698ee1e137915015c61db134267622f956d88d7c2b22e43292a05656f0d7e",
+    "Extended_Data_Figure_8.tiff": "9c5380ecbe79e7b3a410038da156b5f08ac625b3fa89d9007ef2af1970bfcf44"
+  }
+}

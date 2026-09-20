@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "binding_id": "F2_EXISTING_NEGATIVE_CONTROL_BINDING_V1",
+  "state": "FROZEN_EXISTING_OUTCOME_EXPOSED_INPUT_NO_RECOMPUTATION",
+  "scientific_role": "SEPARATE_HIERARCHICAL_ROOT_TASK_CELL_NEGATIVE_CONTROL_FOR_FIGURE_2",
+  "source_table": {
+    "path": "05_SOURCE_DATA/validation_table/F3C_PSEUDOREPLICATION_V1.tsv",
+    "bytes": 9507,
+    "sha256": "e414ea9827e3bceda6f003f6720ab97605805cfb97dc123068d50b807af5c629",
+    "data_rows": 20,
+    "geometry": "4 root counts x 5 procedures",
+    "trials_per_row": 2500
+  },
+  "source_receipt": {
+    "path": "07_PROVENANCE_AND_RECEIPTS/LEGACY_ACCEPTED/F2/RENDER_RECEIPT.json",
+    "bytes": 53859,
+    "sha256": "c2619763ba135c2bc0a09a305c1ad85f15a2bb9fb1f00a7342aa2ffbc3f4fdb0"
+  },
+  "permitted_main_figure_use": {
+    "retain_all_rows_in_source_data": true,
+    "display_requirement": "Display all 20 bound rows in one visually separate panel; no row, root count or procedure may be selected or omitted after inspecting values.",
+    "main_panel_selection_rule": "ALL_20_ROWS_EXACTLY",
+    "main_panel_row_keys": [
+      {"root_count_R": 8, "procedure_id": "EXACT_ROOT_SIGN_HOLM"},
+      {"root_count_R": 8, "procedure_id": "ROOT_CR1_T_MEAN_CONTRAST_HOLM"},
+      {"root_count_R": 8, "procedure_id": "ROOT_NONPARAMETRIC_BOOTSTRAP_MEAN_CONTRAST_HOLM"},
+      {"root_count_R": 8, "procedure_id": "TASK_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM"},
+      {"root_count_R": 8, "procedure_id": "CELL_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM"},
+      {"root_count_R": 12, "procedure_id": "EXACT_ROOT_SIGN_HOLM"},
+      {"root_count_R": 12, "procedure_id": "ROOT_CR1_T_MEAN_CONTRAST_HOLM"},
+      {"root_count_R": 12, "procedure_id": "ROOT_NONPARAMETRIC_BOOTSTRAP_MEAN_CONTRAST_HOLM"},
+      {"root_count_R": 12, "procedure_id": "TASK_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM"},
+      {"root_count_R": 12, "procedure_id": "CELL_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM"},
+      {"root_count_R": 20, "procedure_id": "EXACT_ROOT_SIGN_HOLM"},
+      {"root_count_R": 20, "procedure_id": "ROOT_CR1_T_MEAN_CONTRAST_HOLM"},
+      {"root_count_R": 20, "procedure_id": "ROOT_NONPARAMETRIC_BOOTSTRAP_MEAN_CONTRAST_HOLM"},
+      {"root_count_R": 20, "procedure_id": "TASK_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM"},
+      {"root_count_R": 20, "procedure_id": "CELL_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM"},
+      {"root_count_R": 40, "procedure_id": "EXACT_ROOT_SIGN_HOLM"},
+      {"root_count_R": 40, "procedure_id": "ROOT_CR1_T_MEAN_CONTRAST_HOLM"},
+      {"root_count_R": 40, "procedure_id": "ROOT_NONPARAMETRIC_BOOTSTRAP_MEAN_CONTRAST_HOLM"},
+      {"root_count_R": 40, "procedure_id": "TASK_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM"},
+      {"root_count_R": 40, "procedure_id": "CELL_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM"}
+    ],
+    "valid_root_procedures": [
+      "EXACT_ROOT_SIGN_HOLM",
+      "ROOT_CR1_T_MEAN_CONTRAST_HOLM",
+      "ROOT_NONPARAMETRIC_BOOTSTRAP_MEAN_CONTRAST_HOLM"
+    ],
+    "invalid_negative_controls": [
+      "TASK_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM",
+      "CELL_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM"
+    ]
+  },
+  "prohibitions": [
+    "DO_NOT_REGENERATE_OR_RESAMPLE_AS_PART_OF_THE_280_CELL_GRID",
+    "DO_NOT_POOL_DENOMINATORS_WITH_NEW_SIMULATIONS",
+    "DO_NOT_CALL_INVALID_DESCENDANT_ANALYSES_FWER_ESTIMATES",
+    "DO_NOT_USE_TASK_OR_CELL_COUNTS_AS_INDEPENDENT_ROOTS",
+    "DO_NOT_SELECT_ROOT_COUNTS_OR_PROCEDURES_FROM_EFFECT_MAGNITUDE"
+  ],
+  "claim_boundary": "These rows characterize the specified historical hierarchical-null simulation and invalid analyses; they are not empirical error rates, independent validation or a qualification gate."
+}

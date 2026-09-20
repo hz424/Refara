@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-09-12T17:38:39.112520+00:00",
+  "protocol_sha256": "e65613d2f393663cb324535fac93efbc01ebc818865c6f063626a61d02461689",
+  "type": "Post-protocol model-coverage extension recorded before the supplemental action execution",
+  "reason": "Retain CPA,scGen,CellOT andallfive nativeeffects fromPBMC in the organizer-operation demonstration; current primaryprotocolcoversNormanandKang. No outcome selection.",
+  "resource": "PBMC",
+  "selection": {
+    "task_index": 0,
+    "allocation_index": 0,
+    "models": "all8 fromfrozenpreviousinputinventory",
+    "operation_coverage": "six reference-effect operationfamilies permodel=48; state-to-effect or effect-to-state task switch onlyfor3state-outputmodels=3",
+    "total_cases": 51,
+    "metrics": [
+      "standardized_MSE",
+      "raw_RMSE"
+    ],
+    "native_effect_lift": "No nativeeffecttreatedstate task switch withoutsavedTRAINlift; no inventedbaseline."
+  },
+  "reporting": "Report as supplemental genuine-cache operationreplay, notnewbiologyorindependentlyobservedbenchmarkerrors. Keep separatefromNormanSystemafourmetricpanel.",
+  "previous_access": "AllPBMCresources/earlierfindingswerealreadyknown; retrospectiveextension."
+}

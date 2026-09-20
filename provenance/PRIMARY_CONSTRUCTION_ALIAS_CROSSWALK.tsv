@@ -1,0 +1,4 @@
+display_label	provenance_id	membership_and_aggregation_summary
+Shared	NAIVE_SHARED	The same 24-cell union supplies every active reference role; one utility is scored per root and configuration.
+Role-disjoint split	INDEPENDENT_SPLIT	Three disjoint depth-8 blocks supply the observation, prediction-centering and model-conditioning roles.
+Reference-block rotation	UNIT_AWARE_CROSSFIT	Three depth-8 blocks rotate across roles; utilities are averaged after nonlinear scoring. This provenance label does not imply conventional statistical cross-fitting.

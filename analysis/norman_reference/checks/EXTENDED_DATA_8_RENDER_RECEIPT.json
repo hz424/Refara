@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "canvas_mm": [
+    180.0,
+    115.0
+  ],
+  "layout": {
+    "status": "PASS",
+    "out_of_canvas_text": [],
+    "minimum_x_tick_clearance_mm": 6.381105263157905,
+    "axes_bounds": [
+      [
+        0.09,
+        0.565,
+        0.375,
+        0.255
+      ],
+      [
+        0.585,
+        0.565,
+        0.375,
+        0.255
+      ],
+      [
+        0.09,
+        0.12,
+        0.375,
+        0.245
+      ],
+      [
+        0.585,
+        0.12,
+        0.375,
+        0.245
+      ]
+    ]
+  },
+  "plot_rows": {
+    "a": 48,
+    "b": 6,
+    "c": 12
+  },
+  "complete_models": 4,
+  "complete_primary_pairs": 3,
+  "source_files_sha256": {
+    "Extended_Data_Figure_8_Source_Data.xlsx": "fe2ac5fd07b41e29163d0a890e6fc5a0998e39ca4130ef8bcdc924a1b8316f1b",
+    "a_allocations.tsv": "178a854e06adbdfc35b01c5adaa2ac195097e76855daed689af3c2b1ce4aa8c7",
+    "a_summary.tsv": "1743ac2f8c27fd44f8e827cddbe66607370c1dc49badec001dab6d2fed3664d1",
+    "all_depth_pair_summary.tsv": "06ed5ee3265a0f19ff13333276f762af7866c546257b53a11999a63a22172c07",
+    "all_task_pair_summary.tsv": "d27f369ffad25b177c9f6d88790971437a1d97eee073a08cdfc8833f89f77b67",
+    "b_allocations.tsv": "dfb8b17014e2e113ca29e9ae30924bd1b34e0c7cae437a4e60c329daeda67361",
+    "b_summary.tsv": "ab9463a71284902a7533c943a2631f77bf01d67701dfed1f5c59f2aa3cbb4101",
+    "c_allocations.tsv": "5ecdd6bd1c44cf957efac4ed693634f2304e85e73d786b95f36327fbd1c71602",
+    "c_summary.tsv": "f3fa1fbd7e3bc32c496ff15847b16b237a148938cd1d28abe0bec1d53cec76e4",
+    "crossings_after_mean.tsv": "bf9aee934c092a15b100474ea134a73e713f3f6cdc6234b1de98c07fcd8f868d"
+  },
+  "result_files_sha256": {
+    "utilities.npz": "c247e264a78ba6f6db78d62b879a0a81765f55dbe90174da5501cec4ddcea640",
+    "score_report.json": "9e6d9c43955b491b93e74b83a5cd55a0f8c8401c5d8213becae59609de966949"
+  },
+  "aggregation": {
+    "a": "mean of 55 task errors, then mean and finite range of 30 allocations",
+    "b": "RMS across tasks, genes and ordered block pairs within allocation, then allocation mean/range",
+    "c": "count crossings among 165 task-pairs within each allocation, then allocation mean/range"
+  },
+  "panel_b_plotted_values": [
+    {
+      "depth_per_gemgroup": 8,
+      "cells_per_reference": 64,
+      "mean": 0.0545211593402335,
+      "allocation_min": 0.0408916323504754,
+      "allocation_max": 0.0779518912840877
+    },
+    {
+      "depth_per_gemgroup": 16,
+      "cells_per_reference": 128,
+      "mean": 0.0378851542980154,
+      "allocation_min": 0.0237765591836335,
+      "allocation_max": 0.0529221639429969
+    },
+    {
+      "depth_per_gemgroup": 32,
+      "cells_per_reference": 256,
+      "mean": 0.0273046987524919,
+      "allocation_min": 0.0165285697057911,
+      "allocation_max": 0.0372480786915083
+    },
+    {
+      "depth_per_gemgroup": 64,
+      "cells_per_reference": 512,
+      "mean": 0.0186387405596242,
+      "allocation_min": 0.0109890356543885,
+      "allocation_max": 0.0245474010685752
+    },
+    {
+      "depth_per_gemgroup": 128,
+      "cells_per_reference": 1024,
+      "mean": 0.0131057327477182,
+      "allocation_min": 0.0094447984776959,
+      "allocation_max": 0.0199844133398536
+    },
+    {
+      "depth_per_gemgroup": 135,
+      "cells_per_reference": 1080,
+      "mean": 0.0128870708264157,
+      "allocation_min": 0.0092732466620409,
+      "allocation_max": 0.019202787798892
+    }
+  ],
+  "renderer_sha256": "ccfdfdb6a0d9ae399d8467942fb67d36597fdcf7f97f45985eca04f1f5907408",
+  "x_axis": "six ordered control-depth categories; model and pattern marks slightly offset within depth",
+  "uncertainty": "finite full allocation range, not confidence intervals",
+  "output_sha256": {
+    "Extended_Data_Figure_8.pdf": "cf443547857b41f78fcc6a01e184fa50fb75fb963fc591a7eb6ef88fceb539d2",
+    "Extended_Data_Figure_8.svg": "0b7a3f4a972c3d2884871d02d5b367b7130f3c1ff4c604f76e092189cc189ac0",
+    "Extended_Data_Figure_8.png": "86824f73ce3b5663dbbf8700cf4158ad18d181c7ba91ab4253309ee6ca748e8b",
+    "Extended_Data_Figure_8.tiff": "03fb3152016d2e14dbe45e3b47f16756df7f31bf2cacef69a110b5b0290a7766"
+  }
+}

@@ -1,0 +1,79 @@
+Frozen Parse PCA: real inference and reference scoring
+
+From the source checkout, after installing the package:
+
+  python examples/real_model_reference/run.py --input examples/real_model_reference/data/input.json --output outputs/real_model_reference
+
+This runs on CPU with NumPy and SciPy. The checkout includes the original
+2.09 MB fitted checkpoint and 32 real cells; no download or training is needed.
+The Python inference module is installed in the wheel. The example script and
+data are source/release assets and are not included in the wheel.
+
+What runs
+
+The frozen PCA/ridge model was fitted on Parse PBMC training effects. The
+example uses 24 control and 8 IFN-gamma-treated CD4 Naive cells from one of the
+original training donors. These cells have already been used in training:
+this is a usage demonstration, not independent validation of model quality.
+PROVENANCE.json records the source, training contract and original hashes.
+
+Every allocation calls the fitted predictor again. It consumes the trained
+cell-type and condition labels at unit dose; its native output is a direct
+effect and does not depend on control-cell expression or membership. The
+example therefore illustrates a real direct-effect interface, not a trained
+control-conditioned state model. NC is the zero-effect baseline.
+
+Each of four fixed-seed allocations draws 16 of the 24 controls. S uses all
+16 as both input and observation reference. O uses 8 as input and the other
+8 as observation reference. The same 8 treated cells are used throughout.
+For either protocol, the target is mean(treated) minus mean(observed controls).
+Loss is the mean squared error after division by fixed training gene scales.
+Reference changes can change the loss even though this model's effect is fixed.
+
+The example also represents the identical effect d as control + d and checks
+that centring once on the input controls gives the same loss, within floating
+point tolerance. This conversion is not another trained predictor. It must
+not be used as evidence that general state-output models ignore their input
+cells. Such models must be called separately for each new input allocation
+unless their per-cell caching contract has been established.
+
+Output
+
+RESULTS.json binds inputs and weights, lists all scores, prediction-call count,
+control-cell forwards (zero for this direct model), and wall time.
+scores.tsv has PCA native-effect, equivalent-state and NC losses.
+cell_membership.tsv records every input, observation and treated role.
+inferred_effects.npy contains newly computed effects, not cached inputs.
+An existing nonempty output directory is rejected.
+
+Your own cells
+
+Use --input path/to/input.json with the same schema as data/input.json:
+counts is a SciPy sparse NPZ with cells as rows and raw counts as columns;
+features is a TSV with source_index (0-based input column order) and feature_id;
+cells is a TSV with cell_id and role (control or treated), in count-row order.
+Require at least 16 controls and exactly 8 treated cells from the one declared
+unit, context and condition. The caller is responsible for these biological
+labels. A unit label is recorded, not used to infer biological independence.
+
+All 40,352 training source genes must be present; an explicit column
+permutation is accepted. The library sum uses all genes before CP10K/log1p
+normalization and projection to the fixed 2,000 genes. No missing genes are
+filled, no scale is re-estimated, and held-out treated cells are not used to
+fit a transform. Sparse zero entries are genuine measured zeros, not a way
+to encode missing genes. Unsupported contexts and conditions are rejected.
+The default task is CD4 Naive / IFN-gamma; the checkpoint's trained label
+lists are accessible through FrozenPCA.context_ids and compound_dose_ids.
+This example does not provide cross-platform gene mapping or claim that
+matching gene labels alone establishes cross-platform comparability.
+
+Rights
+
+Code uses the repository BSD-3-Clause license. Counts, gene annotations,
+training-derived scales and model weights retain the Parse CC BY-NC 4.0
+noncommercial scope. See LICENSE.txt and the repository LICENSE_SCOPE.md.
+
+The dataset is Parse Biosciences' 10 million human PBMC cytokine dataset:
+https://www.parsebiosciences.com/datasets/10-million-human-pbmcs-in-a-single-experiment/
+
+Source attribution and noncommercial terms must accompany redistribution.

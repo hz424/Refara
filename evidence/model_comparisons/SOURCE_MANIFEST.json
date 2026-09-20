@@ -1,0 +1,129 @@
+{
+  "schema": "scored-model-comparisons-v1",
+  "origin_release": "NATURE_METHODS_20260915_github_ci_portability_local_review_v1",
+  "source_qa": {
+    "source_data_path": "Figure_2_eight_model_v1820/provenance/43cdb270d8f1ff5c_SOURCE_QA.json",
+    "sha256": "43cdb270d8f1ff5cf0ab3037553758032f75be394999f7c6779b18cf24df30d7"
+  },
+  "source_tables": [
+    {
+      "source_data_path": "Figure_2_eight_model_v1820/provenance/2b39f80b613283c5_ALL_POLICY_ROOT_SEED_MODELS.tsv",
+      "sha256": "2b39f80b613283c5c4b55b6d25566b351740c8f33e07f358dd9a90a63ccc6f14",
+      "bytes": 4468370
+    },
+    {
+      "source_data_path": "Figure_2_eight_model_v1820/provenance/2aec4cc25ec039b3_ALL_POLICY_ROOT_SEED_MODELS.tsv",
+      "sha256": "2aec4cc25ec039b3fa02fbc08d03ecaaff44066d6db74417c2cb8102b81f59f9",
+      "bytes": 4363920
+    },
+    {
+      "source_data_path": "Figure_2_eight_model_v1820/provenance/5db66c7e6308c5eb_ALL_POLICY_ROOT_SEED_MODELS.tsv",
+      "sha256": "5db66c7e6308c5eb03baa8137f80415bb810540df662334dfe10e202df455f56",
+      "bytes": 6140155
+    },
+    {
+      "source_data_path": "Figure_2_eight_model_v1820/provenance/924580fa478b881b_ALL_POLICY_ROOT_SEED_MODELS.tsv",
+      "sha256": "924580fa478b881b134e2b7326cc3f660b33a46fbd1e56982e3ad5fb9624999e",
+      "bytes": 7409698
+    },
+    {
+      "source_data_path": "Figure_2_eight_model_v1820/provenance/1ce015768f18d6ce_PRIMARY_ALL_ROOTS_ALL_DEPTHS_MODELS.tsv",
+      "sha256": "1ce015768f18d6ce4b2e59c6cf4e2b6a15f03e4bb05378e29557ee20d325f2a6",
+      "bytes": 1055764
+    },
+    {
+      "source_data_path": "Figure_2_eight_model_v1820/provenance/2c87e67d95e66b2e_PRIMARY_ALL_ROOTS_ALL_DEPTHS_PAIRS.tsv",
+      "sha256": "2c87e67d95e66b2e3813bcbb885645a504b82834ae96f395b8ef9bbcd7794e2f",
+      "bytes": 3300203
+    }
+  ],
+  "groups": [
+    {
+      "dataset": "gse162632",
+      "regime": "original8",
+      "depths": [
+        4,
+        6,
+        8
+      ],
+      "source_model_table_sha256": "2b39f80b613283c5c4b55b6d25566b351740c8f33e07f358dd9a90a63ccc6f14",
+      "evaluation_binding_sha256": "ef44cb3613a6cb755b9316018f338ca8957c99848284c00aa0c2bebedca3312e",
+      "evaluation_completion_sha256": "a270523582600ec0c371ae025e01e50714b04bb6f423ff9b7dcc27601ff12153",
+      "full_table_completion_sha256": "c3b6953975df97ee84477a504b32d27af05cd8b6c644ae2ea400a497903bb407",
+      "training_gate_sha256": "af60042c80db6c8148fa067b344847da8460858637c1f9c72fb5e4ee64708b0d"
+    },
+    {
+      "dataset": "gse162632",
+      "regime": "cap48",
+      "depths": [
+        4,
+        6,
+        8
+      ],
+      "source_model_table_sha256": "2aec4cc25ec039b3fa02fbc08d03ecaaff44066d6db74417c2cb8102b81f59f9",
+      "evaluation_binding_sha256": "d035e1b1410d9eab571a32ce04018075e46784a48fa83cb96b5b7f919e852fa2",
+      "evaluation_completion_sha256": "656d06a4a77a83d5999f7013a769c096acdfffc499a21bd7e70048bad08c45de",
+      "full_table_completion_sha256": "946d4920aabc105b33185f46deb81ac98ddb361ad9e3d8bb01566c90b110096d",
+      "training_gate_sha256": "af60042c80db6c8148fa067b344847da8460858637c1f9c72fb5e4ee64708b0d"
+    },
+    {
+      "dataset": "parse",
+      "regime": "common48",
+      "depths": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ],
+      "source_model_table_sha256": "5db66c7e6308c5eb03baa8137f80415bb810540df662334dfe10e202df455f56",
+      "evaluation_binding_sha256": "16879272d9719a4122a87f9e8034abbb4ce1e13c2116f3d4b931acfde728cb2e",
+      "evaluation_completion_sha256": "4f2043f7f6ac086e85b0ca0497b50ed2795973801c4cffc356905560ef835d10",
+      "full_table_completion_sha256": "181febecd4e042d68eef088f9895268231e14cc19d82b3fb902cbb0879950ad3",
+      "training_gate_sha256": "af60042c80db6c8148fa067b344847da8460858637c1f9c72fb5e4ee64708b0d"
+    },
+    {
+      "dataset": "parse",
+      "regime": "common128",
+      "depths": [
+        16,
+        24,
+        32,
+        40,
+        48
+      ],
+      "source_model_table_sha256": "924580fa478b881b134e2b7326cc3f660b33a46fbd1e56982e3ad5fb9624999e",
+      "evaluation_binding_sha256": "d58f05fae99c63ea29c35b615fd44c1a49ed97fdb38aa55f3069ce868a28f3d4",
+      "evaluation_completion_sha256": "bb67200149e95d50c8478d7d9aef59be42c1b176c8e07facfdd31c2e7c194ec1",
+      "full_table_completion_sha256": "d639da8b96571b12cc0a7e91f01db7721b6c85f759c97b273f9f0a9e03546b41",
+      "training_gate_sha256": "af60042c80db6c8148fa067b344847da8460858637c1f9c72fb5e4ee64708b0d"
+    }
+  ],
+  "files": {
+    "data/scored_unit_utilities.tsv": {
+      "sha256": "671266fbcf974b4bab24aac8566a0f7049ac42523860ee35e3ad93d3ba74f429",
+      "bytes": 878301
+    },
+    "expected/current_mean_utilities.tsv": {
+      "sha256": "91601f4f12fe5a550b7bdb501d2397399f67703707b0219c3bba277e3b9bdc8a",
+      "bytes": 29640
+    },
+    "expected/current_pair_margins.tsv": {
+      "sha256": "187d9c132f999ffd9a0554ea3303b6f3e63cc85794b7a0e696d17a884461686f",
+      "bytes": 187996
+    }
+  },
+  "input_rows": 15360,
+  "selection": "primary panel; all three scored seeds and eight units; all registered depths, five designs, eight families",
+  "input_level": "Per-seed/per-unit negative MSE after mean over 1000 balanced equal-depth allocations; no predictions bundled.",
+  "fitting_provenance": "The completed TRAIN-selected fits bound by each evaluation binding and the common training gate are retained unchanged.",
+  "deterministic_baselines": "NC, CM, TW, PCA and RBF repeat the same deterministic score over the three seed labels; this does not create additional independent fits.",
+  "policy_roles": {
+    "S": "model input = prediction reference = observation reference",
+    "M": "prediction reference = observation reference; separate model input",
+    "P": "model input = observation reference; separate prediction reference",
+    "O": "model input = prediction reference; separate observation reference",
+    "D": "three distinct blocks for model input, prediction reference and observation reference"
+  },
+  "validation_level": "Expected files are published primary equal-unit values, used only after recomputing scores, orders and reversal identities from seed/unit inputs."
+}

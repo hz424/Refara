@@ -1,0 +1,156 @@
+name: Refara
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  quick-demo:
+    name: quick demo (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-15-intel]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify the focal replay payload
+        shell: bash
+        run: |
+          set -- capsules/gse162632_scgen/replay/arrays/*.npy
+          test "$#" -eq 11
+          git ls-files --error-unmatch "$@" >/dev/null
+          ! git check-ignore --no-index "$@" >/dev/null
+      - name: Set up Python 3.10.17
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10.17"
+      - name: Run the standalone mathematical example
+        env:
+          PYTHON_BIN: python
+        run: bash scripts/run_demo.sh
+
+  test:
+    name: source-free tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up test Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10.21"
+      - name: Install test environment
+        run: |
+          python -m venv .venv
+          .venv/bin/python -m pip install --no-deps -r requirements/vcc-build-py310.txt -r requirements/vcc-py310-linux.txt -r requirements/unified-prepare-py310.txt
+          .venv/bin/python -m pip install --no-build-isolation --no-deps -e .
+          .venv/bin/python -m pip check
+      - name: Run source-free tests
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: .venv/bin/python -m pytest -q
+      - name: Check biological-consequence calculations
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: .venv/bin/python -m unittest discover -s analysis/biological_consequence -p 'test_*.py' -v
+      - name: Check current upstream reconstruction tools
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: .venv/bin/python -m unittest discover -s reconstruction/current_upstream/tests -v
+      - name: Run the declared protocol examples
+        run: |
+          .venv/bin/python examples/organizer/make_example.py --output outputs/organizer_inputs
+          .venv/bin/reference-design design outputs/organizer_inputs/manifest.json --output outputs/organizer_design
+          .venv/bin/reference-design check-design outputs/organizer_design/design.json outputs/organizer_inputs/assessment.tsv --output outputs/organizer_check
+          .venv/bin/python examples/anndata_prepare/make_example.py --output outputs/anndata_inputs
+          .venv/bin/reference-design prepare outputs/anndata_inputs/manifest.json --output outputs/anndata_prepared
+          .venv/bin/reference-design run outputs/anndata_prepared/plan.json --output outputs/anndata_results
+          .venv/bin/python examples/anndata_prepare/block_conditioned.py --output outputs/block_conditioned
+          .venv/bin/python examples/reference_protocol/make_example.py --output outputs/protocol_inputs
+          .venv/bin/reference-design run outputs/protocol_inputs/plan.json --output outputs/protocol_scores
+          .venv/bin/python examples/organizer/from_scores.py --scores outputs/protocol_scores/primary_allocation_scores.tsv --config examples/organizer/protocol_config.json --output outputs/protocol_organizer_inputs
+          .venv/bin/reference-design design outputs/protocol_organizer_inputs/manifest.json --output outputs/protocol_design
+          .venv/bin/reference-design check-design outputs/protocol_design/design.json outputs/protocol_organizer_inputs/assessment_scores.tsv --output outputs/protocol_check
+          .venv/bin/python examples/pbmc_reference_protocol/run.py --output outputs/pbmc_protocol
+          .venv/bin/python examples/fixed_budget.py --output outputs/fixed_budget
+          .venv/bin/python examples/direction_report.py --output outputs/direction_report
+          .venv/bin/python examples/real_model_reference/run.py --output outputs/real_model_reference
+          .venv/bin/python examples/conditioned_model_reference/run.py --output outputs/conditioned_model_reference
+      - name: Check reference operations and numerical evidence
+        run: |
+          .venv/bin/reference-design audit demo --output outputs/reference_audit
+          .venv/bin/python evidence/reproduce.py --output outputs/conclusions
+          .venv/bin/python evidence/current_submission/replay.py --output outputs/current_submission
+          .venv/bin/python evidence/jerber_reference_audit/replay.py --output outputs/jerber_reference_audit
+          .venv/bin/python evidence/program_responses/selection_replay.py --output outputs/program_selection
+          .venv/bin/python evidence/organizer/replay.py --output outputs/norman_organizer
+          .venv/bin/python evidence/organizer/evaluate.py --output outputs/reporting_comparison
+          .venv/bin/python evidence/organizer/plot_comparison.py --results outputs/reporting_comparison --output outputs/reporting_figures
+          .venv/bin/python evidence/gse181897_reference_design/replay.py --output outputs/external_design
+          .venv/bin/python evidence/gse181897_reference_design/plot.py --results outputs/external_design/RESULTS.json --output outputs/external_design_figures
+          .venv/bin/python -m reference_design.reporting_validation replay --input evidence/reporting_reliability --output outputs/reporting_reliability
+
+      - name: Show numerical replay failure details
+        if: failure()
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          root = Path("outputs/conclusions")
+          for path in sorted(root.rglob("*")):
+              if path.is_file() and (path.suffix == ".log" or path.name == "REPLAY_RECEIPT.json"):
+                  print(f"\n--- {path} ---", flush=True)
+                  print("\n".join(path.read_text(errors="replace").splitlines()[-80:]), flush=True)
+          PY
+
+      - name: Build and test an installed wheel outside the checkout
+        shell: bash
+        run: |
+          .venv/bin/python -m pip wheel --no-deps --no-build-isolation --wheel-dir dist .
+          .venv/bin/python -m pip uninstall -y reference-cell-benchmark-design
+          .venv/bin/python -m pip install --no-deps dist/*.whl
+          toolkit_python="$GITHUB_WORKSPACE/.venv/bin/python"
+          outside_dir=$(mktemp -d "$RUNNER_TEMP/reference-smoke.XXXXXX")
+          cd "$outside_dir"
+          unset PYTHONPATH
+          "$toolkit_python" -c 'import sys, reference_design; from pathlib import Path; assert Path(reference_design.__file__).is_relative_to(Path(sys.prefix))'
+          "$toolkit_python" -m reference_design audit demo --output audit
+          "$toolkit_python" "$GITHUB_WORKSPACE/examples/reference_protocol/make_example.py" --output inputs
+          "$toolkit_python" -m reference_design run inputs/plan.json --output results
+          "$toolkit_python" "$GITHUB_WORKSPACE/examples/direction_report.py" --output directions
+          "$toolkit_python" -m reference_design.reporting_validation synthetic --output synthetic_reporting
+          "$toolkit_python" "$GITHUB_WORKSPACE/examples/real_model_reference/run.py" --output real_model
+          "$toolkit_python" "$GITHUB_WORKSPACE/examples/conditioned_model_reference/run.py" --output conditioned_model
+
+  vcc-worker:
+    name: official-scoring input checks (Python 3.12)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12.14"
+      - name: Install pinned official CPU scoring environment
+        run: |
+          python -m pip install --no-deps -r requirements/vcc-build-py312.txt -r requirements/vcc-py312-linux.txt
+          git clone --filter=blob:none --no-checkout https://github.com/ArcInstitute/cell-eval2.git /tmp/cell-eval2
+          git -C /tmp/cell-eval2 checkout --detach 5e64833518a6603a0301cbe28185d49c30f4a986
+          python -m pip install --no-deps --no-build-isolation /tmp/cell-eval2
+          python -m pip check
+      - name: Validate actual H5AD worker inputs
+        env:
+          REFERENCE_DESIGN_OFFICIAL_SOURCE: /tmp/cell-eval2
+          PYTHONDONTWRITEBYTECODE: "1"
+          OMP_NUM_THREADS: "2"
+          OPENBLAS_NUM_THREADS: "2"
+          MKL_NUM_THREADS: "2"
+          NUMBA_NUM_THREADS: "2"
+          POLARS_MAX_THREADS: "2"
+        run: python -m pytest -q tests_official/test_vcc_worker.py

@@ -1,0 +1,99 @@
+{
+  "biological_p_values_or_confidence_intervals": false,
+  "diagnostic_crossing_events": [
+    {
+      "S_margin": 0.0239529954516492,
+      "allocation_max_margin": -0.0073209232707474,
+      "allocation_min_margin": -0.016312776472493,
+      "crossing_allocation_count": 30,
+      "depth_per_gemgroup": 8,
+      "displacement": -0.0337780637454521,
+      "margin": -0.0098250682938028,
+      "model_a": "CPA_0.8.8",
+      "model_b": "zero_effect",
+      "n_allocations": 30,
+      "pair_role": "zero_effect_diagnostic",
+      "pattern": "P",
+      "strict_crossing_after_task_and_allocation_means": true
+    },
+    {
+      "S_margin": 0.0239529954516492,
+      "allocation_max_margin": -0.0027115651341894,
+      "allocation_min_margin": -0.0051601575792311,
+      "crossing_allocation_count": 30,
+      "depth_per_gemgroup": 8,
+      "displacement": -0.0277641294176373,
+      "margin": -0.0038111339659881,
+      "model_a": "CPA_0.8.8",
+      "model_b": "zero_effect",
+      "n_allocations": 30,
+      "pair_role": "zero_effect_diagnostic",
+      "pattern": "O",
+      "strict_crossing_after_task_and_allocation_means": true
+    },
+    {
+      "S_margin": 0.0239529954516492,
+      "allocation_max_margin": -0.0055190011169578,
+      "allocation_min_margin": -0.0102387416056181,
+      "crossing_allocation_count": 30,
+      "depth_per_gemgroup": 8,
+      "displacement": -0.0307710965815447,
+      "margin": -0.0068181011298955,
+      "model_a": "CPA_0.8.8",
+      "model_b": "zero_effect",
+      "n_allocations": 30,
+      "pair_role": "zero_effect_diagnostic",
+      "pattern": "D",
+      "strict_crossing_after_task_and_allocation_means": true
+    }
+  ],
+  "overall_primary_pair_allocation_crossings": 0,
+  "overall_primary_pair_crossings": 0,
+  "scope": "Descriptive one-pooled-screen held-out-combination analysis",
+  "task_primary_crossing_events": [
+    {
+      "S_margin": -0.0012082813894611,
+      "condition": "ETS2+TGFBR2",
+      "crossing_allocation_count": 26,
+      "depth_per_gemgroup": 8,
+      "displacement": 0.0029956059205121,
+      "margin": 0.001787324531051,
+      "model_a": "compositional_ridge",
+      "model_b": "CPA_0.8.8",
+      "n_allocations": 30,
+      "pair_role": "primary_state_pair",
+      "pattern": "P",
+      "strict_crossing_after_allocation_mean": true
+    },
+    {
+      "S_margin": 0.0027183321951256,
+      "condition": "FOSB+PTPN12",
+      "crossing_allocation_count": 10,
+      "depth_per_gemgroup": 8,
+      "displacement": -0.0030202197043849,
+      "margin": -0.0003018875092593,
+      "model_a": "compositional_ridge",
+      "model_b": "CPA_0.8.8",
+      "n_allocations": 30,
+      "pair_role": "primary_state_pair",
+      "pattern": "O",
+      "strict_crossing_after_allocation_mean": true
+    },
+    {
+      "S_margin": -0.0027972383336439,
+      "condition": "FOSB+UBASH3B",
+      "crossing_allocation_count": 11,
+      "depth_per_gemgroup": 8,
+      "displacement": 0.00301931793479,
+      "margin": 0.0002220796011461,
+      "model_a": "compositional_ridge",
+      "model_b": "CPA_0.8.8",
+      "n_allocations": 30,
+      "pair_role": "primary_state_pair",
+      "pattern": "P",
+      "strict_crossing_after_allocation_mean": true
+    }
+  ],
+  "total_controls_per_role": "8 * depth_per_gemgroup",
+  "trained_model_order": "compositional_ridge > additive > CPA_0.8.8 for every overall allocation/depth/pattern"
+}

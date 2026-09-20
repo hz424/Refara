@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "valid_operation_cases": 95,
+  "operation_families": [
+    "common_scoring_reference",
+    "input_replacement",
+    "observation_baseline",
+    "paired_input_effect",
+    "prediction_baseline",
+    "same_target_storage_encoding",
+    "task_switch",
+    "unused_roles_Kang"
+  ],
+  "models": {
+    "Norman": 6,
+    "Kang": 2,
+    "PBMC": 8
+  },
+  "cached_new_input_selections": 8,
+  "reused_prediction_cases": 87,
+  "new_model_inferences": 0,
+  "max_action_component_error": 2.220446049250313e-16,
+  "full_invariance_cases": 16,
+  "injected_stress_tests": 5,
+  "injected_integrity_rejections": 4,
+  "injected_semantic_faults_needing_external_canonical_output": 1,
+  "role_omission_checks": 285,
+  "missing_active_information": 156,
+  "valid_unused_role_omissions": 129,
+  "elapsed_seconds_from_cached_profiles": 1.4179263431578875,
+  "files": {
+    "EXECUTION_BINDING.json": {
+      "sha256": "4d9973511be8327970104e83584bda4cca982f9622dbfc62faa75d7de94a623f",
+      "bytes": 554
+    },
+    "action_summary.tsv": {
+      "sha256": "98cff97b5a0905044394a5fcd9de0ccb019f92c463ee41946d3c0b48dcd80c31",
+      "bytes": 19269
+    },
+    "actions.json": {
+      "sha256": "1bf4a3190bdb461d35dce382243d1da13ede2dd92e4a9817c14e65c7eeab0933",
+      "bytes": 378575
+    },
+    "cases.json": {
+      "sha256": "802d7e83d69c0908e670f957622e007dfac609580c4af66ddc136680e2bd6740",
+      "bytes": 116548
+    },
+    "components.npz": {
+      "sha256": "c4721a3221207eb8eb80320bbfe9637f9aba300078d02346e945e09a9fc9e83a",
+      "bytes": 17219013
+    },
+    "injected_stress_tests.json": {
+      "sha256": "8bed3b32909767f7bc6397658ccdf7122fdf8e4176f3959ae658777e38a0c429",
+      "bytes": 1301
+    },
+    "report.md": {
+      "sha256": "136515225e826aaf4c53c7f693b1193402d505330a61f26438e8e6f5bfc3af76",
+      "bytes": 4141
+    },
+    "role_omission_checks.json": {
+      "sha256": "01002b1ebdc55b6f6059ae30bd7b12ca45a174c8956fdef32fb729f108732842",
+      "bytes": 52301
+    }
+  },
+  "scope": "Agent-executed cached-array demonstration. No human time comparison, new training, external benchmark bug prevalence or Systema diagnostic accuracy is measured."
+}

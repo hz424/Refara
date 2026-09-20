@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-09-12T17:32:31.470866+00:00",
+  "study_protocol_sha256": "e65613d2f393663cb324535fac93efbc01ebc818865c6f063626a61d02461689",
+  "engine_sha256": "f89384c09b6ff5e0abe451aba2224282e87326162ffee9fd62470d7466d7fb2b",
+  "previous_protocol_sha256": "e9bc0d97149657eb1b9957275e2e30c7d4e6fd2a649de0cec0abeb0b388e0d03",
+  "previous_forecast_binding_sha256": "36db8b187b9cdfdc7c9fc434e855cd2d78bbad90123906e39b6fef1236b166ab",
+  "input_adapter_sha256": "653d16a79d6dc23831bc512449b16f209a0ce182dc24d4612fd02e32f7137455",
+  "input_inventory_sha256": "2eb15dfb0a474ad52db41f96eb761ddbb48d4978525314546695f440c0672a08",
+  "source_bindings": {
+    "submission/work/systema_matched_norman_v1/results/fixed_profiles_and_references.npz": "a124615c1d9949f843b7d79c3900e46daebf26910d0f4a91414390662debc834",
+    "submission/work/systema_matched_norman_v1/results/selected_CPA_block_profiles.npy": "b3903b3564a073b8504285ef3b4c71a95bd0e4c1620c68d8a0ef1b4af18a1189",
+    "submission/work/reference_protocol_v2/software/analysis/norman_training_review/source_data/reference_results/control_block_means.npy": "d591ac5c5f761954978b967d2a88a6efaf7140bb33a321b1b0b4c283c0669b2b"
+  },
+  "target_decoding_begins_after_this_binding": true,
+  "design_status": "Retrospective replay; historical targets and results were previously inspected.",
+  "python": "3.10.17 | packaged by conda-forge | (main, Apr 10 2025, 22:19:12) [GCC 13.3.0]",
+  "numpy": "1.26.4",
+  "scipy": "1.15.3",
+  "blas_threads": 2,
+  "unique_prediction_profiles_per_task_depth_allocation": 50,
+  "status": "PASS_COMPLETE_METRIC_CUBES",
+  "finished_utc": "2026-09-12T17:33:23.101309+00:00",
+  "elapsed_seconds": 53.029272377491,
+  "tasks": 55,
+  "depths": [
+    8,
+    16,
+    32,
+    64,
+    128,
+    135
+  ],
+  "allocations": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "models": [
+    "selected_CPA",
+    "original_CPA_fixed",
+    "additive",
+    "compositional_ridge",
+    "NC_native_effect",
+    "native_effect_ridge"
+  ],
+  "metrics": [
+    "standardized_MSE",
+    "raw_RMSE",
+    "perturbation_centred_Pearson",
+    "centroid_accuracy"
+  ],
+  "direct_state_shape": [
+    55,
+    6,
+    30,
+    3,
+    6,
+    4
+  ],
+  "role_effect_shape": [
+    55,
+    6,
+    30,
+    27,
+    6,
+    4
+  ],
+  "direct_state_axes": [
+    "task",
+    "depth",
+    "allocation",
+    "input_block",
+    "model",
+    "metric"
+  ],
+  "role_effect_axes": [
+    "task",
+    "depth",
+    "allocation",
+    "role_tuple",
+    "model",
+    "metric"
+  ],
+  "role_tuple_order": [
+    "Cobs",
+    "Cpred",
+    "Cmodel"
+  ],
+  "role_tuples": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      2,
+      1
+    ],
+    [
+      0,
+      2,
+      2
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      2
+    ],
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      1,
+      2,
+      1
+    ],
+    [
+      1,
+      2,
+      2
+    ],
+    [
+      2,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      1
+    ],
+    [
+      2,
+      0,
+      2
+    ],
+    [
+      2,
+      1,
+      0
+    ],
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      2
+    ],
+    [
+      2,
+      2,
+      0
+    ],
+    [
+      2,
+      2,
+      1
+    ],
+    [
+      2,
+      2,
+      2
+    ]
+  ],
+  "direct_state_rendering": "State M_i against Y; native E+saved TRAIN_control against Y.",
+  "role_effect_rendering": "State M_i-b_p+b_o against Y; native E+b_o against Y, ignoring p and i.",
+  "native_effect_definition": "NC E=0; native ridge E=stored profile[5]-saved native_effect_training_baseline.",
+  "metric_semantics": {
+    "standardized_MSE": "Mean squared residual divided by squared saved training scales.",
+    "raw_RMSE": "Square root of mean squared raw residual over fixed 2000 genes.",
+    "perturbation_centred_Pearson": "Pearson across genes after subtracting fixed saved TRAIN_perturbation from both rendered prediction and target.",
+    "centroid_accuracy": "Fraction of 54 incorrect target centroids strictly farther than the correct centroid in raw Euclidean distance; ties receive zero credit."
+  },
+  "reference_scope": "The fixed TRAIN perturbation reference and all 55 retrieval candidates are shared across every role intervention. No reference is estimated from test targets.",
+  "support": "All 55 tasks, 30 allocations, 6 depths, 6 models, 27 ordered role tuples; each cached Norman model has one fit.",
+  "missingness": "Pearson NaNs are retained; no task deletion or replacement. Other metrics must be finite.",
+  "undefined_values": {
+    "direct_state": 0,
+    "role_effect": 0
+  },
+  "synthetic_checks": {
+    "status": "PASS",
+    "scalar_metric_values": 80,
+    "unique_profiles": 50,
+    "metric_max_error": 2.220446049250313e-16,
+    "role_rendering_max_error": 4.440892098500626e-16,
+    "strict_centroid_tie": true,
+    "undefined_constant_Pearson": true,
+    "native_TRAIN_lift": true,
+    "all_role_tuples_checked": 27
+  },
+  "outputs": {
+    "task_scores.npz": {
+      "sha256": "a8237c2ab7ff08183357b1e87210aa7a1adf1e886ae19a7957faa5d54df15b65",
+      "bytes": 12036092
+    },
+    "EXECUTION_BINDING.json": {
+      "sha256": "010246f6a38c582fef6f4aee91b365f32f8729de037adcea4cdaa0ea523ce4d0",
+      "bytes": 1580
+    }
+  }
+}

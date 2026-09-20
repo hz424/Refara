@@ -1,0 +1,4 @@
+task	unit	condition	compartment
+wB	west	stim	B
+eT	east	stim	T
+wT	west	stim	T

@@ -1,0 +1,10 @@
+# Hatchling 1.32.0 is recorded in the successfully installed official wheel's WHEEL.
+# Its public build dependencies are pinned here for subsequent source builds.
+# https://pypi.org/pypi/hatchling/1.32.0/json
+pip==25.0.1
+hatchling==1.32.0
+packaging==26.3
+pathspec==1.1.1
+pluggy==1.6.0
+tomlkit==0.15.1
+trove-classifiers==2026.6.1.19

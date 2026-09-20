@@ -1,0 +1,42 @@
+{
+  "reporting_candidate": {
+    "executed_source_filename": "runner/reporting_candidate.py",
+    "executed_source_sha256": "30ffa561588f2f52e7823aea72136a3f0846ff5f84bd70c00bbb6cd9525230e6",
+    "adaptation": "Relative package imports only; original synthetic guards preserved."
+  },
+  "assessment_intervals": {
+    "executed_source_filename": "runner/assessment_intervals.py",
+    "executed_source_sha256": "a483417bf4cfe0bd7b8244b01ce110bb8e595b2fdbc1911c7f55b0d6ba71cb2a",
+    "adaptation": "Relative package imports only; original synthetic guards preserved."
+  },
+  "integration_driver": {
+    "executed_source_filename": "runner/integration_driver.py",
+    "executed_source_sha256": "682c6b447fff69dca0a7839ad7b358965f9696874f22450086380fb250a13509",
+    "adaptation": "Relative package imports only; original synthetic guards preserved."
+  },
+  "synthetic_fixture": {
+    "executed_source_filename": "runner/synthetic_fixture.py",
+    "executed_source_sha256": "0b813645173328eda7be3cea7751018a9117486835710f2e57e5f74c775b48b5",
+    "adaptation": "Relative package imports only; original synthetic guards preserved."
+  },
+  "_retrospective": {
+    "executed_source_filename": "retrospective_gse181897/code/compare_rules.py",
+    "executed_source_sha256": "928440b37c1f016829e1a15d378d6c646e2d6114affe6f33a820690c8736a524",
+    "unchanged_mathematical_functions": [
+      "require",
+      "sign",
+      "direction",
+      "roster",
+      "context_matrix",
+      "calibration_penalties",
+      "candidates_for_context",
+      "coverage_protocol",
+      "companion_prefixes",
+      "mean_se",
+      "working_intervals",
+      "pool_sensitivity",
+      "work_accounting"
+    ],
+    "adaptation": "Copied exact function source; removed filesystem/loading/main code; imports point to packaged audited modules."
+  }
+}

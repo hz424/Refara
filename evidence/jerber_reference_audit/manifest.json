@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "scope_id": "retrospective_fixed_observed_panel",
+  "scope": "Retrospective reference-allocation audit conditional on the existing panel of 20 roots and 8 tasks. No population confidence interval or independent experimental validation is claimed.",
+  "tasks": [
+    "Astro",
+    "DA",
+    "Epen1",
+    "FPP",
+    "P_FPP",
+    "Sert",
+    "U_Neur1",
+    "U_Neur3"
+  ],
+  "models": [
+    "NO_CHANGE_DIRECT_V1",
+    "PCA64_ADDITIVE_RIDGE_DIRECT_V1",
+    "SCGEN_2_1_1_ABSOLUTE_V1"
+  ],
+  "root_count": 20,
+  "root_task_count": 160,
+  "root_identity": "Anonymous root indices 0–19 in original order; these are bookkeeping identifiers, not independent experimental units.",
+  "direction_absolute_tolerance": 1e-10,
+  "replay_absolute_tolerance": 2e-14,
+  "losses_sha256": "ee1e9c1a4a4a70f876b9eb850ead424740c3f98f4a2eca7894cafd126065a937",
+  "metric": "Mean squared effect error across 2,000 frozen genes, using scales estimated from 640 training DMSO cells. Cell means and losses use float64. Score each allocation first, then average the 20 roots equally within each task.",
+  "reference_design": {
+    "S": "24 controls shared by inference, prediction reference and observation reference.",
+    "O": "12 controls for inference and prediction reference; the remaining 12 form the observation reference.",
+    "allocations": "PCG64 seed 20260920; 8 independent random partitions of the 24 controls per root-task group. Score both orientations of every partition.",
+    "crossfit": "Average the two complementary O scores. The mean over 8 pairs equals the mean over 16 O orientations. Monte Carlo errors use the 8 pair means.",
+    "fixed_input": "Keep the S24 scGen prediction while applying the same O12 references. NC and PCA produce input-invariant direct effects.",
+    "target": "Average the original 74,356 registered ROT cells within 160 root-task groups matched by pool. Retain the original pool mixtures.",
+    "claim_extent": "The measured panel and these 16 prespecified oriented allocations."
+  },
+  "native_output_kind": {
+    "NO_CHANGE_DIRECT_V1": "effect",
+    "PCA64_ADDITIVE_RIDGE_DIRECT_V1": "effect",
+    "SCGEN_2_1_1_ABSOLUTE_V1": "state"
+  },
+  "corrected_scgen": "Map task labels to latent shifts while preserving all 160 root-task groups. Weights remain fixed. Every predicted cell value matched exactly across 17 actual input orders before cache reuse.",
+  "compute_accounting": {
+    "unique_physical_controls": 3840,
+    "training_runs": 0,
+    "new_actual_input_check_cell_forwards": 34560,
+    "S24_uncached_cell_forwards": 3840,
+    "O16_uncached_cell_forwards": 30720,
+    "crossfit8pairs_uncached_cell_forwards": 30720,
+    "new_scoring_cell_forwards": 0
+  },
+  "provenance": {
+    "dataset": "Jerber et al. (2021), previously analysed day 52 ROT/DMSO panel",
+    "result_sha256": "0d1ac62b50f6a9f223ce49298bab6efadd2a69503fc2260717ad74f45af2a5e0",
+    "runner_sha256": "7c03589eadf0b1307b5d92a5b1612ec89a117d1d4c462e005700d23457dfb314",
+    "actual_input_parity_receipt_sha256": "6bcec911a7176a25a441313bf2323c897622991cb5b3209672e462d7a9761a9a",
+    "corrected_adapter_sha256": "c2767bc39433e7b3e539531bcab5b24501454003e07d92ec212abf474ba6f7a1",
+    "original_materializer_sha256": "eeece1d11b193bcc93d5a23c62c4b054881e1c4dc29e882602cc987b90d01083",
+    "protected_candidate_outcomes_read": false
+  },
+  "source_attribution": {
+    "study": "Jerber et al. 2021",
+    "doi": "10.1038/s41588-021-00801-6",
+    "processed_data_record": "https://zenodo.org/records/4651413"
+  },
+  "historical_paper_correction": "The historical S24, D8/8/8 and three-rotation D correction is separate from this S24 versus O12/12 diagnostic.",
+  "rights": "Derived loss summaries and replay code only. Original source data, model weights and controlled-access assets are not redistributed; their original terms remain applicable. No new source-data rights are asserted.",
+  "expected_counts": {
+    "root_task_pair_allocation": {
+      "events": 7680,
+      "strict_S_O_reversal_events": 3108,
+      "S_tie_events": 0,
+      "O_tie_events": 0,
+      "fixed_input_tie_events": 0,
+      "actual_vs_fixed_input_direction_changes": 16
+    },
+    "task_pair_allocation": {
+      "events": 384,
+      "strict_S_O_reversal_events": 144,
+      "S_tie_events": 0,
+      "O_tie_events": 0,
+      "fixed_input_tie_events": 0,
+      "actual_vs_fixed_input_direction_changes": 0
+    },
+    "task_pairs_with_any_strict_reversal": 9,
+    "task_pairs_reversed_in_all_16": 9
+  }
+}

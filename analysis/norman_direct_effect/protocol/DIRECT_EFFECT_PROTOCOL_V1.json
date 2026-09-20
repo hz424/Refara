@@ -1,0 +1,90 @@
+{
+  "analysis": "Norman fixed direct-effect predictor versus all existing state predictors",
+  "boundary": "One pooled screen; no inference treating tasks, allocations or capture partitions as independent biological experiments.",
+  "evaluation": {
+    "allocation_count": 30,
+    "atomic_scoring": "Reuse all27 balanced observation,prediction,conditioning tuples. Score before pattern averaging. Direct effect residual f-Y+b_obs divided by fixed scales. Reuse unchanged state utility arrays.",
+    "depth_per_gemgroup": [
+      8,
+      16,
+      32,
+      64,
+      128,
+      135
+    ],
+    "depth_total_per_role": [
+      64,
+      128,
+      256,
+      512,
+      1024,
+      1080
+    ],
+    "identity": "d_D=d_S+V",
+    "no_selection_on_crossings": true,
+    "pair_orientation": "effect utility minus state utility",
+    "patterns": [
+      "S",
+      "M",
+      "P",
+      "O",
+      "D"
+    ],
+    "reporting": [
+      "all29700 task-allocation-depth-state pairs",
+      "all990 task-depth-state means over allocations",
+      "all540 allocation-depth-state means over tasks",
+      "all18 depth-state means over tasks and allocations"
+    ],
+    "reversal_condition": "-V<d_S<0",
+    "state_models": [
+      "additive",
+      "compositional_ridge",
+      "CPA_0.8.8"
+    ],
+    "test_conditions": 55,
+    "tie_tolerance": 1e-12
+  },
+  "existing_scoring_protocol_sha256": "0f63b2c33bf13f49ddb106dbf5f639bf6a4fda08b9b60e3ea8069b3a5cb420cf",
+  "frozen_at_utc": "2026-09-11T18:46:40.417691+00:00",
+  "frozen_input_sha256": {
+    "FROZEN_TASK_PROTOCOL.json": "2c0c2c10b658e833b9e4a7451b0b3198bc56a5abc84c9c1293cf254a3cb1fb31",
+    "combination_split.tsv": "0b549bf2a3426bdd1cfdd60e070363743c9562e324df82f9fd96f79f7478f89c",
+    "control_allocations.tsv.gz": "133c5e4a08c16ed9ceab7e8fa4e58815ab6f407acb40197ec66d782de409c563",
+    "gene_panel.tsv": "5490dd456ca4a20386e2094cc5491223e9532e6a402b046bf2e93af9966670d3",
+    "scales.npy": "a80c7097df93d329df7f671c51d85c5a24a6c8aa8b2d90a2e95fd6c000041d69",
+    "test_tasks.tsv": "4ece00418204e40db3cb1cdfdd92dc7d929a1fcc1d4bcf3c69777768c7ee6743",
+    "training_means.npz": "de3a4987e220de658be504cb3071d37cdc64fb1c5c42a624ed07a89145936d5a"
+  },
+  "model": {
+    "alpha_grid": [
+      0,
+      0.01,
+      0.1,
+      1,
+      10,
+      100
+    ],
+    "condition_weights": "equal",
+    "design": "105 constituent-gene multihot inputs; no interactions or intercept",
+    "id": "direct_effect_ridge",
+    "native_output": "effect",
+    "objective": "sum over training conditions and genes of squared standardized residuals plus alpha times squared standardized coefficient norm",
+    "prediction": "fixed X_test W times original scales, with no evaluation-control input or recentering",
+    "target": "(training condition equal-gemgroup mean minus training ctrl equal-gemgroup mean) divided by the original fixed gene scales"
+  },
+  "no_post_evaluation_grid_expansion": true,
+  "prior_exposure": "Additional analysis after the original Norman state-model test results were inspected. The added effect model, hyperparameter grid, selection rule and reporting are fixed before its validation fitting and test evaluation. This is not a blind external validation.",
+  "schema_version": 1,
+  "validation": {
+    "double_membership": "Only the original 55 training doubles; rank by SHA256(namespace + NUL + condition), identifier tie-break, assign rank modulo5",
+    "each_fold_training": "All105 original singles and ctrl plus44 original training doubles",
+    "fold_count": 5,
+    "hash_namespace": "norman_direct_effect_v1815_inner_cv",
+    "metric": "Mean standardized squared error across the55 out-of-fold double-condition predictions and2000 genes, each condition equally weighted",
+    "refit": "All161 original training conditions after selection",
+    "selection_inputs": "Training condition means and frozen training-control features/scales only; no test expression, evaluation controls, reference sensitivity or crossing counts",
+    "tie_rule": "Largest alpha among values within absolute1e-12 of minimum validation MSE",
+    "tie_tolerance": 1e-12
+  }
+}

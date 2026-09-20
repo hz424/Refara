@@ -1,0 +1,1030 @@
+{
+  "schema_version": 1,
+  "resource": "Norman",
+  "citation": {
+    "authors": "Norman et al.",
+    "journal": "Science 365, 786\u2013793 (2019)",
+    "doi": "10.1126/science.aax4438",
+    "accession": "GSE133344"
+  },
+  "license_scope": "Author-written code is BSD-3-Clause. Scores and control geometry are Norman dataset derivatives and retain the source dataset terms; they are not covered by the software or documentation license. See ../../analysis/norman_reference/LICENSE_SCOPE.md.",
+  "configuration": {
+    "schema_version": 1,
+    "target": "heldout_effect",
+    "metric": {
+      "name": "standardized_mse",
+      "direction": "lower"
+    },
+    "models": [
+      "selected_CPA",
+      "original_CPA_fixed",
+      "additive",
+      "compositional_ridge",
+      "NC_native_effect",
+      "native_effect_ridge"
+    ],
+    "budgets": [
+      {
+        "id": "d8",
+        "control_cells_available": 192,
+        "input_cells": 64,
+        "observation_cells": 128,
+        "description": "8 controls per physical block per stratum, 8 strata; three physical blocks available."
+      },
+      {
+        "id": "d16",
+        "control_cells_available": 384,
+        "input_cells": 128,
+        "observation_cells": 256,
+        "description": "16 controls per physical block per stratum, 8 strata; three physical blocks available."
+      },
+      {
+        "id": "d32",
+        "control_cells_available": 768,
+        "input_cells": 256,
+        "observation_cells": 512,
+        "description": "32 controls per physical block per stratum, 8 strata; three physical blocks available."
+      },
+      {
+        "id": "d64",
+        "control_cells_available": 1536,
+        "input_cells": 512,
+        "observation_cells": 1024,
+        "description": "64 controls per physical block per stratum, 8 strata; three physical blocks available."
+      },
+      {
+        "id": "d128",
+        "control_cells_available": 3072,
+        "input_cells": 1024,
+        "observation_cells": 2048,
+        "description": "128 controls per physical block per stratum, 8 strata; three physical blocks available."
+      },
+      {
+        "id": "d135",
+        "control_cells_available": 3240,
+        "input_cells": 1080,
+        "observation_cells": 2160,
+        "description": "135 controls per physical block per stratum, 8 strata; three physical blocks available."
+      }
+    ],
+    "roles": {
+      "model_input": "Only selected CPA is conditioned on the input block. Original CPA, additive and compositional ridge are fixed state profiles; NC and native ridge emit fixed effects.",
+      "prediction_centring": "Subtract the input-control mean from state predictions only; retain native effects without additional centring.",
+      "observation_centring": "Subtract the equal mean of the other two disjoint control blocks from the fixed treated-state target.",
+      "participant_information": "Frozen fitted predictions and declared input controls; no new fitting, entrant selection or target-dependent model changes.",
+      "evaluator_information": "Fixed treated means, training scales, control memberships and prediction caches; development scores and assessment anchors are used for planning."
+    },
+    "development_scores": "development_scores.tsv",
+    "assessment_anchors": "assessment_anchors.tsv",
+    "geometry": "geometry.tsv",
+    "anchor_realization": "a0_B1",
+    "minimum_gap": 0.01,
+    "numerical_tolerance": 1e-12,
+    "geometry_tolerance": 1e-12,
+    "evaluation_scope": "Retrospective fixed-cache organizer replay; no new fitting or prospective/external validation. Task transfer within one screen; all tasks reuse the control pool and may share perturbed genes. No independent experimental replication. Only selected CPA is block-conditioned."
+  },
+  "primary_minimum_gap": 0.01,
+  "minimum_gaps": [
+    0.01,
+    0.0,
+    0.005,
+    0.02
+  ],
+  "unit": "Norman_pooled_screen",
+  "development_cases": [
+    "CNN1+ETS2",
+    "KLF1+TGFBR2",
+    "PTPN12+ZBTB10",
+    "CBL+CNN1",
+    "FOSB+OSR2",
+    "CEBPE+ETS2",
+    "FOSB+IKZF3",
+    "CEBPE+PTPN12",
+    "CEBPB+MAPK1",
+    "CEBPE+CNN1",
+    "RHOXF2B+ZBTB25",
+    "CBFA2T3+POU3F2",
+    "PTPN12+SNAI1",
+    "COL2A1+KLF1",
+    "FOXA1+FOXL2",
+    "SAMD1+UBASH3B",
+    "FOXA3+HOXB9",
+    "CNN1+UBASH3A",
+    "OSR2+PTPN12",
+    "PTPN12+UBASH3A",
+    "DUSP9+PRTG",
+    "ETS2+TGFBR2",
+    "ETS2+IKZF3",
+    "ELMSAN1+ZBTB10",
+    "CBL+PTPN9",
+    "FOXL2+POU3F2",
+    "CEBPB+PTPN12"
+  ],
+  "assessment_cases": [
+    "SGK1+TBX3",
+    "FOXL2+ZNF318",
+    "OSR2+UBASH3B",
+    "PRTG+TGFBR2",
+    "BPGM+ZBTB1",
+    "FOSB+PTPN12",
+    "HOXC13+ZC3HAV1",
+    "IGDCC3+PRTG",
+    "PTPN12+SAMD1",
+    "CLDN6+KLF1",
+    "CBFA2T3+FEV",
+    "FOSB+UBASH3B",
+    "DUSP9+SNAI1",
+    "UBASH3A+UBASH3B",
+    "FOXA1+HOXB9",
+    "SAMD1+ZBTB1",
+    "IGDCC3+TGFBR2",
+    "TBX2+TBX3",
+    "SGK1+TBX2",
+    "BAK1+KLF1",
+    "CBL+PTPN12",
+    "MAPK1+TGFBR2",
+    "FOXA1+FOXA3",
+    "CBL+UBASH3B",
+    "ETS2+IGDCC3",
+    "BAK1+TMSB4X",
+    "UBASH3B+ZBTB25",
+    "CEBPE+SPI1"
+  ],
+  "realizations": [
+    {
+      "id": "a0_B1",
+      "allocation_index": 0,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a0_B2",
+      "allocation_index": 0,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a0_B3",
+      "allocation_index": 0,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a1_B1",
+      "allocation_index": 1,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a1_B2",
+      "allocation_index": 1,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a1_B3",
+      "allocation_index": 1,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a2_B1",
+      "allocation_index": 2,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a2_B2",
+      "allocation_index": 2,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a2_B3",
+      "allocation_index": 2,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a3_B1",
+      "allocation_index": 3,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a3_B2",
+      "allocation_index": 3,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a3_B3",
+      "allocation_index": 3,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a4_B1",
+      "allocation_index": 4,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a4_B2",
+      "allocation_index": 4,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a4_B3",
+      "allocation_index": 4,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a5_B1",
+      "allocation_index": 5,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a5_B2",
+      "allocation_index": 5,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a5_B3",
+      "allocation_index": 5,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a6_B1",
+      "allocation_index": 6,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a6_B2",
+      "allocation_index": 6,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a6_B3",
+      "allocation_index": 6,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a7_B1",
+      "allocation_index": 7,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a7_B2",
+      "allocation_index": 7,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a7_B3",
+      "allocation_index": 7,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a8_B1",
+      "allocation_index": 8,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a8_B2",
+      "allocation_index": 8,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a8_B3",
+      "allocation_index": 8,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a9_B1",
+      "allocation_index": 9,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a9_B2",
+      "allocation_index": 9,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a9_B3",
+      "allocation_index": 9,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a10_B1",
+      "allocation_index": 10,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a10_B2",
+      "allocation_index": 10,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a10_B3",
+      "allocation_index": 10,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a11_B1",
+      "allocation_index": 11,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a11_B2",
+      "allocation_index": 11,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a11_B3",
+      "allocation_index": 11,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a12_B1",
+      "allocation_index": 12,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a12_B2",
+      "allocation_index": 12,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a12_B3",
+      "allocation_index": 12,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a13_B1",
+      "allocation_index": 13,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a13_B2",
+      "allocation_index": 13,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a13_B3",
+      "allocation_index": 13,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a14_B1",
+      "allocation_index": 14,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a14_B2",
+      "allocation_index": 14,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a14_B3",
+      "allocation_index": 14,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a15_B1",
+      "allocation_index": 15,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a15_B2",
+      "allocation_index": 15,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a15_B3",
+      "allocation_index": 15,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a16_B1",
+      "allocation_index": 16,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a16_B2",
+      "allocation_index": 16,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a16_B3",
+      "allocation_index": 16,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a17_B1",
+      "allocation_index": 17,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a17_B2",
+      "allocation_index": 17,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a17_B3",
+      "allocation_index": 17,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a18_B1",
+      "allocation_index": 18,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a18_B2",
+      "allocation_index": 18,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a18_B3",
+      "allocation_index": 18,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a19_B1",
+      "allocation_index": 19,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a19_B2",
+      "allocation_index": 19,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a19_B3",
+      "allocation_index": 19,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a20_B1",
+      "allocation_index": 20,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a20_B2",
+      "allocation_index": 20,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a20_B3",
+      "allocation_index": 20,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a21_B1",
+      "allocation_index": 21,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a21_B2",
+      "allocation_index": 21,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a21_B3",
+      "allocation_index": 21,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a22_B1",
+      "allocation_index": 22,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a22_B2",
+      "allocation_index": 22,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a22_B3",
+      "allocation_index": 22,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a23_B1",
+      "allocation_index": 23,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a23_B2",
+      "allocation_index": 23,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a23_B3",
+      "allocation_index": 23,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a24_B1",
+      "allocation_index": 24,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a24_B2",
+      "allocation_index": 24,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a24_B3",
+      "allocation_index": 24,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a25_B1",
+      "allocation_index": 25,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a25_B2",
+      "allocation_index": 25,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a25_B3",
+      "allocation_index": 25,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a26_B1",
+      "allocation_index": 26,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a26_B2",
+      "allocation_index": 26,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a26_B3",
+      "allocation_index": 26,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a27_B1",
+      "allocation_index": 27,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a27_B2",
+      "allocation_index": 27,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a27_B3",
+      "allocation_index": 27,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a28_B1",
+      "allocation_index": 28,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a28_B2",
+      "allocation_index": 28,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a28_B3",
+      "allocation_index": 28,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "id": "a29_B1",
+      "allocation_index": 29,
+      "input_block": "B1",
+      "observation_blocks": [
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "a29_B2",
+      "allocation_index": 29,
+      "input_block": "B2",
+      "observation_blocks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "id": "a29_B3",
+      "allocation_index": 29,
+      "input_block": "B3",
+      "observation_blocks": [
+        "B1",
+        "B2"
+      ]
+    }
+  ],
+  "models": [
+    {
+      "id": "selected_CPA",
+      "prediction_kind": "state",
+      "conditioned_on_input_block": true,
+      "source_profile": "selected_CPA",
+      "score_representation": "State prediction minus the input-control mean."
+    },
+    {
+      "id": "original_CPA_fixed",
+      "prediction_kind": "state",
+      "conditioned_on_input_block": false,
+      "source_profile": "original_CPA",
+      "score_representation": "State prediction minus the input-control mean."
+    },
+    {
+      "id": "additive",
+      "prediction_kind": "state",
+      "conditioned_on_input_block": false,
+      "source_profile": "additive",
+      "score_representation": "State prediction minus the input-control mean."
+    },
+    {
+      "id": "compositional_ridge",
+      "prediction_kind": "state",
+      "conditioned_on_input_block": false,
+      "source_profile": "compositional_ridge",
+      "score_representation": "State prediction minus the input-control mean."
+    },
+    {
+      "id": "NC_native_effect",
+      "prediction_kind": "effect",
+      "conditioned_on_input_block": false,
+      "source_profile": "NC_common_B1",
+      "score_representation": "Exact zero effect; the NC_common_B1 state profile is replaced by its native effect."
+    },
+    {
+      "id": "native_effect_ridge",
+      "prediction_kind": "effect",
+      "conditioned_on_input_block": false,
+      "source_profile": "direct_effect_ridge_TRAIN_lift",
+      "score_representation": "Fixed lifted profile minus the saved native_effect_training_baseline."
+    }
+  ],
+  "score_definition": "mean over 2000 genes of ((predicted_effect - (treated_state - mean(other two control blocks))) / training_gene_scale)^2. State predictions are centered on the input block. Native effects are used as emitted; NC is zero and native ridge is its saved profile minus the saved TRAIN baseline.",
+  "geometry_definition": "For each case and budget, average over all recorded input-block realizations and tasks the standardized squared distance between the input control mean and the equal mean of the other two control blocks.",
+  "geometry_shared_across_tasks": true,
+  "task_aggregation": "one condition centroid per case; original centroids weight eight captures equally",
+  "score_columns": [
+    "case",
+    "unit",
+    "budget",
+    "realization",
+    "model",
+    "score"
+  ],
+  "geometry_columns": [
+    "case",
+    "unit",
+    "budget",
+    "geometry"
+  ],
+  "reporting_gap_interpretation": "Prespecified illustrative reporting tolerance in this resource standardized-MSE units, not a validated biological effect size. All tolerance results retained; no threshold optimization.",
+  "evaluation_scope": "Retrospective fixed-cache organizer replay; no new fitting or prospective/external validation. Task transfer within one screen; all tasks reuse the control pool and may share perturbed genes. No independent experimental replication. Only selected CPA is block-conditioned.",
+  "replay_boundary": "Starts from saved standardized-MSE scores and control geometry. Exports organizer inputs, calibrates decisions, freezes all four reporting gaps, and then checks every recorded assessment realization. Raw expression, fitted predictions and new experimental replicates are not included."
+}

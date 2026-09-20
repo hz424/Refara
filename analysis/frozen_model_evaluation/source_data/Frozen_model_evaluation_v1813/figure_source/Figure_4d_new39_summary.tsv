@@ -1,0 +1,2 @@
+evaluation_reference	mse_S	mse_D	mse_D_minus_S	mae_S	mae_D	mae_D_minus_S	prediction_mae_difference	donor_count	task_count	D_lower_mse_donors	D_lower_mse_tasks
+heldout_B2	0.023537386108413157	0.019467108154323003	-0.00407027795409016	0.1188441998990223	0.1079675479111343	-0.010876651987888017	0.05851298075023534	39	78	34	60

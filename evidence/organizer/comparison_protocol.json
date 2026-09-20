@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "analysis": "Reporting-rule comparison and donor-disjoint transfer",
+  "study_design": "Retrospective analysis of existing fitted predictions and control allocations",
+  "prior_inspection": "The Norman paper outcomes and a limited anchor top-k diagnostic were inspected before this protocol was written. This is not a prospective or previously blinded validation.",
+  "minimum_gaps": [0.0, 0.005, 0.01, 0.02],
+  "primary_minimum_gap": 0.01,
+  "coverage_grid": [0.1, 0.25, 0.5, 0.75, 0.9, 1.0],
+  "numerical_tolerance": 1e-12,
+  "fixed_threshold_rules": [
+    "single_split",
+    "repeated_primary",
+    "development_margin"
+  ],
+  "development_margin": {
+    "grouping": "One threshold per budget and reporting gap, pooled over development cases and model pairs",
+    "threshold": "max(gap, maximum absolute anchor margin among development comparisons unsupported across their recorded realizations)",
+    "release": "absolute assessment anchor margin > threshold + numerical_tolerance"
+  },
+  "rankings": {
+    "anchor_margin": "absolute assessment anchor margin",
+    "calibrated_margin": "absolute assessment anchor margin minus the development maximum margin displacement for its model pair and budget",
+    "tie_order": ["case", "model_a", "model_b"],
+    "selected_count": "ceil(requested_coverage * comparison_count)",
+    "no_direction": "An anchor margin within numerical_tolerance has no reportable direction. Retained such entries count as unsupported and are enumerated separately.",
+    "area_under_risk_coverage": "sum(unsupported_count_at_k / k for k in 1..N) / N"
+  },
+  "evaluation": {
+    "unsupported": "minimum oriented margin across recorded assessment realizations <= reporting_gap + numerical_tolerance, or anchor direction undefined",
+    "strict_reversal": "minimum oriented assessment margin < -numerical_tolerance",
+    "aggregation": "Report comparison counts, per-model-pair composition and equal-unit summaries; preserve each assessment case's declared biological unit",
+    "uncertainty": "Descriptive finite-sample results; no independent-sample confidence intervals over model pairs, cells or control allocations",
+    "cost": "Record per-realization cells and development/assessment realization counts separately; do not infer equal total computation or acquisition cost"
+  },
+  "resources": {
+    "Norman": {
+      "split": "Existing 27 development and 28 assessment tasks",
+      "budgets": "All six recorded budgets",
+      "model_panel": "All six recorded models and all 15 model pairs",
+      "realizations": "All 30 allocations and three input-block choices",
+      "control_pool_relation": "Shared control pool; task transfer only"
+    },
+    "Influenza_heldout_donors": {
+      "split": "Eight original donors for calibration and 39 additional donors for assessment",
+      "cell_types": ["B", "monocytes_combined"],
+      "training_groups": ["original8", "cap48"],
+      "model_panel": "The two model families previously selected within each training group, before additional-donor assessment",
+      "depth": 8,
+      "physical_blocks": 3,
+      "control_cells_per_task_realization": 24,
+      "allocation_labels": [0, 100, 200, 300, 400, 500, 600, 700, 800, 900],
+      "anchor_realization": "a0_B1",
+      "prediction_reference": "Input block for state predictions; native effects retain their emitted representation",
+      "observation_reference": "Equal mean of the other two control blocks",
+      "treated_target": "Existing fixed eight-cell treated mean",
+      "metric": "Weighted gene-standardized MSE on the recorded training-derived feature axis and scales",
+      "seed_aggregation": "Score each of the three fitted seeds before averaging their scores",
+      "control_pool_relation": "Disjoint donor and control-cell membership; shared study and acquisition batches",
+      "interpretation": "Transfer stress test for frozen reporting thresholds. Each training group has one model pair, so pair-specific margin adjustment cannot change its within-group ranking."
+    }
+  }
+}

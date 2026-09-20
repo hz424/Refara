@@ -1,0 +1,541 @@
+{
+  "schema_version": "1.1.0",
+  "contract_id": "SIMULATION_OPERATING_CHARACTERISTICS_CONTRACT_V1",
+  "editorial_status": "PROSE_ONLY_PUBLIC_RELEASE_SUCCESSOR",
+  "frozen_production_identity": {
+    "bytes": 41032,
+    "sha256": "46be54abba950d5f8ba8d0fb7d4a3cb146c698ed08531d210d6083d26975a40e"
+  },
+  "editorial_note": "Wording was edited for clarity in this public version. All numerical settings, identifiers and decisions are unchanged from the frozen production contract.",
+  "state": "REGISTERED_NOT_RUN_NO_OUTCOMES",
+  "freeze_class": "POST_HOC_AMENDMENT_AFTER_RESULT_INSPECTION",
+  "scientific_role": "SOURCE_FREE_OPERATING_CHARACTERISTICS_FOR_THE_COMPLETE_FAMILY_REPORTING_RULE",
+  "interpretation_boundary": {
+    "simulation_conditional": true,
+    "biological_effect_size_or_sesoi": false,
+    "empirical_validation": false,
+    "external_governance": false,
+    "prospective_preregistration": false,
+    "metric_truth_or_construction_invariance": false,
+    "note": "Figure 2 evaluates a compact M=4,S=1,H=12 reporting-rule instance under an abstract standardized root-utility law. Empirical construction sensitivity is evaluated separately in Figures 3 and 4; these simulated power, abstention and arithmetic-support rates are not transported to an M8 or multi-construction family."
+  },
+  "family": {
+    "construction_count_S": 1,
+    "construction_ids_in_order": [
+      "GENERIC_ROOT_UTILITY_CONSTRUCTION_V1"
+    ],
+    "model_count_M": 4,
+    "model_ids_in_order": [
+      "M0",
+      "M1",
+      "M2",
+      "M3"
+    ],
+    "higher_utility_is_better": true,
+    "ordered_direction_order": [
+      "M0_GT_M1",
+      "M0_GT_M2",
+      "M0_GT_M3",
+      "M1_GT_M0",
+      "M1_GT_M2",
+      "M1_GT_M3",
+      "M2_GT_M0",
+      "M2_GT_M1",
+      "M2_GT_M3",
+      "M3_GT_M0",
+      "M3_GT_M1",
+      "M3_GT_M2"
+    ],
+    "ordered_hypothesis_count_H": 12,
+    "family_scope": "ONE_COMPLETE_12_DIRECTION_FAMILY_WITHIN_THE_SINGLE_CONSTRUCTION",
+    "across_construction_pooling": "NOT_APPLICABLE_S_EQUALS_1",
+    "directional_hypothesis_template": "For ordered direction Mi_GT_Mj, the exact sign test targets the rootwise strong null H_ij: theta_ij,r<=0.5 at every specified root position r, against violation of that intersection null. The design-averaged theta_ij is descriptive and does not by itself define the exact-test null.",
+    "multiplicity_target": "The 12 directional statements are the claim family. The reverse directions are retained because a false directional claim, rather than merely a difference claim, is the error target; no six-pair or two-sided-family reinterpretation is authorized."
+  },
+  "grid": {
+    "root_count_R": [8, 12, 20, 40],
+    "standardized_effect_delta": [-1.0, -0.5, -0.25, 0.0, 0.25, 0.5, 1.0],
+    "tie_probability": [0.0, 0.1, 0.3, 0.5],
+    "complete_root_mcar_missing_probability": [0.0, 0.1, 0.25, 0.5],
+    "root_support_patterns": [
+      {
+        "pattern_id": "BALANCED_8",
+        "cycle": [8],
+        "mean_descendant_tasks_per_root": 8.0,
+        "mean_inverse_descendant_tasks_per_root_exact": "1/8",
+        "mean_pair_difference_variance_exact": "1",
+        "minimum": 8,
+        "maximum": 8
+      },
+      {
+        "pattern_id": "MILD_6_10",
+        "cycle": [6, 10],
+        "mean_descendant_tasks_per_root": 8.0,
+        "mean_inverse_descendant_tasks_per_root_exact": "2/15",
+        "mean_pair_difference_variance_exact": "76/75",
+        "minimum": 6,
+        "maximum": 10
+      },
+      {
+        "pattern_id": "MODERATE_4_12",
+        "cycle": [4, 12],
+        "mean_descendant_tasks_per_root": 8.0,
+        "mean_inverse_descendant_tasks_per_root_exact": "1/6",
+        "mean_pair_difference_variance_exact": "16/15",
+        "minimum": 4,
+        "maximum": 12
+      },
+      {
+        "pattern_id": "SEVERE_1_15",
+        "cycle": [1, 15],
+        "mean_descendant_tasks_per_root": 8.0,
+        "mean_inverse_descendant_tasks_per_root_exact": "8/15",
+        "mean_pair_difference_variance_exact": "124/75",
+        "minimum": 1,
+        "maximum": 15
+      }
+    ],
+    "expansion_rule": {
+      "design": "BASELINE_PLUS_ONE_FACTOR_AT_A_TIME",
+      "baseline": {
+        "tie_probability": 0.0,
+        "complete_root_mcar_missing_probability": 0.0,
+        "root_support_pattern_id": "BALANCED_8"
+      },
+      "arms": [
+        "BASELINE_ALL_DELTA_BY_ALL_R",
+        "NONBASELINE_TIE_LEVELS_ALL_DELTA_BY_ALL_R_WITH_OTHER_AXES_BASELINE",
+        "NONBASELINE_MISSING_LEVELS_ALL_DELTA_BY_ALL_R_WITH_OTHER_AXES_BASELINE",
+        "NONBASELINE_SUPPORT_LEVELS_ALL_DELTA_BY_ALL_R_WITH_OTHER_AXES_BASELINE"
+      ],
+      "factor_interactions_authorized": false,
+      "axis_variant_order": [
+        "BASE",
+        "TIE010",
+        "TIE030",
+        "TIE050",
+        "MISS010",
+        "MISS025",
+        "MISS050",
+        "SUPPORT_MILD",
+        "SUPPORT_MODERATE",
+        "SUPPORT_SEVERE"
+      ],
+      "axis_parameter_map": {
+        "BASE": {"tie_probability": 0.0, "complete_root_mcar_missing_probability": 0.0, "root_support_pattern_id": "BALANCED_8"},
+        "TIE010": {"tie_probability": 0.1, "complete_root_mcar_missing_probability": 0.0, "root_support_pattern_id": "BALANCED_8"},
+        "TIE030": {"tie_probability": 0.3, "complete_root_mcar_missing_probability": 0.0, "root_support_pattern_id": "BALANCED_8"},
+        "TIE050": {"tie_probability": 0.5, "complete_root_mcar_missing_probability": 0.0, "root_support_pattern_id": "BALANCED_8"},
+        "MISS010": {"tie_probability": 0.0, "complete_root_mcar_missing_probability": 0.1, "root_support_pattern_id": "BALANCED_8"},
+        "MISS025": {"tie_probability": 0.0, "complete_root_mcar_missing_probability": 0.25, "root_support_pattern_id": "BALANCED_8"},
+        "MISS050": {"tie_probability": 0.0, "complete_root_mcar_missing_probability": 0.5, "root_support_pattern_id": "BALANCED_8"},
+        "SUPPORT_MILD": {"tie_probability": 0.0, "complete_root_mcar_missing_probability": 0.0, "root_support_pattern_id": "MILD_6_10"},
+        "SUPPORT_MODERATE": {"tie_probability": 0.0, "complete_root_mcar_missing_probability": 0.0, "root_support_pattern_id": "MODERATE_4_12"},
+        "SUPPORT_SEVERE": {"tie_probability": 0.0, "complete_root_mcar_missing_probability": 0.0, "root_support_pattern_id": "SEVERE_1_15"}
+      },
+      "matched_root_deletion_law_pairs": [
+        ["TIE010", "MISS010"],
+        ["TIE050", "MISS050"]
+      ],
+      "matched_root_deletion_interpretation": "For scientific endpoints based only on the non-tied available-root signs and K, each listed TIE/MISS pair has the same probability law because both independently delete a complete root from analysis at the same rate. They are a mechanism-label metamorphic QA, not evidence that tying and missingness have distinguishable endpoint effects; their ledger availability/tie fields remain different.",
+      "interaction_claim_boundary": "This is one-factor-at-a-time only. It contains no tie-by-missing, tie-by-support, missing-by-support or three-way cell and cannot support a combined-nuisance robustness or interaction claim.",
+      "expected_axis_variant_count": 10,
+      "expected_unique_cell_count": 280,
+      "expected_global_null_cell_count": 40,
+      "expected_nonzero_delta_cell_count": 240,
+      "derivation": "7 effects x 4 root counts x [1 baseline + 3 nonbaseline tie + 3 nonbaseline missing + 3 nonbaseline support] = 280 unique cells; delta=0 contributes 1 x 4 x 10 = 40 cells and the six nonzero deltas contribute 6 x 4 x 10 = 240 cells",
+      "uniqueness_rule": "Generate the BASE cell once per delta-by-R combination; nonbaseline arms replace exactly one baseline axis and may not duplicate BASE or combine two nonbaseline axes.",
+      "cell_output_order": "standardized_effect_delta order, then root_count_R order, then axis_variant_order",
+      "cell_manifest_required": true,
+      "cell_manifest_path": "08_ANALYSIS_REBUILD_FREEZE/SIMULATION_CELL_MANIFEST_V1.tsv",
+      "cell_manifest_rows": 280,
+      "cell_manifest_bytes": 62389,
+      "cell_manifest_sha256": "e27efcab9c0ea70ae1c26215abb9c5a3d2367e6d5b06f46276bd9ecb5bb7a650",
+      "cell_manifest_exact_columns_in_order": [
+        "cell_order",
+        "cell_id",
+        "standardized_effect_delta",
+        "is_global_null",
+        "root_count_R",
+        "axis_variant",
+        "tie_probability",
+        "complete_root_mcar_missing_probability",
+        "root_support_pattern_id",
+        "root_support_cycle",
+        "replicates",
+        "seed_sha256",
+        "cell_seed_first16_hex",
+        "cell_seed_uint128_decimal"
+      ],
+      "cell_manifest_serialization": "UTF-8 TSV, one header, LF line endings, no BOM and terminal LF; cell_order is 1-based; rows follow cell_output_order and exact generator formatting.",
+      "cell_manifest_generator_path": "08_ANALYSIS_REBUILD_FREEZE/generate_simulation_cell_manifest_v1.py",
+      "cell_manifest_generator_bytes": 6736,
+      "cell_manifest_generator_sha256": "bf23358ea02cdf0f645c5ddbf69f29b767eea4e506f46d2a69af8648f74686e4",
+      "cell_manifest_digest_strategy": "The outcome-free generator derives rows from this contract, verifies exactly 280 unique cell_id, 280 unique 128-bit seeds and 40 global-null cells, and emits deterministic bytes. Its --check mode must pass in the locked environment before production; the manifest/generator byte counts and SHA-256 values above must also be bound by the activation receipt."
+    },
+    "replicates_per_cell": 5000,
+    "expected_total_replicates": 1400000,
+    "failed_replicates_replaced": false
+  },
+  "data_generating_law": {
+    "indices": "r=0,...,R-1 roots; m=0,...,3 models",
+    "root_independence": "ROOT_VECTORS_ARE_MUTUALLY_INDEPENDENT_BY_CONSTRUCTION",
+    "root_support_assignment": "n_r is the root_support_pattern cycle repeated in root-index order; every authorized R is an integer multiple of every cycle length",
+    "root_support_role": "n_r controls only descendant-task averaging variance inside a root; descendant tasks are not independent evidence units and never replace R in the sign procedure",
+    "mean_coefficient_vector_in_model_order": [1.5, 0.5, -0.5, -1.5],
+    "mean_formula": "mu_m(delta)=delta*[1.5,0.5,-0.5,-1.5]_m",
+    "ordered_pair_mean_difference": "mu_i(delta)-mu_j(delta)=delta*(c_i-c_j), with c=[1.5,0.5,-0.5,-1.5]; adjacent true directions have magnitude |delta|, distance-two pairs 2|delta| and the M0/M3 pair 3|delta|",
+    "root_aggregate_formula": "U_rm=mu_m(delta)+A_rm+Ebar_rm",
+    "numeric_implementation_order": [
+      "Create c=np.asarray([1.5,0.5,-0.5,-1.5],dtype=float64), n=np.asarray(expanded support cycle,dtype=float64), and mu=np.float64(delta)*c.",
+      "Create A=np.sqrt(np.float64(0.4))*G_A + np.sqrt(np.float64(0.4))*Z_A.",
+      "Create e_scale=np.sqrt(np.float64(0.8)/n)[None,:,None] and Ebar=e_scale*G_E + e_scale*Z_E.",
+      "Create U=(mu[None,None,:] + A) + Ebar with exactly this parenthesization.",
+      "Create tied_mean=np.mean(U,axis=2,dtype=float64,keepdims=True), then U=np.where(tie_mask[:,:,None],tied_mean,U). No in-place alternate reduction is authorized.",
+      "Apply missing_mask and tie_mask only through analysis_root_mask; do not compact or reorder the root axis."
+    ],
+    "A_covariance": {
+      "distribution": "MULTIVARIATE_NORMAL",
+      "marginal_variance": 0.8,
+      "equicorrelation": 0.5,
+      "constructive_formula": "A_rm=sqrt(0.4)*G_A_r+sqrt(0.4)*Z_A_rm",
+      "standard_normals_mutually_independent": true
+    },
+    "Ebar_covariance": {
+      "distribution": "MULTIVARIATE_NORMAL",
+      "marginal_variance_formula": "1.6/n_r",
+      "equicorrelation": 0.5,
+      "constructive_formula": "Ebar_rm=sqrt(0.8/n_r)*G_E_r+sqrt(0.8/n_r)*Z_E_rm",
+      "standard_normals_mutually_independent": true
+    },
+    "pair_difference_variance_identity": "For every i!=j at root r, Var(U_ri-U_rj)=2*0.8*(1-0.5)+2*(1.6/n_r)*(1-0.5)=0.8+1.6/n_r.",
+    "standardization_identity": "For BALANCED_8, Var(U_ri-U_rj)=0.8+1.6/8=1 for every i!=j; therefore |delta| is the balanced-root pair-difference SD magnitude only for adjacent model pairs.",
+    "standardization_limit": "delta is not one common standardized effect for all six unordered pairs or for heterogeneous n_r. Pair-specific root-r standardized mean difference is delta*(c_i-c_j)/sqrt(0.8+1.6/n_r).",
+    "support_stress_interpretation": "All support cycles have arithmetic mean n_r=8, but they do not hold mean(1/n_r) or average pair-difference variance fixed. Average Var(U_i-U_j) is 1,76/75,16/15 and 124/75 for BALANCED_8,MILD_6_10,MODERATE_4_12 and SEVERE_1_15. Thus this axis intentionally combines support heterogeneity with reduced average precision and must not be described as pure imbalance at constant information.",
+    "conditional_pair_probability": "For a non-tied available root at fixed n_r, theta_ij,r=Phi(delta*(c_i-c_j)/sqrt(0.8+1.6/n_r)); independent tie and missing events do not change this conditional probability.",
+    "effect_interpretation": "dimensionless simulation parameter only; not a biological effect, clinically meaningful threshold, SESOI or common effect size for all family edges",
+    "tie_mechanism": {
+      "event": "one Bernoulli(tie_probability) event independently for each replicate and root",
+      "mask_rule": "tie_mask = (tie_uniform < tie_probability); equality at the probability boundary is not a tie",
+      "action_when_true": "replace all four U_rm values by their arithmetic mean computed before replacement",
+      "scope": "ALL_MODEL_PAIRS_SHARE_THE_LITERAL_ROOT_TIE",
+      "truth_definition": "delta and the non-tied generating law continue to define the ordered truth",
+      "incidental_zero_policy": "For a root with tie_mask=false, every one of the six pair differences must be nonzero in float64. Any literal zero is NUMERIC_DEGENERACY_FAILURE for the replicate; it may not create pair-specific K or be silently treated as an induced tie."
+    },
+    "missingness_mechanism": {
+      "event": "one Bernoulli(complete_root_mcar_missing_probability) event independently for each replicate and root",
+      "mask_rule": "missing_mask = (missing_uniform < complete_root_mcar_missing_probability); equality at the probability boundary is not missing",
+      "action_when_true": "remove the complete four-model root vector before testing",
+      "scope": "COMPLETE_ROOT_VECTOR_ONLY",
+      "missingness_order": "apply after tie replacement",
+      "dependence_on_utilities_or_ties": false,
+      "modelwise_or_outcome_dependent_missingness_authorized": false
+    },
+    "estimand_registry": {
+      "root_specific_estimand": "theta_ij,r=P(U_ri>U_rj | tie_mask=false, missing_mask=false, n_r)",
+      "design_averaged_estimand": "theta_ij=(1/R)*sum_r theta_ij,r over the fixed root-support sequence",
+      "availability_weighting": "Because tie and missing probabilities are common across roots and independent of utilities and n_r, conditioning on non-tied availability preserves uniform weighting over the R specified root positions.",
+      "operating_characteristic_target": "Endpoint probabilities average over generated utilities, ties and missing observations, including structurally withheld outcomes. They describe this simulation law and do not estimate biological performance."
+    },
+    "truth_registry": {
+      "truth_basis": "Truth is defined by whether every root-specific theta_ij,r is greater than 0.5 under the non-tied law; support, MCAR missingness and independent induced ties change power/withholding but not direction truth.",
+      "delta_zero": "ALL_12_ORDERED_NULLS_TRUE",
+      "delta_positive": "THE_6_DIRECTIONS_Mi_GT_Mj_WITH_i_LT_j_ARE_TRUE_ALTERNATIVES_AND_THEIR_6_REVERSES_ARE_TRUE_NULLS",
+      "delta_negative": "THE_6_DIRECTIONS_Mi_GT_Mj_WITH_i_GT_j_ARE_TRUE_ALTERNATIVES_AND_THEIR_6_REVERSES_ARE_TRUE_NULLS"
+    }
+  },
+  "randomness": {
+    "namespace": "NM_ANALYSIS_V2_SIMULATION_OPERATING_CHARACTERISTICS_V1",
+    "cell_id_rule": "SIMV1__D{M100|M050|M025|Z000|P025|P050|P100}__R{08|12|20|40}__AX{BASE|TIE010|TIE030|TIE050|MISS010|MISS025|MISS050|SUPPORT_MILD|SUPPORT_MODERATE|SUPPORT_SEVERE}",
+    "delta_token_map": {
+      "-1.0": "M100",
+      "-0.5": "M050",
+      "-0.25": "M025",
+      "0.0": "Z000",
+      "0.25": "P025",
+      "0.5": "P050",
+      "1.0": "P100"
+    },
+    "root_count_token_map": {
+      "8": "08",
+      "12": "12",
+      "20": "20",
+      "40": "40"
+    },
+    "cell_seed_derivation": "digest=SHA256(UTF8(namespace) || one byte 0x00 || UTF8(cell_id)) with no newline or terminator; cell_seed is the first 16 digest bytes interpreted as one unsigned big-endian integer",
+    "generator": "numpy.random.Generator(numpy.random.PCG64DXSM(cell_seed))",
+    "required_numpy_version": "1.26.4",
+    "generation_scope": "ONE_WHOLE_CELL_PER_GENERATOR_NO_RESEEDING",
+    "always_draw_rule": "Execute all six draw calls in the frozen order for every cell even when tie_probability=0 or missing_probability=0; never skip, shorten or lazily generate a draw based on an axis value.",
+    "replicate_index_rule": "The first array dimension is replicate_index 0,...,4999 in order; indices are never compacted after withhold or failure.",
+    "numeric_dtype_and_layout": "All random draws and utility arithmetic are IEEE-754 float64 in C-contiguous arrays; uniforms use Generator.random(...,dtype=float64); no float32 cast, fast-math, fused alternate implementation or reassociation is authorized.",
+    "draw_order": [
+      "Generator.standard_normal(size=[5000,R,1],dtype=float64) for G_A",
+      "Generator.standard_normal(size=[5000,R,4],dtype=float64) for Z_A",
+      "Generator.standard_normal(size=[5000,R,1],dtype=float64) for G_E",
+      "Generator.standard_normal(size=[5000,R,4],dtype=float64) for Z_E",
+      "Generator.random(size=[5000,R],dtype=float64) for tie uniforms",
+      "Generator.random(size=[5000,R],dtype=float64) for missing uniforms"
+    ],
+    "chunking_or_draw_reordering_authorized": false,
+    "parallelization_unit": "COMPLETE_CELL_ONLY",
+    "cross_cell_seed_relation": "Every distinct cell_id, including +delta and -delta partners, has its own independently derived seed namespace. Common random numbers are not used, and opposite-sign production cells are not expected to be byte-identical or numerically equal.",
+    "rng_known_answer_test": {
+      "required_numpy_version": "1.26.4",
+      "seed_source_cell_id": "SIMV1__DM100__R08__AXBASE",
+      "seed_uint128_decimal": "54984478322859451020735094965464744100",
+      "call": "fresh np.random.PCG64DXSM(seed_uint128_decimal).random_raw(8)",
+      "expected_uint64_decimal_in_order": [
+        "13058350983778358099",
+        "2704308977427999785",
+        "8904331753317011808",
+        "1068564671151939128",
+        "15360410920595346242",
+        "13074150305756625988",
+        "11454158150381572947",
+        "7586130600163989780"
+      ],
+      "stream_boundary": "Run the KAT on an independent fresh bit generator. It must not advance, replace or share the production Generator stream for this or any other cell."
+    },
+    "state_audit": "Record cell_id, decimal cell_seed, full initial PCG64DXSM state, full final state, NumPy version, Python version, byte order, platform and locked-environment receipt hash without recording outcome values.",
+    "byte_identity_boundary": "Public byte identity requires the same cell enumeration, NumPy 1.26.4, immutable environment, arithmetic implementation, serializer and platform class; a statistically equivalent generator or seed API is not a replay."
+  },
+  "reporting_rule": {
+    "procedure_id": "EXACT_ONE_SIDED_ROOT_SIGN_HOLM_V1",
+    "estimand": "For ordered pair i,j, descriptive theta_ij=(1/R)*sum_r theta_ij,r over the fixed support sequence, where theta_ij,r=P(U_ri>U_rj | tie_mask=false, missing_mask=false,n_r). Exact testing targets the stronger intersection null theta_ij,r<=0.5 for every r, not merely theta_ij<=0.5.",
+    "analysis_root_mask": "analysis_root_mask = not missing_mask and not tie_mask; because both masks act on the complete four-model vector, the same K is used for all 12 directions.",
+    "tie_rule": "All tie_mask=true roots are excluded from every W,L,K and retained in the ledger. A literal float64 zero on tie_mask=false is NUMERIC_DEGENERACY_FAILURE, not a pair-specific tie.",
+    "count_rule": "For Mi_GT_Mj, W_ij=sum over analysis roots of I(U_i>U_j), L_ij=sum I(U_i<U_j), and K=W_ij+L_ij=sum(analysis_root_mask). Require W_ij=L_ji, L_ij=W_ji and one common K across all directions.",
+    "per_direction_p_value": "Let N_ij=sum_{w=W_ij}^{K} choose(K,w) as an exact nonnegative integer. The one-sided fair-binomial p value is N_ij/2^K; integer N_ij and K are the decision authority and float64 p is display only.",
+    "nonidentical_root_exactness": "Conditional on any realized analysis-root mask, signs are independent but may be non-identically distributed when n_r varies. Under the rootwise strong null every retained success probability is <=0.5, so W is stochastically dominated by Binomial(K,0.5) and the fair-binomial upper tail is valid. No claim of exact testing for the weaker average-null theta_ij<=0.5 is authorized.",
+    "alpha": 0.05,
+    "alpha_exact": "1/20",
+    "multiplicity": "Holm step-down over all 12 ordered directions. Sort by the exact rational p value, breaking exact p ties by ordered_direction_order; at sorted step s=1,...,12 reject only if 20*N_(s)*(12-s+1)<=2^K, and stop at the first failure. Reject exactly the uninterrupted prefix; no later hypothesis can be rejected after a stop.",
+    "first_step_arithmetic_Kmin": 8,
+    "Kmin_derivation": "ceil(log2(12/0.05))=ceil(log2(240))=8; at K=7 the minimum p=1/128 exceeds 1/240, while at K=8 the minimum p=1/256 is at most 1/240.",
+    "Kmin_interpretation": "Kmin=8 is only the arithmetic minimum at which any first Holm rejection is possible; it is not a claim of adequate biological sample size, power or root support.",
+    "Kmin_family_scope": "The value 8 applies only to this M=4,H=12,alpha=0.05 family. For any other H recompute ceil(log2(H/alpha)); for illustration H=56 and H=90 require 11, while H=168 requires 12. No M8 or multi-construction procedure may inherit Kmin=8.",
+    "structural_withhold": "If common non-tied available K<8, return no direction and STRUCTURAL_WITHHOLD_ARITHMETIC; do not run a reduced family.",
+    "decision_abstention": "If K>=8 and Holm rejects no ordered direction, return no direction and DECISION_ABSTENTION_NO_REJECTION.",
+    "state_partition": "With zero execution failures, every replicate is in exactly one of: STRUCTURAL_WITHHOLD_ARITHMETIC (K<8); DECISION_ABSTENTION_NO_REJECTION (K>=8 and empty rejection set); or NONEMPTY_DIRECTION_SET (K>=8 and one or more Holm rejections).",
+    "family_assertions": [
+      "No accepted replicate may reject both directions of the same unordered model pair.",
+      "popcount(rejected_direction_12_bitmask)=true_positive_edge_count+false_positive_edge_count.",
+      "For delta!=0, exact-family recovery is true if and only if true_positive_edge_count=6 and false_positive_edge_count=0.",
+      "For delta=0, true_positive_edge_count=0 and false_positive_edge_count=popcount(rejected_direction_12_bitmask).",
+      "Any assertion failure is HOLM_INVARIANT_FAILURE and invalidates the complete cell."
+    ],
+    "family_pruning_authorized": false,
+    "mid_p_or_randomized_ties_authorized": false
+  },
+  "registered_endpoints": [
+    {
+      "endpoint_id": "SIM_FWER_GLOBAL_NULL",
+      "scope": "delta=0 cells",
+      "definition": "proportion of replicates with at least one rejected ordered direction",
+      "denominator": "5,000 simulated replicates in an accepted zero-failure cell, including structurally withheld outcomes",
+      "structural_withhold_value": 0,
+      "tier": "PRIMARY"
+    },
+    {
+      "endpoint_id": "SIM_EXACT_FAMILY_RECOVERY",
+      "scope": "delta!=0 cells",
+      "definition": "proportion of replicates whose rejected-direction set equals the six alternative directions specified by the simulation",
+      "denominator": "5,000 simulated replicates in an accepted zero-failure cell, including structurally withheld outcomes",
+      "structural_withhold_value": 0,
+      "tier": "PRIMARY"
+    },
+    {
+      "endpoint_id": "SIM_ANY_FALSE_SELECTION",
+      "scope": "all cells",
+      "definition": "proportion of replicates with at least one rejected null direction specified by the simulation",
+      "denominator": "5,000 simulated replicates in an accepted zero-failure cell, including structurally withheld outcomes",
+      "structural_withhold_value": 0,
+      "tier": "PRIMARY"
+    },
+    {
+      "endpoint_id": "SIM_NO_DIRECTION_ABSTENTION",
+      "scope": "all cells",
+      "definition": "proportion of replicates with an empty rejected-direction set",
+      "denominator": "5,000 simulated replicates in an accepted zero-failure cell, including structurally withheld outcomes",
+      "structural_withhold_value": 1,
+      "tier": "PRIMARY"
+    },
+    {
+      "endpoint_id": "SIM_STRUCTURAL_WITHHOLD",
+      "scope": "all cells",
+      "definition": "proportion of replicates with K<8 and the frozen structural reason",
+      "denominator": "5,000 simulated replicates in an accepted zero-failure cell",
+      "structural_withhold_value": 1,
+      "tier": "PRIMARY"
+    },
+    {
+      "endpoint_id": "SIM_TRUE_EDGE_RECOVERY",
+      "scope": "delta!=0 cells",
+      "definition": "For each replicate, divide the number of rejected alternative directions specified by the simulation by six, assigning zero to structural withholding or decision abstention; report the mean of this bounded replicate-level score.",
+      "denominator": "5,000 simulated replicates in an accepted zero-failure cell, including structurally withheld outcomes",
+      "structural_withhold_value": 0.0,
+      "tier": "SECONDARY"
+    },
+    {
+      "endpoint_id": "SIM_FALSE_EDGE_SELECTION",
+      "scope": "all cells",
+      "definition": "For each replicate, divide the number of rejected null directions specified by the simulation by 12 when delta=0 and by six when delta!=0, assigning zero to structural withholding or decision abstention; report the mean of this bounded replicate-level score.",
+      "denominator": "5,000 simulated replicates in an accepted zero-failure cell, including structurally withheld outcomes",
+      "structural_withhold_value": 0.0,
+      "tier": "SECONDARY"
+    },
+    {
+      "endpoint_id": "SIM_DECISION_ABSTENTION",
+      "scope": "all cells",
+      "definition": "proportion with K>=8 and no Holm rejection",
+      "denominator": "5,000 simulated replicates in an accepted zero-failure cell, including structurally withheld outcomes",
+      "structural_withhold_value": 0,
+      "tier": "SECONDARY"
+    }
+  ],
+  "monte_carlo_reporting": {
+    "accepted_cell_scientific_denominator": "exactly 5,000 simulated replicates; structurally withheld outcomes remain in this denominator",
+    "failure_rate_denominator": "all 5,000 fixed replicate indices; an uncomputed index after cell abort receives a QC failure stub rather than being dropped",
+    "failed_replicate_endpoint_disposition": "Any non-NONE replicate failure code makes the entire cell CELL_FAILED_CLOSED. Withhold every scientific endpoint and interval for that cell; report only failure count, failure-code counts and failure rate. A failed replicate is never encoded as success, abstention, withhold or false-selection zero and is never removed to form a smaller scientific denominator.",
+    "grid_failure_disposition": "The fixed 280-cell grid is incomplete if any cell is CELL_FAILED_CLOSED; Figure 2 and its scientific source table cannot receive terminal acceptance from a partial grid.",
+    "failed_replicates_replaced": false,
+    "binary_endpoint_intervals": "For binary endpoints, pointwise two-sided 95% Clopper-Pearson intervals over n=5000 accepted replicates, with alpha=0.05 and exact boundary handling k=0 or k=n; the locked SciPy implementation/version must be recorded before execution.",
+    "bounded_mean_endpoint_intervals": "For SIM_TRUE_EDGE_RECOVERY and SIM_FALSE_EDGE_SELECTION, use the 5000 independent replicate-level bounded scores and report the pointwise finite-sample 95% Hoeffding interval [max(0,mean-h),min(1,mean+h)] with h=sqrt(log(2/0.05)/(2*5000)). This remains nonzero-width at all-zero/all-one boundaries. Edge observations within a replicate are not treated as independent binomial trials.",
+    "replicate_count_precision_justification": "With 5000 independent simulation replicates, a binary proportion has worst-case Monte Carlo SE sqrt(0.25/5000)=0.0070711 and SE sqrt(0.05*0.95/5000)=0.0030822 at probability 0.05. These are precision calculations, not biological sample-size or power justifications.",
+    "interval_interpretation": "All intervals quantify Monte Carlo estimation error under this simulation law only; they are not root-level, biological, simultaneous or across-cell inferential intervals.",
+    "endpoint_algebra_invariants": [
+      "Within every accepted cell, SIM_NO_DIRECTION_ABSTENTION numerator equals SIM_STRUCTURAL_WITHHOLD numerator plus SIM_DECISION_ABSTENTION numerator.",
+      "Within every accepted delta=0 cell, SIM_FWER_GLOBAL_NULL numerator equals SIM_ANY_FALSE_SELECTION numerator.",
+      "Within every accepted delta!=0 cell, exact-family recovery is equivalent to true_positive_edge_count=6 and false_positive_edge_count=0.",
+      "All endpoint numerators are between 0 and 5000; all replicate-level edge fractions are in [0,1]."
+    ],
+    "simultaneous_interval_claim": false,
+    "across_cell_hypothesis_tests": false,
+    "rounding": "display rounding only; source data retains integer counts, denominators and full float64 proportions/limits"
+  },
+  "retained_outputs": {
+    "replicate_ledger_required": true,
+    "replicate_fields": [
+      "cell_id",
+      "replicate_index",
+      "generated_tie_root_count",
+      "generated_missing_root_count",
+      "available_root_count",
+      "available_tied_root_count",
+      "non_tied_root_count_K",
+      "structural_withhold",
+      "decision_abstention",
+      "wins_W_12_vector_in_ordered_direction_order",
+      "exact_binomial_tail_numerator_N_12_vector_in_ordered_direction_order",
+      "rejected_direction_12_bitmask",
+      "true_positive_edge_count",
+      "false_positive_edge_count",
+      "failure_code"
+    ],
+    "root_count_ledger_invariants": [
+      "0<=generated_missing_root_count<=R and 0<=generated_tie_root_count<=R; the two generated masks may overlap because missingness is applied after tie generation.",
+      "available_root_count=R-generated_missing_root_count.",
+      "available_root_count=available_tied_root_count+non_tied_root_count_K.",
+      "For every zero-failure replicate, W_ij+W_ji=K. When K>=8, all exact binomial numerator entries are integers in [1,2^K]; when K<8, the complete N vector is missing under the structural-withhold rule."
+    ],
+    "bitmask_encoding": "Bit b (least-significant bit is b=0) corresponds exactly to ordered_direction_order[b]; unused bits above b=11 must be zero.",
+    "failure_code_enum": [
+      "NONE",
+      "NUMERIC_DEGENERACY_FAILURE",
+      "NONFINITE_FAILURE",
+      "RNG_STATE_FAILURE",
+      "SCHEMA_FAILURE",
+      "ROOT_COUNT_INVARIANT_FAILURE",
+      "HOLM_INVARIANT_FAILURE",
+      "SERIALIZATION_FAILURE",
+      "UNEXPECTED_EXECUTION_FAILURE"
+    ],
+    "failure_code_rule": "Accepted cells require failure_code=NONE for all 5000 ledger rows. Any other enumerated code invalidates the complete cell; an unrecognized code is SCHEMA_FAILURE.",
+    "failed_row_NA_rule": "When failure_code is not NONE, all scientific fields from structural_withhold through false_positive_edge_count are missing, not zero and not partial. Serialize missing as JSON null and as an empty TSV field; the strings NA/NaN and numeric sentinels are forbidden. Preserve cell_id, replicate_index, auditable pre-failure root-count fields when valid, and failure_code.",
+    "structural_withhold_row_rule": "STRUCTURAL_WITHHOLD_ARITHMETIC is not a failure: failure_code=NONE, structural_withhold=true, decision_abstention=false, rejected bitmask=0 and TP/FP counts=0. Record W; store the exact-tail N vector as missing because Holm is not entered at K<8.",
+    "decision_abstention_row_rule": "DECISION_ABSTENTION_NO_REJECTION is not a failure: failure_code=NONE, structural_withhold=false, decision_abstention=true, exact W/N vectors are present, rejected bitmask=0 and TP/FP counts=0.",
+    "cell_aggregate_required": true,
+    "cell_aggregate_fields_required": [
+      "cell_id",
+      "registered_replicate_count_5000",
+      "failure_count",
+      "failure_rate",
+      "cell_acceptance_status",
+      "endpoint_id",
+      "endpoint_numerator_or_replicate_score_sum",
+      "scientific_denominator_5000_or_NA_on_failure",
+      "point_estimate_or_NA_on_failure",
+      "interval_lower_or_NA",
+      "interval_upper_or_NA",
+      "interval_method",
+      "contract_sha256",
+      "code_sha256",
+      "environment_receipt_sha256"
+    ],
+    "all_zero_nonzero_failed_and_withheld_cells_retained": true,
+    "outcome_guided_cell_or_endpoint_selection_authorized": false
+  },
+  "execution_gate": {
+    "new_outcome_bearing_execution_authorized_before_public_activation_receipt": false,
+    "public_byte_identity_required": true,
+    "locked_environment_receipt_required_before_run": true,
+    "clean_directory_replay_required": true,
+    "smoke_run_outcome_authority": "NONE",
+    "production_failure_policy": "FAIL_CLOSED_NO_REPLACEMENT",
+    "cell_acceptance_rule": "A cell has status ACCEPTED only if it contains exactly 5,000 unique replicate_index values (0–4,999), no failures, all invariants pass and its output manifest is complete. Otherwise, it has status CELL_FAILED_CLOSED and contributes no scientific endpoint values.",
+    "whole_cell_rerun_rule": "No failed replicate may be replaced or appended. After correcting a software or infrastructure problem without changing the fixed scientific contract, rerun the entire cell from replicate_index=0 with the same cell_id and deterministic seed. Retain the failed attempt, record its hash and document the correction.",
+    "cell_abort_ledger_rule": "If a cell-level exception prevents complete per-replicate evaluation, emit 5,000 QC ledger stubs keyed by the fixed replicate indices, with scientific fields missing and the appropriate failure code. This preserves the 5,000-index denominator without treating uncomputed outcomes as zeros.",
+    "complete_grid_acceptance_rule": "The complete grid is accepted only if it contains exactly 280 unique accepted cells, 1,400,000 accepted ledger rows, 40 delta=0 cells and 240 delta!=0 cells, with no extra or duplicate cell_id.",
+    "direction_label_symmetry_qa": {
+      "analytic_identity": "Under delta -> -delta and model-label reversal M0<->M3,M1<->M2, the generating law, truth family and endpoint distributions are invariant after applying the corresponding ordered-direction permutation.",
+      "required_preproduction_metamorphic_test": "On synthetic fixed utility/tie/missing fixtures, reverse model labels and direction bits and require exact mapped equality of W/L/K, integer p numerators, Holm rejection bitmask, truth labels and replicate endpoint scores.",
+      "production_pair_interpretation": "+delta and -delta cells have distinct independently derived seeds, so byte equality or exact endpoint equality is prohibited as an acceptance requirement. Post-run signed differences may be reported only as descriptive Monte Carlo QA, never as a tuning trigger or scientific endpoint."
+    },
+    "matched_deletion_metamorphic_qa": {
+      "analytic_identity": "At equal deletion probability with all other axes baseline, an induced all-model tie and a completely missing root yield the same scientific-endpoint law because both exclude the complete root from W/L/K.",
+      "required_preproduction_test": "Using one synthetic utility fixture and one fixed deletion mask, encode deleted roots once as tie and once as missing; require exact equality of K,W,L,N,Holm bitmask and all scientific replicate scores, while requiring the tie/missing/availability ledger fields to differ as specified.",
+      "production_pair_interpretation": "TIE010 versus MISS010 and TIE050 versus MISS050 use distinct cell seeds, so observed Monte Carlo differences are not mechanism effects and exact production equality is not required."
+    },
+    "static_preproduction_invariants_required": [
+      "The standardization and covariance identities in data_generating_law hold algebraically.",
+      "The support-pattern mean inverse n and average pair-difference variances equal 1/8,2/15,1/6,8/15 and 1,76/75,16/15,124/75 in the specified order.",
+      "The OFAT expansion yields 10 axis variants, 280 unique cells, 40 zero-delta cells, 240 nonzero-delta cells and 1,400,000 simulated replicates.",
+      "Every axis_variant maps to exactly one specified tie/missing/support tuple; only BASE has all baseline axes and no pair of nonbaseline factors is combined.",
+      "Every authorized R is divisible by every support-cycle length.",
+      "The direction list contains exactly all 4*3 ordered pairs once, with no self-pair or duplicate.",
+      "K=7 cannot pass the first Holm threshold and K=8 can pass it only at W=8.",
+      "The endpoint algebra, bitmask mapping, root-count identities and opposite-direction W/L identities are executable assertions."
+    ]
+  },
+  "figure_2_contract": {
+    "primary_message": "Under the specified source-free root law, the complete 12-direction rule controls false directional selection and abstains when ties or missing roots remove arithmetic support; recovery varies with pair-specific standardized separation and root-support design.",
+    "control_basis": "False-direction control follows analytically from independent-root stochastic domination under each rootwise strong null and the complete-family Holm procedure. Monte Carlo curves check the implementation and operating characteristics under the specified law; they do not prove empirical control or construction invariance.",
+    "source_data_requirement": "Retain and release all 280 specified cells and every specified endpoint, including zero, failed and withheld states. Any main-panel subset or aggregation must be hash-bound before production execution and trace to the complete source table.",
+    "existing_negative_control_boundary": "The hierarchical root/task/cell negative controls were defined after the earlier results had been inspected and remain separate inputs. They are not regenerated, resampled, pooled, averaged or counted in the 280-cell source-free operating grid or its 1,400,000-replicate denominator. Their axes and denominators must remain visually distinct.",
+    "main_panel_binding_required": "F2_MAIN_PANEL_BINDING_V1.json must be byte-bound in the public amendment before production execution; no cell, endpoint, magnitude, root count, stress state, procedure or display aggregation outside that binding may be substituted after outcomes are inspected.",
+    "label_reflection_pooling_rule": "Only where F2_MAIN_PANEL_BINDING_V1.json explicitly authorizes it, independently seeded +|delta| and -|delta| cells with otherwise identical specified settings are pooled under exact model-label-reversal symmetry. For a binary endpoint, sum the two event numerators, use denominator 10,000 and compute a two-sided 95% Clopper-Pearson interval. For a specified bounded replicate-level edge score, concatenate the two 5,000-score vectors, report their 10,000-replicate mean and use the specified two-sided 95% Hoeffding formula with n=10,000. Release both signed 5,000-replicate cells separately. Pooling does not assert byte equality, paired seeds or exact observed endpoint equality.",
+    "must_show": [
+      "global-null false-direction calibration with its fixed 5000-replicate denominator",
+      "exact-family recovery across delta and R, with the secondary all-edge average clearly subordinate and a note that nonadjacent edges have 2|delta| or 3|delta| mean separation",
+      "structural and decision abstention decomposition",
+      "prespecified tie, missingness and root-support stress cells with complete-grid source-data linkage",
+      "all 20 pre-existing hierarchical root/task/cell negative-control rows, hash-bound before production and reported separately because they were defined after the earlier results had been inspected",
+      "pointwise Monte Carlo interval type and denominator"
+    ],
+    "must_not_show": [
+      "biological SESOI language",
+      "empirical validation language",
+      "descendant task count as independent sample size",
+      "delta as one common effect size for all six unordered pairs",
+      "only favorable cells",
+      "confidence intervals derived from roots instead of Monte Carlo replicates",
+      "exact +delta/-delta equality or paired-seed language",
+      "a mechanistic difference claim from TIE010 versus MISS010 or TIE050 versus MISS050",
+      "support imbalance at constant information language for the specified heterogeneous support cycles",
+      "combined-nuisance robustness or interaction language from the OFAT-only grid",
+      "transport of M4/H12 recovery, abstention or Kmin values to M8 or multi-construction families",
+      "official benchmark, external validation, confirmatory or construction-invariant language"
+    ]
+  }
+}

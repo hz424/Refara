@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-09-12T17:34:51.300754+00:00",
+  "protocol_sha256": "e65613d2f393663cb324535fac93efbc01ebc818865c6f063626a61d02461689",
+  "sample_sha256": "4f5ec1881c4758662838696f8e240f200411f9aa625276114891fa35a049ed0a",
+  "input_inventory_sha256": "2eb15dfb0a474ad52db41f96eb761ddbb48d4978525314546695f440c0672a08",
+  "source_bindings": {
+    "submission/work/systema_matched_norman_v1/results/selected_CPA_block_profiles.npy": "b3903b3564a073b8504285ef3b4c71a95bd0e4c1620c68d8a0ef1b4af18a1189",
+    "submission/work/reference_protocol_v2/software/analysis/norman_training_review/source_data/reference_results/control_block_means.npy": "d591ac5c5f761954978b967d2a88a6efaf7140bb33a321b1b0b4c283c0669b2b",
+    "submission/work/systema_matched_norman_v1/results/fixed_profiles_and_references.npz": "a124615c1d9949f843b7d79c3900e46daebf26910d0f4a91414390662debc834"
+  },
+  "production_code_imported": false,
+  "raw_score_rows": 6480,
+  "full_prior_pattern_rows": 297000,
+  "comparison_counts": {
+    "raw_role_metrics": 23328,
+    "raw_role_centroid_exact": 5832,
+    "raw_direct_metrics": 2592,
+    "raw_direct_centroid_exact": 648,
+    "full_prior_direct_state_panel": 712800,
+    "full_prior_O_panel": 1425600,
+    "full_prior_balanced_MSE": 297000,
+    "all_label_permutation_balanced_means": 7128000,
+    "all_native_unused_roles": 2138400,
+    "all_fixed_state_unused_Cmodel": 3207600,
+    "all_common_centre_state_matches_direct": 1425600,
+    "scalar_tie_control": 4
+  },
+  "maximum_absolute_errors": {
+    "raw_role_metrics": 1.6653345369377348e-15,
+    "raw_role_centroid_exact": 0.0,
+    "raw_direct_metrics": 1.7763568394002505e-15,
+    "raw_direct_centroid_exact": 0.0,
+    "full_prior_direct_state_panel": 2.220446049250313e-16,
+    "full_prior_O_panel": 3.3306690738754696e-16,
+    "full_prior_balanced_MSE": 1.6653345369377348e-16,
+    "all_label_permutation_balanced_means": 3.3306690738754696e-16,
+    "all_native_unused_roles": 0.0,
+    "all_fixed_state_unused_Cmodel": 0.0,
+    "all_common_centre_state_matches_direct": 0.0,
+    "scalar_tie_control": 0.0
+  },
+  "elapsed_seconds": 18.03429643623531,
+  "checker_sha256": "4066b674760aea060e5a33538d21e9f0ee883467696ac826229991deeeb35ba0",
+  "cube_sha256": "a8237c2ab7ff08183357b1e87210aa7a1adf1e886ae19a7957faa5d54df15b65",
+  "expected_sample_sha256": "52ffeeaf0174910c0e1e8afa0325b629f76fe4e8706980f62641aef604f2dbb1",
+  "previous_systema_cube_sha256": "b382897fc0c25c5c6894043e890575389839e410fe658e35d38036e0d310f5df",
+  "previous_pattern_scores_sha256": "ff7cf12ecd2a62d0a911a94359e9bf9de83d954fd6b4498ee30c5d9a51c3a319",
+  "checks_do_not_establish": "Scientific novelty, prospective validation, or superiority over a correctly paired exhaustive Systema evaluator."
+}

@@ -1,0 +1,41 @@
+Bootstrap: docker
+From: python:3.10.17-slim-bookworm
+
+%labels
+    Capsule gse162632-scgen-v1.6.1
+
+%post
+    apt-get update
+    apt-get install -y --no-install-recommends build-essential ca-certificates git patch
+    rm -rf /var/lib/apt/lists/*
+    python -m pip install --no-cache-dir --upgrade pip==25.2
+    python -m pip install --no-cache-dir --no-deps \
+        -r /opt/capsule/requirements-cu117.txt
+    git clone https://github.com/theislab/scgen.git /opt/scgen
+    cd /opt/scgen
+    git checkout --detach d79e1f04233c30f9a4eb5b8d57718127909807d7
+    test "$(git rev-parse HEAD)" = d79e1f04233c30f9a4eb5b8d57718127909807d7
+    git apply /opt/capsule/scgen-qzm-qzv.patch
+    printf '%s  %s\n' \
+        00348b640b5ea36355c4cdf335a89f74621e9d4d231b2d855c1190905441a527 \
+        scgen/_scgenvae.py | sha256sum -c -
+    python -m pip install --no-cache-dir --no-deps --no-build-isolation /opt/scgen
+    rm -rf /opt/scgen/.git
+
+%files
+    requirements-cu117.txt /opt/capsule/requirements-cu117.txt
+    scgen-qzm-qzv.patch /opt/capsule/scgen-qzm-qzv.patch
+
+%environment
+    export PYTHONNOUSERSITE=1
+    export CUBLAS_WORKSPACE_CONFIG=:4096:8
+    export MPLCONFIGDIR="${TMPDIR:-/tmp}/matplotlib"
+    export NUMBA_CACHE_DIR="${TMPDIR:-/tmp}/numba"
+
+%test
+    mkdir -p "${MPLCONFIGDIR}" "${NUMBA_CACHE_DIR}"
+    python -m pip check
+    python -c "import aiohttp, anndata, importlib_resources, scanpy, scgen, scvi, torch; from etils import epath"
+
+%runscript
+    exec python "$@"

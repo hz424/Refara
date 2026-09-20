@@ -1,0 +1,24 @@
+{
+  "schema": "refara.reporting_reliability.manifest.v1",
+  "files": {
+    "EXPORT_RECEIPT.json": "0f3cec4cb80c97f114461c4188e0b203ebf15e047a7598542b9a842bb9b2dd20",
+    "USAGE.txt": "3481511721f03ae0a196803c410e3b5d9ea7e0ba2cee926e1e4540f10aaf103c",
+    "build_export.py": "f7aaf2d14dd3df1bf80e0ef8380099139edc208a79bb87dc42c9e5e9db771322",
+    "code_contract.json": "9e62cc4cc024e7b44604045209ba9a383828b6ab153effbaf8cac1ffa7bf5dc2",
+    "executed_math_provenance.json": "eac8640bda30f0f7b8bc7b89ed526617fc95f6a2f2ae6ce6522f988b31620fa5",
+    "expected/assessment_intervals.json": "b44914235a427deedf78776e19b0fd112ea2ba1c035420e50fee438c384360de",
+    "expected/coverage.json": "2f8821c27039ca35ab19095d7d92cd5b3d9a29ca15a5f3016460eac96590b417",
+    "expected/pool_sensitivity.tsv.gz": "8348881c9892a0cf4f8225a7ca22ff2d8ef7a8f1db3c278d615bf8185226ceda",
+    "expected/summary.tsv.gz": "4b0823b17b72308d957084fefb01476100cdecd9c63e95d45a9a77bdea40737f",
+    "expected/work_accounting.tsv.gz": "c58de934e458a70cfac8c92c2aaaced17f558cfb3a9b50b8c05991913a28e6a5",
+    "model_contract.json": "2274a4e038e8d3bf234dcbf162454b099424e66341ec2bc9d592315b9e419514",
+    "protocol.json": "74ff81b8354961cb929a385b4a3a3c2ab5fd894bd039bf65e56ecfca0fd07864",
+    "source_data/A_rows.tsv.gz": "6c10036db29730cc97028f2a4722acd8585830d2ebe12111bc386aadd4b24d61",
+    "source_data/A_scores.npz": "e2697b58e66764b0daa39ed68f12daf26bca92dccaf748e20508efa1b5fac828",
+    "source_data/C_rows.tsv.gz": "d3fe878cbc49c9c6f054f6e2a17cdd0fc908568fd61d64566e51ff6196f56062",
+    "source_data/C_scores.npz": "5ced81dd6591253db06841726fbd0b4e4620e8c7a7aa8c44d945961ccb893066",
+    "source_data/P_rows.tsv.gz": "ecd41c1fb02a3b0662d03c81ad561832516ce44908438afd2dee57861419ae72",
+    "source_data/P_scores.npz": "9fc9650358260d12164c12139760b544f1ea1e481f9f30425ab3a4366e927406",
+    "source_data/donor_pools.tsv.gz": "1eaa0a78f97a61328ef7693766075994a68ad24f9c6bfef14d5387aa005ffb3a"
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "schema": "REFARA_CONDITIONED_MODEL_PROVENANCE_V1",
+  "family": "scGen",
+  "seed": 17,
+  "checkpoint_source_sha256": "daf7ac5a5099bf0fc0490697dee429fb7d3f5217d8db44663fcb34262125574b",
+  "checkpoint_source_bytes": 33870971,
+  "exported_checkpoint_sha256": "e40cdb61b914ee5db11fb9ef01d2e87edce1e670c8339482ed144f83bf66a0e0",
+  "exported_checkpoint_bytes": 10308582,
+  "training_request": {
+    "seed": 17,
+    "learning_rate": 0.0003,
+    "epochs": 160,
+    "checkpoints": [
+      160
+    ],
+    "bundle_manifest_sha256": "d4f273e2263eda3a73588a6bdf18fc811dc7d586b059fa08be4ff078428e54ba",
+    "protocol_sha256": "81a3ede8d8d286c409ccf3e7a9fdb8995ddc57a1d89c45c4feedd7bcfd159d0e",
+    "architecture": {
+      "n_hidden": 512,
+      "n_latent": 100,
+      "n_layers": 2,
+      "dropout_rate": 0.2,
+      "kl_weight": 5e-05
+    },
+    "runner_sha256": "5e46b27b462cdb606f473403906eaf8fb9bf470fe7482ce725fa5fd712be1374",
+    "native_source_sha256": "00348b640b5ea36355c4cdf335a89f74621e9d4d231b2d855c1190905441a527",
+    "technical_smoke": false
+  },
+  "source_code_sha256": {
+    "train_scgen.py": "5e46b27b462cdb606f473403906eaf8fb9bf470fe7482ce725fa5fd712be1374",
+    "scgen/_scgenvae.py": "00348b640b5ea36355c4cdf335a89f74621e9d4d231b2d855c1190905441a527",
+    "scgen/_base_components.py": "25822b5b1d20f5b6e536e073ae0a827ee39db7af7abe75e5ac24dc90b25194a6",
+    "scvi/nn/_base_components.py": "57cac0bbd1a7d65737bb6a12b51fd6e8b04aff2814c7fd302e9ca84009646915"
+  },
+  "source_arrays": {
+    "encoder_0_weight": {
+      "shape": [
+        512,
+        2000
+      ],
+      "dtype": "float32",
+      "sha256": "e76361ca79bc90ec2823903d9ee27a76121511c958e3aa7a983e29403e43fd73"
+    },
+    "encoder_0_bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "2ba72288608332765d8058b3232ab5ee54df43be95eb6a981bdff4864f746661"
+    },
+    "encoder_0_bn_weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "594e96d7df824a84737811bbc3c32577f04e64d2f3761befdac3c3a2b583ccd6"
+    },
+    "encoder_0_bn_bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "c5784be44033c8c9052734f36c2691e3923669aa6b8a48b73106bb7949d31697"
+    },
+    "encoder_0_bn_mean": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "95a4846190aaa6f57f55057d772532ccb458331f0b92f8d8641088903240589e"
+    },
+    "encoder_0_bn_var": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "ed5f119b59688ed9aa71a7e7c89b1e2596f44e0e9505fc27a4c52a234ed3af94"
+    },
+    "encoder_1_weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "0f2a9d506e7f31b473e581876d2367824b9544ba6a414b4dd402af086beda12e"
+    },
+    "encoder_1_bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "6c82d5aec9a93d17c7e49f20fe2dfc1f96bf2178f1411c8940e757c999799ead"
+    },
+    "encoder_1_bn_weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "43dcc7b009de9dcd8f1c06d359947135ba3a16529e84c633123177230c6000ae"
+    },
+    "encoder_1_bn_bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "4ce7f3d2faba8e23a0bc4c31e3af0cba31fe0e88d57fb76cbeef12890a768fcf"
+    },
+    "encoder_1_bn_mean": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "5b80750f33a5f0f50ed204f9793696698d457c3d41228fd41df56ca544f9f09b"
+    },
+    "encoder_1_bn_var": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "b1f2c040f6f9f50cf551300f22042095f3757b7c022c349b32bd17fe63c32038"
+    },
+    "decoder_0_weight": {
+      "shape": [
+        512,
+        100
+      ],
+      "dtype": "float32",
+      "sha256": "912d214a49f8dfb1477fe5c1eea29ca462aced6263d8f21a8f3843f3b2874d80"
+    },
+    "decoder_0_bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "50d82cc999896549c220cc4377547e586e8c9ec412d085374cb4c245e38b7d2e"
+    },
+    "decoder_0_bn_weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "3a626226ef7889cac7edd3bd5715f1e527d9a149701c5fa8a212aef6498de48f"
+    },
+    "decoder_0_bn_bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "c17e47d33ea05283a04c3a121ef0bc73b5a985d1b19f4e283e6673488a4dcb9a"
+    },
+    "decoder_0_bn_mean": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "8133909c60750c0a379d8fbad3598e981d74ad3915f18ea0c0597e908d22679d"
+    },
+    "decoder_0_bn_var": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "befb1e4e89ebff9da9a79d5bb925c2d5ba1602fa3aa5ed366a62aeef7f8ac0b2"
+    },
+    "decoder_1_weight": {
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "97b5c3ba6f9e40ad80145f96210e3013173fdf6b51c074bc1711f5cf60839436"
+    },
+    "decoder_1_bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "2718d63434ce822c67a5bb77bfbd5b690cf90f562c83c9e0a778434ceb2abb9b"
+    },
+    "decoder_1_bn_weight": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "85c41bb349986434bb77224919f10dbfb26be4e7f10d0618986e97c6aa872e96"
+    },
+    "decoder_1_bn_bias": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "5ad7d2d1f76cc65d44cabd229ac7383fcfc1d4717da7798b7b75c4dde0408d91"
+    },
+    "decoder_1_bn_mean": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "1122db98c1f8cf190b3dcbdd50a4cd451412ee1a6746fed4de5f499e757238b5"
+    },
+    "decoder_1_bn_var": {
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "5d1f597eec1f3c0507ca2620c36ff7eb8e305e44880374a58070624728f4e76d"
+    },
+    "encoder_mean_weight": {
+      "shape": [
+        100,
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "72169d7d66ea376ac8bdedccf05e86a4d53e536d079bc5cc9dd4374537d59df4"
+    },
+    "encoder_mean_bias": {
+      "shape": [
+        100
+      ],
+      "dtype": "float32",
+      "sha256": "0bc1fdbc85b3a93130fadcadf68aa40a94c64d9da18fe4a87de1c4f952d8c0b0"
+    },
+    "decoder_output_weight": {
+      "shape": [
+        2000,
+        512
+      ],
+      "dtype": "float32",
+      "sha256": "dab98cb3d0f6035ac3ef15c6940913ef398257525f13f3f44df03dee4bc5102b"
+    },
+    "decoder_output_bias": {
+      "shape": [
+        2000
+      ],
+      "dtype": "float32",
+      "sha256": "6f0acc9db8fab647f2431fa8298d82ee9926bdf0ff41e6ce3c70273a9143cc0c"
+    },
+    "feature_axis": {
+      "shape": [
+        2000
+      ],
+      "dtype": "int64",
+      "sha256": "bc7cf35c9fb1a724a1b8fca9a0467eb1c84c61353bc2509ebc1f7840da573d06"
+    },
+    "scales": {
+      "shape": [
+        2000
+      ],
+      "dtype": "float64",
+      "sha256": "d9764030974011c6651de4f92b0677617bce7eb0ef67048deb870c17d542cbd8"
+    },
+    "latent_shifts": {
+      "shape": [
+        722,
+        100
+      ],
+      "dtype": "float32",
+      "sha256": "b6763f2ca0176f48f655e9d0846e549230185b9845a492db3ab179131ef3e007"
+    }
+  },
+  "fixture": "The same 24 controls and 8 treated training cells already distributed with real_model_reference; no outcome-dependent reselection",
+  "source_scope": "Parse CC BY-NC 4.0; no broader rights granted",
+  "seed_choice": "First prespecified original fit seed17, selected before inspecting these demonstration scores",
+  "scientific_scope": "Mechanism and usability demonstration on reused training cells; no independent validation or model-quality ranking",
+  "tasks": 722,
+  "native_output": "state",
+  "uses_control_expression": true,
+  "point_contract": "Eval mode, fixed training BN statistics and deterministic qz_m; cells do not interact. Numerical batch-shape differences are tested with tolerance, not claimed bitwise equal.",
+  "omitted_state": "Optimizer, RNG state, unused posterior-variance head and training counters; none affect qz_m+shift decoding",
+  "runtime": {
+    "torch": "2.0.0+cu117",
+    "numpy": "1.23.5",
+    "scvi_tools": "0.20.3"
+  }
+}

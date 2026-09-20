@@ -1,0 +1,115 @@
+{
+  "aggregation": {
+    "root_to_focal": "arithmetic mean across eight roots",
+    "rotation": "score each of three rotations before averaging utilities",
+    "task_to_root": "arithmetic mean across five tasks"
+  },
+  "maximum_focal_absolute_error_vs_expected": 1.3877787807814457e-17,
+  "maximum_root_task_utility_absolute_error_vs_expected": 0.0,
+  "metric": "negative_equal_feature_standardized_mse",
+  "metric_detail": "utility is minus the equal-weighted squared standardized error",
+  "realizations": [
+    {
+      "absolute_error": {
+        "rotation": 1.3877787807814457e-17,
+        "shared": 0.0,
+        "split": 1.3877787807814457e-17
+      },
+      "expected_focal_pca64_minus_scgen": {
+        "rotation": 0.12466578191228986,
+        "shared": -0.0339990537976535,
+        "split": 0.12031850891433962
+      },
+      "focal_pca64_minus_scgen": {
+        "rotation": 0.12466578191228984,
+        "shared": -0.0339990537976535,
+        "split": 0.12031850891433964
+      },
+      "realization_id": "q1",
+      "role": "primary_analysis_realization",
+      "seed": 17
+    },
+    {
+      "absolute_error": {
+        "rotation": 0.0,
+        "shared": 0.0,
+        "split": 1.3877787807814457e-17
+      },
+      "expected_focal_pca64_minus_scgen": {
+        "rotation": 0.12506030825084774,
+        "shared": -0.03293237989341592,
+        "split": 0.12160800818605973
+      },
+      "focal_pca64_minus_scgen": {
+        "rotation": 0.12506030825084774,
+        "shared": -0.03293237989341592,
+        "split": 0.12160800818605971
+      },
+      "realization_id": "q2",
+      "role": "additional_realization",
+      "seed": 29
+    },
+    {
+      "absolute_error": {
+        "rotation": 0.0,
+        "shared": 0.0,
+        "split": 1.3877787807814457e-17
+      },
+      "expected_focal_pca64_minus_scgen": {
+        "rotation": 0.1259417387933741,
+        "shared": -0.03287695747257732,
+        "split": 0.12243530473472512
+      },
+      "focal_pca64_minus_scgen": {
+        "rotation": 0.1259417387933741,
+        "shared": -0.03287695747257732,
+        "split": 0.12243530473472511
+      },
+      "realization_id": "q3",
+      "role": "additional_realization",
+      "seed": 43
+    },
+    {
+      "absolute_error": {
+        "rotation": 0.0,
+        "shared": 0.0,
+        "split": 0.0
+      },
+      "expected_focal_pca64_minus_scgen": {
+        "rotation": 0.12514184973117448,
+        "shared": -0.0327207703464536,
+        "split": 0.12129325483030941
+      },
+      "focal_pca64_minus_scgen": {
+        "rotation": 0.12514184973117448,
+        "shared": -0.0327207703464536,
+        "split": 0.12129325483030941
+      },
+      "realization_id": "q4",
+      "role": "additional_realization",
+      "seed": 763929762
+    },
+    {
+      "absolute_error": {
+        "rotation": 0.0,
+        "shared": 0.0,
+        "split": 0.0
+      },
+      "expected_focal_pca64_minus_scgen": {
+        "rotation": 0.12615546209390543,
+        "shared": -0.03085736619304758,
+        "split": 0.12249462655794911
+      },
+      "focal_pca64_minus_scgen": {
+        "rotation": 0.12615546209390543,
+        "shared": -0.03085736619304758,
+        "split": 0.12249462655794911
+      },
+      "realization_id": "q5",
+      "role": "additional_realization",
+      "seed": 85508424
+    }
+  ],
+  "status": "PASS",
+  "tolerance": 5e-13
+}

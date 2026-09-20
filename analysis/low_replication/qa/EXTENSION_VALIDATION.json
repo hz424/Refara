@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "original_grid_regression": {
+    "root_counts": [
+      8,
+      12,
+      20,
+      40
+    ],
+    "outer_replicates_each": 4,
+    "all_five_procedure_count_structures_identical": true
+  },
+  "r2_whole_root_bootstrap": {
+    "analytic_limit": 0.9583333333333334,
+    "analytic_derivation": "Only one of 4! relative model orderings is fully reversed",
+    "trials": 2500,
+    "concordant_pair_events": 2397,
+    "bootstrap_events": 2397,
+    "concordant_events_with_rejection": 2397,
+    "reversed_order_events_with_rejection": 0,
+    "archived_bootstrap_event_match": true,
+    "finite_bootstrap_note": "499 draws with plus-one p value; the bound beyond support gives p=1/500, below 0.05/12."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "canvas_mm": [
+    179.99999491373697,
+    167.99999525282115
+  ],
+  "raster": {
+    "png": {
+      "mode": "RGB",
+      "pixels": [
+        4251,
+        3968
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    "tiff": {
+      "mode": "RGB",
+      "pixels": [
+        4251,
+        3968
+      ],
+      "dpi": [
+        600.0,
+        600.0
+      ]
+    }
+  },
+  "plotted_rows": {
+    "a": 60,
+    "b": 6,
+    "c": 12,
+    "d": 18
+  },
+  "source_tables": {
+    "a_allocations": 4500,
+    "a_summary": 150,
+    "all_depth_pair_summary": 180,
+    "all_task_pair_summary": 9900,
+    "b_allocations": 180,
+    "b_summary": 6,
+    "c_allocations": 900,
+    "c_summary": 30,
+    "crossings_after_mean": 30,
+    "d_allocation_mean_pairs": 540,
+    "d_overall_pairs": 18,
+    "d_summary": 18,
+    "d_task_mean_pairs": 990
+  },
+  "source_workbook_sha256": "c98364c3175af7b1b24b2aebe1ff276056272984c31390581456a48a39b63f91",
+  "all_plotted_values_match_tsv": true,
+  "all_old_state_source_values_unchanged": true,
+  "old_b_c_source_files_byte_identical": true,
+  "d_all_18_pairs_retained": true,
+  "d_990_task_means_retained": true,
+  "d_aggregate_ratios_not_mean_ratios": true,
+  "minimum_pdf_font_pt": 7.0,
+  "fonts": [
+    "CPWVVE+LiberationSans-Bold",
+    "CPWVVE+LiberationSans-Italic",
+    "CPWVVE+LiberationSans"
+  ],
+  "output_sha256": {
+    "Extended_Data_Figure_8.pdf": "b3ca889a487b1b65036f4e63a37efa33661be84f58e9b5a991f93b9fab6e56cb",
+    "Extended_Data_Figure_8.svg": "d1596ae0b602dc10bcd6c83fdb10cee9f604247b732de43638f6a2e5d1c3abc1",
+    "Extended_Data_Figure_8.png": "54e698ee1e137915015c61db134267622f956d88d7c2b22e43292a05656f0d7e",
+    "Extended_Data_Figure_8.tiff": "9c5380ecbe79e7b3a410038da156b5f08ac625b3fa89d9007ef2af1970bfcf44"
+  },
+  "validator_sha256": "da4c4004ae86078c1f0c00e222d01b7605ab9807122ae378978e0e3dad6a3d3c"
+}

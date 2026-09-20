@@ -1,0 +1,5 @@
+# AnnData preparation, tested with Python 3.10.
+-r locked.txt
+anndata==0.11.4
+array-api-compat==1.15.0
+natsort==8.4.0

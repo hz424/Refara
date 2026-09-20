@@ -1,0 +1,34 @@
+{
+  "alpha_grid_expanded": false,
+  "evaluation_controls_used": false,
+  "fit_code_sha256": "96823acb2cea041bdcd528e062c62e3e9b45b7eeb975f1021a170fd6e20489df",
+  "input_sha256": {
+    "gene_panel.tsv": "5490dd456ca4a20386e2094cc5491223e9532e6a402b046bf2e93af9966670d3",
+    "scales.npy": "a80c7097df93d329df7f671c51d85c5a24a6c8aa8b2d90a2e95fd6c000041d69",
+    "training_means.npz": "de3a4987e220de658be504cb3071d37cdc64fb1c5c42a624ed07a89145936d5a"
+  },
+  "minimum_validation_mse": 0.018423263987317817,
+  "n_folds": 5,
+  "n_genes": 2000,
+  "n_training_conditions": 161,
+  "n_validation_doubles": 55,
+  "numpy_version": "1.26.4",
+  "output_sha256": {
+    "cv_alpha_summary.tsv": "d0f786a8b8b557506bff7cd99e638e1e3874c0c20bf4b5913f927bbc8a20dafa",
+    "cv_condition_errors.tsv": "44282ccd65087b7984e8c246a26c9eeee2ec17988d715f78050dfaf7291fa67f",
+    "cv_fold_summary.tsv": "745f5f0a4cfc533b8aeef35e3af0a3ee71001e1b0d24e424d1bd4df5867924d8",
+    "cv_oof_predictions.npz": "2e6609423ce4cfb0d78bf2049b5456ffdf566fe5d53c04945d7ecd0a1e8b7381",
+    "cv_training_errors.tsv": "3f910db6251db7ef530180656cb291f4ba87ad9d1f828901446dee8f6e3a8235",
+    "fold_membership.tsv": "3cccfa5a6df0f1bff40b5311e1801671783b0b443c08126d47e1ba05215ff630"
+  },
+  "pandas_version": "2.2.3",
+  "protocol_sha256": "0f989cf4570ab93c1de3e3e7ead7baad4d29a2e15fd034cc064f3c00c5ed3cb3",
+  "selected_alpha": 0.1,
+  "selected_alpha_on_grid_boundary": false,
+  "selected_validation_mse": 0.018423263987317817,
+  "status": "PASS_FROZEN_TRAINING_ONLY_SELECTION",
+  "test_expression_used": false,
+  "test_task_labels_read": false,
+  "tie_rule": "Largest alpha among values within absolute1e-12 of minimum validation MSE",
+  "tie_tolerance": 1e-12
+}

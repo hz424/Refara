@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "target": "heldout_effect",
+  "metric": {"name": "MSE", "direction": "lower"},
+  "models": ["native_effect", "fixed_state", "conditioned_state"],
+  "budgets": [
+    {
+      "id": "two_cells",
+      "control_cells_available": 2,
+      "input_cells": 1,
+      "observation_cells": 1,
+      "description": "One cell per block in a single stratum; two disjoint blocks per realization."
+    }
+  ],
+  "roles": {
+    "model_input": "B1 for conditioned_state; native_effect and fixed_state use fixed supplied predictions.",
+    "prediction_centring": "B1 for the two state predictions; native_effect needs no centring.",
+    "observation_centring": "B2 defines each observed effect.",
+    "participant_information": "Supplied predictions and their declared input controls.",
+    "evaluator_information": "Treated means, controls, membership and both recorded allocations."
+  },
+  "anchor_realization": "0",
+  "minimum_gap": 0.1,
+  "numerical_tolerance": 1e-12,
+  "evaluation_scope": "Three synthetic tasks share four source control cells and two recorded allocations.",
+  "development_cases": ["task_0"],
+  "assessment_cases": ["task_1", "task_2"],
+  "budget_by_depth": {"1": "two_cells"}
+}

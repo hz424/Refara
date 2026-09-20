@@ -1,0 +1,22 @@
+{
+  "status": "INDEPENDENT_ENUMERATION_COMPLETE",
+  "protocol_sha256": "e65613d2f393663cb324535fac93efbc01ebc818865c6f063626a61d02461689",
+  "production_summary_imported": false,
+  "cube_sha256": "a8237c2ab7ff08183357b1e87210aa7a1adf1e886ae19a7957faa5d54df15b65",
+  "oracle_sha256": "44b8ea7d90573d5b9a32d4ede174998b113720f2abc5262350033690e66b5381",
+  "row_counts": {
+    "INDEPENDENT_ROLE_CONTRASTS.tsv": 432,
+    "INDEPENDENT_ROLE_CONTRAST_GAPS.tsv": 1728,
+    "INDEPENDENT_ROLE_INTERACTIONS.tsv": 432,
+    "INDEPENDENT_ROLE_INTERACTION_GAPS.tsv": 1728
+  },
+  "files_sha256": {
+    "INDEPENDENT_ROLE_CONTRASTS.tsv": "5931ecf8eb97d6a89719cf37d482726f96b5d2e1a3199453fa985681aaa449bf",
+    "INDEPENDENT_ROLE_CONTRAST_GAPS.tsv": "542003482ea74ac8eda199dad2502cd73501fe9ca7fcd8df5febb3c800c1b1c3",
+    "INDEPENDENT_ROLE_INTERACTIONS.tsv": "636d8792aea10b7fb414c84fa7e05eab89fc2da9ac2d5ee5c111f4114b8247c1",
+    "INDEPENDENT_ROLE_INTERACTION_GAPS.tsv": "577f882b452037881b2d764ce9628a281cf9bf403df39dedcacb14f9795fbf48"
+  },
+  "directed_edge_signs": "Both directions are included; symmetric signs are structural. Magnitudes and support are the descriptive endpoints.",
+  "gap_count_rule": "Positive > gap + 1e-12; negative < -gap - 1e-12; remaining within. Numerical tolerance is separate from descriptive effect-size gaps.",
+  "elapsed_seconds": 2.550003618001938
+}

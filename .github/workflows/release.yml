@@ -1,0 +1,47 @@
+name: Release
+
+on:
+  push:
+    tags: ["v[0-9]*"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    uses: ./.github/workflows/tests.yml
+  package:
+    needs: checks
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10.21"
+      - name: Install build tools
+        run: python -m pip install --no-deps -r requirements/vcc-build-py310.txt
+      - name: Check tag and build release assets
+        run: |
+          python - <<'PY'
+          import os, pathlib, re
+          version = re.search(r'^version = "([^"]+)"$', pathlib.Path('pyproject.toml').read_text(), re.M).group(1)
+          assert os.environ['GITHUB_REF_NAME'] == 'v' + version
+          PY
+          python scripts/build_release.py --output dist/release
+      - name: Publish release in this repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          test "$(gh api "repos/$GITHUB_REPOSITORY/commits/$GITHUB_REF_NAME" --jq .sha)" = "$GITHUB_SHA"
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" dist/release/* --clobber
+            gh release edit "$GITHUB_REF_NAME" --target "$GITHUB_SHA" --title "Refara $GITHUB_REF_NAME" --notes-file RELEASE_NOTES.txt
+          else
+            gh release create "$GITHUB_REF_NAME" dist/release/* --verify-tag --title "Refara $GITHUB_REF_NAME" --notes-file RELEASE_NOTES.txt
+          fi

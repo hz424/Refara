@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "canvas_mm": [
+    179.99999491373697,
+    115.00000033908421
+  ],
+  "minimum_pdf_font_pt": 7.0,
+  "pdf_text_runs": 63,
+  "pdf_raster_images": 0,
+  "svg_live_text": true,
+  "rasters": {
+    "png": {
+      "pixels": [
+        4251,
+        2716
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    "tiff": {
+      "pixels": [
+        4251,
+        2716
+      ],
+      "dpi": [
+        600.0,
+        600.0
+      ],
+      "mode": "RGB"
+    }
+  },
+  "workbook_table_rows": {
+    "a_summary": 120,
+    "a_allocations": 3600,
+    "b_summary": 6,
+    "b_allocations": 180,
+    "c_summary": 30,
+    "c_allocations": 900,
+    "crossings_after_mean": 30,
+    "all_task_pair_summary": 9900,
+    "all_depth_pair_summary": 180
+  },
+  "workbook_values_match_tsv": true,
+  "panel_c_counts_match_complete_pair_table": true,
+  "legend_word_count": 152,
+  "source_builder_sha256": "955c58fba3952c759394fb2b70e639d52a429fbf4f3649a5cce1d305461029c3",
+  "renderer_sha256": "ccfdfdb6a0d9ae399d8467942fb67d36597fdcf7f97f45985eca04f1f5907408"
+}

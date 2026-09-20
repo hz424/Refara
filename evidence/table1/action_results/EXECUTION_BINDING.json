@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-12T17:43:13.298934+00:00",
+  "protocol_sha256": "e65613d2f393663cb324535fac93efbc01ebc818865c6f063626a61d02461689",
+  "code_sha256": "ba362112577d6fd3bd452634b4c97280b85e3861994a5e91390beee06c922aea",
+  "demo_manifest_sha256": "fc7cfa743ad97751630d78c7dc68cd328e94d467a3238a4bcae5c2500e2769c3",
+  "data_sha256": "62ba173134585845cf06795445ad6a32bb8c094c3ddc69310f5efa5de42e00bc",
+  "python": "3.10.17 | packaged by conda-forge | (main, Apr 10 2025, 22:19:12) [GCC 13.3.0]",
+  "numpy": "1.26.4",
+  "selected_valid_cases": 95
+}

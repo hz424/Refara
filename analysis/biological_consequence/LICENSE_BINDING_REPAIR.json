@@ -1,0 +1,13 @@
+{
+  "status": "DOCUMENTATION_ONLY_BINDING_REPAIR",
+  "file": "vendor/LICENSE_SCOPE.md",
+  "previous_sha256": "df245968b8b11fba70408e5f7adaf0a6be5d0edfcddfbc763ed33c8dd1b7d0f2",
+  "current_sha256": "14e1ebc66cff78b4a80cd250a8ec188c19085c86b9c0446d15579e2e65de35bd",
+  "changes": [
+    "Bundled Liberation Sans fonts -> licence notice for separately archived fonts",
+    "Relative link corrected to ../../../data/derived/LICENSE_SCOPE.md"
+  ],
+  "license_terms_changed": false,
+  "numerical_code_changed": false,
+  "numerical_inputs_changed": false
+}

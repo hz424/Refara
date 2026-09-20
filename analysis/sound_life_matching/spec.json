@@ -1,0 +1,83 @@
+{
+  "schema_version": "2.0.0",
+  "adapter": "sound_life_matching_robustness_v2",
+  "evidence_label": "POST_HOC_OUTCOME_EXPOSED_ROBUST_MATCHING_SENSITIVITY",
+  "project_root_relative_to_spec": "../../external/sound_life",
+  "inputs": [
+    {
+      "role": "acquisition_metadata",
+      "path": "acquisition_metadata.tsv",
+      "sha256": "6304e511e9aaa274517b661c4b15b2fdd4722bf655d6df84628619661cfd4d08"
+    },
+    {
+      "role": "frozen_role_wave_mask",
+      "path": "role_wave_mask.tsv",
+      "sha256": "427d68e727ec7a54cb611ade34d94ada22ee748ff1aa23b3499d82347c97f657"
+    },
+    {
+      "role": "frozen_eval_wave_utility",
+      "path": "eval_wave_utility.tsv",
+      "sha256": "b9ee97aacc5fc7afd412d7adf77c2604ec9a5977789730d0dd1c73ebc0f4e954"
+    }
+  ],
+  "graphs": [
+    {
+      "graph_id": "SAME_BATCH_SAME_POOL",
+      "remove_train_d0_d7_batches": false,
+      "expected_candidate_waves": 93,
+      "expected_candidate_donors": 58,
+      "expected_candidate_batches": 40,
+      "expected_maximum_cardinality": 39,
+      "analysis_mode": "EXACT_ADDITIVE_OPTIMIZATION"
+    },
+    {
+      "graph_id": "SAME_BATCH_SAME_POOL_TRAIN_BATCH_EXCLUDED",
+      "remove_train_d0_d7_batches": true,
+      "expected_candidate_waves": 23,
+      "expected_candidate_donors": 22,
+      "expected_candidate_batches": 12,
+      "expected_maximum_cardinality": 12,
+      "analysis_mode": "EXHAUSTIVE_ENUMERATION",
+      "expected_maximum_matching_count": 144
+    }
+  ],
+  "witness_ensemble": {
+    "algorithm": "SHA256_SALT_EDGE_ORDER_THEN_GLOBAL_MAXIMUM_COMPLETION",
+    "salt_prefix": "sound-life-matching-ensemble-v1:",
+    "salt_start": 0,
+    "salt_count": 256,
+    "salt_width": 4,
+    "frequency_interpretation": "MEMBERSHIP_WITNESSES_ONLY_NOT_A_NATURAL_PROBABILITY"
+  },
+  "optimization": {
+    "additive_solver": "CUSTOM_EXACT_FRACTION_SUCCESSIVE_SHORTEST_AUGMENTING_PATH",
+    "leader_feasibility_solver": "SCIPY_1_15_3_MILP_HIGHS_MAXIMIN",
+    "leader_certification_absolute_margin": 1e-10,
+    "leader_time_limit_seconds": 120
+  },
+  "inference": {
+    "model_ids_in_order": [
+      "NO_CHANGE_DIRECT_V1",
+      "CONTEXT_MEAN_EFFECT_DIRECT_V1",
+      "TWO_WAY_ADDITIVE_RIDGE_DIRECT_V1",
+      "PCA64_ADDITIVE_RIDGE_DIRECT_V1",
+      "RBF_KERNEL_RIDGE_DIRECT_V1",
+      "CPA_0_8_8_ABSOLUTE_V1",
+      "SCGEN_2_1_1_ABSOLUTE_V1",
+      "CELLOT_522D2B9_ABSOLUTE_V1"
+    ],
+    "ordered_comparisons": 56,
+    "tie_rule": "LITERAL_IEEE754_FLOAT64_EQUALITY",
+    "raw_test": "EXACT_ONE_SIDED_FAIR_BINOMIAL_UPPER_SIGN_TAIL_CONDITIONAL_ON_DECLARED_SIGN_MODEL",
+    "multiplicity": "HOLM_STEP_DOWN_WITHIN_56_ORDERED_COMPARISONS_PER_MATCHING",
+    "alpha_numerator": 1,
+    "alpha_denominator": 20
+  },
+  "authority_boundary": {
+    "confirmatory_authority": false,
+    "residual_utility_independence_established": false,
+    "frequency_is_natural_probability": false,
+    "supports_population_best_configuration": false,
+    "retroactively_validates_original_protocol": false
+  }
+}

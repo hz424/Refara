@@ -1,0 +1,124 @@
+{
+  "origin_release": "NATURE_METHODS_20260915_overleaf_readability_table_end_local_review_v1",
+  "statistic": "mean_abs_task_mean_change",
+  "definition": "Average signed score changes across all 55 tasks before taking absolute values, then average allocations and directed changes.",
+  "original_source": {
+    "path": "05_SOURCE_DATA/Table1_reference_role_audit/role_contrasts.tsv",
+    "sha256": "a213a7c0e1d2f4db1db688987786629e78df25e28234dc9e428a8ffa9b839df7"
+  },
+  "selected_rows": [
+    {
+      "role": "Cobs",
+      "depth": "8",
+      "model": "selected_CPA",
+      "metric": "standardized_MSE",
+      "mean_abs_task_mean_change": "0.02342913376077086"
+    },
+    {
+      "role": "Cobs",
+      "depth": "135",
+      "model": "selected_CPA",
+      "metric": "standardized_MSE",
+      "mean_abs_task_mean_change": "0.002224180452591782"
+    },
+    {
+      "role": "Cpred",
+      "depth": "8",
+      "model": "selected_CPA",
+      "metric": "standardized_MSE",
+      "mean_abs_task_mean_change": "0.02346039805380389"
+    },
+    {
+      "role": "Cpred",
+      "depth": "135",
+      "model": "selected_CPA",
+      "metric": "standardized_MSE",
+      "mean_abs_task_mean_change": "0.002227443529188007"
+    },
+    {
+      "role": "Cmodel",
+      "depth": "8",
+      "model": "selected_CPA",
+      "metric": "standardized_MSE",
+      "mean_abs_task_mean_change": "0.008539029118365977"
+    },
+    {
+      "role": "Cmodel",
+      "depth": "8",
+      "model": "original_CPA_fixed",
+      "metric": "standardized_MSE",
+      "mean_abs_task_mean_change": "0"
+    },
+    {
+      "role": "Cmodel",
+      "depth": "8",
+      "model": "additive",
+      "metric": "standardized_MSE",
+      "mean_abs_task_mean_change": "0"
+    },
+    {
+      "role": "Cmodel",
+      "depth": "8",
+      "model": "compositional_ridge",
+      "metric": "standardized_MSE",
+      "mean_abs_task_mean_change": "0"
+    },
+    {
+      "role": "Cmodel",
+      "depth": "8",
+      "model": "NC_native_effect",
+      "metric": "standardized_MSE",
+      "mean_abs_task_mean_change": "0"
+    },
+    {
+      "role": "Cmodel",
+      "depth": "8",
+      "model": "native_effect_ridge",
+      "metric": "standardized_MSE",
+      "mean_abs_task_mean_change": "0"
+    },
+    {
+      "role": "Cmodel",
+      "depth": "135",
+      "model": "selected_CPA",
+      "metric": "standardized_MSE",
+      "mean_abs_task_mean_change": "0.001755037788981073"
+    },
+    {
+      "role": "Cmodel",
+      "depth": "135",
+      "model": "original_CPA_fixed",
+      "metric": "standardized_MSE",
+      "mean_abs_task_mean_change": "0"
+    },
+    {
+      "role": "Cmodel",
+      "depth": "135",
+      "model": "additive",
+      "metric": "standardized_MSE",
+      "mean_abs_task_mean_change": "0"
+    },
+    {
+      "role": "Cmodel",
+      "depth": "135",
+      "model": "compositional_ridge",
+      "metric": "standardized_MSE",
+      "mean_abs_task_mean_change": "0"
+    },
+    {
+      "role": "Cmodel",
+      "depth": "135",
+      "model": "NC_native_effect",
+      "metric": "standardized_MSE",
+      "mean_abs_task_mean_change": "0"
+    },
+    {
+      "role": "Cmodel",
+      "depth": "135",
+      "model": "native_effect_ridge",
+      "metric": "standardized_MSE",
+      "mean_abs_task_mean_change": "0"
+    }
+  ],
+  "original_fit_vs_refit": "The fixed-output CPA uses the original fit; input-conditioned selected_CPA uses the validation-selected refit. Parameters remain fixed during reference reassignment."
+}

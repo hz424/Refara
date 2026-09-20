@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "epochs": 200,
+  "train_cells": 68002,
+  "inference_controls": 3639,
+  "test_combinations": 55,
+  "features": 2000,
+  "training_seconds": 506.525801545009,
+  "state_sha256": "01c2feef6ed217f677c18797f5766b4eafe777541e1ea53fc101c8edabf364ac",
+  "model_protocol_sha256": "0161d1528ed28bbea9fa3e9b6c54635251d1a5218a380bb8fd78cf3098d0e60a",
+  "native_inference_check_max_abs": 4.291534423828125e-06,
+  "native_inference_check_controls_per_task": 16,
+  "prediction_arrays_hashed_and_finite": 55,
+  "training_control_overlap": 0,
+  "treated_cells_used_as_input": 0,
+  "omitted_logging_metrics": [
+    "r2_mean",
+    "r2_var"
+  ]
+}

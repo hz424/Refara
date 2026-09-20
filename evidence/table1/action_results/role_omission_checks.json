@@ -1,0 +1,1712 @@
+[
+  {
+    "case_id": "Norman_0_input_replacement",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "Norman_0_input_replacement",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_0_input_replacement",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_0_paired_input_effect",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "Norman_0_paired_input_effect",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_0_paired_input_effect",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_0_prediction_baseline",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "Norman_0_prediction_baseline",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_0_prediction_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_0_observation_baseline",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "Norman_0_observation_baseline",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_0_observation_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_0_common_scoring_reference",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "Norman_0_common_scoring_reference",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_0_common_scoring_reference",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_0_same_target_storage_encoding",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "Norman_0_same_target_storage_encoding",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_0_same_target_storage_encoding",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_0_task_switch",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "Norman_0_task_switch",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_0_task_switch",
+    "field": "observation_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_1_input_replacement",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_1_input_replacement",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_1_input_replacement",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_1_paired_input_effect",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_1_paired_input_effect",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_1_paired_input_effect",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_1_prediction_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_1_prediction_baseline",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_1_prediction_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_1_observation_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_1_observation_baseline",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_1_observation_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_1_common_scoring_reference",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_1_common_scoring_reference",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_1_common_scoring_reference",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_1_same_target_storage_encoding",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_1_same_target_storage_encoding",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_1_same_target_storage_encoding",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_1_task_switch",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_1_task_switch",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_1_task_switch",
+    "field": "observation_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_2_input_replacement",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_2_input_replacement",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_2_input_replacement",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_2_paired_input_effect",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_2_paired_input_effect",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_2_paired_input_effect",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_2_prediction_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_2_prediction_baseline",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_2_prediction_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_2_observation_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_2_observation_baseline",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_2_observation_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_2_common_scoring_reference",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_2_common_scoring_reference",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_2_common_scoring_reference",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_2_same_target_storage_encoding",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_2_same_target_storage_encoding",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_2_same_target_storage_encoding",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_2_task_switch",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_2_task_switch",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_2_task_switch",
+    "field": "observation_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_3_input_replacement",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_3_input_replacement",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_3_input_replacement",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_3_paired_input_effect",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_3_paired_input_effect",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_3_paired_input_effect",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_3_prediction_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_3_prediction_baseline",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_3_prediction_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_3_observation_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_3_observation_baseline",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_3_observation_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_3_common_scoring_reference",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_3_common_scoring_reference",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_3_common_scoring_reference",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_3_same_target_storage_encoding",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_3_same_target_storage_encoding",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "Norman_3_same_target_storage_encoding",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_3_task_switch",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_3_task_switch",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_3_task_switch",
+    "field": "observation_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_4_input_replacement",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_4_input_replacement",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_4_input_replacement",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_4_paired_input_effect",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_4_paired_input_effect",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_4_paired_input_effect",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_4_prediction_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_4_prediction_baseline",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_4_prediction_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_4_observation_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_4_observation_baseline",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_4_observation_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_4_common_scoring_reference",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_4_common_scoring_reference",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_4_common_scoring_reference",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_4_same_target_storage_encoding",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_4_same_target_storage_encoding",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_4_same_target_storage_encoding",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_4_task_switch",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_4_task_switch",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_4_task_switch",
+    "field": "observation_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_5_input_replacement",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_5_input_replacement",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_5_input_replacement",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_5_paired_input_effect",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_5_paired_input_effect",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_5_paired_input_effect",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_5_prediction_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_5_prediction_baseline",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_5_prediction_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_5_observation_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_5_observation_baseline",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_5_observation_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_5_common_scoring_reference",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_5_common_scoring_reference",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_5_common_scoring_reference",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_5_same_target_storage_encoding",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_5_same_target_storage_encoding",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_5_same_target_storage_encoding",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "Norman_5_task_switch",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_5_task_switch",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Norman_5_task_switch",
+    "field": "observation_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Kang_0_unused_roles_Kang",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "Kang_0_unused_roles_Kang",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Kang_0_unused_roles_Kang",
+    "field": "observation_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Kang_1_unused_roles_Kang",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "Kang_1_unused_roles_Kang",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "Kang_1_unused_roles_Kang",
+    "field": "observation_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_0_input_replacement",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_0_input_replacement",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_0_input_replacement",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_0_paired_input_effect",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_0_paired_input_effect",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_0_paired_input_effect",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_0_prediction_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_0_prediction_baseline",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_0_prediction_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_0_observation_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_0_observation_baseline",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_0_observation_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_0_common_scoring_reference",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_0_common_scoring_reference",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_0_common_scoring_reference",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_0_same_target_storage_encoding",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_0_same_target_storage_encoding",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_0_same_target_storage_encoding",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_1_input_replacement",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_1_input_replacement",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_1_input_replacement",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_1_paired_input_effect",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_1_paired_input_effect",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_1_paired_input_effect",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_1_prediction_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_1_prediction_baseline",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_1_prediction_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_1_observation_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_1_observation_baseline",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_1_observation_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_1_common_scoring_reference",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_1_common_scoring_reference",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_1_common_scoring_reference",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_1_same_target_storage_encoding",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_1_same_target_storage_encoding",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_1_same_target_storage_encoding",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_2_input_replacement",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_2_input_replacement",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_2_input_replacement",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_2_paired_input_effect",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_2_paired_input_effect",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_2_paired_input_effect",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_2_prediction_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_2_prediction_baseline",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_2_prediction_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_2_observation_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_2_observation_baseline",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_2_observation_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_2_common_scoring_reference",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_2_common_scoring_reference",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_2_common_scoring_reference",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_2_same_target_storage_encoding",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_2_same_target_storage_encoding",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_2_same_target_storage_encoding",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_3_input_replacement",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_3_input_replacement",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_3_input_replacement",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_3_paired_input_effect",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_3_paired_input_effect",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_3_paired_input_effect",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_3_prediction_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_3_prediction_baseline",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_3_prediction_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_3_observation_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_3_observation_baseline",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_3_observation_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_3_common_scoring_reference",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_3_common_scoring_reference",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_3_common_scoring_reference",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_3_same_target_storage_encoding",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_3_same_target_storage_encoding",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_3_same_target_storage_encoding",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_4_input_replacement",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_4_input_replacement",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_4_input_replacement",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_4_paired_input_effect",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_4_paired_input_effect",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_4_paired_input_effect",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_4_prediction_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_4_prediction_baseline",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_4_prediction_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_4_observation_baseline",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_4_observation_baseline",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_4_observation_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_4_common_scoring_reference",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_4_common_scoring_reference",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_4_common_scoring_reference",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_4_same_target_storage_encoding",
+    "field": "model_input_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_4_same_target_storage_encoding",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_4_same_target_storage_encoding",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_5_input_replacement",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_5_input_replacement",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_5_input_replacement",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_5_paired_input_effect",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_5_paired_input_effect",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_5_paired_input_effect",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_5_prediction_baseline",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_5_prediction_baseline",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_5_prediction_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_5_observation_baseline",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_5_observation_baseline",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_5_observation_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_5_common_scoring_reference",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_5_common_scoring_reference",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_5_common_scoring_reference",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_5_same_target_storage_encoding",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_5_same_target_storage_encoding",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_5_same_target_storage_encoding",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_5_task_switch",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_5_task_switch",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_5_task_switch",
+    "field": "observation_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_6_input_replacement",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_6_input_replacement",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_6_input_replacement",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_6_paired_input_effect",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_6_paired_input_effect",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_6_paired_input_effect",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_6_prediction_baseline",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_6_prediction_baseline",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_6_prediction_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_6_observation_baseline",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_6_observation_baseline",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_6_observation_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_6_common_scoring_reference",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_6_common_scoring_reference",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_6_common_scoring_reference",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_6_same_target_storage_encoding",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_6_same_target_storage_encoding",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_6_same_target_storage_encoding",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_6_task_switch",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_6_task_switch",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_6_task_switch",
+    "field": "observation_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_7_input_replacement",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_7_input_replacement",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_7_input_replacement",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_7_paired_input_effect",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_7_paired_input_effect",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_7_paired_input_effect",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_7_prediction_baseline",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_7_prediction_baseline",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_7_prediction_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_7_observation_baseline",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_7_observation_baseline",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_7_observation_baseline",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_7_common_scoring_reference",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_7_common_scoring_reference",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_7_common_scoring_reference",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_7_same_target_storage_encoding",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_7_same_target_storage_encoding",
+    "field": "prediction_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: prediction_reference_id"
+  },
+  {
+    "case_id": "PBMC_7_same_target_storage_encoding",
+    "field": "observation_reference_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: observation_reference_id"
+  },
+  {
+    "case_id": "PBMC_7_task_switch",
+    "field": "model_input_id",
+    "result": "missing_active_information",
+    "message": "Missing active declaration: model_input_id"
+  },
+  {
+    "case_id": "PBMC_7_task_switch",
+    "field": "prediction_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  },
+  {
+    "case_id": "PBMC_7_task_switch",
+    "field": "observation_reference_id",
+    "result": "valid_unused_role_omission",
+    "message": null
+  }
+]

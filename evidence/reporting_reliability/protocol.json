@@ -1,0 +1,965 @@
+{
+  "array_contracts": {
+    "A": {
+      "anchor_index": 0,
+      "array_bytes_before_compression": 7160832,
+      "compressed_bytes": 6634899,
+      "donors": 46,
+      "dtype": "float64",
+      "family_order": [
+        "NC",
+        "CM",
+        "TW",
+        "PCA",
+        "RBF",
+        "scGen",
+        "CellOT"
+      ],
+      "fit_loss_shape": [
+        777,
+        64,
+        11
+      ],
+      "fits": [
+        {
+          "family": "NC",
+          "seed": null
+        },
+        {
+          "family": "CM",
+          "seed": null
+        },
+        {
+          "family": "TW",
+          "seed": null
+        },
+        {
+          "family": "PCA",
+          "seed": null
+        },
+        {
+          "family": "RBF",
+          "seed": null
+        },
+        {
+          "family": "scGen",
+          "seed": 17
+        },
+        {
+          "family": "scGen",
+          "seed": 29
+        },
+        {
+          "family": "scGen",
+          "seed": 43
+        },
+        {
+          "family": "CellOT",
+          "seed": 17
+        },
+        {
+          "family": "CellOT",
+          "seed": 29
+        },
+        {
+          "family": "CellOT",
+          "seed": 43
+        }
+      ],
+      "fold_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          32,
+          33
+        ],
+        [
+          34,
+          35
+        ],
+        [
+          36,
+          37
+        ],
+        [
+          38,
+          39
+        ],
+        [
+          40,
+          41
+        ],
+        [
+          42,
+          43
+        ],
+        [
+          44,
+          45
+        ],
+        [
+          46,
+          47
+        ],
+        [
+          48,
+          49
+        ],
+        [
+          50,
+          51
+        ],
+        [
+          52,
+          53
+        ],
+        [
+          54,
+          55
+        ],
+        [
+          56,
+          57
+        ],
+        [
+          58,
+          59
+        ],
+        [
+          60,
+          61
+        ],
+        [
+          62,
+          63
+        ]
+      ],
+      "loss_shape": [
+        777,
+        64,
+        7
+      ],
+      "lossless_exact_array_roundtrip": true,
+      "seed_reduction": "mean of squared losses",
+      "tasks": 777
+    },
+    "C": {
+      "anchor_index": 0,
+      "array_bytes_before_compression": 1769472,
+      "compressed_bytes": 1628200,
+      "donors": 8,
+      "dtype": "float64",
+      "family_order": [
+        "NC",
+        "CM",
+        "TW",
+        "PCA",
+        "RBF",
+        "scGen",
+        "CellOT"
+      ],
+      "fit_loss_shape": [
+        192,
+        64,
+        11
+      ],
+      "fits": [
+        {
+          "family": "NC",
+          "seed": null
+        },
+        {
+          "family": "CM",
+          "seed": null
+        },
+        {
+          "family": "TW",
+          "seed": null
+        },
+        {
+          "family": "PCA",
+          "seed": null
+        },
+        {
+          "family": "RBF",
+          "seed": null
+        },
+        {
+          "family": "scGen",
+          "seed": 17
+        },
+        {
+          "family": "scGen",
+          "seed": 29
+        },
+        {
+          "family": "scGen",
+          "seed": 43
+        },
+        {
+          "family": "CellOT",
+          "seed": 17
+        },
+        {
+          "family": "CellOT",
+          "seed": 29
+        },
+        {
+          "family": "CellOT",
+          "seed": 43
+        }
+      ],
+      "fold_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          32,
+          33
+        ],
+        [
+          34,
+          35
+        ],
+        [
+          36,
+          37
+        ],
+        [
+          38,
+          39
+        ],
+        [
+          40,
+          41
+        ],
+        [
+          42,
+          43
+        ],
+        [
+          44,
+          45
+        ],
+        [
+          46,
+          47
+        ],
+        [
+          48,
+          49
+        ],
+        [
+          50,
+          51
+        ],
+        [
+          52,
+          53
+        ],
+        [
+          54,
+          55
+        ],
+        [
+          56,
+          57
+        ],
+        [
+          58,
+          59
+        ],
+        [
+          60,
+          61
+        ],
+        [
+          62,
+          63
+        ]
+      ],
+      "loss_shape": [
+        192,
+        64,
+        7
+      ],
+      "lossless_exact_array_roundtrip": true,
+      "seed_reduction": "mean of squared losses",
+      "tasks": 192
+    },
+    "P": {
+      "anchor_index": 0,
+      "array_bytes_before_compression": 2211840,
+      "compressed_bytes": 2052762,
+      "donors": 16,
+      "dtype": "float64",
+      "family_order": [
+        "NC",
+        "CM",
+        "TW",
+        "PCA",
+        "RBF",
+        "scGen",
+        "CellOT"
+      ],
+      "fit_loss_shape": [
+        240,
+        64,
+        11
+      ],
+      "fits": [
+        {
+          "family": "NC",
+          "seed": null
+        },
+        {
+          "family": "CM",
+          "seed": null
+        },
+        {
+          "family": "TW",
+          "seed": null
+        },
+        {
+          "family": "PCA",
+          "seed": null
+        },
+        {
+          "family": "RBF",
+          "seed": null
+        },
+        {
+          "family": "scGen",
+          "seed": 17
+        },
+        {
+          "family": "scGen",
+          "seed": 29
+        },
+        {
+          "family": "scGen",
+          "seed": 43
+        },
+        {
+          "family": "CellOT",
+          "seed": 17
+        },
+        {
+          "family": "CellOT",
+          "seed": 29
+        },
+        {
+          "family": "CellOT",
+          "seed": 43
+        }
+      ],
+      "fold_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          32,
+          33
+        ],
+        [
+          34,
+          35
+        ],
+        [
+          36,
+          37
+        ],
+        [
+          38,
+          39
+        ],
+        [
+          40,
+          41
+        ],
+        [
+          42,
+          43
+        ],
+        [
+          44,
+          45
+        ],
+        [
+          46,
+          47
+        ],
+        [
+          48,
+          49
+        ],
+        [
+          50,
+          51
+        ],
+        [
+          52,
+          53
+        ],
+        [
+          54,
+          55
+        ],
+        [
+          56,
+          57
+        ],
+        [
+          58,
+          59
+        ],
+        [
+          60,
+          61
+        ],
+        [
+          62,
+          63
+        ]
+      ],
+      "loss_shape": [
+        240,
+        64,
+        7
+      ],
+      "lossless_exact_array_roundtrip": true,
+      "seed_reduction": "mean of squared losses",
+      "tasks": 240
+    }
+  },
+  "assessment_bootstrap_resamples": 19999,
+  "assessment_bootstrap_seed": 20260923,
+  "classification": {
+    "conclusion_vocabulary": "Observed descriptive advantage requires lowerR without higherU at the same M. Any paired bound is assumption-conditional; do not call this confirmed reporting superiority.",
+    "denominators": "N=held+M; M=S+R+U; R/M,U/M,S/M are null at M0. Report natural allhold/lowcoverage explicitly.",
+    "paired_bounds": "Existing finite-panel sign-set/risk-difference algebra may be reported conditional on these working intervals. Candidates share signs, models and donors; no independent-pair binomial intervals.",
+    "reversed": "Oriented interval upper<0",
+    "supported": "Published-direction oriented interval lower>0",
+    "unresolved": "Interval touches/crosses0 or is unassessable"
+  },
+  "compression_scope": "All float64 family and per-fit scored losses, row ordering, allocation ordering and pool membership needed for the reporting comparison are preserved exactly. Raw expression, per-gene predictions, checkpoints, cell identifiers, and repeated per-coverage JSON detail are excluded. This replays saved scores, not model inference.",
+  "coverage": {
+    "attainable_counts": "A_j={0} plus every complete prefix-block count of the hard-eligible set for rule j. Common counts A_common are the intersection across all five primary families.",
+    "composition": "Publish selected task/pair IDs and composition per rule at each coverage. Different selected subsets at equal M are part of the reporting-policy effect; expose them, and do not compute a test treating them as independent Bernoulli samples.",
+    "fixed_roster": "The same N task/model-pair candidates for all five primary families. Report every candidate as direction a/b or hold with reason.",
+    "fixed_threshold_companion": "Natural threshold results are a mandatory primary practical-utility display alongside the matched endpoint: each family natural hard-gated coverage, all-hold status, reasons and S/R/U on its actual M. They remain reportable if common matched coverage is empty. Unequal-coverage risk comparisons do not replace or masquerade as the primary matched-coverage comparison.",
+    "hard_holds": "A numeric direction tie, unavailable score, failed minimum-gap/stability gate or missing calibration stays held at every matched coverage. Low confidence is not rescued to meet a quota.",
+    "infeasible": "If M_star does not exist positively, is below 10 or below 0.25*N, label only the matched-coverage endpoint primary_matched_coverage_not_evaluable. The experiment and natural-coverage utility results remain reportable. A rule issuing zero directions has an observed all_hold/zero_coverage utility failure on this panel, with M=0 and conditional R/M,U/M null. Disclose all scores, penalties, holds and attainable counts; do not loosen the rule. Proceed with previously frozen natural-coverage and secondary evaluations using their original thresholds; no primary substitution or retrospective redesign.",
+    "minimum_primary_actual_coverage": 0.25,
+    "minimum_primary_count": 10,
+    "natural_coverage_failure": "Record no_publications as an observed failure to issue directions at the declared confidence/gap/budget, not as missing research or evidence of zero risk. Coverage below the prespecified practical floor is inadequate practical coverage, even when the conditional reversed fraction is zero.",
+    "primary_actual_count": "Largest common whole-tie-block count M <= floor(0.5*N). For primary N=63, M<=31; matched endpoint evaluable only if M>=16 (which also exceeds the floor10). For secondary N=504, M<=252 and practical coverage floor126. Natural sets remain reportable at every M, including zero.",
+    "primary_nominal_coverage": 0.5,
+    "score_ties": "For each rule sort eligible reliability scores descending. Values within tau form maximal consecutive blocks; include or exclude an entire block. Do not use task IDs, pair labels, random tie breaking or ceil(q*N) to split a score block.",
+    "secondary_actual_counts": "For each target q use max common attainable m<=floor(q*N). Remove duplicate m values, report requested and actual q, and retain m=0 with risk ratios null. No interpolation between attainable points and no claim of equal coverage if counts differ.",
+    "secondary_nominal_grid": [
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      1.0
+    ],
+    "separate_families": "Run the coverage algorithm independently for primary N63 and secondary all-context N504. The secondary family includes CD4 Naive but uses its own N504 multiplicity; never substitute it for primary.",
+    "thresholds": "Record an explicit threshold interval producing each selected whole-block prefix, the selected IDs and hash. It is acceptable to select thresholds from P scores without A outcomes because the matching algorithm and all directions are frozen before A."
+  },
+  "first_two_crossfit_companion": {
+    "allocations": [
+      0,
+      1
+    ],
+    "cost": "Uncached input forwards16 per state fit/task versus8 anchor and512 fullbank; point caching uses at most16 distinct control forwards per fit/task. Actual cache fills, calibration and score arithmetic separately reported.",
+    "direction": "sign_tau of mean margin",
+    "estimate": "Mean per-seed squared losses across first complementary partition, then equal P donors.",
+    "report": "Natural coverage and assessment S/R/U using the same primary A64 intervals. At any primary matched M, show this companion only if that exact M is attainable by its own whole-tie prefix; otherwise record unavailable, without forcing ties or replacing M.",
+    "role": "Prespecified secondary cost companion; not one of five primary families and cannot change common five-rule M.",
+    "score": "absolute mean margin"
+  },
+  "five_rules": {
+    "cross_fitting": {
+      "candidate_direction": "sign_tau(d_cf_c)",
+      "equivalence_check": "For equal fold sizes and identical arithmetic weights, d_cf equals the repeated_mean_margin companion. Do not fabricate a distinction with different cells, models, seeds or precision. Difference from repeated_splitting primary is the reliability functional (mean margin versus lower allocation quantile).",
+      "estimate": "For every unit/task, average already-squared per-seed loss over the two folds of each of the 32 partitions, then across partitions, then across P donor vectors under the stated working model. Subtract mean loss_A from mean loss_B.",
+      "hard_eligibility": "Nonzero direction and finite fold-complete scores.",
+      "reliability_score": "abs(d_cf_c)",
+      "secondary_cost_frontier": "Report the prespecified first-partition (two loss) crossfit and 32-partition version separately; no choosing the better one using A.",
+      "source": "Ordinary two-fold crossfit scoring using all cells as input and held-out observed reference in complementary directions."
+    },
+    "existing_refara_reporting": {
+      "calibration_case": "Old Parse calibration donor x all eight supported contexts x three matched conditions; 8 donors x 24 tasks = 192 cases, provided adapter verifies complete metadata support. Same seven families, 1968 score genes, B16/T8 and 64 oriented O-half allocations.",
+      "calibration_to_publication_adaptation": "The calibration cases are individual C unit x task margins, while a publication candidate is a task margin pooled over P units. The maximum-displacement algebra is unchanged, but this aggregation-level transfer is an explicit prespecified adaptation. Its calibration range is not automatically a valid bound for the new pooled-population estimand. Record both levels and evaluate the rule neutrally.",
+      "calibration_transfer": "Record the Parse-to-GSE transfer explicitly. Retain all-hold results caused by this maximum; do not cap, rescale or swap to a GSE-derived penalty after inspecting results.",
+      "candidate_direction": "sign_tau(d0_c)",
+      "estimate": "d0_c: the same pooled P anchor margin as score_margin.",
+      "geometry": "No automatic geometry_scaled upgrade: only a separate secondary variant if the exact geometry definition and calibration are justified and frozen before P. No post-assessment choice among REFARA variants.",
+      "hard_eligibility": "Nonzero direction, complete calibration support for the pair/B, reliability_score > primary_practical_gap + tau.",
+      "historical_non_equivalence": "Historical repeated_primary was a calibrated maximum-displacement rule, not the new repeated-splitting quantile. Its old allocation unsupported event is not final interval unresolved.",
+      "penalty": "For each of 21 ordered-family pairs, maximum absolute displacement from its case-specific allocation-0 margin over all 192 C cases and all 64 allocations. Reuse this pair penalty unchanged for every GSE task; never fit it on GSE publication or assessment. This is a cross-dataset, individual-case-to-pooled-publication adaptation, not a guaranteed error bound.",
+      "reliability_score": "abs(d0_c)-B_pair,B",
+      "source": "Adaptation of current organizer.py _calibrate / repeated_primary empirical-displacement algebra to independent-unit reporting; not an exact reuse of the historical task-level sampling design or old unsupported endpoint."
+    },
+    "independent_unit_resampling": {
+      "bootstrap_unit": "For each context independently, sort metadata-eligible P donor IDs, draw np.random.default_rng(20260922).integers(0,n_P,size=(9999,n_P)), and reuse that exact schedule for its 3conditions x21pairs. Primary n_P=16; secondary uses its fixed eligible P roster. Repeat the same seed for each context. No cross-context joint-bootstrap interval is inferred from these publication ranking scores.",
+      "calibration_boundary": "Percentile scores are approximate uncertainty summaries, potentially inaccurate under skew, small independent-unit count or rare blocks. Use the declared pre-outcome simulation/precision gate; never choose percentile versus studentized after P/A results.",
+      "candidate_direction": "sign_tau(d_boot_c)",
+      "constant_and_degenerate_draws": "Retain every resample, including zero-variance and all-equal draws. A nonzero constant sample yields its ordinary constant percentile score; do not remove or artificially penalize it. No calibration guarantee follows from that score. A zero mean within tau is a direction tie and remains hold. Final independent assessment supplies the common inferential check.",
+      "estimate": "d_boot_c=mean_P_units x_unit,c, where x is the same per-unit crossfit margin.",
+      "hard_eligibility": "Nonzero candidate direction, the prespecified minimum P-unit support, finite complete raw unit margins and finite percentile score; score > primary_practical_gap + tau. Do not impose a per-bootstrap-draw SE gate.",
+      "label_in_this_run": "donor_resampling_working_independence_baseline",
+      "minimum_P_donors": 2,
+      "reliability_score": "Orient each complete P-unit crossfit-averaged margin by sign_tau(d_boot_c). Resample P donor IDs under the stated working model jointly across all candidates, retaining all nested data, and compute the equal-unit mean for each draw. Score is the empirical 0.05 lower quantile of those oriented bootstrap means: sorted zero-based index floor(0.05*(resamples-1)), no interpolation. This ordinary percentile-bootstrap lower score includes all repeated and constant resamples.",
+      "resamples": 9999,
+      "resamples_proposal": 9999,
+      "seed": 20260922,
+      "seed_proposal": 20260922,
+      "source": "Ordinary whole-independent-unit percentile bootstrap lower-confidence score, using the same crossfit-averaged unit margins. This is a publication-ranking/release baseline, not a claim of calibrated final-assessment coverage."
+    },
+    "repeated_splitting": {
+      "candidate_direction": "sign_tau(dbar_c)",
+      "estimate": "dbar_c=mean_r mean_P_units margin(unit,c,r), over all 64 oriented splits.",
+      "hard_eligibility": "Nonzero direction and reliability_score > primary_practical_gap + tau.",
+      "interpretation": "Allocation stability score, not an validated donor-population confidence interval or guaranteed coverage probability.",
+      "reliability_score": "For d=sign_tau(dbar_c), take the empirical 0.05 lower quantile of {d*mean_P_units margin(unit,c,r)}. Use order statistic index floor(0.05*(64-1)) in zero-based sorted order, with no interpolation.",
+      "source": "Stability across repeated balanced reference allocations on publication units.",
+      "strong_companion": "Always emit repeated_mean_margin: same dbar direction and abs(dbar) score. With the balanced antithetic bank it is exactly the cross_fitting mean-margin score below. Verify and report this identity rather than omitting the strong averaging baseline or claiming five distinct numerical procedures."
+    },
+    "score_margin": {
+      "candidate_direction": "sign_tau(d0_c)",
+      "estimate": "d0_c=mean_P_units margin(unit,c,anchor), using frozen equal-unit/population weights.",
+      "hard_eligibility": "candidate direction nonzero; finite compatible scores.",
+      "natural_release": "score > primary_practical_gap + tau.",
+      "reliability_score": "abs(d0_c)",
+      "source": "Strong simple anchor-margin ranking and threshold baseline."
+    }
+  },
+  "local_freeze_utc": "2026-09-20T07:12:10.208893+00:00",
+  "mode": "retrospective_used_data_only",
+  "native_unit_caveat": "Rows are donors under a conditional working-independence model within existing experimental pools. Donor identity does not prove independent culture replication; intervals and finite-panel bounds are assumption-conditional diagnostics, not validated coverage guarantees or new-pool inference.",
+  "numerical_expected_tolerance": {
+    "absolute": 1e-12,
+    "reason": "SciPy t-quantiles may differ in final floating-point bits. Decisions use the original strict zero tests, never this comparison tolerance.",
+    "relative": 1e-12
+  },
+  "original_protocol_sha256": "6bc1c58d4c449cd07f6c87f5b9fc054ffc7a5e8ca797f154fcc0fa20a2330812",
+  "original_result_sha256": "05c4617c5ec382d4865ed9e8aaab1e816d86e2acd19bea243363902de28fb597",
+  "pool_sensitivity": {
+    "held_directions": "Publication directions, rule scores, penalties and M remain frozen; never refit rules after excluding pools.",
+    "interpretation": "Descriptive perturbation of donor composition and shared technical exposure. It changes the assessed donor panel, is not a cluster confidence interval and cannot certify independent new-pool replication. No pool sensitivity replaces the common primary interval.",
+    "method": "leave_one_observed_physical_pool_exclusion_point_margins",
+    "outputs": [
+      "pool_id",
+      "comparison_id",
+      "excluded_donors",
+      "remaining_donors",
+      "full_mean_margin",
+      "exclusion_mean_margin",
+      "full_point_direction",
+      "exclusion_point_direction",
+      "changed_point_sign",
+      "zero_or_unavailable_reason"
+    ],
+    "per_task_exclusion": "For each A task and pool, remove donor rows whose control_pool or that condition treated_pool equals the excluded pool. Recompute the donor mean of the same64-allocation margin. Use condition-specific treatment pools, not the union of unrelated task treatment pools.",
+    "pool_ids": "All12 pool IDs from original donor_split, in numeric order; no outcome-selected pools.",
+    "unavailable": "If no donors remain, record unavailable without dropping comparison or pool."
+  },
+  "primary_assessment": {
+    "N": 63,
+    "bootstrap_resamples": 19999,
+    "bootstrap_seed": 20260923,
+    "bootstrap_zeroSE": "0/0 becomes0; nonzero/0 becomes signed infinity. Retain all draws. If q is infinite, mark resulting intervals unassessable; do not fall back to narrower t-only.",
+    "confidence": 0.95,
+    "constant_missing": "Any missing declared donor margin or zero/nonfinite original SE is unassessable. No automatic structural-zero declaration from constant observed margins. This run does not assert identical-function evidence for distinct model families.",
+    "donor_order": "Sort donor IDs and comparison IDs before resampling as in the bound mathematical implementation. Bootstrap generator numpy.random.default_rng(20260923), sample donor indices with replacement.",
+    "donors": 46,
+    "envelope": "min of component lower bounds; max of component upper bounds. Report both components plus envelope.",
+    "formula_maxT": "Resample whole A donor vectors jointly across all63 candidates. For each bootstrap T=(bootstrap_mean-original_mean)/bootstrap_SE. Critical q is higher empirical .95 quantile (index ceil(.95*(19999-1))) of max(abs(T)) over original positive-SE assessable candidates.",
+    "formula_t": "mean +/- t_(1-.05/(2*63),45)*sample_sd/sqrt(46). Exact classical t calibration would require iid Gaussian donor vectors marginally per contrast; this is not demonstrated here.",
+    "implementation": "Reuse reviewed mathematical formulas through an explicitly retrospective wrapper or copied module bound to source hash. Do not label real scores synthetic to bypass the original runner mode guard.",
+    "method": "bonferroni_paired_t_joint_max_studentized_bootstrap_envelope_working_donor_v1",
+    "minimum_units": 2,
+    "multiplicity": "All63 frozen comparisons, even held/unassessable ones; same interval per comparison for all rules and coverage points."
+  },
+  "prior_exposure": "All datasets and historical assessment outcomes were used or inspected before this comparison; the original P16/A46 assignment is retained. This is not untouched validation.",
+  "public_preregistration": false,
+  "publication_bootstrap_resamples": 9999,
+  "publication_bootstrap_seed": 20260922,
+  "rosters": {
+    "conditions": [
+      "IFN-beta",
+      "IFN-gamma",
+      "TNF-alpha"
+    ],
+    "context_donor_counts": {
+      "B Intermediate/Memory": {
+        "assessment": 15,
+        "selection": 4
+      },
+      "B Naive": {
+        "assessment": 25,
+        "selection": 4
+      },
+      "CD14 Mono": {
+        "assessment": 37,
+        "selection": 14
+      },
+      "CD4 Memory": {
+        "assessment": 45,
+        "selection": 16
+      },
+      "CD4 Naive": {
+        "assessment": 46,
+        "selection": 16
+      },
+      "CD8 Memory": {
+        "assessment": 26,
+        "selection": 8
+      },
+      "CD8 Naive": {
+        "assessment": 41,
+        "selection": 12
+      },
+      "NK": {
+        "assessment": 24,
+        "selection": 6
+      }
+    },
+    "fit_count": 11,
+    "fit_seeds": {
+      "CM": [
+        null
+      ],
+      "CellOT": [
+        17,
+        29,
+        43
+      ],
+      "NC": [
+        null
+      ],
+      "PCA": [
+        null
+      ],
+      "RBF": [
+        null
+      ],
+      "TW": [
+        null
+      ],
+      "scGen": [
+        17,
+        29,
+        43
+      ]
+    },
+    "missing_context": "Metadata-ineligible donor-context pairs are absent from that task population, not zero losses and not numerical failures. Freeze each task roster before this rerun. All models/rules use exactly the same roster per task.",
+    "model_order": [
+      "NC",
+      "CM",
+      "TW",
+      "PCA",
+      "RBF",
+      "scGen",
+      "CellOT"
+    ],
+    "primary_N": 63,
+    "primary_context": "CD4 Naive",
+    "primary_tasks": 3,
+    "secondary_N": 504,
+    "secondary_contexts": [
+      "B Intermediate/Memory",
+      "B Naive",
+      "CD14 Mono",
+      "CD4 Memory",
+      "CD4 Naive",
+      "CD8 Memory",
+      "CD8 Naive",
+      "NK"
+    ],
+    "secondary_support_boundary": "Retain exactly the old complete-three-condition donor-context eligibility blocks: 1017 donor tasks and339 donor-contexts. A wider single-condition-support audit cannot expand this frozen secondary roster.",
+    "secondary_tasks": 24,
+    "task_donor_weighting": "Equal donors within each context-condition task, independently for P and A. Do not reuse historical within_donor_weight across different contexts: this study reports per-task comparisons. Each task-pair is one reporting opportunity.",
+    "unexpected_missing": "Keep every declared comparison in N; unassessable assessment counts as unresolved for any published direction. A numerical/runtime failure cannot silently shrink the roster."
+  },
+  "schema": "refara.reporting_reliability.retrospective.v1",
+  "scientific_confirmation": false,
+  "scope": {
+    "conditional_model": "Treat donor paired-margin vectors as exchangeable, independent observations for a working approximation conditional on fixed models, reference schedule and the observed technical acquisition environment. Shared pools can violate residual independence or exchangeability; this assumption is stated, not established.",
+    "previous_result": "Preserve the earlier frozen family-selection result: all B16 policies selected PCA, observed loss gain 0%. Reporting reliability is a different endpoint and does not overturn that result.",
+    "prior_exposure": "All GSE181897 and Parse outcomes belong to disclosed development/retrospective evidence. Recomputed allocations or a preserved historical P/A split do not create untouched validation.",
+    "question": "Retrospective comparison of five rules for publishing task-specific model-comparison directions at attainable coverage.",
+    "scope_limit": "No new-pool, new-study, causal treatment or independent-native-experiment claim. Every interval-derived classification and sign-risk bound is a descriptive, assumption-conditional diagnostic; no confirmed superiority or validated nominal coverage claim.",
+    "split": "Preserve original selection donors as publication P16 and assessment donors as A46; do not reassign. C is old Parse8. Jerber is excluded and remains sealed."
+  },
+  "score_contract": {
+    "B": 16,
+    "Parse_control_membership": "Original canonical 144-control order, first16; reuse old validated model point predictions at those same16 controls.",
+    "Parse_treated_membership": {
+      "key": "UTF8 json.dumps([salt,donor,context,condition,obs_index],ensure_ascii=False,separators=(comma,colon))",
+      "order": "Sort by full SHA256 digest bytes ascending, with obs_index UTF8 bytes as deterministic tie-break; take first8.",
+      "salt": "REFARA_GSE181897_RETROSPECTIVE_20260920_V1:PARSE_TREATED8",
+      "source": "Existing Parse cell_axis.tsv.gz; source path and complete digest bound by adapter manifest before freeze."
+    },
+    "allocation_count": 64,
+    "allocation_ids": "0..63; allocation 2*r and 2*r+1 are exact complementary orientation swaps.",
+    "allocation_rng": {
+      "condition_key": "No condition key: all three conditions reuse the same context control schedule.",
+      "generator": "numpy.random.Generator(numpy.random.PCG64(seed_integer)).permutation(16)",
+      "namespace": "REFARA_GSE181897_RETROSPECTIVE_20260920_V1",
+      "native_donor": "Original donor identity used by the score adapter, with native-to-publication-alias mapping bound in metadata; never swap native donor with public alias without regenerating the schedule contract.",
+      "orientation": "2*r uses permutation[:8] for input/centering and permutation[8:] for observation; 2*r+1 swaps these exact sets",
+      "partition_labels": [
+        "C",
+        "P",
+        "A"
+      ],
+      "repeat_indices": "0..31",
+      "seed_integer": "int.from_bytes(sha256(serialized_key).digest()[:16], byteorder=big)",
+      "serialized_key": "UTF8 json.dumps([namespace,20260921,partition,native_donor,context,repeat],ensure_ascii=False,separators=(comma,colon)); comma and colon are the literal single-character separators."
+    },
+    "allocation_seed": 20260921,
+    "anchor_allocation": 0,
+    "assessment_target": "A uses these same B16/T8 repeated O-half losses. It is not the prior deployment8/all-remaining-target endpoint. Both models always share each allocation target.",
+    "assessment_vector": "x_d,c = mean_r mean_seed L_b(d,c,r,seed) - mean_r mean_seed L_a(d,c,r,seed). Allocations and seeds are averaged within donor; they are never inference rows.",
+    "complementary_partitions": 32,
+    "control_membership": "Existing canonical_control_rank 0..15 per donor/context, merging old control roles in canonical order. All conditions share that context control pool.",
+    "excluded_family": "CPA excluded under the existing frozen cross-platform adapter, not selected by this rerun.",
+    "features": 1968,
+    "input_features": 2000,
+    "loss": "Mean_g ((predicted_effect_g - (mean_treated8_g - mean_observation8_g))/training_scale_g)^2. State effect is mean_state_prediction - mean_same_input_controls exactly once; direct effects are unchanged.",
+    "margin": "loss_b_minus_loss_a; positive favours model_a",
+    "missing_inputs": 32,
+    "primary_practical_gap": 0.0,
+    "reference": "O-half: input and prediction centre share 8 controls, observed centre uses other8; fixed same treated8.",
+    "scale": "Existing frozen Parse training scales projected onto the same 1968 genes; uniform gene weighting.",
+    "seed_aggregation": "Score each fit separately, then mean losses within family. Never square the mean across seed predictions. Preserve upstream model and centering precision; use float64 loss summaries.",
+    "tie_tolerance": 1e-12,
+    "treated_T": 8,
+    "treated_membership": "Existing canonical within-role treated order first8 per donor/context/condition; Parse uses frozen deterministic source ordering documented by adapter."
+  },
+  "secondary_assessment": {
+    "N": 504,
+    "bootstrap": "No maxT on a falsely complete 46x504 matrix; no adaptive method choice. Secondary publication donor-bootstrap ranking is context-specific as defined in five_rules.",
+    "confidence": 0.95,
+    "formula": "For each task-pair c use its fixed complete A donor roster n_c: mean_c +/- t_(1-.05/(2*504),n_c-1)*sd_c/sqrt(n_c).",
+    "method": "bonferroni_paired_t_by_fixed_context_roster_working_donor_v1",
+    "minimum_units": 2,
+    "missing_constant": "Unexpected missing values or nonpositive/nonfinite original SE make c unassessable; retain N504. Metadata-absent contexts never become zero rows.",
+    "scope": "Exploratory all-context working intervals for task-specific eligible donor populations. Small P groups of4 or6 and differing donor populations are reported explicitly. No cross-context population equivalence implied."
+  },
+  "source_score_hashes": {
+    "A": {
+      "axes.json": "f25a827616571bc7f19000ae824a309fdb5043c5b21df4ddad7a54201b7c6471",
+      "fit_losses.npy": "a3c4e8c5fe0df94de847763899f9dcacf2940bd24d999756eec0bab77782e5a4",
+      "losses.npy": "d5b3e587dd5468200acaff7f74a6d0bda2380d3b453d0fc207c3b4a5da04792f",
+      "receipt.json": "fce2a034755851ea40481062c38f0e1580c0194cfcff57f4c70ae3246d2a09e5",
+      "rows.tsv": "c4b4c3db7baaf0b62d65901969e29fcf736aa3191972b0d18848beb9ce5a787b"
+    },
+    "C": {
+      "axes.json": "97b7c4f97c5c159e2aa8b8ae84e2ab3b053e8a7eca7d84c52e6c42eef61e7720",
+      "fit_losses.npy": "271635ef3ca155a42916428bd4e3b3245f1a2739074db3b834a20bf7120594b1",
+      "losses.npy": "c50d93ba219e1118d9d89b122ce3ea370740cc9146e12437fa9dd6c16e649fb1",
+      "receipt.json": "5c1112738a8ec35e93d12d038b3b8e0ba6ee2703374efbc36305c1e188894d85",
+      "rows.tsv": "6222b855a060a0be2012392a9da4d8cf1f8862ce05323d914a6fd4b050f36ea0"
+    },
+    "P": {
+      "axes.json": "a88900854b78506bdb64681ff61add9e63c59821a4cbd1b74240455445153e24",
+      "fit_losses.npy": "12ce27573aaf63901fb3a6f22ad0290c6907e1e956eb7bc4c013bdd1d13a8ed0",
+      "losses.npy": "60380bfdbf2b266bf8357e39f3855775125f002dbb0a9c8c617176b2a7d01666",
+      "receipt.json": "98d8d98284e52d1cab6d6f33fd8efb22772fb769bbaea479eb4fd4042879b7ad",
+      "rows.tsv": "92d54728b2bd07ec8d861d62f116a739448d8d2fd6e26e09115b7bc2dc5a80c1"
+    }
+  },
+  "source_urls": [
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE181897",
+    "https://www.parsebiosciences.com/datasets/"
+  ]
+}

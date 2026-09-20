@@ -1,0 +1,68 @@
+{
+  "adapter": "Fixed training-control mean imputation of 32 unavailable inputs; 1968 unambiguous genes scored with original training scales and uniform weights. Seven fixed families; CPA excluded before outcomes.",
+  "bootstrap_resamples": 19999,
+  "bootstrap_seed": 20260919,
+  "conditions": [
+    "IFN-beta",
+    "IFN-gamma",
+    "TNF-alpha"
+  ],
+  "confidence": 0.95,
+  "donor_relabeling": "Partition-specific monotone pseudonyms preserve the original donor sort order, including the fixed bootstrap draw order. No original cell identities are exported.",
+  "eligibility": "At least 16 controls and 8 treated cells for each of three conditions in every eligible donor/context; metadata-only complete condition blocks.",
+  "executed_runner_sha256": "d2bdb93f6612975cc420f7c8948cb1fca396c82466dd9a04221c99990f7b332c",
+  "freeze_scope": "Locally recorded before GSE181897 expression extraction or model scoring in this project stage; not a public preregistration. Earlier related Parse outcomes informed development. Historical accession searches were bounded and do not establish complete historical non-exposure.",
+  "inference_scope": "Generalization over exchangeable donors conditional on the observed acquisition pools, admitted adapted models and the single frozen selection split; not new-pool or cross-study population inference. Donor intervals are approximate and assume this conditional donor model.",
+  "internal_receipt_sha256": {
+    "assessment": "6bc233920fef0f31aa180acd461d719cbcb3be824289f69453f07bd1e1bef13a",
+    "report": "56d4ab34b15e1d59ca005d91d8a03979a2970cfe0677993394e71d42c09fb7f0",
+    "selection": "2b5e76871c752d8a457510774c579dd63d3df6e3c1e55f9721cf025ac012593e"
+  },
+  "local_freeze": {
+    "scope": "Local protocol and code were frozen before external outcome analysis; this is not a claim of public preregistration.",
+    "time_utc": "2026-09-19T19:12:50.023237+00:00"
+  },
+  "max_inference_ratio": 4,
+  "minimum_inference_donors": 24,
+  "minimum_relative_reduction": 0.05,
+  "model_contract": {
+    "path": "model_contract.json",
+    "sha256": "2274a4e038e8d3bf234dcbf162454b099424e66341ec2bc9d592315b9e419514"
+  },
+  "models": [
+    "NC",
+    "CM",
+    "TW",
+    "PCA",
+    "RBF",
+    "scGen",
+    "CellOT"
+  ],
+  "numerical_verification": {
+    "absolute_tolerance": 1e-12,
+    "observed_t_interval_difference_with_scipy_1_15_3": 2.457921019494158e-13,
+    "original_inference_scipy": "1.12.0",
+    "reason": "SciPy Student-t quantile implementations differ in final digits. Original frozen expected values are retained; selection labels and joint decisions must match exactly, and the benefit boundary remains strictly zero.",
+    "relative_tolerance": 1e-11
+  },
+  "primary_budget": 16,
+  "primary_deployment_n": 8,
+  "primary_endpoint": "Common independent finite-cell effect-target MSE, including its measurement-noise floor; not latent-effect MSE",
+  "recommended_rule": "O_half",
+  "replay_scope": "Independent numerical recomputation from saved per-task model losses. This capsule does not rerun expression preprocessing or neural model inference.",
+  "schema": "REFARA_GSE181897_REFERENCE_DESIGN_V1",
+  "secondary_budgets": [
+    8,
+    32
+  ],
+  "secondary_deployment_n": 16,
+  "source": {
+    "accession": "GSE181897",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE181897"
+  },
+  "source_frozen_protocol_sha256": "7a09da0f9aecf5ff46b41a1c8cf618ab40fde1e2d8abe2c14b42815495ada95c",
+  "statistics_executed_source_sha256": "0e3b704744a88cd4612f5f9ac4993a4ca55d57979988cbb29efa7a60fdccd2ac",
+  "tie_tolerance": 1e-12,
+  "treated_state_secondary": "The same frozen effect-selected families are evaluated against the common treated-state measurement. Direct effects add the common deployment input mean; native state predictions retain their state output. Per-seed squared losses are averaged. No state-based reselection or confirmatory state claim.",
+  "weighting": "Equal eligible donors, equal eligible contexts within donor, equal three conditions. Secondary subsets renormalize these prespecified within-donor weights."
+}

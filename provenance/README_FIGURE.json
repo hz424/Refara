@@ -1,0 +1,19 @@
+{
+  "schema": "reference_design.readme_figure.v1",
+  "figure": "Overview illustration from manuscript Figure 1",
+  "asset": "docs/assets/figure-1.png",
+  "asset_sha256": "eaa38e092a86ea9b45b61bb2096289ba4fe68917c9ea4e2974200b48a1c07bfa",
+  "source_artifact": "04_FIGURES/MAIN/Figure_1.pdf",
+  "source_release": "NATURE_METHODS_20260915_vcc_discussion_refinement_local_review_v1",
+  "source_sha256": "181e127862ab0cb782e157fe56528b9f7212b6220caa1c543b59c758f15962b1",
+  "rendering": {
+    "tool": "PyMuPDF",
+    "version": "1.26.4",
+    "scale": 3,
+    "alpha": false,
+    "page_width_pt": 510.2362060546875,
+    "page_height_pt": 181.41732788085938
+  },
+  "alteration": "PDF rendering only; no drawing or content edits",
+  "scope": "The sole manuscript-image illustration in this GitHub release; no manuscript rendering code is included."
+}

@@ -1,0 +1,198 @@
+{
+  "cell": {
+    "array_index": 3,
+    "cell_id": "LOWN_R06_C02",
+    "cell_master_seed_sha256": "942cc973624856e5309e5d75f8fa2bc138bbb93b3168e0f5a59b070c1f7efc3b",
+    "failure_reason_counts": {
+      "method_or_artifact_contract_failure": 0,
+      "nonfinite_generated_or_derived_value": 0,
+      "numerical_algorithm_failure": 0,
+      "opposite_rejected_directions": 0,
+      "unexpected_exception": 0
+    },
+    "family_id": "F02",
+    "inferential_procedures": {
+      "CELL_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM": {
+        "counts": {
+          "null_direction_rejections_total": 11519,
+          "outer_replicates_all_true_directions_rejected_nonvacuous": 0,
+          "outer_replicates_any_direct_condorcet": 1608,
+          "outer_replicates_any_null_direction_rejected": 2478,
+          "outer_replicates_any_true_direction_rejected": 0,
+          "outer_replicates_any_zero_standard_error": 0,
+          "outer_replicates_graph_cycle": 0,
+          "outer_replicates_no_rejections": 22,
+          "outer_replicates_nontarget_direct_condorcet": 1608,
+          "outer_replicates_target_direct_condorcet": 0,
+          "reported_graph_source_set_size_counts_0_to_4": {
+            "0": 0,
+            "1": 1608,
+            "2": 664,
+            "3": 206,
+            "4": 22
+          },
+          "true_direction_rejections_total": 0,
+          "zero_standard_error_ordered_tests_total": 0
+        },
+        "error_measure_class": "INVALID_DESCENDANT_NEGATIVE_CONTROL_REJECTION_BEHAVIOR_NOT_VALID_FWER",
+        "graph_authority": "INVALID_PSEUDOREPLICATION_NEGATIVE_CONTROL_GRAPH",
+        "inferential_object": "INVALID_DESCENDANT_CELL_PSEUDOREPLICATION",
+        "procedure_authority": "NEGATIVE_CONTROL_NO_VALID_INFERENCE"
+      },
+      "EXACT_ROOT_SIGN_HOLM": {
+        "counts": {
+          "null_direction_rejections_total": 0,
+          "ordered_root_non_ties_total": 180000,
+          "ordered_root_ties_total": 0,
+          "outer_replicates_all_true_directions_rejected_nonvacuous": 0,
+          "outer_replicates_any_direct_condorcet": 0,
+          "outer_replicates_any_null_direction_rejected": 0,
+          "outer_replicates_any_true_direction_rejected": 0,
+          "outer_replicates_any_zero_standard_error": 0,
+          "outer_replicates_graph_cycle": 0,
+          "outer_replicates_no_rejections": 2500,
+          "outer_replicates_nontarget_direct_condorcet": 0,
+          "outer_replicates_target_direct_condorcet": 0,
+          "reported_graph_source_set_size_counts_0_to_4": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 2500
+          },
+          "true_direction_rejections_total": 0,
+          "zero_standard_error_ordered_tests_total": 0
+        },
+        "error_measure_class": "SIGN_FWER_AND_SIGN_DIRECTIONAL_RECOVERY",
+        "graph_authority": "V3_REPORTED_COMMON_SIGN_GRAPH_DESCRIPTOR_ONLY",
+        "inferential_object": "ROOT_SIGN",
+        "procedure_authority": "VALID_SIGN_INFERENCE_CHARACTERIZATION_NOT_A_QUALIFICATION_RECEIPT"
+      },
+      "ROOT_CR1_T_MEAN_CONTRAST_HOLM": {
+        "counts": {
+          "null_direction_rejections_total": 133,
+          "outer_replicates_all_true_directions_rejected_nonvacuous": 0,
+          "outer_replicates_any_direct_condorcet": 1,
+          "outer_replicates_any_null_direction_rejected": 122,
+          "outer_replicates_any_true_direction_rejected": 0,
+          "outer_replicates_any_zero_standard_error": 0,
+          "outer_replicates_graph_cycle": 0,
+          "outer_replicates_no_rejections": 2378,
+          "outer_replicates_nontarget_direct_condorcet": 1,
+          "outer_replicates_target_direct_condorcet": 0,
+          "reported_graph_source_set_size_counts_0_to_4": {
+            "0": 0,
+            "1": 1,
+            "2": 4,
+            "3": 117,
+            "4": 2378
+          },
+          "true_direction_rejections_total": 0,
+          "zero_standard_error_ordered_tests_total": 0
+        },
+        "error_measure_class": "ROOT_MEAN_COMPARATOR_ERROR_NOT_SIGN_FWER_AND_MEAN_DIRECTIONAL_RECOVERY",
+        "graph_authority": "DESCRIPTIVE_MEAN_REJECTION_GRAPH_NOT_A_V3_GRAPH",
+        "inferential_object": "ROOT_MEAN",
+        "procedure_authority": "DESCRIPTIVE_ROOT_MEAN_COMPARATOR"
+      },
+      "ROOT_NONPARAMETRIC_BOOTSTRAP_MEAN_CONTRAST_HOLM": {
+        "counts": {
+          "null_direction_rejections_total": 1065,
+          "outer_replicates_all_true_directions_rejected_nonvacuous": 0,
+          "outer_replicates_any_direct_condorcet": 16,
+          "outer_replicates_any_null_direction_rejected": 759,
+          "outer_replicates_any_true_direction_rejected": 0,
+          "outer_replicates_any_zero_standard_error": 0,
+          "outer_replicates_graph_cycle": 0,
+          "outer_replicates_no_rejections": 1741,
+          "outer_replicates_nontarget_direct_condorcet": 16,
+          "outer_replicates_target_direct_condorcet": 0,
+          "reported_graph_source_set_size_counts_0_to_4": {
+            "0": 0,
+            "1": 16,
+            "2": 120,
+            "3": 623,
+            "4": 1741
+          },
+          "true_direction_rejections_total": 0,
+          "zero_standard_error_ordered_tests_total": 0
+        },
+        "error_measure_class": "ROOT_MEAN_COMPARATOR_ERROR_NOT_SIGN_FWER_AND_MEAN_DIRECTIONAL_RECOVERY",
+        "graph_authority": "DESCRIPTIVE_MEAN_REJECTION_GRAPH_NOT_A_V3_GRAPH",
+        "inferential_object": "ROOT_MEAN",
+        "procedure_authority": "DESCRIPTIVE_ROOT_MEAN_COMPARATOR"
+      },
+      "TASK_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM": {
+        "counts": {
+          "null_direction_rejections_total": 5760,
+          "outer_replicates_all_true_directions_rejected_nonvacuous": 0,
+          "outer_replicates_any_direct_condorcet": 466,
+          "outer_replicates_any_null_direction_rejected": 2087,
+          "outer_replicates_any_true_direction_rejected": 0,
+          "outer_replicates_any_zero_standard_error": 0,
+          "outer_replicates_graph_cycle": 0,
+          "outer_replicates_no_rejections": 413,
+          "outer_replicates_nontarget_direct_condorcet": 466,
+          "outer_replicates_target_direct_condorcet": 0,
+          "reported_graph_source_set_size_counts_0_to_4": {
+            "0": 0,
+            "1": 466,
+            "2": 812,
+            "3": 809,
+            "4": 413
+          },
+          "true_direction_rejections_total": 0,
+          "zero_standard_error_ordered_tests_total": 0
+        },
+        "error_measure_class": "INVALID_DESCENDANT_NEGATIVE_CONTROL_REJECTION_BEHAVIOR_NOT_VALID_FWER",
+        "graph_authority": "INVALID_PSEUDOREPLICATION_NEGATIVE_CONTROL_GRAPH",
+        "inferential_object": "INVALID_DESCENDANT_TASK_PSEUDOREPLICATION",
+        "procedure_authority": "NEGATIVE_CONTROL_NO_VALID_INFERENCE"
+      }
+    },
+    "law_id": "C02",
+    "outer_counts": {
+      "attempted_replicates": 2500,
+      "failed_replicates": 0,
+      "successful_replicates": 2500
+    },
+    "point_procedure": {
+      "counts": {
+        "exact_maximum_tie_break_events": 0,
+        "selection_counts_M01_to_M04": {
+          "M01": 624,
+          "M02": 639,
+          "M03": 612,
+          "M04": 625
+        },
+        "target_model_selections": 0
+      },
+      "error_measure_class": "POINT_SELECTION_NO_FWER_NO_INFERENCE",
+      "graph_authority": "NO_GRAPH",
+      "inferential_object": "POINT_SELECTION_ONLY",
+      "procedure_authority": "NO_TEST_NO_INTERVAL_NO_FWER_NO_GRAPH",
+      "procedure_id": "POINT_LEADERBOARD_NO_UNCERTAINTY"
+    },
+    "production_outer_replicates": 2500,
+    "root_count": 6,
+    "test_outer_replicate_override_used": false
+  },
+  "elapsed_seconds": 26.897861363366246,
+  "low_n_frozen_spec_sha256": "5ffdf86562265ab4ef9322e73f4f972609a98ab28340ec035e44c0f5edad6aa8",
+  "outer_indices": [
+    0,
+    2499
+  ],
+  "runtime": {
+    "numpy": "1.26.4",
+    "python": "3.10.21"
+  },
+  "seed_formula": "SHA256(namespace + NUL + cell_id + NUL + OUTER + NUL + six_digit_index + NUL + purpose); unsigned big-endian integer",
+  "seed_namespace": "REFERENCE_CELL_FIGURE5_LOW_N_V1814_20260911",
+  "stream_purposes": [
+    "DATA",
+    "BOOT_ROOT",
+    "BOOT_TASK",
+    "BOOT_CELL"
+  ]
+}

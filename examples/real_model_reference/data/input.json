@@ -1,0 +1,11 @@
+{
+  "schema": "REFARA_REAL_MODEL_INPUT_V1",
+  "counts": "counts.npz",
+  "features": "source_features.tsv",
+  "cells": "cells.tsv",
+  "context": "CD4 Naive",
+  "condition": "IFN-gamma",
+  "unit": "training_demo_unit_1",
+  "normalization": "full_source_CP10K_log1p",
+  "scope": "Previously used training cells; method-use demonstration, not validation"
+}

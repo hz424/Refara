@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "study": "Value of explicit reference roles for benchmark operations",
+  "created_utc": "2026-09-12T17:32:16.361139+00:00",
+  "authorization": "User approved focusing on three-role assessment value and matched Systema comparison; no manuscript, CURRENT, frozen releases or training changes.",
+  "access_history": "Retrospective follow-up using previously examined resources, scores and findings. This protocol fixes the present operational cases and reporting before new metric cube and action outputs; it is not prospective or blinded.",
+  "prior_binding": {
+    "path": "submission/work/reference_coupling_validation_v1/FORECAST_BINDING.json",
+    "sha256": "36db8b187b9cdfdc7c9fc434e855cd2d78bbad90123906e39b6fef1236b166ab"
+  },
+  "input_inventory": {
+    "path": "submission/work/reference_coupling_validation_v1/INPUT_INVENTORY.json",
+    "sha256": "2eb15dfb0a474ad52db41f96eb761ddbb48d4978525314546695f440c0672a08"
+  },
+  "question": "Does making the three reference roles explicit provide a correct, executable route from a benchmark change to the affected prediction, target and scoring operations?",
+  "role_definitions": {
+    "Cmodel": "Untreated-cell input supplied to a fitted predictor. Change can require a new prediction, depending on declared model dependence.",
+    "Cpred": "Baseline used to define a predicted effect from state output. Unused for emitted native effects and direct treated-state scoring.",
+    "Cobs": "Baseline defining observed effect. Unused for direct treated-state scoring.",
+    "other_artifacts": "Storage-encoding baseline, native-effect state lift, metric centre, feature scales and candidate coordinates remain separately declared; they are not automatically any of the three roles."
+  },
+  "comparators": [
+    {
+      "id": "systema_single",
+      "definition": "Same Systema metric formulas, canonical declared outputs, allocation0/input0 at each depth; reference-effect anchor tuple obs1,pred0,model0. Conventional fixed-realization output is a workflow comparator, not the complete capability of Systema."
+    },
+    {
+      "id": "systema_repeated",
+      "definition": "Same metric formulas and canonical outputs; every recorded direct-state input and every correctly paired held-out-effect O realization, all30allocations. Same source data, available role metadata and control budget as full-role workflow."
+    },
+    {
+      "id": "systema_with_roles",
+      "definition": "Same metric formulas plus explicit role-dependency plan, all27 balanced role assignments and checked post-change action. Complete role cube is an additional intervention set, not an intrinsically stronger metric."
+    }
+  ],
+  "parity_reference": "Systema repeats plus explicit manual role reasoning receive identical metadata and all post-intervention arrays. Their canonical calculations can recover the full-role results; omitting a default diagnostic is unreported, not incorrect. No invented diagnostic accuracy or human time comparison.",
+  "metric_panel": {
+    "resource": "Norman",
+    "tasks": 55,
+    "units": 1,
+    "models": [
+      "selected_CPA",
+      "original_CPA_fixed",
+      "additive",
+      "compositional_ridge",
+      "NC_native_effect",
+      "native_effect_ridge"
+    ],
+    "allocations": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "depths": [
+      8,
+      16,
+      32,
+      64,
+      128,
+      135
+    ],
+    "genes": 2000,
+    "tuple_order": [
+      "Cobs",
+      "Cpred",
+      "Cmodel"
+    ],
+    "tuples": "all27 lexicographic assignments; no selection by observed scores",
+    "state_shape": [
+      55,
+      6,
+      30,
+      3,
+      6,
+      4
+    ],
+    "role_shape": [
+      55,
+      6,
+      30,
+      27,
+      6,
+      4
+    ],
+    "metrics": [
+      "standardized_MSE",
+      "raw_RMSE",
+      "perturbation_centred_Pearson",
+      "centroid_accuracy"
+    ],
+    "formula": "State M_i-b_p+b_o versus Y; native E+b_o versusY, with Cp andCm unused for fixed native outputs. Direct state uses M_i or E+savedTRAIN_control. Native ridge removes its original savedTRAINlift before any rendering.",
+    "metric_artifacts": "Fixed TRAIN_perturbation Pearson centre; all55observed targets asEuclidean retrieval candidates,54incorrect candidates strict comparison. OnlystandardizedMSEusestraining gene scales. These are matchedSystema formulas, notSystema publishedbenchmark reproduction.",
+    "target_scope": "Fullrole cube is diagnostic; changingprediction/observation baselines can change realizedquantities. Eachview/assignment is reportedexplicitly; no universalcorrectpolicy."
+  },
+  "operation_families": [
+    {
+      "id": "input_replacement",
+      "meaning": "ReplaceCm while preserving declaredCp/Co; input-conditionedstate needscorrespondingprediction, fixedstate/nativecanreuse. This does not select a checkpoint."
+    },
+    {
+      "id": "paired_input_effect",
+      "meaning": "ReplaceCm and itsdeclaredpairedCp together; checkrawinputresponse andeffectdefinition separately."
+    },
+    {
+      "id": "prediction_baseline",
+      "meaning": "ChangeCp atfixedCm/Co; stateeffectdefinitionchanges, nativeeffectCp unused. Reuse rawprediction and rebuilddeclared effect."
+    },
+    {
+      "id": "observation_baseline",
+      "meaning": "ChangeCo; referenceeffect hasnewrealizedobservedtarget, directstateCo unused. Permit correctlydeclaredrepeats; do not label everytargetrealizationchange invalid."
+    },
+    {
+      "id": "common_scoring_reference",
+      "meaning": "MoveCp/Co together for state-outputeffect; MSE/RMSE residualunchanged. Fixednativeeffect doesnot acquire an artificialCp subtraction."
+    },
+    {
+      "id": "same_target_storage_encoding",
+      "meaning": "Re-encodeanddecode the same delivered prediction withdeclaredstoragebaseline. Recover canonicalprediction,target,residual andmetrics; transformorrestoremetriccentres/candidates consistently."
+    },
+    {
+      "id": "task_switch",
+      "meaning": "Explicitlychangebetween state/effect tasks; requiretaskdeclaration andseparatelynamed results, withnative liftdeclared asneeded."
+    },
+    {
+      "id": "unused_roles_Kang",
+      "meaning": "Kang treated-state primary forridge/CellFlow; Cp/Co changes require noprediction/scoring changes. Keepfit-level scorethenaverage."
+    }
+  ],
+  "action_validation": {
+    "primary_endpoint": "Executed action must recover independently reconstructed canonical prediction, target and residual as well as metric values. Equal loss alone does not establish preserved meaning.",
+    "real_data_cases": "Metadata-fixed task0, allocation0, depth8, all6Norman models; Kang task0/allavailablefits forits2models. These are genuine cached benchmark operations, not independently observed organizer mistakes.",
+    "reader_demo": "Includecompactrealarrays andcontracts enablingstandaloneexecution withouttraining orlargeoriginalcaches.",
+    "stress_tests": "Anywrong/missingstoragebaseline, staleinputdeclaration, nativedoublecentring or inconsistentmetriccoordinatefixtures must be labeled injected softwaretests. Evaluateabstention/missingprovenance separatelyfromwrongnumericoutput.",
+    "role_ablation": "Deleteeachroledeclaration onlywhereactive; expectedoutcome is explicitmissinginformation or reducedactioncoverage, not inferredSystemafailure. Validunusedroleomissionsare negativecontrols.",
+    "inference_provenance_limit": "A declared inputID does not prove a modelactuallyusedthosecells. Cachedmatchingoutputs verifythe action replay, notanexternalinference history."
+  },
+  "analysis": {
+    "role_contrasts": "One-role orderedblock changes withotherrolesfixed; reportcomplete model/depth family, rawprediction/effect/observedtarget changes andmetric changes. Interactions evaluatedthroughfulljoint cube.",
+    "aggregation": "Allocateequalweight within task, thenequal55tasks inNorman. Depths and metricsseparate; all modelpairs retainedwherepairanalysisused. Reusedcells/tasks/fits notbiologicalreplicates.",
+    "numerical_tolerance": 1e-10,
+    "tie_tolerance": 1e-12,
+    "descriptive_gaps": [
+      0,
+      0.005,
+      0.01,
+      0.02
+    ],
+    "gap_meaning": "Metric-specific scoreunit descriptions, notinterchangeable biologicaleffect thresholds.",
+    "claims": "Distinguish tested operational correctness, descriptive diagnostic coverage, actual human/organizer benefit andmethodologicalnovelty. Reportunmeasuredbenefits asunmeasured; no causalclaim thatunreporteddefaultoutputsare incorrect. No ranking-superiorityclaim basedonchangedtarget."
+  },
+  "qa": {
+    "sampling_file": "qa/EMPIRICAL_SAMPLING.json",
+    "sampling_sha256": "4f5ec1881c4758662838696f8e240f200411f9aa625276114891fa35a049ed0a",
+    "independent_raw_score_rows": 6480,
+    "independent_raw_metric_values": 25920,
+    "complete_anchor_checks": "newdirectstate andallO metrics matchpriorpanel; all297000NormanbalancedMSEpatternrows matchpriorstudy",
+    "negative_controls": "Fixedstateinputindependence; fixednativeCm/Cpindependence; commoncentre cancellationforstate; all6blockpermutations; storagecoordinatescorrectlyrestored."
+  },
+  "protected": {
+    "manuscript_changes": false,
+    "CURRENT_change": false,
+    "frozen_software_change": false,
+    "new_training": false,
+    "external_publication": false
+  }
+}

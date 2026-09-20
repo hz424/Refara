@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "exports": {
+    "Extended_Data_Figure_8.pdf": {
+      "sha256": "cf443547857b41f78fcc6a01e184fa50fb75fb963fc591a7eb6ef88fceb539d2",
+      "repeat_identical": true
+    },
+    "Extended_Data_Figure_8.svg": {
+      "sha256": "0b7a3f4a972c3d2884871d02d5b367b7130f3c1ff4c604f76e092189cc189ac0",
+      "repeat_identical": true
+    },
+    "Extended_Data_Figure_8.png": {
+      "sha256": "86824f73ce3b5663dbbf8700cf4158ad18d181c7ba91ab4253309ee6ca748e8b",
+      "repeat_identical": true
+    },
+    "Extended_Data_Figure_8.tiff": {
+      "sha256": "03fb3152016d2e14dbe45e3b47f16756df7f31bf2cacef69a110b5b0290a7766",
+      "repeat_identical": true
+    }
+  },
+  "source_tables_and_workbook_identical": true
+}

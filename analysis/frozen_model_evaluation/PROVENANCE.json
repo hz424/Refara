@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "revision": "1.8.13",
+  "scope": "portable Figure 4 and Extended Data Figure 7 replay",
+  "canonical_code_component_manifest_sha256": "644eff8d5ce84dec3a775a1caa79000d0e6365a2d5419cc8e48075918afb744a",
+  "canonical_source_component_manifest_sha256": "c890b1abe6693f43036e0b621080d228848507c7b4c37c378d17556dd8ce108a",
+  "public_source_files": 22,
+  "portable_adaptations": [
+    "Figure 4 imports the repository presentation renderer.",
+    "Extended Data Figure 7 imports the repository biological-consequence style module.",
+    "SVG clip-path identifiers are normalized across NumPy scalar-representation versions; geometry, styles and data are unchanged."
+  ],
+  "svg_identifier_validation": {
+    "scope": "semantics-free clip-path identifiers only",
+    "environments": [
+      "NumPy 2.2 with Matplotlib 3.10.3",
+      "NumPy 1.26 with Matplotlib 3.10.8"
+    ],
+    "submitted_artwork_hashes_matched_per_environment": 8
+  },
+  "scientific_changes": false,
+  "new_training_executed": false,
+  "frozen_model_inference_already_completed": true,
+  "submitted_artwork_sha256": {
+    "Figure_4.pdf": "d85634cee4a0846ef00e5407f1030a92bb7f0a693424b8976ff6bc9f7ccd1cb3",
+    "Figure_4.svg": "01e02f201c839260256b9be2744a6831a31439862f99f9cce92ec288362f9dbc",
+    "Figure_4.png": "4fe6a95c40e3624d1281230f9610493115d0c137afa80b02049538d6a508d6ae",
+    "Figure_4.tiff": "c2346ebd16bd72ed57e61b4b0356eb7f1d894d55b789736029023c5a087edd32",
+    "Extended_Data_Figure_7.pdf": "f8146bea2d770087abdba618983ae40c48312c2ea2cf74298c56b72b47ab062d",
+    "Extended_Data_Figure_7.svg": "0f55b2116428f02f0da2f3418238b0a4f974b746e74978b9bbe4f0dd62003791",
+    "Extended_Data_Figure_7.png": "eec037334db4a189f4895d5d1a01f84b90d98e7c0ff36bf5397191ccba4837d1",
+    "Extended_Data_Figure_7.tiff": "2fa156d039f5321f9b86cd68e2d247df473e6220402f60b2d584d3b4b99b048a"
+  }
+}

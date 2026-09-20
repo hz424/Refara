@@ -1,0 +1,29 @@
+{
+  "final_evaluations_recovered": [
+    "native_adv10",
+    "per_epoch_adv10"
+  ],
+  "fit_seconds": {
+    "native_adv1": 784.4643612634391,
+    "native_adv10": 775.2878974564373,
+    "per_epoch_adv1": 779.2818603431806,
+    "per_epoch_adv10": 775.5164063996635
+  },
+  "fit_seconds_scope": "For every configuration: actual progress elapsed through epoch 400, excluding that epoch final checkpoint/evaluation work",
+  "grid_complete": true,
+  "independent_test_evaluated": false,
+  "initialization_identical": true,
+  "no_convergence_claim": true,
+  "no_grid_expansion": true,
+  "original_jobs_all_successful": false,
+  "original_test_files_read": [],
+  "protocol_sha256": "30eafbee5b38233ef543dd751055f965c25f567ec336630acaaa0f83d94bb55f",
+  "recovery_protocol_sha256": "f54c39d9eff4cd80b23133ea180fdc6263787ec7540443c922b10800baae409a",
+  "sample_order_evidence": "Two observed saved traces and two reconstructed expected traces match; failed runs retain actual epoch and sampler counters",
+  "sample_order_identical": true,
+  "selected_configuration": "per_epoch_adv10",
+  "selected_epoch": 400,
+  "selected_validation_mse": 0.07174347554938035,
+  "selection_target": "Fixed 11-combination fold 0 only; equal-condition standardized effect MSE",
+  "total_fit_seconds": 3114.5505254627205
+}

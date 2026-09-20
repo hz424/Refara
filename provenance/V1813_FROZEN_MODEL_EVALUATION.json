@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "revision": "1.8.13",
+  "changed_displays": [
+    "Figure_4",
+    "Extended_Data_Figure_7"
+  ],
+  "entry_points": {
+    "Figure_4": "analysis/frozen_model_evaluation/render_figure4.py",
+    "Extended_Data_Figure_7": "analysis/frozen_model_evaluation/render_extended_data_figure7.py"
+  },
+  "public_source_directory": "analysis/frozen_model_evaluation/source_data",
+  "public_source_files": 22,
+  "source_scope": "deidentified donor, batch, assignment and program summaries",
+  "excluded": [
+    "cell-level matrices",
+    "source identifier mappings",
+    "fitted checkpoints",
+    "study-wide prediction arrays"
+  ],
+  "new_training_executed": false,
+  "frozen_model_inference_already_completed": true,
+  "submitted_pdf_sha256": {
+    "Figure_4": "d85634cee4a0846ef00e5407f1030a92bb7f0a693424b8976ff6bc9f7ccd1cb3",
+    "Extended_Data_Figure_7": "f8146bea2d770087abdba618983ae40c48312c2ea2cf74298c56b72b47ab062d"
+  }
+}

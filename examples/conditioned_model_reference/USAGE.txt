@@ -1,0 +1,100 @@
+Real control-dependent inference: frozen scGen
+
+From the source checkout after installing the package:
+
+  python examples/conditioned_model_reference/run.py --input examples/real_model_reference/data/input.json --output outputs/conditioned_model_reference
+
+NumPy and SciPy suffice. The example includes a 10.3 MB numeric export of an
+existing trained scGen fit. It reuses the real count matrix, gene annotations
+and cell roles in real_model_reference; no download or training is needed.
+The wheel supplies the predictor code. Example weights and cells are source
+archive assets, so retain both sibling example directories when relocating them.
+
+Prediction
+
+This model encodes each normalized control cell, adds a fixed training-derived
+latent shift, and decodes a predicted treated state. The two hidden layers in
+each network use their learned weights, stored batch-normalization statistics
+and LeakyReLU activation. Inference uses the posterior mean, with dropout off.
+It does not add a fixed effect directly to the input expression.
+
+The original seed17/epoch160 checkpoint is unchanged. The NPZ export omits the
+optimizer, random-generator state and unused posterior-variance head. PARITY.json
+records comparisons against the original Torch prediction path on multiple
+conditions, batch sizes, repeated cells and all four allocations. Small float32
+roundoff differences are expected across numerical libraries. PROVENANCE.json
+binds the original fit, source code, every exported parameter and training setup.
+
+The 24 controls and 8 treated cells are the same previously used Parse training
+cells supplied with the PCA example. Seed17 is the first original fit seed;
+neither the seed nor cells were chosen for this example's scoring outcomes.
+This demonstrates software use and model-input dependence, not generalization,
+biological replication or a model-ranking advantage.
+
+Operations
+
+All four fixed-seed permutations of the 24 controls are retained. Each forms
+three disjoint eight-cell blocks A, B and C. The model is called separately on
+each block. The treated mean and training-derived gene scales remain fixed.
+
+operation              model input    prediction centre    observed reference
+anchor_O                    A                 A                    C
+input_only                  B                 A                    C
+rescore_only                A                 A                    B
+matched_O_new_input         B                 B                    C
+shared_S                    A                 A                    A
+
+shared_S uses eight shared cells; anchor_O uses eight input and eight observed
+cells. The full 24-cell pool supports these role diagnostics. These two rows
+are not a comparison at equal physical control budget; the separate fixed_budget
+API provides that design.
+
+input_only isolates model-input changes: both scoring references stay fixed.
+It is a diagnostic operation, not the matched O protocol. rescore_only reuses
+the identical native state and changes only the observed reference. The matched
+O operation changes input and prediction centre together. These rows distinguish
+new model predictions from changes caused by centring or evaluation references.
+
+For each matched baseline, the native state Q and its effect encoding Q-C_input
+must receive the same O score. The effect encoding is the same prediction, not
+a second learned model. role_scores.tsv retains all 27 assignments and marks
+the subset where this encoding contract applies; equality is not claimed for
+assignments that change the prediction centre away from the model-input block.
+The effect-encoding score is left blank for those unmatched assignments.
+
+Output and accounting
+
+operation_scores.tsv reports each operation's score, prediction hash and scaled
+RMS displacement from the anchor. control_membership.tsv records every control
+block. inference_arrays.npz includes all per-cell predictions, block means,
+normalized inputs, treatment mean, scales and allocation indices for direct
+recalculation. RESULTS.json records input/weight hashes and array axes.
+
+The four allocations make 12 actual inference calls over 96 control cells.
+One additional call over the complete 24-cell pool checks the caching contract.
+Rescoring adds no inference. With evaluation-mode batch normalization, this
+particular model has a fixed per-cell prediction and its point bank can be
+reused within measured numerical tolerance. That property must be checked anew
+for a model whose prediction depends on other cells in the input set.
+
+Your own cells
+
+--input accepts the JSON/TSV/sparse-NPZ schema described in
+../real_model_reference/USAGE.txt, with exactly 24 controls and 8 treated cells.
+The full 40,352-gene source axis is required; explicitly reordered columns are
+mapped by gene identity. Library totals use every source gene before CP10K,
+log1p and projection to the fitted 2,000-gene panel. No genes are imputed and
+no normalization parameter, shift or scale is fitted on the supplied cells.
+Unsupported context/condition pairs and incorrect feature axes are rejected.
+The unit label records the caller's experimental definition; it cannot establish
+independence. Use a new or empty output directory.
+
+Rights
+
+Predictor and example code follow the repository BSD-3-Clause license. Data and
+trained weights retain the Parse noncommercial scope in LICENSE_SCOPE.md. The
+export is for the fixed mean-inference path and is not a scGen training package.
+Original implementation: scGen and scvi-tools; exact source hashes and versions
+are recorded in PROVENANCE.json. Dataset and terms:
+https://www.parsebiosciences.com/datasets/10-million-human-pbmcs-in-a-single-experiment/
+https://creativecommons.org/licenses/by-nc/4.0/

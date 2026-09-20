@@ -1,0 +1,43 @@
+{
+  "hyperparameters": {
+    "batch_size": 512,
+    "benchmark": false,
+    "deterministic": true,
+    "dropout_rate": 0.2,
+    "early_stopping": false,
+    "enable_checkpointing": false,
+    "enable_model_summary": false,
+    "enable_progress_bar": false,
+    "logger": false,
+    "n_hidden": 512,
+    "n_latent": 100,
+    "n_layers": 2,
+    "terminal_epoch": 80,
+    "train_size": 1.0,
+    "validation_size": null
+  },
+  "realizations": [
+    {
+      "id": "q1",
+      "seed": 17
+    },
+    {
+      "id": "q2",
+      "seed": 29
+    },
+    {
+      "id": "q3",
+      "seed": 43
+    },
+    {
+      "id": "q4",
+      "seed": 763929762
+    },
+    {
+      "id": "q5",
+      "seed": 85508424
+    }
+  ],
+  "release_version": "1.6.1",
+  "schema_version": 1
+}

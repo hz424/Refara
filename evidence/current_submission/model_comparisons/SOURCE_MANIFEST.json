@@ -1,0 +1,54 @@
+{
+  "schema": "scored-model-comparisons-v1",
+  "origin_release": "NATURE_METHODS_20260917_validation_reference_selection_local_review_v1",
+  "source_tables": [
+    {
+      "source_data_path": "CPA2560_selected/selected_2560/all_policy_tables/gse162632/original8/ALL_POLICY_ROOT_SEED_MODELS.tsv",
+      "sha256": "ead343d55ea3903938694685f7bc1957fcbb6fc470928c5fc6a74d2e89b33f92",
+      "bytes": 4468982
+    },
+    {
+      "source_data_path": "CPA2560_selected/selected_2560/all_policy_tables/gse162632/cap48/ALL_POLICY_ROOT_SEED_MODELS.tsv",
+      "sha256": "9d3807795e0f3c38a44dd011228ae351f8cdef3fbd10928da2d422ae5f40b34a",
+      "bytes": 4363836
+    },
+    {
+      "source_data_path": "Figure_2_eight_model_v1820/provenance/5db66c7e6308c5eb_ALL_POLICY_ROOT_SEED_MODELS.tsv",
+      "sha256": "5db66c7e6308c5eb03baa8137f80415bb810540df662334dfe10e202df455f56",
+      "bytes": 6140155
+    },
+    {
+      "source_data_path": "Figure_2_eight_model_v1820/provenance/924580fa478b881b_ALL_POLICY_ROOT_SEED_MODELS.tsv",
+      "sha256": "924580fa478b881b134e2b7326cc3f660b33a46fbd1e56982e3ad5fb9624999e",
+      "bytes": 7409698
+    },
+    {
+      "source_data_path": "CPA2560_figure_sources/fig2/source_data/PRIMARY_ALL_ROOTS_ALL_DEPTHS_MODELS.tsv",
+      "sha256": "6f35e4c6f037611842e1af837e2297287fbb71a7cb0d8763eea5a776a1a0e32a",
+      "bytes": 1055774
+    },
+    {
+      "source_data_path": "CPA2560_figure_sources/fig2/source_data/PRIMARY_ALL_ROOTS_ALL_DEPTHS_PAIRS.tsv",
+      "sha256": "19eaead40d71a962eaa43b171d263b2c56daa748cbfbd6953a649691a516ee26",
+      "bytes": 3300134
+    }
+  ],
+  "input_rows": 15360,
+  "files": {
+    "data/scored_unit_utilities.tsv": {
+      "sha256": "05af974ca6cd3c253edfeeb42dad3c6d55f271940ece5e1095a8c401ed79f1a1",
+      "bytes": 878322
+    },
+    "expected/current_mean_utilities.tsv": {
+      "sha256": "9810eb9f703af95dd5e9f4eae5fa3555e12bfc19cb0a9fe4588164c8908da7d4",
+      "bytes": 29641
+    },
+    "expected/current_pair_margins.tsv": {
+      "sha256": "638c89f23f94df9a5f28fc829401c3a9145ec44e173ac20ddd4ec1757feff8d8",
+      "bytes": 188012
+    }
+  },
+  "replay_code_origin": "af59f2cccba607fe2c9823d082e35cb537d8bac5:evidence/model_comparisons/replay.py",
+  "model_scope": "Influenza CPA2560; remaining models and both Parse groups retain their original fits.",
+  "input_level": "Scored seed/root utilities after 1000-allocation averaging; no raw expression or predictions."
+}

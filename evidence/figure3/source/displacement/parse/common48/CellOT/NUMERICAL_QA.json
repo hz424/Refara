@@ -1,0 +1,22 @@
+{
+  "absolute_tolerance": 2e-12,
+  "direct_gram_case_count": 120,
+  "direct_gram_max_abs": 2.7755575615628914e-17,
+  "equivalent_representation_max_abs": 2.7755575615628914e-17,
+  "native_float32_vs_float64_max_abs": 2.2504812041690414e-09,
+  "native_precision_difference_is_not_forced_zero": true,
+  "negative_roundoff_clipped_reference_cells": 0,
+  "negative_roundoff_clipped_root_cells": 0,
+  "negative_roundoff_clipped_task_cells": 0,
+  "negative_roundoff_lower_limit": -2e-12,
+  "observed_values_used_only_for_predeclared_oracle_tasks": [
+    0,
+    5775
+  ],
+  "relative_tolerance": 2e-10,
+  "representation_absolute_tolerance": 1e-10,
+  "representation_case_count": 1620,
+  "representation_relative_tolerance": 1e-11,
+  "status": "PASS_DIRECT_GRAM_AND_REPRESENTATION_ORACLES",
+  "task_pool_root_aggregation_max_abs": 3.191891195797325e-16
+}

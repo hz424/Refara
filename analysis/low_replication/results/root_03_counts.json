@@ -1,0 +1,198 @@
+{
+  "cell": {
+    "array_index": 1,
+    "cell_id": "LOWN_R03_C02",
+    "cell_master_seed_sha256": "fac5889cfdb299a7d1f0ddd15a6e7aa34bc6b155f9deb6d637034e2bbdd4b6ea",
+    "failure_reason_counts": {
+      "method_or_artifact_contract_failure": 0,
+      "nonfinite_generated_or_derived_value": 0,
+      "numerical_algorithm_failure": 0,
+      "opposite_rejected_directions": 0,
+      "unexpected_exception": 0
+    },
+    "family_id": "F02",
+    "inferential_procedures": {
+      "CELL_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM": {
+        "counts": {
+          "null_direction_rejections_total": 11968,
+          "outer_replicates_all_true_directions_rejected_nonvacuous": 0,
+          "outer_replicates_any_direct_condorcet": 1671,
+          "outer_replicates_any_null_direction_rejected": 2483,
+          "outer_replicates_any_true_direction_rejected": 0,
+          "outer_replicates_any_zero_standard_error": 0,
+          "outer_replicates_graph_cycle": 0,
+          "outer_replicates_no_rejections": 17,
+          "outer_replicates_nontarget_direct_condorcet": 1671,
+          "outer_replicates_target_direct_condorcet": 0,
+          "reported_graph_source_set_size_counts_0_to_4": {
+            "0": 0,
+            "1": 1671,
+            "2": 642,
+            "3": 170,
+            "4": 17
+          },
+          "true_direction_rejections_total": 0,
+          "zero_standard_error_ordered_tests_total": 0
+        },
+        "error_measure_class": "INVALID_DESCENDANT_NEGATIVE_CONTROL_REJECTION_BEHAVIOR_NOT_VALID_FWER",
+        "graph_authority": "INVALID_PSEUDOREPLICATION_NEGATIVE_CONTROL_GRAPH",
+        "inferential_object": "INVALID_DESCENDANT_CELL_PSEUDOREPLICATION",
+        "procedure_authority": "NEGATIVE_CONTROL_NO_VALID_INFERENCE"
+      },
+      "EXACT_ROOT_SIGN_HOLM": {
+        "counts": {
+          "null_direction_rejections_total": 0,
+          "ordered_root_non_ties_total": 90000,
+          "ordered_root_ties_total": 0,
+          "outer_replicates_all_true_directions_rejected_nonvacuous": 0,
+          "outer_replicates_any_direct_condorcet": 0,
+          "outer_replicates_any_null_direction_rejected": 0,
+          "outer_replicates_any_true_direction_rejected": 0,
+          "outer_replicates_any_zero_standard_error": 0,
+          "outer_replicates_graph_cycle": 0,
+          "outer_replicates_no_rejections": 2500,
+          "outer_replicates_nontarget_direct_condorcet": 0,
+          "outer_replicates_target_direct_condorcet": 0,
+          "reported_graph_source_set_size_counts_0_to_4": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 2500
+          },
+          "true_direction_rejections_total": 0,
+          "zero_standard_error_ordered_tests_total": 0
+        },
+        "error_measure_class": "SIGN_FWER_AND_SIGN_DIRECTIONAL_RECOVERY",
+        "graph_authority": "V3_REPORTED_COMMON_SIGN_GRAPH_DESCRIPTOR_ONLY",
+        "inferential_object": "ROOT_SIGN",
+        "procedure_authority": "VALID_SIGN_INFERENCE_CHARACTERIZATION_NOT_A_QUALIFICATION_RECEIPT"
+      },
+      "ROOT_CR1_T_MEAN_CONTRAST_HOLM": {
+        "counts": {
+          "null_direction_rejections_total": 152,
+          "outer_replicates_all_true_directions_rejected_nonvacuous": 0,
+          "outer_replicates_any_direct_condorcet": 0,
+          "outer_replicates_any_null_direction_rejected": 147,
+          "outer_replicates_any_true_direction_rejected": 0,
+          "outer_replicates_any_zero_standard_error": 0,
+          "outer_replicates_graph_cycle": 0,
+          "outer_replicates_no_rejections": 2353,
+          "outer_replicates_nontarget_direct_condorcet": 0,
+          "outer_replicates_target_direct_condorcet": 0,
+          "reported_graph_source_set_size_counts_0_to_4": {
+            "0": 0,
+            "1": 0,
+            "2": 3,
+            "3": 144,
+            "4": 2353
+          },
+          "true_direction_rejections_total": 0,
+          "zero_standard_error_ordered_tests_total": 0
+        },
+        "error_measure_class": "ROOT_MEAN_COMPARATOR_ERROR_NOT_SIGN_FWER_AND_MEAN_DIRECTIONAL_RECOVERY",
+        "graph_authority": "DESCRIPTIVE_MEAN_REJECTION_GRAPH_NOT_A_V3_GRAPH",
+        "inferential_object": "ROOT_MEAN",
+        "procedure_authority": "DESCRIPTIVE_ROOT_MEAN_COMPARATOR"
+      },
+      "ROOT_NONPARAMETRIC_BOOTSTRAP_MEAN_CONTRAST_HOLM": {
+        "counts": {
+          "null_direction_rejections_total": 3860,
+          "outer_replicates_all_true_directions_rejected_nonvacuous": 0,
+          "outer_replicates_any_direct_condorcet": 169,
+          "outer_replicates_any_null_direction_rejected": 1872,
+          "outer_replicates_any_true_direction_rejected": 0,
+          "outer_replicates_any_zero_standard_error": 0,
+          "outer_replicates_graph_cycle": 0,
+          "outer_replicates_no_rejections": 628,
+          "outer_replicates_nontarget_direct_condorcet": 169,
+          "outer_replicates_target_direct_condorcet": 0,
+          "reported_graph_source_set_size_counts_0_to_4": {
+            "0": 0,
+            "1": 169,
+            "2": 652,
+            "3": 1051,
+            "4": 628
+          },
+          "true_direction_rejections_total": 0,
+          "zero_standard_error_ordered_tests_total": 0
+        },
+        "error_measure_class": "ROOT_MEAN_COMPARATOR_ERROR_NOT_SIGN_FWER_AND_MEAN_DIRECTIONAL_RECOVERY",
+        "graph_authority": "DESCRIPTIVE_MEAN_REJECTION_GRAPH_NOT_A_V3_GRAPH",
+        "inferential_object": "ROOT_MEAN",
+        "procedure_authority": "DESCRIPTIVE_ROOT_MEAN_COMPARATOR"
+      },
+      "TASK_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM": {
+        "counts": {
+          "null_direction_rejections_total": 7004,
+          "outer_replicates_all_true_directions_rejected_nonvacuous": 0,
+          "outer_replicates_any_direct_condorcet": 619,
+          "outer_replicates_any_null_direction_rejected": 2254,
+          "outer_replicates_any_true_direction_rejected": 0,
+          "outer_replicates_any_zero_standard_error": 0,
+          "outer_replicates_graph_cycle": 0,
+          "outer_replicates_no_rejections": 246,
+          "outer_replicates_nontarget_direct_condorcet": 619,
+          "outer_replicates_target_direct_condorcet": 0,
+          "reported_graph_source_set_size_counts_0_to_4": {
+            "0": 0,
+            "1": 619,
+            "2": 931,
+            "3": 704,
+            "4": 246
+          },
+          "true_direction_rejections_total": 0,
+          "zero_standard_error_ordered_tests_total": 0
+        },
+        "error_measure_class": "INVALID_DESCENDANT_NEGATIVE_CONTROL_REJECTION_BEHAVIOR_NOT_VALID_FWER",
+        "graph_authority": "INVALID_PSEUDOREPLICATION_NEGATIVE_CONTROL_GRAPH",
+        "inferential_object": "INVALID_DESCENDANT_TASK_PSEUDOREPLICATION",
+        "procedure_authority": "NEGATIVE_CONTROL_NO_VALID_INFERENCE"
+      }
+    },
+    "law_id": "C02",
+    "outer_counts": {
+      "attempted_replicates": 2500,
+      "failed_replicates": 0,
+      "successful_replicates": 2500
+    },
+    "point_procedure": {
+      "counts": {
+        "exact_maximum_tie_break_events": 0,
+        "selection_counts_M01_to_M04": {
+          "M01": 606,
+          "M02": 667,
+          "M03": 653,
+          "M04": 574
+        },
+        "target_model_selections": 0
+      },
+      "error_measure_class": "POINT_SELECTION_NO_FWER_NO_INFERENCE",
+      "graph_authority": "NO_GRAPH",
+      "inferential_object": "POINT_SELECTION_ONLY",
+      "procedure_authority": "NO_TEST_NO_INTERVAL_NO_FWER_NO_GRAPH",
+      "procedure_id": "POINT_LEADERBOARD_NO_UNCERTAINTY"
+    },
+    "production_outer_replicates": 2500,
+    "root_count": 3,
+    "test_outer_replicate_override_used": false
+  },
+  "elapsed_seconds": 17.911125047132373,
+  "low_n_frozen_spec_sha256": "5ffdf86562265ab4ef9322e73f4f972609a98ab28340ec035e44c0f5edad6aa8",
+  "outer_indices": [
+    0,
+    2499
+  ],
+  "runtime": {
+    "numpy": "1.26.4",
+    "python": "3.10.21"
+  },
+  "seed_formula": "SHA256(namespace + NUL + cell_id + NUL + OUTER + NUL + six_digit_index + NUL + purpose); unsigned big-endian integer",
+  "seed_namespace": "REFERENCE_CELL_FIGURE5_LOW_N_V1814_20260911",
+  "stream_purposes": [
+    "DATA",
+    "BOOT_ROOT",
+    "BOOT_TASK",
+    "BOOT_CELL"
+  ]
+}

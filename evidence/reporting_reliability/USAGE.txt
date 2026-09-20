@@ -1,0 +1,93 @@
+Five reporting rules on a fixed comparison panel
+
+From a source checkout with the package installed:
+  python -m reference_design.reporting_validation replay --input evidence/reporting_reliability --output /tmp/refara-reporting-replay
+  python -m reference_design.reporting_validation synthetic --output /tmp/refara-reporting-synthetic
+
+Both outputs must be new directories. The replay input can be an absolute path
+to this entire directory after relocation. It requires NumPy/SciPy and the
+installed package, with no research workspace, raw expression, checkpoints,
+downloads or model training. The wheel supplies the API and synthetic fixture;
+this saved-score capsule is distributed in the source archive.
+
+The historical replay computes all five rules and the first-partition two-fold
+cross-fitting companion from float64 scored losses. Every fit is scored before
+seed averaging. It recomputes calibration penalties, publication candidates,
+natural coverage, all jointly achievable coverage counts with whole score ties,
+assessment intervals, finite-panel paired reversal bounds, pool-exclusion point
+sensitivity and attributable computation costs. It verifies every summary row,
+every published interval, every pool-sensitivity row and the cost table against
+the completed original run. RESULTS.json contains all coverage points and paired
+bounds; summary.tsv is the smaller table for plotting. PUBLICATION_FROZEN.json
+is written before assessment arrays are read in this replay process.
+
+The fixed rules are score_margin (anchor magnitude), repeated_splitting (lower
+5% floor order statistic over signed allocation margins), cross_fitting (absolute
+mean scored-fold margin), independent_unit_resampling (lower 5% floor order
+statistic from whole-unit mean resampling), and existing_refara_reporting
+(anchor magnitude minus the maximum development allocation displacement for the
+model pair). Full cross-fitting and repeated splitting share the same 64
+oriented allocations; repeated splitting additionally tests their lower tail.
+The first-partition companion uses only the first complementary pair. Ranking
+scores are not confidence intervals. The calibration penalty adapts the earlier
+REFARA reporting rule to unit-by-task displacement and is labelled accordingly.
+
+Common coverage cannot split a connected score-tie block or force an ineligible
+comparison to publish. Primary M is the largest common count at or below 50%
+coverage. If the count is below 10 or coverage below 25%, that matched endpoint
+is not evaluable; natural coverage and natural failures remain visible. Every
+published comparison is supported, reversed or unresolved against the same
+assessment interval. Intervals touching zero are unresolved. Missing/constant
+unsupported margins are unassessable and count as unresolved when published.
+Held comparisons stay in the fixed N denominator. Reversal and unresolved
+fractions use the published M denominator and are null at M=0.
+
+This is retrospective evidence, not independent confirmation. GSE181897 P16/A46
+donors and historical outcomes were already inspected. Calibration uses eight
+previously used Parse donors. All donors share the existing experimental pools;
+different donor IDs do not establish independent native cultures. Primary
+intervals use a conditional-donor working-independence model and the envelope
+of Bonferroni t and joint studentized bootstrap intervals. Secondary intervals
+use Bonferroni t over all 504 comparisons with each context's fixed donor roster.
+These are assumption-conditional diagnostics, not validated coverage guarantees
+or new-batch inference. Pool exclusions change point means only. Prior generic
+synthetic stress experiments did not calibrate this actual study.
+
+The primary matched point has M=31/63: all five rules report 31 supported,
+zero reversed and zero unresolved comparisons. Natural REFARA coverage is
+36/63, compared with 58/63 for repeated splitting and unit resampling. At every
+positive common primary count, all five rules have the same reversal/unresolved
+counts. This experiment establishes no matched-coverage REFARA advantage. The
+synthetic command and tests include actual reversals, unresolved intervals,
+missing support and abstention; engineering tests do not prove scientific value.
+
+Matrix API:
+  from reference_design.reporting_validation import (
+      publication_candidates, common_coverage, working_assessment_intervals,
+      finite_panel_risk_bounds, paired_rule_difference_bounds)
+
+publication_candidates expects [unit, oriented allocation, comparison] margins
+(loss_b minus loss_a), a frozen calibration penalty per comparison, unique unit
+and comparison IDs, and an explicit antithetic_O_half allocation contract with
+seed_aggregation='mean_after_scoring' and an upstream basis. Paired consecutive
+folds must really exchange input and held-out controls; summaries cannot verify
+that condition. The unit bootstrap and allocation quantiles use fixed defaults
+and strict eligibility >1e-12. Assessment inputs do not belong in this step.
+
+working_assessment_intervals expects [unit, comparison] margins and explicit
+unit_definition, conditioning_scope and working_independence_basis strings.
+Rows receive equal weight. Supply the total frozen multiplicity when processing
+a prespecified subset. Neither a user declaration nor this API authenticates
+experimental independence. Constant values do not automatically yield exact
+zero-width intervals. Nonfinite joint bootstrap quantiles cannot fall back to
+the narrower t interval. The full receipt-based input/fold/assessment integration
+remains synthetic-only until an appropriate real-study admission is implemented.
+
+Float64 arrays round-trip exactly in NPZ; per-fit losses, family losses, task
+order, allocation order and anonymized donor/pool metadata are retained. The
+export omits raw expression, per-gene predictions and repeated JSON expansions.
+It therefore reproduces the reporting analysis, not upstream model inference.
+See EXPORT_RECEIPT.json for sizes and protocol.json for the local freeze, source
+digests and statistical scope. This was a local freeze, not public preregistration.
+Small differences in SciPy t-quantiles are checked at 1e-12 numeric tolerance;
+the actual decision boundaries remain strict zero throughout.

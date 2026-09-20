@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0.0",
+  "binding_id": "F2_MAIN_PANEL_BINDING_V1",
+  "editorial_status": "PROSE_ONLY_PUBLIC_RELEASE_SUCCESSOR",
+  "frozen_production_identity": {
+    "bytes": 7837,
+    "sha256": "45d22962f7fce891db0fc58d42e435811ab8c0048ffdca63a0c30a4184824ea9"
+  },
+  "editorial_note": "Wording was edited for clarity in this public version. All numerical settings, identifiers and decisions are unchanged from the frozen production binding.",
+  "state": "FROZEN_BEFORE_NEW_SIMULATION_OUTCOMES__EXISTING_NEGATIVE_CONTROLS_FIXED_AFTER_INSPECTION",
+  "purpose": "Records the fixed cells, endpoints and aggregation rules for artwork identifier 2 (current Figure 5), together with the complete Source Data grid.",
+  "simulation_contract": {
+    "path": "08_ANALYSIS_REBUILD_FREEZE/SIMULATION_OPERATING_CHARACTERISTICS_CONTRACT_V1.json",
+    "bytes": 41416,
+    "sha256": "579e03bac4ad103666237531d0da980ba4a11dae61b8b4495e9f7ffacc560d30"
+  },
+  "simulation_cell_manifest": {
+    "path": "08_ANALYSIS_REBUILD_FREEZE/SIMULATION_CELL_MANIFEST_V1.tsv",
+    "bytes": 62389,
+    "sha256": "e27efcab9c0ea70ae1c26215abb9c5a3d2367e6d5b06f46276bd9ecb5bb7a650",
+    "registered_rows": 280
+  },
+  "existing_negative_control_binding": {
+    "path": "08_ANALYSIS_REBUILD_FREEZE/F2_EXISTING_NEGATIVE_CONTROL_BINDING_V1.json",
+    "bytes": 3705,
+    "sha256": "03ae666540e4d2a08c5cc591a16b50a7ee00bc5bd2d49e3c890dbc11eb8f89c3"
+  },
+  "panel_order": [
+    "F2A_BASELINE_RECOVERY",
+    "F2B_GLOBAL_NULL_CALIBRATION",
+    "F2C_STRESS_RECOVERY_AND_ABSTENTION",
+    "F2D_EXISTING_HIERARCHICAL_NEGATIVE_CONTROLS"
+  ],
+  "panels": {
+    "F2A_BASELINE_RECOVERY": {
+      "scientific_message": "Recovery rises with the specified separation and the number of independent roots under the balanced complete-root law.",
+      "manifest_selector": {
+        "axis_variant": ["BASE"],
+        "standardized_effect_delta": [-1.0, -0.5, -0.25, 0.25, 0.5, 1.0],
+        "root_count_R": [8, 12, 20, 40]
+      },
+      "selected_cell_count": 24,
+      "ordered_cell_id_digest_rule": "SHA256_OF_MANIFEST_ORDER_CELL_IDS_ONE_PER_LINE_WITH_FINAL_LF",
+      "ordered_cell_id_sha256": "159f6b44842b6eba5c0e81f31022469173fd5b10f49cbc2048c9ff671e1f0d57",
+      "primary_endpoint": "SIM_EXACT_FAMILY_RECOVERY",
+      "subordinate_endpoint": "SIM_TRUE_EDGE_RECOVERY",
+      "display_grouping": ["absolute_standardized_effect", "root_count_R"],
+      "label_reflection_pooling": "POOL_PLUS_AND_MINUS_OF_EQUAL_ABSOLUTE_DELTA_BY_REGISTERED_RULE",
+      "displayed_group_count_per_endpoint": 12,
+      "intervals": "BINARY_CLOPPER_PEARSON_N10000_FOR_EXACT_FAMILY;BOUNDED_HOEFFDING_N10000_FOR_TRUE_EDGE",
+      "prohibitions": [
+        "DO_NOT_LABEL_DELTA_AS_BIOLOGICAL_SESOI",
+        "DO_NOT_DESCRIBE_DELTA_AS_COMMON_TO_ALL_SIX_UNORDERED_EDGES",
+        "DO_NOT_DROP_EITHER_SIGNED_SOURCE_CELL"
+      ]
+    },
+    "F2B_GLOBAL_NULL_CALIBRATION": {
+      "scientific_message": "False directional selection is assessed at zero signal for every specified stress state, with the complete 12-direction family intact.",
+      "manifest_selector": {
+        "axis_variant": ["BASE", "TIE010", "TIE030", "TIE050", "MISS010", "MISS025", "MISS050", "SUPPORT_MILD", "SUPPORT_MODERATE", "SUPPORT_SEVERE"],
+        "standardized_effect_delta": [0.0],
+        "root_count_R": [8, 12, 20, 40]
+      },
+      "selected_cell_count": 40,
+      "ordered_cell_id_digest_rule": "SHA256_OF_MANIFEST_ORDER_CELL_IDS_ONE_PER_LINE_WITH_FINAL_LF",
+      "ordered_cell_id_sha256": "868640b551fabfae949d7e3110e98aa66d4e2c98792f214ef59bdb309e7eef9a",
+      "primary_endpoint": "SIM_ANY_FALSE_SELECTION",
+      "algebraic_alias_at_delta_zero": "SIM_FWER_GLOBAL_NULL",
+      "display_grouping": ["axis_variant", "root_count_R"],
+      "label_reflection_pooling": "NOT_APPLICABLE_DELTA_ZERO",
+      "displayed_group_count": 40,
+      "intervals": "BINARY_CLOPPER_PEARSON_N5000_PER_CELL",
+      "fixed_reference_line": 0.05,
+      "axis_rule": "INCLUDE_ZERO_AND_0.10_AT_MINIMUM_AND_EXPAND_TO_INCLUDE_EVERY_POINT_AND_INTERVAL_WITHOUT_CLIPPING"
+    },
+    "F2C_STRESS_RECOVERY_AND_ABSTENTION": {
+      "scientific_message": "At the fixed intermediate separation, ties, missing complete roots and heterogeneous root support affect recovery through their specified support patterns and corresponding precision, while structural withholding remains separate from decision abstention.",
+      "manifest_selector": {
+        "axis_variant": ["BASE", "TIE010", "TIE030", "TIE050", "MISS010", "MISS025", "MISS050", "SUPPORT_MILD", "SUPPORT_MODERATE", "SUPPORT_SEVERE"],
+        "standardized_effect_delta": [-0.5, 0.5],
+        "root_count_R": [8, 12, 20, 40]
+      },
+      "selected_cell_count": 80,
+      "ordered_cell_id_digest_rule": "SHA256_OF_MANIFEST_ORDER_CELL_IDS_ONE_PER_LINE_WITH_FINAL_LF",
+      "ordered_cell_id_sha256": "e49a7f3f850fa5b67337682d64d063d04e55d2cf3056cfe8664ab37bfe8e71cd",
+      "primary_endpoints": [
+        "SIM_EXACT_FAMILY_RECOVERY",
+        "SIM_STRUCTURAL_WITHHOLD",
+        "SIM_DECISION_ABSTENTION"
+      ],
+      "derived_display_identity": "SIM_NO_DIRECTION_ABSTENTION_EQUALS_SIM_STRUCTURAL_WITHHOLD_PLUS_SIM_DECISION_ABSTENTION",
+      "display_grouping": ["axis_variant", "root_count_R"],
+      "label_reflection_pooling": "POOL_PLUS_AND_MINUS_DELTA_0_5_BY_REGISTERED_RULE",
+      "displayed_group_count_per_endpoint": 40,
+      "intervals": "BINARY_CLOPPER_PEARSON_N10000_AFTER_REGISTERED_LABEL_REFLECTION_POOLING",
+      "prohibitions": [
+        "DO_NOT_CLAIM_TIE_VERSUS_MISSING_MECHANISTIC_DIFFERENCE_AT_EQUAL_DELETION_PROBABILITY",
+        "DO_NOT_CALL_SUPPORT_CYCLES_CONSTANT_INFORMATION_IMBALANCE",
+        "DO_NOT_CLAIM_COMBINED_NUISANCE_ROBUSTNESS_OR_INTERACTIONS"
+      ]
+    },
+    "F2D_EXISTING_HIERARCHICAL_NEGATIVE_CONTROLS": {
+      "scientific_message": "Replacing acquisition roots with descendant tasks or cells changes the apparent null behavior and is an invalid inferential analysis.",
+      "source_table": {
+        "path": "05_SOURCE_DATA/validation_table/F3C_PSEUDOREPLICATION_V1.tsv",
+        "bytes": 9507,
+        "sha256": "e414ea9827e3bceda6f003f6720ab97605805cfb97dc123068d50b807af5c629"
+      },
+      "row_selection": "ALL_20_ROWS_EXACTLY_AS_BOUND",
+      "root_count_R": [8, 12, 20, 40],
+      "procedure_ids": [
+        "EXACT_ROOT_SIGN_HOLM",
+        "ROOT_CR1_T_MEAN_CONTRAST_HOLM",
+        "ROOT_NONPARAMETRIC_BOOTSTRAP_MEAN_CONTRAST_HOLM",
+        "TASK_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM",
+        "CELL_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM"
+      ],
+      "displayed_row_count": 20,
+      "intervals": "USE_PREEXISTING_TABLE_INTERVALS_WITHOUT_RECOMPUTATION",
+      "separation_rule": "VISUALLY_SEPARATE_FROM_NEW_280_CELL_GRID_AND_LABEL_AS_PREEXISTING_OUTCOME_EXPOSED_NEGATIVE_CONTROL",
+      "prohibitions": [
+        "DO_NOT_POOL_WITH_NEW_SIMULATION_DENOMINATORS",
+        "DO_NOT_CALL_DESCENDANT_PROCEDURES_VALID_FWER_ESTIMATES",
+        "DO_NOT_SELECT_ROOT_COUNTS_OR_PROCEDURES_BY_OBSERVED_MAGNITUDE"
+      ]
+    }
+  },
+  "cross_panel_cell_accounting": {
+    "panel_selection_instances": 144,
+    "unique_simulation_cells": 136,
+    "ordered_unique_cell_id_digest_rule": "FIRST_OCCURRENCE_IN_PANEL_ORDER_THEN_MANIFEST_ORDER_ONE_ID_PER_LINE_WITH_FINAL_LF",
+    "ordered_unique_cell_id_sha256": "b4d353e92b6fa5a4358ab9eab869b139b8fe02390df1b3130ad83a2886cf4d97",
+    "complete_source_data_cells_retained": 280,
+    "unselected_main_panel_cells_disposition": "RETAIN_AND_RELEASE_IN_COMPLETE_SOURCE_DATA_AND_EXTENDED_DATA_AS_FROZEN_WITHOUT_OUTCOME_GUIDED_PROMOTION"
+  },
+  "visualization_constraints": {
+    "figure_title": "NONE",
+    "panel_titles": "NONE",
+    "panel_letters": ["a", "b", "c", "d"],
+    "allowed_outcome_independent_changes_after_activation": [
+      "panel_geometry",
+      "font_size_within_journal_limits",
+      "colorblind_safe_palette",
+      "legend_placement",
+      "nonsemantic_line_and_marker_style"
+    ],
+    "forbidden_after_activation": [
+      "scientific_cell_or_endpoint_substitution",
+      "row_or_procedure_omission",
+      "outcome_selected_axis_truncation",
+      "favorable_only_annotation",
+      "panel_reordering_that_changes_the_registered_evidence_logic"
+    ]
+  },
+  "outcome_fields_present": false
+}

@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "biological_experiments": 1,
+  "state_utility_shape": [
+    55,
+    30,
+    6,
+    4,
+    5
+  ],
+  "effect_utility_shape": [
+    55,
+    30,
+    6,
+    5
+  ],
+  "original_state_rows_preserved_exactly": true,
+  "unchanged_table_sha256": {
+    "all_depth_pair_summary.tsv": "06ed5ee3265a0f19ff13333276f762af7866c546257b53a11999a63a22172c07",
+    "all_task_pair_summary.tsv": "d27f369ffad25b177c9f6d88790971437a1d97eee073a08cdfc8833f89f77b67",
+    "b_allocations.tsv": "dfb8b17014e2e113ca29e9ae30924bd1b34e0c7cae437a4e60c329daeda67361",
+    "b_summary.tsv": "ab9463a71284902a7533c943a2631f77bf01d67701dfed1f5c59f2aa3cbb4101",
+    "c_allocations.tsv": "5ecdd6bd1c44cf957efac4ed693634f2304e85e73d786b95f36327fbd1c71602",
+    "c_summary.tsv": "f3fa1fbd7e3bc32c496ff15847b16b237a148938cd1d28abe0bec1d53cec76e4",
+    "crossings_after_mean.tsv": "bf9aee934c092a15b100474ea134a73e713f3f6cdc6234b1de98c07fcd8f868d"
+  },
+  "original_source_receipt_sha256": "06d4bfc06c59014ea19ce7a0de33a616c8374c2e38ce8ddb8ff3ddb34a43009c",
+  "source_utilities_sha256": "c247e264a78ba6f6db78d62b879a0a81765f55dbe90174da5501cec4ddcea640",
+  "source_record_sha256": "9e6d9c43955b491b93e74b83a5cd55a0f8c8401c5d8213becae59609de966949",
+  "effect_score_receipt_sha256": "799d8e1dc577522bb8d8d931e4ccefda724542894963d721783e6a8be37ae428",
+  "effect_result_files_sha256": {
+    "allocation_mean_pairs.tsv": "6285ce75a3fa9997111c9c52d434b490f41763ddf77a384d795ff9dd642f3511",
+    "effect_utilities.npz": "8b5e528f2f29cbaa4c1403b974d057eee1de747c79f42b209bb90f1229314571",
+    "overall_mean_pairs.tsv": "9c2bd828668dac1464809b0b9e5bb5b9ef1d93403560cfdb0c75081fefb184de",
+    "task_allocation_pairs.tsv.gz": "1871bbfd0f437fc18e90a9946ad7c7931c9dc3f9e424c6b9bbe3ad90ca5a89ee",
+    "task_mean_pairs.tsv": "39ef967dff59ba1f11b986d3db1bc1b82d3fef42a75c1b7388c3de62fbbabaa4"
+  },
+  "protocol_sha256": "0f989cf4570ab93c1de3e3e7ead7baad4d29a2e15fd034cc064f3c00c5ed3cb3",
+  "tables": {
+    "a_allocations": 4500,
+    "a_summary": 150,
+    "all_depth_pair_summary": 180,
+    "all_task_pair_summary": 9900,
+    "b_allocations": 180,
+    "b_summary": 6,
+    "c_allocations": 900,
+    "c_summary": 30,
+    "crossings_after_mean": 30,
+    "d_allocation_mean_pairs": 540,
+    "d_overall_pairs": 18,
+    "d_summary": 18,
+    "d_task_mean_pairs": 990
+  },
+  "panel_d_pairs": 18,
+  "panel_d_crossings": 4,
+  "panel_d_normalization": "ratio of aggregate d_S and aggregate V; not an average of allocation-level ratios",
+  "script_sha256": "c9f192335068af0a108fac8f2e2c77a4f1f9d431cdfdceee6b25118bb93e192f",
+  "output_sha256": {
+    "Extended_Data_Figure_8_Source_Data.xlsx": "c98364c3175af7b1b24b2aebe1ff276056272984c31390581456a48a39b63f91",
+    "a_allocations.tsv": "81f769adca4764051f51657ceefed7902ea635ae056771ebdb9af4af9d25fabf",
+    "a_summary.tsv": "ea5ba76e6e0770dd32d92edb0c889929e00de35419600f7bfd387092ea44da7b",
+    "all_depth_pair_summary.tsv": "06ed5ee3265a0f19ff13333276f762af7866c546257b53a11999a63a22172c07",
+    "all_task_pair_summary.tsv": "d27f369ffad25b177c9f6d88790971437a1d97eee073a08cdfc8833f89f77b67",
+    "b_allocations.tsv": "dfb8b17014e2e113ca29e9ae30924bd1b34e0c7cae437a4e60c329daeda67361",
+    "b_summary.tsv": "ab9463a71284902a7533c943a2631f77bf01d67701dfed1f5c59f2aa3cbb4101",
+    "c_allocations.tsv": "5ecdd6bd1c44cf957efac4ed693634f2304e85e73d786b95f36327fbd1c71602",
+    "c_summary.tsv": "f3fa1fbd7e3bc32c496ff15847b16b237a148938cd1d28abe0bec1d53cec76e4",
+    "crossings_after_mean.tsv": "bf9aee934c092a15b100474ea134a73e713f3f6cdc6234b1de98c07fcd8f868d",
+    "d_allocation_mean_pairs.tsv": "6285ce75a3fa9997111c9c52d434b490f41763ddf77a384d795ff9dd642f3511",
+    "d_overall_pairs.tsv": "9c2bd828668dac1464809b0b9e5bb5b9ef1d93403560cfdb0c75081fefb184de",
+    "d_summary.tsv": "1f310d195ecb112a5645c3ee2fbf2ad4b4d33bd3e7a6223732a33abfe59d7e26",
+    "d_task_mean_pairs.tsv": "39ef967dff59ba1f11b986d3db1bc1b82d3fef42a75c1b7388c3de62fbbabaa4"
+  }
+}

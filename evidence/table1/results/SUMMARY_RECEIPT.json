@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-09-12T17:38:49.950920+00:00",
+  "protocol_sha256": "e65613d2f393663cb324535fac93efbc01ebc818865c6f063626a61d02461689",
+  "summary_code_sha256": "f6a3a6c9acb714debd235f1f0be6b51afcc9d316aa7a626076737253d0426118",
+  "cube_sha256": "a8237c2ab7ff08183357b1e87210aa7a1adf1e886ae19a7957faa5d54df15b65",
+  "empirical_receipt_sha256": "e7c415597c1e7fc6d1dd8f0c9be025189c41d93cbbe77c4b895d438319686a0b",
+  "status": "PASS_COMPLETE_ROLE_SUMMARIES",
+  "finished_utc": "2026-09-12T17:38:52.040827+00:00",
+  "elapsed_seconds": 2.1255562156438828,
+  "table_rows": {
+    "pattern_means.tsv": 864,
+    "role_contrasts.tsv": 432,
+    "role_interactions.tsv": 432,
+    "workflow_comparison.tsv": 288
+  },
+  "outputs": {
+    "SUMMARY_BINDING.json": {
+      "sha256": "ec1353375dd3a2c5d7ce439cbe833ba2d925fca621df0020b15664f1124d0351",
+      "bytes": 444
+    },
+    "SUMMARY_METADATA.json": {
+      "sha256": "b49e676b0fb2f3e3a21e904cf65cc9220f0b4d374be8ab5a6763921e5b68ee99",
+      "bytes": 37082
+    },
+    "pattern_means.tsv": {
+      "sha256": "b77565609e661a614fdb6264ed5804052b787574211d4c9fd4a6cfa8e662bd70",
+      "bytes": 96092
+    },
+    "role_contrasts.tsv": {
+      "sha256": "a213a7c0e1d2f4db1db688987786629e78df25e28234dc9e428a8ffa9b839df7",
+      "bytes": 72140
+    },
+    "role_interactions.tsv": {
+      "sha256": "16841bb0ee63800a8c02e668fc083814d92b663235da9bbdc6833e6948700224",
+      "bytes": 66052
+    },
+    "workflow_comparison.tsv": {
+      "sha256": "5e751dd11a8e85046d7eaf4bb94be05e614bbbd890754818d6424064a9de5868",
+      "bytes": 57876
+    }
+  }
+}

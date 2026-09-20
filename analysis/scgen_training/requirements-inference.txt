@@ -1,0 +1,4 @@
+# Tested with Python 3.10.17; CPU computation. The audited installation was the
+# 2.0.0+cu117 build, but no CUDA device or toolkit is required for CPU inference.
+numpy==1.23.5
+torch==2.0.0

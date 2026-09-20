@@ -1,0 +1,40 @@
+{
+  "schema": "program_responses_numerical_capsule_v1",
+  "source_release": "NATURE_METHODS_20260915_github_ci_portability_local_review_v1",
+  "inputs": {
+    "inputs/cap48_task_programs.tsv": "afcfd2d2e3f08a1d2881341d3d1907b58f81407e175b7d2645149f07d052e7a0",
+    "inputs/donor_errors.tsv": "87cc221735a44d3922d2cfc91e8b21b7928b9de6bc226a3334cdb00922a57b89",
+    "inputs/original8_task_programs.tsv": "fecb9600e3b45d07e6d267127652b97ec5a87d95b698f01318c94c561c093f8a"
+  },
+  "provenance": {
+    "inputs/original8_task_programs.tsv": {
+      "source": "05_SOURCE_DATA/Figure_4_updated_training_programs/readability_v2/inputs/original8_PRIMARY_TASK_PROGRAMS.tsv",
+      "sha256": "fecb9600e3b45d07e6d267127652b97ec5a87d95b698f01318c94c561c093f8a"
+    },
+    "original8_original8_expectation": {
+      "source": "05_SOURCE_DATA/Figure_4_updated_training_programs/readability_v2/inputs/original8_original8_SUMMARY.json",
+      "sha256": "638ded868593986126f03575977f710ef02ad3ae65c570611480e9b1a86927f1"
+    },
+    "original8_new39_expectation": {
+      "source": "05_SOURCE_DATA/Figure_4_updated_training_programs/readability_v2/inputs/original8_new39_SUMMARY.json",
+      "sha256": "2cf1f2d2a4118b06d6bad763e879bc398647f41139c41e2c9dd1ee86f08e0335"
+    },
+    "inputs/cap48_task_programs.tsv": {
+      "source": "05_SOURCE_DATA/Figure_4_updated_training_programs/readability_v2/inputs/cap48_PRIMARY_TASK_PROGRAMS.tsv",
+      "sha256": "afcfd2d2e3f08a1d2881341d3d1907b58f81407e175b7d2645149f07d052e7a0"
+    },
+    "cap48_original8_expectation": {
+      "source": "05_SOURCE_DATA/Figure_4_updated_training_programs/readability_v2/inputs/cap48_original8_SUMMARY.json",
+      "sha256": "43e8bc2833fa3e9dff32017058bac296ccf8c56aaf3f7cbe0f1335dc3c8a2d07"
+    },
+    "cap48_new39_expectation": {
+      "source": "05_SOURCE_DATA/Figure_4_updated_training_programs/readability_v2/inputs/cap48_new39_SUMMARY.json",
+      "sha256": "5826435b3bd6cf5ede6b95afa5ad8a567957bdc3bfe94d4f7c331717ef37dd2b"
+    },
+    "inputs/donor_errors.tsv": {
+      "source": "05_SOURCE_DATA/Figure_4_updated_training_programs/readability_v2/inputs/PANELS_BC_ALL_DONORS.tsv",
+      "sha256": "87cc221735a44d3922d2cfc91e8b21b7928b9de6bc226a3334cdb00922a57b89"
+    }
+  },
+  "expected_sha256": "2bda1cab43df2a7222ef272195f492d916566c9cb74e2eef55ee75c4890d0b88"
+}
