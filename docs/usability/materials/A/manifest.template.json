@@ -1,0 +1,56 @@
+{
+  "target": "heldout_effect",
+  "prediction_controls": "unavailable",
+  "cells": {
+    "format": "h5ad",
+    "path": "cells.h5ad",
+    "layer": "请填写",
+    "unit_column": "请填写",
+    "condition_column": "请填写",
+    "strata_columns": [
+      "请填写"
+    ],
+    "context_columns": [
+      "请填写"
+    ],
+    "normalization": "already transformed synthetic measurements"
+  },
+  "tasks": "tasks.tsv",
+  "control_value": "vehicle",
+  "treated_aggregation": "请填写",
+  "allocation": {
+    "blocks": 0,
+    "depths": [
+      2
+    ],
+    "allocations": 2,
+    "seed": 19
+  },
+  "diagnostics": true,
+  "models": [
+    {
+      "name": "first",
+      "kind": "effect",
+      "conditioning": "fixed",
+      "representation": "native",
+      "predictions": {
+        "format": "h5ad",
+        "path": "first.h5ad",
+        "layer": "X",
+        "task_column": "task_name"
+      }
+    },
+    {
+      "name": "second",
+      "kind": "effect",
+      "conditioning": "fixed",
+      "representation": "native",
+      "predictions": {
+        "format": "h5ad",
+        "path": "second.h5ad",
+        "layer": "X",
+        "task_column": "task_name"
+      }
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "D_largest_absolute_score_program_frequencies": {
+    "HALLMARK_INTERFERON_ALPHA_RESPONSE": 1200
+  },
+  "S_D_same_largest_absolute_score_program_task_settings": 1200,
+  "S_largest_absolute_score_program_frequencies": {
+    "HALLMARK_INTERFERON_ALPHA_RESPONSE": 1200
+  },
+  "assignment_ranges": {
+    "direction_tasks": {
+      "0.0": {
+        "maximum": 40,
+        "minimum": 38
+      },
+      "0.01": {
+        "maximum": 40,
+        "minimum": 37
+      },
+      "0.025": {
+        "maximum": 38,
+        "minimum": 30
+      },
+      "0.05": {
+        "maximum": 18,
+        "minimum": 9
+      }
+    },
+    "priority_tasks": {
+      "1": {
+        "maximum": 0,
+        "minimum": 0
+      },
+      "10": {
+        "maximum": 40,
+        "minimum": 38
+      },
+      "3": {
+        "maximum": 19,
+        "minimum": 8
+      },
+      "5": {
+        "maximum": 37,
+        "minimum": 29
+      }
+    }
+  },
+  "largest_absolute_score_program_common_to_all_S_D_task_settings": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+  "observed_primary_largest_absolute_score_program_frequencies": {
+    "HALLMARK_ANDROGEN_RESPONSE": 1,
+    "HALLMARK_APICAL_JUNCTION": 1,
+    "HALLMARK_INTERFERON_ALPHA_RESPONSE": 38
+  },
+  "prediction_reference_setting_count": 30,
+  "primary_direction": {
+    "0.0": {
+      "donor_denominator": 8,
+      "donors_with_at_least_one_opposite_active_direction": 8,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_absolute_score_in_both_predictions": 0.0,
+      "task_denominator": 40,
+      "task_program_denominator": 1480,
+      "task_programs_with_opposite_active_directions": 304,
+      "tasks_with_at_least_one_opposite_active_direction": 39,
+      "uses_original_primary_prediction_reference": true
+    },
+    "0.01": {
+      "donor_denominator": 8,
+      "donors_with_at_least_one_opposite_active_direction": 8,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_absolute_score_in_both_predictions": 0.01,
+      "task_denominator": 40,
+      "task_program_denominator": 1480,
+      "task_programs_with_opposite_active_directions": 163,
+      "tasks_with_at_least_one_opposite_active_direction": 38,
+      "uses_original_primary_prediction_reference": true
+    },
+    "0.025": {
+      "donor_denominator": 8,
+      "donors_with_at_least_one_opposite_active_direction": 8,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_absolute_score_in_both_predictions": 0.025,
+      "task_denominator": 40,
+      "task_program_denominator": 1480,
+      "task_programs_with_opposite_active_directions": 70,
+      "tasks_with_at_least_one_opposite_active_direction": 34,
+      "uses_original_primary_prediction_reference": true
+    },
+    "0.05": {
+      "donor_denominator": 8,
+      "donors_with_at_least_one_opposite_active_direction": 7,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_absolute_score_in_both_predictions": 0.05,
+      "task_denominator": 40,
+      "task_program_denominator": 1480,
+      "task_programs_with_opposite_active_directions": 16,
+      "tasks_with_at_least_one_opposite_active_direction": 13,
+      "uses_original_primary_prediction_reference": true
+    }
+  },
+  "primary_observed_direction_alignment": {
+    "0.0": {
+      "affected_tasks_with_equal_match_counts": 5,
+      "affected_tasks_with_more_D_matches": 21,
+      "affected_tasks_with_more_S_matches": 13,
+      "evaluable_opposite_direction_task_programs": 304,
+      "minimum_absolute_score_in_S_D_and_observed": 0.0,
+      "observed_direction_matches_D_calls": 170,
+      "observed_direction_matches_S_calls": 134,
+      "task_denominator": 40,
+      "task_program_denominator": 1480,
+      "tasks_with_at_least_one_evaluable_call": 39
+    },
+    "0.01": {
+      "affected_tasks_with_equal_match_counts": 7,
+      "affected_tasks_with_more_D_matches": 20,
+      "affected_tasks_with_more_S_matches": 11,
+      "evaluable_opposite_direction_task_programs": 148,
+      "minimum_absolute_score_in_S_D_and_observed": 0.01,
+      "observed_direction_matches_D_calls": 89,
+      "observed_direction_matches_S_calls": 59,
+      "task_denominator": 40,
+      "task_program_denominator": 1480,
+      "tasks_with_at_least_one_evaluable_call": 38
+    },
+    "0.025": {
+      "affected_tasks_with_equal_match_counts": 3,
+      "affected_tasks_with_more_D_matches": 19,
+      "affected_tasks_with_more_S_matches": 10,
+      "evaluable_opposite_direction_task_programs": 55,
+      "minimum_absolute_score_in_S_D_and_observed": 0.025,
+      "observed_direction_matches_D_calls": 39,
+      "observed_direction_matches_S_calls": 16,
+      "task_denominator": 40,
+      "task_program_denominator": 1480,
+      "tasks_with_at_least_one_evaluable_call": 32
+    },
+    "0.05": {
+      "affected_tasks_with_equal_match_counts": 0,
+      "affected_tasks_with_more_D_matches": 5,
+      "affected_tasks_with_more_S_matches": 3,
+      "evaluable_opposite_direction_task_programs": 9,
+      "minimum_absolute_score_in_S_D_and_observed": 0.05,
+      "observed_direction_matches_D_calls": 6,
+      "observed_direction_matches_S_calls": 3,
+      "task_denominator": 40,
+      "task_program_denominator": 1480,
+      "tasks_with_at_least_one_evaluable_call": 8
+    }
+  },
+  "primary_priority": {
+    "1": {
+      "inference_block": 1,
+      "label_id": 0,
+      "mean_S_D_top_k_intersection": 1.0,
+      "task_denominator": 40,
+      "tasks_with_different_S_D_top_k_sets": 0,
+      "top_k_by_absolute_predicted_score": 1,
+      "uses_original_primary_prediction_reference": true
+    },
+    "10": {
+      "inference_block": 1,
+      "label_id": 0,
+      "mean_S_D_top_k_intersection": 7.2,
+      "task_denominator": 40,
+      "tasks_with_different_S_D_top_k_sets": 39,
+      "top_k_by_absolute_predicted_score": 10,
+      "uses_original_primary_prediction_reference": true
+    },
+    "3": {
+      "inference_block": 1,
+      "label_id": 0,
+      "mean_S_D_top_k_intersection": 2.725,
+      "task_denominator": 40,
+      "tasks_with_different_S_D_top_k_sets": 11,
+      "top_k_by_absolute_predicted_score": 3,
+      "uses_original_primary_prediction_reference": true
+    },
+    "5": {
+      "inference_block": 1,
+      "label_id": 0,
+      "mean_S_D_top_k_intersection": 3.85,
+      "task_denominator": 40,
+      "tasks_with_different_S_D_top_k_sets": 36,
+      "top_k_by_absolute_predicted_score": 5,
+      "uses_original_primary_prediction_reference": true
+    }
+  },
+  "primary_priority_cutoff_margin_sensitivity": [
+    {
+      "eligible_tasks_with_different_S_D_top_k_sets": 0,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_kth_to_next_score_margin_in_both_predictions": 0.0,
+      "task_denominator": 40,
+      "tasks_meeting_both_cutoff_margins": 40,
+      "top_k_by_absolute_predicted_score": 1,
+      "uses_original_primary_prediction_reference": true
+    },
+    {
+      "eligible_tasks_with_different_S_D_top_k_sets": 0,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_kth_to_next_score_margin_in_both_predictions": 0.01,
+      "task_denominator": 40,
+      "tasks_meeting_both_cutoff_margins": 40,
+      "top_k_by_absolute_predicted_score": 1,
+      "uses_original_primary_prediction_reference": true
+    },
+    {
+      "eligible_tasks_with_different_S_D_top_k_sets": 0,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_kth_to_next_score_margin_in_both_predictions": 0.025,
+      "task_denominator": 40,
+      "tasks_meeting_both_cutoff_margins": 40,
+      "top_k_by_absolute_predicted_score": 1,
+      "uses_original_primary_prediction_reference": true
+    },
+    {
+      "eligible_tasks_with_different_S_D_top_k_sets": 0,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_kth_to_next_score_margin_in_both_predictions": 0.05,
+      "task_denominator": 40,
+      "tasks_meeting_both_cutoff_margins": 40,
+      "top_k_by_absolute_predicted_score": 1,
+      "uses_original_primary_prediction_reference": true
+    },
+    {
+      "eligible_tasks_with_different_S_D_top_k_sets": 11,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_kth_to_next_score_margin_in_both_predictions": 0.0,
+      "task_denominator": 40,
+      "tasks_meeting_both_cutoff_margins": 40,
+      "top_k_by_absolute_predicted_score": 3,
+      "uses_original_primary_prediction_reference": true
+    },
+    {
+      "eligible_tasks_with_different_S_D_top_k_sets": 10,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_kth_to_next_score_margin_in_both_predictions": 0.01,
+      "task_denominator": 40,
+      "tasks_meeting_both_cutoff_margins": 38,
+      "top_k_by_absolute_predicted_score": 3,
+      "uses_original_primary_prediction_reference": true
+    },
+    {
+      "eligible_tasks_with_different_S_D_top_k_sets": 8,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_kth_to_next_score_margin_in_both_predictions": 0.025,
+      "task_denominator": 40,
+      "tasks_meeting_both_cutoff_margins": 31,
+      "top_k_by_absolute_predicted_score": 3,
+      "uses_original_primary_prediction_reference": true
+    },
+    {
+      "eligible_tasks_with_different_S_D_top_k_sets": 1,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_kth_to_next_score_margin_in_both_predictions": 0.05,
+      "task_denominator": 40,
+      "tasks_meeting_both_cutoff_margins": 18,
+      "top_k_by_absolute_predicted_score": 3,
+      "uses_original_primary_prediction_reference": true
+    },
+    {
+      "eligible_tasks_with_different_S_D_top_k_sets": 36,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_kth_to_next_score_margin_in_both_predictions": 0.0,
+      "task_denominator": 40,
+      "tasks_meeting_both_cutoff_margins": 40,
+      "top_k_by_absolute_predicted_score": 5,
+      "uses_original_primary_prediction_reference": true
+    },
+    {
+      "eligible_tasks_with_different_S_D_top_k_sets": 14,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_kth_to_next_score_margin_in_both_predictions": 0.01,
+      "task_denominator": 40,
+      "tasks_meeting_both_cutoff_margins": 16,
+      "top_k_by_absolute_predicted_score": 5,
+      "uses_original_primary_prediction_reference": true
+    },
+    {
+      "eligible_tasks_with_different_S_D_top_k_sets": 7,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_kth_to_next_score_margin_in_both_predictions": 0.025,
+      "task_denominator": 40,
+      "tasks_meeting_both_cutoff_margins": 8,
+      "top_k_by_absolute_predicted_score": 5,
+      "uses_original_primary_prediction_reference": true
+    },
+    {
+      "eligible_tasks_with_different_S_D_top_k_sets": 0,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_kth_to_next_score_margin_in_both_predictions": 0.05,
+      "task_denominator": 40,
+      "tasks_meeting_both_cutoff_margins": 0,
+      "top_k_by_absolute_predicted_score": 5,
+      "uses_original_primary_prediction_reference": true
+    },
+    {
+      "eligible_tasks_with_different_S_D_top_k_sets": 39,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_kth_to_next_score_margin_in_both_predictions": 0.0,
+      "task_denominator": 40,
+      "tasks_meeting_both_cutoff_margins": 40,
+      "top_k_by_absolute_predicted_score": 10,
+      "uses_original_primary_prediction_reference": true
+    },
+    {
+      "eligible_tasks_with_different_S_D_top_k_sets": 9,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_kth_to_next_score_margin_in_both_predictions": 0.01,
+      "task_denominator": 40,
+      "tasks_meeting_both_cutoff_margins": 10,
+      "top_k_by_absolute_predicted_score": 10,
+      "uses_original_primary_prediction_reference": true
+    },
+    {
+      "eligible_tasks_with_different_S_D_top_k_sets": 0,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_kth_to_next_score_margin_in_both_predictions": 0.025,
+      "task_denominator": 40,
+      "tasks_meeting_both_cutoff_margins": 0,
+      "top_k_by_absolute_predicted_score": 10,
+      "uses_original_primary_prediction_reference": true
+    },
+    {
+      "eligible_tasks_with_different_S_D_top_k_sets": 0,
+      "inference_block": 1,
+      "label_id": 0,
+      "minimum_kth_to_next_score_margin_in_both_predictions": 0.05,
+      "task_denominator": 40,
+      "tasks_meeting_both_cutoff_margins": 0,
+      "top_k_by_absolute_predicted_score": 10,
+      "uses_original_primary_prediction_reference": true
+    }
+  ],
+  "scope": "Frozen eight-donor program readouts; no inferential independence is assigned to tasks or overlapping programs.",
+  "source_sha256": {
+    "program_readouts.npz": "9484e44ec80b7393726526989dda060b2c467f0035e5b3258eb0b3c9bf015ab2",
+    "program_scores.tsv": "49da8c69966141b89bb92c7eb2467a45869fd63a5cd9ff31dbf492c7b5739dba",
+    "summarize_program_interpretation.py": "39a5025cec0089123118df4c71d2da046c39a35d9058b198bb77117106dbd3ff"
+  },
+  "status": "PASS_POST_HOC_DESCRIPTIVE_SUMMARY",
+  "tasks_per_prediction_reference_setting": 40,
+  "thresholds": [
+    0.0,
+    0.01,
+    0.025,
+    0.05
+  ],
+  "top_k_values": [
+    1,
+    3,
+    5,
+    10
+  ]
+}

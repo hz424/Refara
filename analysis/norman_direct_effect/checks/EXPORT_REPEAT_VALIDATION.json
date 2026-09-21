@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "exports": {
+    "Extended_Data_Figure_8.pdf": {
+      "sha256": "b3ca889a487b1b65036f4e63a37efa33661be84f58e9b5a991f93b9fab6e56cb",
+      "repeat_identical": true
+    },
+    "Extended_Data_Figure_8.svg": {
+      "sha256": "d1596ae0b602dc10bcd6c83fdb10cee9f604247b732de43638f6a2e5d1c3abc1",
+      "repeat_identical": true
+    },
+    "Extended_Data_Figure_8.png": {
+      "sha256": "54e698ee1e137915015c61db134267622f956d88d7c2b22e43292a05656f0d7e",
+      "repeat_identical": true
+    },
+    "Extended_Data_Figure_8.tiff": {
+      "sha256": "9c5380ecbe79e7b3a410038da156b5f08ac625b3fa89d9007ef2af1970bfcf44",
+      "repeat_identical": true
+    }
+  },
+  "source_files": {
+    "Extended_Data_Figure_8_Source_Data.xlsx": {
+      "sha256": "c98364c3175af7b1b24b2aebe1ff276056272984c31390581456a48a39b63f91",
+      "repeat_identical": true
+    },
+    "a_allocations.tsv": {
+      "sha256": "81f769adca4764051f51657ceefed7902ea635ae056771ebdb9af4af9d25fabf",
+      "repeat_identical": true
+    },
+    "a_summary.tsv": {
+      "sha256": "ea5ba76e6e0770dd32d92edb0c889929e00de35419600f7bfd387092ea44da7b",
+      "repeat_identical": true
+    },
+    "all_depth_pair_summary.tsv": {
+      "sha256": "06ed5ee3265a0f19ff13333276f762af7866c546257b53a11999a63a22172c07",
+      "repeat_identical": true
+    },
+    "all_task_pair_summary.tsv": {
+      "sha256": "d27f369ffad25b177c9f6d88790971437a1d97eee073a08cdfc8833f89f77b67",
+      "repeat_identical": true
+    },
+    "b_allocations.tsv": {
+      "sha256": "dfb8b17014e2e113ca29e9ae30924bd1b34e0c7cae437a4e60c329daeda67361",
+      "repeat_identical": true
+    },
+    "b_summary.tsv": {
+      "sha256": "ab9463a71284902a7533c943a2631f77bf01d67701dfed1f5c59f2aa3cbb4101",
+      "repeat_identical": true
+    },
+    "c_allocations.tsv": {
+      "sha256": "5ecdd6bd1c44cf957efac4ed693634f2304e85e73d786b95f36327fbd1c71602",
+      "repeat_identical": true
+    },
+    "c_summary.tsv": {
+      "sha256": "f3fa1fbd7e3bc32c496ff15847b16b237a148938cd1d28abe0bec1d53cec76e4",
+      "repeat_identical": true
+    },
+    "crossings_after_mean.tsv": {
+      "sha256": "bf9aee934c092a15b100474ea134a73e713f3f6cdc6234b1de98c07fcd8f868d",
+      "repeat_identical": true
+    },
+    "d_allocation_mean_pairs.tsv": {
+      "sha256": "6285ce75a3fa9997111c9c52d434b490f41763ddf77a384d795ff9dd642f3511",
+      "repeat_identical": true
+    },
+    "d_overall_pairs.tsv": {
+      "sha256": "9c2bd828668dac1464809b0b9e5bb5b9ef1d93403560cfdb0c75081fefb184de",
+      "repeat_identical": true
+    },
+    "d_summary.tsv": {
+      "sha256": "1f310d195ecb112a5645c3ee2fbf2ad4b4d33bd3e7a6223732a33abfe59d7e26",
+      "repeat_identical": true
+    },
+    "d_task_mean_pairs.tsv": {
+      "sha256": "39ef967dff59ba1f11b986d3db1bc1b82d3fef42a75c1b7388c3de62fbbabaa4",
+      "repeat_identical": true
+    }
+  }
+}

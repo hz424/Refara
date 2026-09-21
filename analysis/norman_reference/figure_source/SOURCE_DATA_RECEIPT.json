@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "utility_shape": [
+    55,
+    30,
+    6,
+    4,
+    5
+  ],
+  "biological_experiments": 1,
+  "source_record_sha256": "9e6d9c43955b491b93e74b83a5cd55a0f8c8401c5d8213becae59609de966949",
+  "source_utilities_sha256": "c247e264a78ba6f6db78d62b879a0a81765f55dbe90174da5501cec4ddcea640",
+  "tables": {
+    "a_summary": 120,
+    "a_allocations": 3600,
+    "b_summary": 6,
+    "b_allocations": 180,
+    "c_summary": 30,
+    "c_allocations": 900,
+    "crossings_after_mean": 30,
+    "all_task_pair_summary": 9900,
+    "all_depth_pair_summary": 180
+  },
+  "output_sha256": {
+    "Extended_Data_Figure_8_Source_Data.xlsx": "fe2ac5fd07b41e29163d0a890e6fc5a0998e39ca4130ef8bcdc924a1b8316f1b",
+    "a_allocations.tsv": "178a854e06adbdfc35b01c5adaa2ac195097e76855daed689af3c2b1ce4aa8c7",
+    "a_summary.tsv": "1743ac2f8c27fd44f8e827cddbe66607370c1dc49badec001dab6d2fed3664d1",
+    "all_depth_pair_summary.tsv": "06ed5ee3265a0f19ff13333276f762af7866c546257b53a11999a63a22172c07",
+    "all_task_pair_summary.tsv": "d27f369ffad25b177c9f6d88790971437a1d97eee073a08cdfc8833f89f77b67",
+    "b_allocations.tsv": "dfb8b17014e2e113ca29e9ae30924bd1b34e0c7cae437a4e60c329daeda67361",
+    "b_summary.tsv": "ab9463a71284902a7533c943a2631f77bf01d67701dfed1f5c59f2aa3cbb4101",
+    "c_allocations.tsv": "5ecdd6bd1c44cf957efac4ed693634f2304e85e73d786b95f36327fbd1c71602",
+    "c_summary.tsv": "f3fa1fbd7e3bc32c496ff15847b16b237a148938cd1d28abe0bec1d53cec76e4",
+    "crossings_after_mean.tsv": "bf9aee934c092a15b100474ea134a73e713f3f6cdc6234b1de98c07fcd8f868d"
+  }
+}

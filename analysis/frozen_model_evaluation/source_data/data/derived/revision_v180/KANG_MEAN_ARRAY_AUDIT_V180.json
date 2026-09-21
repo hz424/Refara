@@ -1,0 +1,23 @@
+{
+  "status": "PASS_MEAN_ARRAY_REPLAY",
+  "root_count": 8,
+  "task_count": 4,
+  "initialization_count": 5,
+  "mapping_count": 6,
+  "geometry_mapping_rows": 192,
+  "conditioning_mapping_rows": 960,
+  "reference_distance_mean": 0.49095036618263643,
+  "maximum_task_identity_residual": 3.3306690738754696e-16,
+  "maximum_root_identity_residual": 1.1102230246251565e-16,
+  "maximum_midpoint_residual": 2.7755575615628914e-17,
+  "margin_C": 0.018273322830658804,
+  "margin_B": -0.001010937797052089,
+  "margin_shift_B_minus_C": -0.019284260627710895,
+  "negative_paired_shift_roots": 8,
+  "root_crossings_C_to_B": 5,
+  "ridge_rms_output_displacement": 0.06392876715310014,
+  "cellflow_rms_output_displacement": 0.2079940172085688,
+  "interpretation": "FIXED_PANEL_DESCRIPTIVE; GEOMETRY_IS_AN_IDENTITY_NOT_TWO_VALIDATIONS",
+  "model_fitting_performed": false,
+  "maximum_sealed_endpoint_residual": 1.1102230246251565e-16
+}

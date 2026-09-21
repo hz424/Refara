@@ -1,0 +1,9 @@
+{
+  "original_spec_sha256": "083c38a23329afb6ecd31bfb088684214272d6fa9bdb18c86813a0b404657373",
+  "portable_spec_sha256": "926095e65474be976366d931f0d54a09c1e28839aa9742a3cb54440b4b82d614",
+  "removed_json_pointers": [
+    "/future_slurm_contract/account"
+  ],
+  "reason": "Remove author-specific scheduler account metadata from the portable release; numerical algorithms, generating laws, parameter values and random streams are unchanged.",
+  "numerical_spec_unchanged": true
+}

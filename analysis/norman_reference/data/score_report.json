@@ -1,0 +1,54 @@
+{
+  "baseline_fit_sha256": "df5eaf6473327dbd3c0fdeef28a1f8d40e5dd881cd21591233a39d054c437514",
+  "cpa_record_sha256": "6567c645af1f62888c1798f09780b572f69f69249f1fe64c5daf8b00d05a6668",
+  "depths_per_gemgroup": [
+    8,
+    16,
+    32,
+    64,
+    128,
+    135
+  ],
+  "diagnostic_zero_pairs": 3,
+  "identities": {
+    "D_minus_PO_midpoint": 1.6653345369377348e-16,
+    "D_minus_S_plus_V": 1.5265566588595902e-16,
+    "M_minus_S": 1.6653345369377348e-16,
+    "O_minus_S_plus_V_minus_2K": 1.5265566588595902e-16,
+    "P_minus_S_plus_V_plus_2K": 1.3487475025719675e-16,
+    "representation_residual_max_abs": 1.7763568394002505e-15,
+    "representation_state_reconstruction_max_abs": 8.881784197001252e-16,
+    "representation_utility_max_abs": 1.6653345369377348e-16,
+    "state_pair_S_D_margin_displacement": 1.5265566588595902e-16,
+    "zero_effect_pattern_spread": 1.1102230246251565e-16
+  },
+  "model_pairs": 6,
+  "models": [
+    "additive",
+    "compositional_ridge",
+    "CPA_0.8.8",
+    "zero_effect"
+  ],
+  "n_allocations": 30,
+  "n_gemgroups": 8,
+  "n_independent_pooled_experiments": 1,
+  "n_tasks": 55,
+  "output_sha256": {
+    "allocation_membership.tsv.gz": "62005a8e4721ac9b019d890ccd58705c5a3b825ab89f3b2cf736ddac415fe547",
+    "allocation_pair_margins.tsv": "33cfb0ee9dca3d9e58d16321b68b1a64294f980e8ffb39bf86ee2643b21aa9d8",
+    "control_block_means.npy": "d591ac5c5f761954978b967d2a88a6efaf7140bb33a321b1b0b4c283c0669b2b",
+    "depth_pair_summary.tsv": "02454594283818e460ec44d9a3a81810fcbc0f162bb8e6209ecb3fe3763d14b5",
+    "depth_utility_summary.tsv": "47d7b4e2cccf293ff6d5090e0506e9ac75b4f990b1248bef7740bfeeb918deb7",
+    "geometry_and_input_displacement.tsv.gz": "e694e783d5f812a38bbbdf7b2592aa92a53135f73d186e610d2180ddadefc669",
+    "task_depth_pair_summary.tsv": "29624143f3f72365c6f4da323391d8d5103cca4d19cfd9988757bca47476ab35",
+    "task_pair_margins.tsv.gz": "ac8065465730f607a8337680a8daa024d2d73d506057bfb9c46df737dac2a946",
+    "task_pattern_utilities.tsv.gz": "56d7547e99ef704188b6395ac574e8f8c8dabd67bc64e0185c6b4d2c9630d8c4",
+    "utilities.npz": "c247e264a78ba6f6db78d62b879a0a81765f55dbe90174da5501cec4ddcea640"
+  },
+  "primary_state_pairs": 3,
+  "protocol_sha256": "0f63b2c33bf13f49ddb106dbf5f639bf6a4fda08b9b60e3ea8069b3a5cb420cf",
+  "quality_sha256": "41338a3e7f76d4d1f9d24c72cd4ebc8c8de0d882229b1bec37d88d0faeac6694",
+  "scope": "One pooled experiment; finite-allocation descriptive summaries",
+  "script_sha256": "ab137a00c9ba87af8d0c1e7d111df852ea86fab1011daeebf3987df9b4a32c58",
+  "status": "PASS"
+}

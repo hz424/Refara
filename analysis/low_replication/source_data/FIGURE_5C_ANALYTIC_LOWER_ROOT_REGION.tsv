@@ -1,0 +1,9 @@
+independent_roots_R	minimum_one_sided_sign_p	first_holm_threshold	rejection_possible	exact_family_recovery	true_edge_recovery	basis	monte_carlo_replicates	interval_lower	interval_upper
+1	1/2	1/240	false	0	0	ANALYTIC_DISCRETENESS			
+2	1/4	1/240	false	0	0	ANALYTIC_DISCRETENESS			
+3	1/8	1/240	false	0	0	ANALYTIC_DISCRETENESS			
+4	1/16	1/240	false	0	0	ANALYTIC_DISCRETENESS			
+5	1/32	1/240	false	0	0	ANALYTIC_DISCRETENESS			
+6	1/64	1/240	false	0	0	ANALYTIC_DISCRETENESS			
+7	1/128	1/240	false	0	0	ANALYTIC_DISCRETENESS			
+8	1/256	1/240	true			ANALYTIC_DISCRETENESS			

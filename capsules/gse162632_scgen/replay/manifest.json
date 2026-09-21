@@ -1,0 +1,320 @@
+{
+  "asset_kind": "gse162632_scgen_focal_replay",
+  "axes": {
+    "feature_count": 2000,
+    "reference_instances": [
+      "D8_NAIVE_SHARED",
+      "D8_INDEPENDENT_SPLIT",
+      "D8_CROSSFIT_R0",
+      "D8_CROSSFIT_R1",
+      "D8_CROSSFIT_R2"
+    ],
+    "roots": [
+      "R41",
+      "R42",
+      "R43",
+      "R44",
+      "R45",
+      "R46",
+      "R47",
+      "R48"
+    ],
+    "tasks": [
+      "T01",
+      "T02",
+      "T03",
+      "T04",
+      "T05"
+    ]
+  },
+  "bundle_id": "pseudonymized_cpu_focal_replay_v1",
+  "capsule_id": "gse162632_scgen_focal_replay_v1_6_1",
+  "data_terms_note": "Any redistribution of the underlying third-party data remains subject to its source terms.",
+  "files": [
+    {
+      "bytes": 957,
+      "dtype": "utf-8 text",
+      "name": "readme",
+      "path": "README.md",
+      "semantics": "Overview, metric definition and data-terms note for the CPU replay.",
+      "sha256": "1b63bed891ab9bc3c1442f9a7116fe03554eddf4b1dbf9eb683db8a8e7e1c09c",
+      "shape": [
+        9
+      ]
+    },
+    {
+      "bytes": 10201,
+      "dtype": "utf-8 text",
+      "name": "standalone_replay",
+      "path": "replay_cpu.py",
+      "semantics": "Standalone NumPy replay with hash, geometry and expected-value checks.",
+      "sha256": "427e2fbffa73024ab33601fd0d017c06beb893807de5588c3ba74cde9136a2a3",
+      "shape": [
+        289
+      ]
+    },
+    {
+      "bytes": 644,
+      "dtype": "utf-8 TSV",
+      "name": "root_tasks",
+      "path": "root_tasks.tsv",
+      "semantics": "Pseudonymized 40-row evaluation root-by-task axis.",
+      "sha256": "2654556a62719f050f5af737109ed1514538efe3e5bc093040c5c7848cc1e4a3",
+      "shape": [
+        40,
+        5
+      ]
+    },
+    {
+      "bytes": 103008,
+      "dtype": "utf-8 TSV",
+      "name": "root_task_metrics",
+      "path": "root_task_metrics.tsv",
+      "semantics": "Standardized MSE, negative utility and focal method contrast for every realization, construction and root-task.",
+      "sha256": "59ea250f9cc2daf089f4b7a2dcb6b22f1d7f1c0d946f2db672af273084bf0741",
+      "shape": [
+        600,
+        15
+      ]
+    },
+    {
+      "bytes": 14347,
+      "dtype": "utf-8 TSV",
+      "name": "root_metrics",
+      "path": "root_metrics.tsv",
+      "semantics": "Five-task means within each pseudonymized evaluation root.",
+      "sha256": "c3b5e39064244a500ea48a9fcf1140bf499896136083033682eadfd8b1f26285",
+      "shape": [
+        120,
+        9
+      ]
+    },
+    {
+      "bytes": 1532,
+      "dtype": "utf-8 TSV",
+      "name": "focal_contrasts",
+      "path": "focal_contrasts.tsv",
+      "semantics": "Equal-root focal contrasts, reported values and numerical checks.",
+      "sha256": "17c09f96454361fad9f28ca9a5bc3a85bf6cd64b96fbd8b6879575d69fbf3f61",
+      "shape": [
+        5,
+        16
+      ]
+    },
+    {
+      "bytes": 3331,
+      "dtype": "JSON object",
+      "name": "replay_result",
+      "path": "replay_result.json",
+      "semantics": "Machine-readable summary of the exact replay and aggregation checks.",
+      "sha256": "717b28e743bef839db1538d7fcddb0ebd17d878cf65990bcc187fd07eaa9fa1a",
+      "shape": [
+        1,
+        8
+      ]
+    },
+    {
+      "bytes": 640128,
+      "dtype": "<f8",
+      "name": "treated_means",
+      "path": "arrays/treated_means.npy",
+      "semantics": "Observed perturbed log1p means on the pseudonymized root-task by feature axes.",
+      "sha256": "793e4ca18af07ed2ecab45d93b036c16ea7bb6a076a7ea601c75677a691df6f0",
+      "shape": [
+        40,
+        2000
+      ]
+    },
+    {
+      "bytes": 3200128,
+      "dtype": "<f8",
+      "name": "c_obs",
+      "path": "arrays/c_obs.npy",
+      "semantics": "Observed reference means ordered by reference instance, root-task and feature.",
+      "sha256": "5e22762ee4994992f59f5ebb1a383b216f5f7e67d6dfc510d7655b6074ce4339",
+      "shape": [
+        5,
+        40,
+        2000
+      ]
+    },
+    {
+      "bytes": 320128,
+      "dtype": "<f4",
+      "name": "pca64_effect",
+      "path": "arrays/pca64_effect.npy",
+      "semantics": "Scheme-invariant PCA-64 ridge predicted perturbation effects.",
+      "sha256": "5fdab4d167c1ba9d78a3e563490b7a13d5a3ac78d38ab747f56e84d5de4adcdf",
+      "shape": [
+        40,
+        2000
+      ]
+    },
+    {
+      "bytes": 1600128,
+      "dtype": "<f4",
+      "name": "c_pred",
+      "path": "arrays/c_pred.npy",
+      "semantics": "Prediction-reference means ordered by reference instance, root-task and feature.",
+      "sha256": "a0405f388f458b6d86c2cea65c92a67f14a9fc0d9c957b5aca884d2c509ef406",
+      "shape": [
+        5,
+        40,
+        2000
+      ]
+    },
+    {
+      "bytes": 1600128,
+      "dtype": "<f4",
+      "name": "scgen_native_q1",
+      "path": "arrays/scgen_native_q1.npy",
+      "semantics": "Native scGen predicted perturbed means for the realization used in the primary analysis.",
+      "sha256": "117b7aa707f64917ddf1dfffe8bbd689287451596ccde3d2570eb2bbde94cf71",
+      "shape": [
+        5,
+        40,
+        2000
+      ]
+    },
+    {
+      "bytes": 1600128,
+      "dtype": "<f4",
+      "name": "scgen_native_q2",
+      "path": "arrays/scgen_native_q2.npy",
+      "semantics": "Native scGen predicted perturbed means for additional realization q2.",
+      "sha256": "7f5f3eb0fc0aa896d33afc0bf68c3103f7bfe609ab0c749bf8c8206bacf8433c",
+      "shape": [
+        5,
+        40,
+        2000
+      ]
+    },
+    {
+      "bytes": 1600128,
+      "dtype": "<f4",
+      "name": "scgen_native_q3",
+      "path": "arrays/scgen_native_q3.npy",
+      "semantics": "Native scGen predicted perturbed means for additional realization q3.",
+      "sha256": "847ffc1c3ae148d2a1892727ab707325ebfc7d0201362a901fecc63b3d1fae5f",
+      "shape": [
+        5,
+        40,
+        2000
+      ]
+    },
+    {
+      "bytes": 1600128,
+      "dtype": "<f4",
+      "name": "scgen_native_q4",
+      "path": "arrays/scgen_native_q4.npy",
+      "semantics": "Native scGen predicted perturbed means for additional realization q4.",
+      "sha256": "b09eb86d5ae07efe730a1ead10e12385c22b5c8e41ae1e8185059a02a54c0d75",
+      "shape": [
+        5,
+        40,
+        2000
+      ]
+    },
+    {
+      "bytes": 1600128,
+      "dtype": "<f4",
+      "name": "scgen_native_q5",
+      "path": "arrays/scgen_native_q5.npy",
+      "semantics": "Native scGen predicted perturbed means for additional realization q5.",
+      "sha256": "615cafe96318fd8f9f91ddbf13f669ff49f8d97b704c617a2d2154d771482e47",
+      "shape": [
+        5,
+        40,
+        2000
+      ]
+    },
+    {
+      "bytes": 16128,
+      "dtype": "<f8",
+      "name": "scales",
+      "path": "arrays/scales.npy",
+      "semantics": "Positive analysis feature standard deviations used for standardization.",
+      "sha256": "cac0122acc5b6862439831d1d827068fe26004a6af0bcd7c3a0aa43b1715f716",
+      "shape": [
+        2000
+      ]
+    },
+    {
+      "bytes": 16128,
+      "dtype": "<f8",
+      "name": "weights",
+      "path": "arrays/weights.npy",
+      "semantics": "Equal analysis feature weights that sum to one within numerical tolerance.",
+      "sha256": "fdfb894fa1bd99b6de91685f366f8e69fa26c8f8a393903cb6bc1b3d747bd636",
+      "shape": [
+        2000
+      ]
+    }
+  ],
+  "manifest_inventory_note": "manifest.json is omitted from its own inventory because it cannot contain its final digest.",
+  "metric": {
+    "feature_chunk": 256,
+    "name": "negative_equal_feature_standardized_mse",
+    "root_aggregation": "equal mean across eight roots",
+    "rotation_aggregation": "score each rotation before averaging utilities",
+    "task_aggregation": "mean within root",
+    "utility_formula": "-sum_g weight_g * ((observed_effect_g - predicted_effect_g) / scale_g)^2"
+  },
+  "payload_tree_sha256": "c15f31bc3dd2641bbd0b81e98eebaf960690646749faecf04b2805fd62e9ccb5",
+  "privacy_audit": {
+    "checks": [
+      "internal absolute paths",
+      "workspace account names",
+      "source root identifiers",
+      "source cell barcodes",
+      "source batch and capture tokens",
+      "selection salts",
+      "scheduler job identifiers"
+    ],
+    "files_scanned": 18,
+    "findings": 0,
+    "status": "PASS"
+  },
+  "realization_provenance": {
+    "q1": "used_in_primary_analysis",
+    "q2_to_q5": "additional_realizations"
+  },
+  "realizations": [
+    {
+      "id": "q1",
+      "seed": 17
+    },
+    {
+      "id": "q2",
+      "seed": 29
+    },
+    {
+      "id": "q3",
+      "seed": 43
+    },
+    {
+      "id": "q4",
+      "seed": 763929762
+    },
+    {
+      "id": "q5",
+      "seed": 85508424
+    }
+  ],
+  "reference_instances": [
+    "D8_NAIVE_SHARED",
+    "D8_INDEPENDENT_SPLIT",
+    "D8_CROSSFIT_R0",
+    "D8_CROSSFIT_R1",
+    "D8_CROSSFIT_R2"
+  ],
+  "release_version": "1.6.1",
+  "schema_version": 1,
+  "scope": "CPU recalculation of the five reported focal contrasts between PCA-64 ridge and scGen.",
+  "status": "NUMERIC_CHECKS_PASSED",
+  "verification": {
+    "maximum_focal_absolute_error_vs_expected": 1.3877787807814457e-17,
+    "maximum_root_task_utility_absolute_error_vs_expected": 0.0,
+    "tolerance": 5e-13
+  }
+}

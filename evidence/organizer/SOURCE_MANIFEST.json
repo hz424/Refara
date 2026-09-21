@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "description": "Norman organizer score-input replay",
+  "files": {
+    "data/development_scores.tsv.gz": {
+      "sha256": "0d575deafd55b06a7d77945647273fd2f0c68b52ba9e71da362c8a9be91f2585",
+      "bytes": 1122890,
+      "export_name": "development_scores.tsv",
+      "export_sha256": "4115e16fc8197f8ccd113037f96fbcad30c798ac4369b3a0368ecd4be4978d1d",
+      "export_bytes": 7093677,
+      "rows": 87480
+    },
+    "data/assessment_anchors.tsv.gz": {
+      "sha256": "c2ade875bb4b323bf567d9a4d868023d40e41f49d7eff3a7db7aad3bfc4bcfe0",
+      "bytes": 14085,
+      "export_name": "assessment_anchors.tsv",
+      "export_sha256": "8eb7dc6d208880d3fabf2ba24f7308a2ecb3c337858b56d3080c68f6736b76cf",
+      "export_bytes": 81119,
+      "rows": 1008
+    },
+    "data/assessment_scores.tsv.gz": {
+      "sha256": "96c94539383b3e9c3694063181a46bbf9b159240066f8bfb7b6c5eed0392ad1c",
+      "bytes": 1168194,
+      "export_name": "assessment_scores.tsv",
+      "export_sha256": "f062b78371702e66f1266e11a81a08c077da1fc5dfbe1ad86cd5632b973deb6b",
+      "export_bytes": 7358064,
+      "rows": 90720
+    },
+    "data/geometry.tsv": {
+      "sha256": "638843dc4efbaa12acf9b4229db344d948caff5d2c4eb9c3715678a4d89ed50c",
+      "bytes": 19513,
+      "export_name": "geometry.tsv",
+      "export_sha256": "638843dc4efbaa12acf9b4229db344d948caff5d2c4eb9c3715678a4d89ed50c",
+      "export_bytes": 19513,
+      "rows": 330
+    },
+    "study.json": {
+      "sha256": "579c42b2265e186727f8518856c583f3bbc6d0c447542140b6259ad4e79c3f4c",
+      "bytes": 22362
+    },
+    "expected/policy_summary.tsv": {
+      "sha256": "2df678800c72f0eed4d1dcd27e1e2cdc564a6e4bd43d3487e48aecdfc83f061d",
+      "bytes": 5723,
+      "source_table_sha256": "05a98dfb3beaf60ec1d031f7944fe463c2d0fb8ed537d940cdcc19f938cea3e9",
+      "selection": "resource == 'Norman'"
+    },
+    "expected/budget_summary.tsv": {
+      "sha256": "ee4780bc14b677ca989b2d8d69f511519a02965f46be5b43c2b6ff03218ca7d7",
+      "bytes": 930,
+      "source_table_sha256": "d6bf8b25de33be1b49c8abda86a0157c66c8d4a39667ed4eb81e90a990019e88",
+      "selection": "resource == 'Norman'"
+    },
+    "expected/geometry_comparison.tsv": {
+      "sha256": "9eaf58469e89d416ce99e043090aec7bf1535a097fd294dbeef52fa109335323",
+      "bytes": 885,
+      "source_table_sha256": "e95a472c1c9c7f10d98607a46f3e472dabe10f45fd989a50c68ba9b36ed01af4",
+      "selection": "resource == 'Norman'"
+    }
+  },
+  "source": {
+    "component": "Organizer validation companion, frozen protocol 2026-09-12",
+    "protocol_sha256": "0d143bae3acb5b5b39941ede31add696071d57ce78b36441638cc4227bdc5f06",
+    "resource_receipt_sha256": "8d08b312c8f822cd6f151781a8a9fef11e65614926d7095db75499dec40ee1dc",
+    "score_generation_code_sha256": "e289d3d0e0e92735aa76db1e05b5d898f7b13c36db395f15e7a87a5e04cb983c",
+    "source_arrays": [
+      {
+        "resource": "Norman",
+        "file_name": "fixed_profiles_and_references.npz",
+        "sha256": "a124615c1d9949f843b7d79c3900e46daebf26910d0f4a91414390662debc834",
+        "bytes": 4637674,
+        "arrays": {
+          "models": {
+            "shape": [
+              6
+            ],
+            "dtype": "<U30",
+            "fortran_order": false
+          },
+          "conditions": {
+            "shape": [
+              55
+            ],
+            "dtype": "<U15",
+            "fortran_order": false
+          },
+          "gene_ids": {
+            "shape": [
+              2000
+            ],
+            "dtype": "<U15",
+            "fortran_order": false
+          },
+          "profiles": {
+            "shape": [
+              6,
+              55,
+              2000
+            ],
+            "dtype": "float64",
+            "fortran_order": false
+          },
+          "observed_states": {
+            "shape": [
+              55,
+              2000
+            ],
+            "dtype": "float64",
+            "fortran_order": false
+          },
+          "TRAIN_control": {
+            "shape": [
+              2000
+            ],
+            "dtype": "float64",
+            "fortran_order": false
+          },
+          "TRAIN_perturbation": {
+            "shape": [
+              2000
+            ],
+            "dtype": "float64",
+            "fortran_order": false
+          },
+          "scales": {
+            "shape": [
+              2000
+            ],
+            "dtype": "float64",
+            "fortran_order": false
+          },
+          "original_B1": {
+            "shape": [
+              2000
+            ],
+            "dtype": "float64",
+            "fortran_order": false
+          },
+          "original_B2": {
+            "shape": [
+              2000
+            ],
+            "dtype": "float64",
+            "fortran_order": false
+          },
+          "native_effect_training_baseline": {
+            "shape": [
+              2000
+            ],
+            "dtype": "float64",
+            "fortran_order": false
+          }
+        }
+      },
+      {
+        "resource": "Norman",
+        "file_name": "selected_CPA_block_profiles.npy",
+        "sha256": "b3903b3564a073b8504285ef3b4c71a95bd0e4c1620c68d8a0ef1b4af18a1189",
+        "bytes": 475200128,
+        "array": {
+          "shape": [
+            55,
+            30,
+            6,
+            3,
+            2000
+          ],
+          "dtype": "float64",
+          "fortran_order": false
+        }
+      },
+      {
+        "resource": "Norman",
+        "file_name": "control_block_means.npy",
+        "sha256": "d591ac5c5f761954978b967d2a88a6efaf7140bb33a321b1b0b4c283c0669b2b",
+        "bytes": 8640128,
+        "array": {
+          "shape": [
+            30,
+            6,
+            3,
+            2000
+          ],
+          "dtype": "float64",
+          "fortran_order": false
+        }
+      }
+    ],
+    "source_arrays_included": false,
+    "score_generation": {
+      "started_utc": "2026-09-12T16:09:07.740699+00:00",
+      "finished_utc": "2026-09-12T16:09:11.410345+00:00",
+      "python_version": "3.10.17",
+      "numpy": "1.26.4",
+      "blas_threads": 2,
+      "no_historical_utility_values_used": true,
+      "no_new_fitting": true,
+      "geometry_uses_predictions_or_treated": false
+    }
+  },
+  "validation": "Expected summaries are checked after all four designs and checks complete; they do not enter calibration."
+}

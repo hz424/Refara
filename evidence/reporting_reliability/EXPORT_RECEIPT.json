@@ -1,0 +1,11 @@
+{
+  "compressed_array_bytes": 10315861,
+  "compression_ratio": 0.9258416513015807,
+  "model_inference_performed": false,
+  "original_audit_status": "PASS_INDEPENDENT_COMPLETED_RESULT_REPLAY",
+  "original_independent_audit_sha256": "72accf5f3efcf101d917fd9c9183e04a02ce47286bef5c761f25d3282cec5f5c",
+  "original_result_bytes": 1579585494,
+  "raw_array_bytes": 11142144,
+  "raw_expression_read": false,
+  "status": "LOSSLESS_SCORE_EXPORT"
+}

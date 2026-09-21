@@ -1,0 +1,52 @@
+{
+  "admission_gate_unchanged": true,
+  "component": "Historical Jerber scGen prediction adapter",
+  "corrected_payloads": {
+    "data/derived/extended_data_figure_4_jerber/JERBER_HISTORICAL_POINT_RANKINGS_V1.tsv": {
+      "bytes": 2383,
+      "corrected_sha256": "967f8f2cfef03d5ca6f08e6c9eaca46facf4b6aa666dda66b50e62658994e907",
+      "previous_sha256": "ae1446fce4b403a2d41959cebc0feb4cf3886a51d9a067930c1f0c6944143dde"
+    },
+    "data/derived/extended_data_figure_4_jerber/JERBER_POINT_RANKING_AUTHORITY_V1.json": {
+      "bytes": 3689,
+      "corrected_sha256": "3982e80282caf87fb548c1b1fb6496913ad3a39559a71f38f5f103e020757e5e",
+      "previous_sha256": "042a4dd6edb6106d4208791e1ef7fae84e6e912f39155e4eb477bf23b96f7c41"
+    }
+  },
+  "correction": "Use separate task-label context indices for latent shifts and retain root-task group indices for aggregation.",
+  "current_source_binding": {
+    "changed_payload_count": 2,
+    "compatibility_alias_filenames_retained": true,
+    "manifest": "SOURCE_DATA_ROOT_MANIFEST_V1.json",
+    "payload_count": 90,
+    "release_version": "1.10.0",
+    "sha256": "31bf61f54546fed808a5dadc3a4aa2d6ad225f5a4e3d3765a32fa31c59e8b71d"
+  },
+  "external_correction_receipt": {
+    "sha256": "0bf5623c9292ba032066e0bd2b8ff1cd886521175e24e60466dbd2dface0537f",
+    "source_data_relative_path": "JERBER_SCGEN_CORRECTION.json"
+  },
+  "historical_record": {
+    "meaning": "Original v1.8.3 input hashes, preserved unchanged; superseded for current replay by the 1.10.0 binding",
+    "original_source_manifest_sha256": "fbe01eca4b975a9131a6d79bd72e50813c49bdb5adb827455660bb290aeb6eb2",
+    "path": "V183_IMMUTABLE_INPUTS.json",
+    "sha256": "5dfb9256fc0b861afc7a02e19a56b59e97312308eaf771c163a494fb2565db2f"
+  },
+  "independent_experimental_validation": false,
+  "issue": "The original scGen adapter matched 160 root-task group indices against eight context indices, omitting the perturbation shift after the first root.",
+  "method_checks": {
+    "corrected_adapter_sha256": "c2767bc39433e7b3e539531bcab5b24501454003e07d92ec212abf474ba6f7a1",
+    "dispatch_regression_tests_sha256": "9e146d0eecc6dc476a9e4650c20fb9451292a1c3b59214e6c28c6707c110c7c9",
+    "independent_review_sha256": "96bac7130c0ad8521522c2551cd7044ef8f4a162274974150f6c8da243057131",
+    "maximum_independent_utility_error": 0.0,
+    "original_adapter_sha256": "eeece1d11b193bcc93d5a23c62c4b054881e1c4dc29e882602cc987b90d01083",
+    "repair_result_sha256": "9bcc921ddd6c5ba79418d05d569b4331f7e1faa72b1ba1283b9ea239d28f1311",
+    "utility_entries_independently_recomputed": 19200
+  },
+  "other_seven_model_utilities_exact": true,
+  "point_leaders": "RBF ridge ranks first in all three constructions. scGen ranks 5, 6 and 6.",
+  "schema_version": 1,
+  "scope": "Original 20 exposed lines, eight models, S24, D8/8/8 and three-rotation D; descriptive ranks only",
+  "software_version": "1.10.0",
+  "status": "PASS_CORRECTED_JERBER_SOURCE_BINDING"
+}

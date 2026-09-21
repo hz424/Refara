@@ -1,0 +1,43 @@
+{
+  "allocation_membership_checked": "Every selected allocation is a partition of its case-specific 24 controls; every selected cell maps to the declared case and donor",
+  "assessment_cases": 78,
+  "assessment_donors": 39,
+  "assessment_selected_control_cells": 1872,
+  "cell_types": [
+    "B",
+    "monocytes_combined"
+  ],
+  "cells_per_block": 8,
+  "comparison_key": "Exact source-native donor identifiers and (source_object, cell_id) pairs; raw identifiers omitted",
+  "comparison_protocol_sha256": "150c50c95524993a72f47056a7c1ce6ed43ddb9dc071d9b7cff5f9fbf5397961",
+  "control_blocks_per_realization": 3,
+  "controls_per_case": 24,
+  "development_assessment_control_cell_overlap": 0,
+  "development_assessment_donor_overlap": 0,
+  "development_cases": 16,
+  "development_donors": 8,
+  "development_selected_control_cells": 384,
+  "realizations_per_case": 30,
+  "scoring_validation": {
+    "all_assessment_control_means_recomputed": true,
+    "all_assessment_native_state_means_recomputed": true,
+    "independent_scalar_checks": 24,
+    "maximum_absolute_difference": 1.1102230246251565e-15,
+    "new_fits": 0,
+    "new_inference": 0,
+    "tolerance": 1e-12
+  },
+  "shared_acquisition_batch_count": 8,
+  "source_protocol_sha256": "2ab42cf0fb751f3fdbc70f1a298584586d23865a43cc7f66d10267ed54db736b",
+  "training_donors_per_group": 40,
+  "training_overlap": {
+    "cap48": {
+      "assessment": 0,
+      "development": 0
+    },
+    "original8": {
+      "assessment": 0,
+      "development": 0
+    }
+  }
+}

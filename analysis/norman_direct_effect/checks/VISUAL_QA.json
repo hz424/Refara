@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "final_physical_size_mm": [
+    180,
+    168
+  ],
+  "inspected_views": [
+    "complete color preview",
+    "complete grayscale preview",
+    "panel d enlarged"
+  ],
+  "panels": {
+    "a": {
+      "claim": "Matched S/D model ranking with fixed effect output",
+      "rows": 60,
+      "center": "55-task mean then 30-allocation mean",
+      "spread": "full allocation range",
+      "visual_pass": true,
+      "comment": "Distinct markers and category offsets retain close baselines; original source values unchanged."
+    },
+    "b": {
+      "claim": "CPA conditioning displacement decreases with control depth",
+      "rows": 6,
+      "center": "RMS within allocation, then allocation mean",
+      "spread": "full allocation range",
+      "visual_pass": true,
+      "comment": "Original values and bounds retained; two-line ordinate label fits."
+    },
+    "c": {
+      "claim": "Original state-model pair reversals remain few",
+      "rows": 12,
+      "center": "Count among 165 task/pair comparisons within allocation, then allocation mean",
+      "spread": "full allocation range",
+      "visual_pass": true,
+      "comment": "Original P/O series retained; legend adjusted for clear text bounds."
+    },
+    "d": {
+      "claim": "Strict reversal condition distinguishes every changing and stable aggregate pair",
+      "rows": 18,
+      "center": "Ratio of task/allocation mean d_S to mean V",
+      "spread": "none; complete finite aggregate set",
+      "visual_pass": true,
+      "comment": "Six depths in all three facets. First two share limits; CPA wider axis is described in caption. Strict interval shaded; boundaries excluded."
+    }
+  },
+  "text_collision_check": {
+    "status": "PASS",
+    "out_of_canvas_text": [],
+    "text_box_collisions": [],
+    "checked_text_boxes": 97,
+    "minimum_x_tick_clearance_mm": 2.433736842105251,
+    "axes_bounds": [
+      [
+        0.09,
+        0.675,
+        0.375,
+        0.17999999999999994
+      ],
+      [
+        0.585,
+        0.675,
+        0.375,
+        0.17999999999999994
+      ],
+      [
+        0.09,
+        0.405,
+        0.375,
+        0.15500000000000003
+      ],
+      [
+        0.585,
+        0.405,
+        0.375,
+        0.15500000000000003
+      ],
+      [
+        0.09,
+        0.105,
+        0.24999999999999997,
+        0.17000000000000004
+      ],
+      [
+        0.4,
+        0.105,
+        0.25,
+        0.17000000000000004
+      ],
+      [
+        0.71,
+        0.105,
+        0.25,
+        0.17000000000000004
+      ]
+    ]
+  },
+  "static_warning_resolution": {
+    "FONT-GLYPH-FLOOR": "The source heuristic warns about math scripts. Actual PDF audit finds minimum 7 pt and zero violations; math parent explicitly 10 pt."
+  },
+  "no_rows_excluded_from_requested_comparisons": true,
+  "no_significance_claim_added": true,
+  "source_receipt_sha256": "a02b634219eb99babb7249dec56b90b9ee97ac9d7447e5e7c08ca0715e89380c",
+  "render_receipt_sha256": "b0456d8fee2bb1f9ea5273d02929302fbabc38705b3c099a147ee10fa36a692f",
+  "exports": {
+    "Extended_Data_Figure_8.pdf": "b3ca889a487b1b65036f4e63a37efa33661be84f58e9b5a991f93b9fab6e56cb",
+    "Extended_Data_Figure_8.svg": "d1596ae0b602dc10bcd6c83fdb10cee9f604247b732de43638f6a2e5d1c3abc1",
+    "Extended_Data_Figure_8.png": "54e698ee1e137915015c61db134267622f956d88d7c2b22e43292a05656f0d7e",
+    "Extended_Data_Figure_8.tiff": "9c5380ecbe79e7b3a410038da156b5f08ac625b3fa89d9007ef2af1970bfcf44"
+  }
+}

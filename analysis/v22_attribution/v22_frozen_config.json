@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0.1",
+  "record_type": "V22_FROZEN_ATTRIBUTION_CONFIG",
+  "editorial_status": "PROSE_ONLY_PUBLIC_RELEASE_SUCCESSOR",
+  "frozen_production_identity": {
+    "bytes": 14345,
+    "sha256": "62cd5f6041da29ead6fe22dfe2bb03ec1a3c3a07f29b8b7a89112f9a7734bfd9"
+  },
+  "editorial_note": "Wording was edited for clarity in this public version. All numerical settings, identifiers and decisions are unchanged from the frozen production configuration.",
+  "status": "FROZEN_PRE_PILOT_WITH_RAW_IDENTITY_AMENDMENT_001",
+  "frozen_at": "2026-08-31",
+  "amendments": [
+    {
+      "id": "V22_RAW_IDENTITY_PREMODEL_AMENDMENT_001",
+      "markdown": "V22_RAW_IDENTITY_PREMODEL_AMENDMENT_001.md",
+      "json": "V22_RAW_IDENTITY_PREMODEL_AMENDMENT_001.json",
+      "timing": "BEFORE_ANY_ENDPOINT_PILOT_OR_FORMAL_MODEL_RUN",
+      "scope": "RAW_FEATURE_IDENTITY_BRIDGE_ONLY"
+    }
+  ],
+  "positioning_sentence": "A fixed eight-donor factor-isolation analysis tested whether output representation, prediction centering and model conditioning altered benchmark contrasts under a leave-one-donor-out learning pipeline. Endpoints were specified before this analysis, but their directions were informed by earlier results from the same resource.",
+  "independently_scope": "DESIGN_WISE_FACTOR_ISOLATION_NOT_BIOLOGICAL_STATISTICAL_OR_CAUSAL_INDEPENDENCE",
+  "version_boundary": {
+    "v21_package": "submission/FINAL_SUBMISSION_PACKAGE_V21_MULTI_REALIZATION_SENSITIVITY_WORKING",
+    "v21_is_immutable": true,
+    "v22_is_separate_append_only_successor": true
+  },
+  "evidence_label": "EXTERNAL_TO_V21_NONBLINDED_ENDPOINT_PRESPECIFIED_FINITE_PANEL_ALGORITHMIC_ATTRIBUTION",
+  "forbidden_claims": [
+    "UNTOUCHED_DATASET",
+    "PROSPECTIVE_COHORT",
+    "INDEPENDENT_EXTERNAL_VALIDATION",
+    "DONOR_POPULATION_INFERENCE",
+    "BIOLOGICAL_REPLICATION",
+    "PREVALENCE",
+    "CAUSALITY"
+  ],
+  "dataset": {
+    "name": "Kang IFN-beta PBMC",
+    "geo_accession": "GSE96583",
+    "experimenthub_accession": "EH2259",
+    "processed_identity_object": "scPerturBench_KangCrossPatient",
+    "processed_shape": [
+      13093,
+      5000
+    ],
+    "raw_expected_gene_count": 35635,
+    "root_key": "sample_id",
+    "task_key": "cell_type_x",
+    "condition_key": "perturbation",
+    "control_label": "control",
+    "stimulated_label": "stimulated",
+    "root_count": 8,
+    "tasks": [
+      "B",
+      "CD14 Mono",
+      "CD16 Mono",
+      "CD4 T"
+    ],
+    "prior_aggregate_outcome_exposure": true,
+    "cell_qc_filtering_and_annotations_are_external_frozen_definitions": true,
+    "raw_identity_gate": {
+      "required_before_any_model_run": true,
+      "amendment_id": "V22_RAW_IDENTITY_PREMODEL_AMENDMENT_001",
+      "original_no_go_evidence_preserved": true,
+      "checks": [
+        "EXACT_CELL_ID_ALIGNMENT",
+        "EXACT_FULL_FROZEN_METADATA_ALIGNMENT",
+        "EXACT_UNIQUE_DETERMINISTIC_5000_GENE_SYMBOL_COUNT_BRIDGE",
+        "EXACT_FROZEN_33_ENTRY_SOURCE_VERSION_DISCREPANCY_LEDGER"
+      ],
+      "bridge": {
+        "mapped_raw_column_count": 5000,
+        "mapped_raw_columns_unique": true,
+        "route_counts": {
+          "literal_symbol_exact_count": 4980,
+          "seurat_make_unique_base_symbol_exact_count": 3,
+          "source_version_discrepancy_ledger": 17
+        },
+        "route_count_total": 5000
+      },
+      "source_version_discrepancy_ledger": {
+        "ledger_id": "V22_RAW_IDENTITY_SOURCE_VERSION_DISCREPANCY_LEDGER_001",
+        "sha256": "95e672201987a9c32c6471af29f730487e355d7ccdb35e3fec5dcfa13432fb0b",
+        "entry_count": 33,
+        "gene_count": 17,
+        "cell_count": 33,
+        "difference_definition": "OFFICIAL_EH2259_MINUS_PROCESSED_ANCHOR",
+        "all_differences_strictly_positive": true,
+        "difference_sum": 35,
+        "difference_max": 2,
+        "acceptance_rule": "EXACT_CANONICAL_CONTENT_HASH_AND_SUMMARY_EQUALITY_NO_TOLERANCE"
+      },
+      "preprocessing_count_source": "OFFICIAL_EH2259_FULL_35635_GENE_RAW_COUNTS_ONLY",
+      "processed_anchor_role": "FROZEN_CELL_IDS_FULL_METADATA_AND_RECONCILIATION_ANCHORS_ONLY",
+      "failure_outcome": "NO_GO_RAW_IDENTITY",
+      "fallback_to_global_processed_5000_genes": false,
+      "count_tolerance_allowed": false,
+      "fuzzy_or_nearest_matching_allowed": false
+    }
+  },
+  "lodo": {
+    "fold_count": 8,
+    "held_out_unit": "DONOR",
+    "training_donors_per_fold": 7,
+    "exclude_all_held_out_donor_cells_from_gene_selection_preprocessing_and_fit": true,
+    "fold_fits_share_training_donors": true
+  },
+  "evaluation_axis": {
+    "selection_is_expression_blind": true,
+    "cell_id_key": "obs_names",
+    "hash_algorithm": "SHA256",
+    "hash_serialization": "UTF8_NAMESPACE_NUL_DONOR_NUL_TASK_NUL_CONDITION_NUL_CELL_ID",
+    "selection_namespace": "V22_KANG_FINITE_PANEL_CELL_AXIS_20260831",
+    "ordering": "ASCENDING_DIGEST_THEN_ASCENDING_CELL_ID",
+    "controls_per_donor_task": 12,
+    "stimulated_per_donor_task": 12,
+    "physical_control_blocks": 3,
+    "controls_per_physical_block": 4,
+    "block_rule": "SELECTED_CONTROL_RANKS_1_TO_4__5_TO_8__9_TO_12",
+    "semantic_labels": [
+      "A",
+      "B",
+      "C"
+    ],
+    "physical_to_semantic_permutations": [
+      "ABC",
+      "ACB",
+      "BAC",
+      "BCA",
+      "CAB",
+      "CBA"
+    ],
+    "contrast_before_permutation_average": true,
+    "each_physical_block_occupies_each_semantic_label_exactly_twice": true,
+    "insufficient_support_or_hash_collision_outcome": "NO_GO_AXIS"
+  },
+  "fold_only_preprocessing": {
+    "gene_selection_rows": "ALL_CONTROL_AND_STIMULATED_CELLS_IN_THE_FOUR_TASKS_FROM_THE_SEVEN_TRAINING_DONORS",
+    "normalization": "CELLWISE_CP10K_THEN_NATURAL_LOG1P",
+    "gene_selection": "DESCENDING_TRAINING_ROW_SAMPLE_VARIANCE",
+    "gene_count": 5000,
+    "tie_break": "ASCENDING_ORIGINAL_RAW_GENE_INDEX",
+    "selected_output_order": "ASCENDING_ORIGINAL_RAW_GENE_INDEX",
+    "pca_components": 100,
+    "pca_center": true,
+    "pca_gene_z_scaling": false,
+    "pca_fit_rows": "SAME_TRAINING_FOLD_ROWS_AS_GENE_SELECTION",
+    "primary_gene_scale_rows": "TRAINING_FOLD_CONTROL_CELLS_ONLY",
+    "primary_gene_scale_estimator": "SAMPLE_STANDARD_DEVIATION_DDOF_1_AFTER_CP10K_LOG1P",
+    "primary_gene_scale_floor": 0.1
+  },
+  "models": {
+    "ridge": {
+      "role": "MATCHED_PRIMARY_BASELINE",
+      "family": "CONTROL_PROFILE_LOW_RANK_LINEAR_RIDGE",
+      "training_rows_per_fold": 28,
+      "input": "DONOR_TASK_CONTROL_ARITHMETIC_MEAN_IN_SELECTED_GENE_SPACE",
+      "input_center": "TRAINING_ROW_MEAN",
+      "input_basis": "RIGHT_SINGULAR_VECTORS_OF_CENTERED_TRAINING_INPUT",
+      "rank": 4,
+      "ridge_lambda": 1.0,
+      "coefficient_formula": "solve(S.T@S + lambda*I, S.T@(Y-mean(Y)))",
+      "target_fits": {
+        "effect": "DONOR_TASK_STIMULATED_MEAN_MINUS_CONTROL_MEAN",
+        "state": "DONOR_TASK_STIMULATED_MEAN"
+      },
+      "query_input": "FOUR_CELL_CMODEL_BLOCK_MEAN",
+      "effect_output_to_terminal_state": "PREDICTED_EFFECT_PLUS_QUERY_CMODEL_BLOCK_MEAN",
+      "state_output_to_terminal_state": "PREDICTED_STATE",
+      "fit_count": 16,
+      "fit_count_derivation": "8_FOLDS_X_2_TARGETS"
+    },
+    "cellflow": {
+      "role": "PRIMARY_MODERN_CONDITIONAL_GENERATIVE_MODEL",
+      "distribution": "cellflow-tools==0.0.9",
+      "tag": "v0.0.9",
+      "source_commit": "03bff12e71326742ad53a0909a4a8fee36958794",
+      "license": "PolyForm-Noncommercial-1.0.0",
+      "use_scope": "ACADEMIC_NONCOMMERCIAL_RUNTIME_DEPENDENCY_ONLY",
+      "vendored_redistribution": false,
+      "acquisition_receipt_requires_source_archive_or_tree_sha256": true,
+      "training_method": "OTFM",
+      "architecture_and_optimizer": "EXECUTABLE_OFFICIAL_PBMC_CONFIGURATION_FOR_PINNED_SOURCE",
+      "microsteps": 500000,
+      "gradient_accumulation": 20,
+      "optimizer_updates": 25000,
+      "checkpoint": "TERMINAL_ONLY",
+      "out_of_core_dataloading": false,
+      "formal_initialization_seeds": [
+        17,
+        29,
+        43,
+        763929762,
+        85508424
+      ],
+      "batch_order_rng_seed_in_pinned_source": 0,
+      "training_noise_rng_seed_in_pinned_source": 0,
+      "realization_label": "FIVE_INITIALIZATION_REALIZATIONS_WITH_COMMON_BATCH_AND_NOISE_RNG_NOT_INDEPENDENT_STOCHASTIC_REPLICATES",
+      "fit_count": 40,
+      "fit_count_derivation": "8_FOLDS_X_5_INITIALIZATION_SEEDS",
+      "one_fit_covers_all_four_tasks": true,
+      "context_id": "DONOR_X_TASK",
+      "sample_covariates": [
+        "context_id"
+      ],
+      "split_covariates": [
+        "context_id"
+      ],
+      "training_context_embedding": "TRAINING_DONOR_TASK_CONTROL_MEAN_IN_FOLD_ONLY_PCA_SPACE",
+      "held_out_context_bundle": "SAME_FOUR_CELL_BLOCK_SUPPLIES_SOURCE_CELLS_AND_ITS_MEAN_CONTEXT_EMBEDDING",
+      "held_out_bundle_name": "DONOR_X_TASK_CONTEXT_BUNDLE",
+      "predicted_cells_per_context_bundle": 4,
+      "cmodel_scenarios_are_same_checkpoint_inference_not_refits": true
+    }
+  },
+  "primary_utility": {
+    "id": "NEGATIVE_EQUAL_GENE_STANDARDIZED_EFFECT_MSE",
+    "formula": "U(p,delta_obs)=-(1/5000)*sum_g[((p_g-delta_obs_g)/max(s_g,0.1))^2]",
+    "observed_effect": "MEAN_OF_12_STIMULATED_CELLS_MINUS_MEAN_OF_4_COBS_CELLS",
+    "gene_scale": "TRAINING_CONTROL_SAMPLE_SD_DDOF_1",
+    "gene_scale_floor": 0.1,
+    "larger_is_better": true
+  },
+  "output_adapters": {
+    "terminal_state_symbol": "yhat_m(Z)",
+    "effect": "p_m^E(Z)=yhat_m(Z)-mean(Z)",
+    "state": "p_m^S(Z,P)=yhat_m(Z)-mean(P)",
+    "required_identity": "p_m^S=p_m^E+mean(Z)-mean(P)"
+  },
+  "primary_endpoints": [
+    {
+      "id": "E1",
+      "stage": "A",
+      "raw_direction": 1,
+      "fixed_roles": "Cobs=A; Cmodel=C; P0=A; P1=B",
+      "definitions": "R_k^{ab}=U_ridge-effect-fit^a(A,P_k,C)-U_CellFlow^b(A,P_k,C); M_k=R_k^{ES}-0.5*(R_k^{EE}+R_k^{SS})",
+      "root_formula": "Z_1d=mean_seed_task_permutation(M_1-M_0)",
+      "identity_audit": "M_k=0.5*(R_k^{ES}-R_k^{SE})",
+      "interpretation": "CROSS_OUTPUT_BENCHMARK_CONTRAST_RELATIVE_TO_SAME_OUTPUT_CONTROLS"
+    },
+    {
+      "id": "E2",
+      "stage": "A",
+      "raw_direction": 1,
+      "fixed_roles": "Cobs=A; Cmodel=C; P0=A; P1=B",
+      "definitions": "H_k=U_ridge-effect-fit^E(A,P_k,C)-U_ridge-state-fit^S(A,P_k,C)",
+      "root_formula": "Z_2d=mean_task_permutation(H_1-H_0)",
+      "has_seed_axis": false,
+      "interpretation": "MATCHED_RIDGE_EFFECT_TARGET_VERSUS_STATE_TARGET_ATTRIBUTION"
+    },
+    {
+      "id": "E3",
+      "stage": "B",
+      "raw_direction": -1,
+      "fixed_roles": "Cobs=A; Cpred=B; Q(Z)=U_CellFlow^S(A,B,Z)",
+      "root_formula": "Z_3d=mean_seed_task_permutation(Q(A)-Q(C))",
+      "interpretation": "CMODEL_COBS_SHARING_VERSUS_INDEPENDENT_CMODEL"
+    },
+    {
+      "id": "E4",
+      "stage": "B",
+      "raw_direction": 1,
+      "fixed_roles": "Cobs=A; Cpred=B; Q(Z)=U_CellFlow^S(A,B,Z)",
+      "root_formula": "Z_4d=mean_seed_task_permutation(Q(B)-Q(C))",
+      "interpretation": "CMODEL_CPRED_SHARING_VERSUS_INDEPENDENT_CMODEL"
+    }
+  ],
+  "direction_provenance": "PRESPECIFIED_BEFORE_KANG_V22_OUTCOMES_FROM_OUTCOME_EXPOSED_HISTORICAL_V7_2_ANALYSIS",
+  "aggregation_order": [
+    "CELL_TO_BLOCK_AND_STIMULATED_ARITHMETIC_MEANS",
+    "EQUAL_GENE_PRIMARY_UTILITY",
+    "CONTRAST_WITHIN_DONOR_TASK_SEED_PERMUTATION",
+    "EQUAL_MEAN_OVER_6_PERMUTATIONS",
+    "EQUAL_MEAN_OVER_4_TASKS",
+    "EQUAL_MEAN_OVER_5_INITIALIZATION_REALIZATIONS_FOR_E1_E3_E4_ONLY",
+    "RETAIN_8_DONOR_ROOT_VALUES"
+  ],
+  "working_law": {
+    "orientation": "X_jd=raw_direction_j*Z_jd",
+    "family_size": 4,
+    "root_count": 8,
+    "familywise_alpha": 0.05,
+    "sign_enumeration": "ALL_256_CARTESIAN_SIGN_VECTORS_IN_LEXICOGRAPHIC_ROOT_ORDER",
+    "sign_count": 256,
+    "sign_enumeration_seed": null,
+    "same_donor_sign_vector_across_all_four_endpoints": true,
+    "procedure": "RECENTERED_RESTUDENTIZED_ROOT_SIGN_FLIP_MAX_ABS_T",
+    "influence": "h_jd=(X_jd-mean_d(X_jd))/8",
+    "signed_statistic": "T_j(e)=sum_d(e_d*h_jd)/sqrt((8/7)*(sum_d(h_jd^2)-sum_d(e_d*h_jd)^2/8))",
+    "critical_statistic": "max_j(abs(T_j(e)))",
+    "critical_order_zero_based": 243,
+    "critical_order_rule": "ceil((1-alpha)*256)-1",
+    "simultaneous_interval": "mean_d(X_jd)+or- critical*sample_sd_d(X_jd)/sqrt(8)",
+    "invalid_or_nonfinite_procedure_outcome": "UNBOUNDED_WORKING_LAW_AND_NO_ENDPOINT_SUPPORT",
+    "inferential_label": "SIMULTANEOUS_WORKING_LAW_SENSITIVITY_ONLY",
+    "population_confidence_interval_claimed": false,
+    "p_value_claimed": false,
+    "randomization_inference_claimed": false,
+    "endpoint_primary_support": "ORIENTED_SIMULTANEOUS_LOWER_BOUND_STRICTLY_GREATER_THAN_ZERO",
+    "uniform_finite_panel_robustness": {
+      "criterion": "ALL_8_ORIENTED_DONOR_ROOT_VALUES_STRICTLY_GREATER_THAN_ZERO",
+      "zero_counts_as_failure": true,
+      "required_for_primary_support": false,
+      "reported_separately": true
+    }
+  },
+  "claim_gates": {
+    "output_representation_attribution": "E1_PRIMARY_SUPPORT_AND_E2_PRIMARY_SUPPORT",
+    "model_conditioning_allocation_attribution": "E3_PRIMARY_SUPPORT_AND_E4_PRIMARY_SUPPORT",
+    "joint_attribution": "ALL_FOUR_ENDPOINTS_HAVE_PRIMARY_SUPPORT",
+    "partial_support_is_reported": true,
+    "title_and_abstract_may_name_only_passing_paired_mechanisms": true
+  },
+  "execution": {
+    "pilot": {
+      "count": 1,
+      "initialization_seed": 20260831,
+      "seed_is_disjoint_from_formal": true,
+      "complete_full_configuration": true,
+      "technical_gates_only": true,
+      "predictions_are_discarded": true,
+      "may_change_scientific_configuration": false
+    },
+    "formal": {
+      "no_scientific_retry": true,
+      "no_replacement_seed_or_checkpoint": true,
+      "no_tuning_after_start": true,
+      "pre_code_infrastructure_failure_max_checksum_identical_resubmissions": 1,
+      "available_case_analysis": false,
+      "required_cellflow_fits": 40,
+      "required_ridge_fits": 16,
+      "all_primary_cells_must_be_finite": true,
+      "incomplete_outcome": "INCONCLUSIVE_INCOMPLETE"
+    }
+  },
+  "reporting": {
+    "report_all_four_endpoints_when_complete": true,
+    "report_all_eight_root_values_per_endpoint_when_complete": true,
+    "report_failed_gates": true,
+    "uniform_robustness_reported_separately_from_primary_support": true,
+    "v21_upgrade_by_v22": false
+  },
+  "secondary_nonblocking": {
+    "analyses": [
+      "RBF_RIDGE",
+      "UNSQUARED_EUCLIDEAN_ENERGY_DISTANCE_U_STATISTIC_IN_FOLD_ONLY_PCA_SPACE",
+      "STRICT_RANKING_REVERSAL",
+      "REMAINING_COBS_FACTORIAL_CONTRASTS",
+      "STACK_IF_PROVENANCE_LICENSE_AND_GPU_GATES_PASS"
+    ],
+    "energy_distance_predicted_cells": 4,
+    "energy_distance_observed_cells": 12,
+    "energy_distance_negative_finite_sample_values_retained": true,
+    "secondary_failure_blocks_primary": false,
+    "historical_only_models": [
+      "CPA",
+      "scGen",
+      "CellOT"
+    ]
+  }
+}

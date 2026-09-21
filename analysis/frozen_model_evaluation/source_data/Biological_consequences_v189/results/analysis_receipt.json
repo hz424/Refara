@@ -1,0 +1,56 @@
+{
+  "status": "PASS_DESCRIPTIVE_FINITE_PANEL_READOUTS",
+  "started_utc": "2026-09-10T21:01:47.017947+00:00",
+  "files_sha256": {
+    "inputs": "28758d37fa4c65392e753e8972c0d6884074d9d3c99db1e05f0c8cff98e001bb",
+    "axes": "d1af44d74981bc45a9bfd9c27cc25d4fd5934fbfcb9264d959c09c58a0116c4b",
+    "programs": "acb981db66c280f6e4ae6a83a9d2f6b7d0c467dbde77f7dfd130a5a64bc0d1d1",
+    "protocol": "bdfb2cf99f9451ca1b5d4fe495b38751a7d8969ddf76f67296e572cca32e9122",
+    "freeze": "4abf19f59e56bc469ba38772bed99fead780c82f98cc02cf4425d4b7be4500a8",
+    "staging_receipt": "8d5af9ccf7508f69bbd165f5d7db2c17a34f4df0d6eb8c5628631b0a02e1e7a8"
+  },
+  "implementation_sha256": "9b089bfd950bf932b07d60eaa7e71103a9c45ee331476a5d0ce2b631c2233274",
+  "python_version": "3.10.17",
+  "numpy_version": "1.26.4",
+  "frozen_utc": "2026-09-10T20:49:37.704702+00:00",
+  "completed_utc": "2026-09-10T21:01:55.337260+00:00",
+  "input_dtypes": {
+    "selection_utilities": "float64",
+    "direct_effects": "float64",
+    "treated_means": "float64",
+    "scales": "float64",
+    "weights": "float64",
+    "state_predictions": "float32",
+    "control_means": "float32",
+    "root_index": "int64",
+    "task_index": "int64",
+    "label_ids": "int64",
+    "selection_label_ids": "int64"
+  },
+  "arithmetic": "Cached arrays converted to float64 before centring, standardization and aggregation; no normalization, log transform, inference or fitting.",
+  "scope": "Descriptive contrasts on eight fixed donors; tasks, labels, genes and overlapping programs are not biological replicates.",
+  "outputs_sha256": {
+    "FIRST_RUN_RECEIPT.json": "da50a6cc1a2bef77d728752a373c4a86c571cd90d065c596fa3ec8f17ad516cf",
+    "donor_summary.tsv": "681327d19604c7d5b5860aaca0b3b05637c04de99d7ef458d582c0e591701816",
+    "example_selection.json": "86b69b6322e737102d6dae8e64f5d6ce5e4e968fb084e7ae2389bbdb4b0fa0b5",
+    "gene_overlaps.tsv": "80af66a78642be7bb83e55f66d0384ed6d1cc28b818a08e5834494b4ff971e2a",
+    "overall_summary.tsv": "faf29eec24f4fdcffcab196d44a93709c6f0d90757df1617f33204f0e81d1bb4",
+    "program_coverage.tsv": "ea42980ae26aa2824a7870f429a70c6b749511761620dc1e023b13adf29ae62e",
+    "program_readouts.npz": "9484e44ec80b7393726526989dda060b2c467f0035e5b3258eb0b3c9bf015ab2",
+    "program_scores.tsv": "49da8c69966141b89bb92c7eb2467a45869fd63a5cd9ff31dbf492c7b5739dba",
+    "reference_sensitivity.tsv": "38bd0441f701559756eb5e66984c1951e67250d5d30b9117e11e2c8e3b8b23f7",
+    "reference_sensitivity_donors.tsv": "bada007aa2e41af3303bb10931f67e45237fe93db7bb17c134e0d2e50aecd99a",
+    "reference_sensitivity_overall.tsv": "e5042dbde75184cca7a0e55574ad2303111a428fffe3649bba7039add8c3929a",
+    "selection.tsv": "b183f96abeb0e85ff7cdce76751d48e7d9de16a5230d0822de6a627db1a37a95",
+    "task_summary.tsv": "0f00a58440037341701a686f8a27fbe059d7a8cc305e67dd7805cb659bd60361"
+  },
+  "results": {
+    "task_count": 40,
+    "donor_count": 8,
+    "eligible_program_count": 37,
+    "reference_assignment_count": 60,
+    "primary_example_task_row": 20,
+    "same_selected_model_donors": 0,
+    "same_winner_exact_equality_verified": true
+  }
+}

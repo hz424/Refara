@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0.0",
+  "framework_id": "GENERIC_REFERENCE_AWARE_ROOT_INFERENCE_V1_0",
+  "outcome_free": true,
+  "require_full_grid": true,
+  "grid": {
+    "root_counts": [
+      4,
+      6,
+      8,
+      12,
+      20,
+      58
+    ],
+    "method_counts": [
+      6,
+      8,
+      10
+    ],
+    "profiles": [
+      {
+        "profile_id": "P01_NULL_BALANCED_WEAK_GAUSSIAN",
+        "support_pattern": "BALANCED",
+        "variance_pattern": "HOMOSKEDASTIC",
+        "reference_strength_name": "WEAK",
+        "reference_strength": 0.15,
+        "root_law": "GAUSSIAN",
+        "truth_pattern": "NULL",
+        "exact_degenerate": false
+      },
+      {
+        "profile_id": "P02_NULL_UNEQUAL_MODERATE_GAUSSIAN",
+        "support_pattern": "UNEQUAL",
+        "variance_pattern": "HOMOSKEDASTIC",
+        "reference_strength_name": "MODERATE",
+        "reference_strength": 0.6,
+        "root_law": "GAUSSIAN",
+        "truth_pattern": "NULL",
+        "exact_degenerate": false
+      },
+      {
+        "profile_id": "P03_NULL_UNEQUAL_HETERO_STRONG_GAUSSIAN",
+        "support_pattern": "UNEQUAL",
+        "variance_pattern": "HETEROSKEDASTIC",
+        "reference_strength_name": "STRONG",
+        "reference_strength": 1.2,
+        "root_law": "GAUSSIAN",
+        "truth_pattern": "NULL",
+        "exact_degenerate": false
+      },
+      {
+        "profile_id": "P04_NULL_UNEQUAL_HETERO_STRONG_T4",
+        "support_pattern": "UNEQUAL",
+        "variance_pattern": "HETEROSKEDASTIC",
+        "reference_strength_name": "STRONG",
+        "reference_strength": 1.2,
+        "root_law": "STUDENT_T_DF4",
+        "truth_pattern": "NULL",
+        "exact_degenerate": false
+      },
+      {
+        "profile_id": "P05_NULL_UNEQUAL_HETERO_STRONG_SKEW",
+        "support_pattern": "UNEQUAL",
+        "variance_pattern": "HETEROSKEDASTIC",
+        "reference_strength_name": "STRONG",
+        "reference_strength": 1.2,
+        "root_law": "CENTERED_GAMMA_SHAPE2",
+        "truth_pattern": "NULL",
+        "exact_degenerate": false
+      },
+      {
+        "profile_id": "P06_CLEAR_BALANCED_WEAK_GAUSSIAN",
+        "support_pattern": "BALANCED",
+        "variance_pattern": "HOMOSKEDASTIC",
+        "reference_strength_name": "WEAK",
+        "reference_strength": 0.15,
+        "root_law": "GAUSSIAN",
+        "truth_pattern": "CLEAR_WINNER",
+        "exact_degenerate": false
+      },
+      {
+        "profile_id": "P07_CLEAR_UNEQUAL_HETERO_MODERATE_GAUSSIAN",
+        "support_pattern": "UNEQUAL",
+        "variance_pattern": "HETEROSKEDASTIC",
+        "reference_strength_name": "MODERATE",
+        "reference_strength": 0.6,
+        "root_law": "GAUSSIAN",
+        "truth_pattern": "CLEAR_WINNER",
+        "exact_degenerate": false
+      },
+      {
+        "profile_id": "P08_CLEAR_UNEQUAL_HETERO_STRONG_T4",
+        "support_pattern": "UNEQUAL",
+        "variance_pattern": "HETEROSKEDASTIC",
+        "reference_strength_name": "STRONG",
+        "reference_strength": 1.2,
+        "root_law": "STUDENT_T_DF4",
+        "truth_pattern": "CLEAR_WINNER",
+        "exact_degenerate": false
+      },
+      {
+        "profile_id": "P09_TIED_BALANCED_MODERATE_GAUSSIAN",
+        "support_pattern": "BALANCED",
+        "variance_pattern": "HOMOSKEDASTIC",
+        "reference_strength_name": "MODERATE",
+        "reference_strength": 0.6,
+        "root_law": "GAUSSIAN",
+        "truth_pattern": "TIED_BEST",
+        "exact_degenerate": false
+      },
+      {
+        "profile_id": "P10_TIED_UNEQUAL_HETERO_STRONG_SKEW",
+        "support_pattern": "UNEQUAL",
+        "variance_pattern": "HETEROSKEDASTIC",
+        "reference_strength_name": "STRONG",
+        "reference_strength": 1.2,
+        "root_law": "CENTERED_GAMMA_SHAPE2",
+        "truth_pattern": "TIED_BEST",
+        "exact_degenerate": false
+      },
+      {
+        "profile_id": "P11_EXACT_DEGENERATE_FALLBACK",
+        "support_pattern": "BALANCED",
+        "variance_pattern": "HOMOSKEDASTIC",
+        "reference_strength_name": "WEAK",
+        "reference_strength": 0.15,
+        "root_law": "GAUSSIAN",
+        "truth_pattern": "NULL",
+        "exact_degenerate": true
+      }
+    ]
+  },
+  "simulation": {
+    "alpha": 0.05,
+    "repetitions": 10000,
+    "batch_size": 8,
+    "seed": 2026072901,
+    "sign_schedule_seed": 1046527,
+    "monte_carlo_sign_count": 4096,
+    "minimum_roots_for_joint_inference": 8,
+    "balanced_descendants_per_root": 48,
+    "unequal_descendants_minimum": 12,
+    "unequal_descendants_maximum": 96,
+    "clear_winner_effect": 0.75,
+    "tied_best_effect": 0.75,
+    "finite_cell_standard_deviation": 0.8
+  },
+  "validity_gates": {
+    "simultaneous_coverage_lower_95_min": 0.94,
+    "familywise_or_wrong_direction_error_upper_95_max": 0.06,
+    "best_model_set_coverage_lower_95_min": 0.94,
+    "possible_rank_set_coverage_lower_95_min": 0.94
+  }
+}

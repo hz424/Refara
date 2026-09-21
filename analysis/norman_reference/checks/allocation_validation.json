@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "n_control_cells": 3639,
+  "n_groups": 8,
+  "n_allocations": 30,
+  "maximum_depth_per_block_per_group": 135,
+  "allocation_rows": 97200,
+  "block_memberships_unique_within_allocation": true,
+  "all_block_ranks_complete_and_depth_prefixes_nested": true,
+  "source_allocation_sha256": "133c5e4a08c16ed9ceab7e8fa4e58815ab6f407acb40197ec66d782de409c563",
+  "no_expression_or_scores_read": true
+}

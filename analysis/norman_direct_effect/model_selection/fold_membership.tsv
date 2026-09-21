@@ -1,0 +1,162 @@
+condition	condition_order	validation_fold	hash_rank	assignment_sha256	fold_role
+AHR	1	-1	-1		training_in_every_fold
+AHR+FEV	2	3	8	212557ed446db11c71f37b34f429d5db2e804cd324df1a876eda6e26b9ba3f10	out_of_fold_double
+AHR+KLF1	2	0	25	737a1f70049b9f9568b85e822140782e9b01c6beabc1ba6990ce62ef793d20e4	out_of_fold_double
+ARID1A	1	-1	-1		training_in_every_fold
+ARRDC3	1	-1	-1		training_in_every_fold
+ATL1	1	-1	-1		training_in_every_fold
+BAK1	1	-1	-1		training_in_every_fold
+BAK1+BCL2L11	2	3	38	af7cd77904b8a561b4242ae9b7b7a8d3fa570d3648a615bbc09773a7ba073aef	out_of_fold_double
+BCL2L11	1	-1	-1		training_in_every_fold
+BCL2L11+TGFBR2	2	2	22	6803b64f76a86b8323d958810dce1ff8ad0c5da6ccc2214f766d1411d5d5808c	out_of_fold_double
+BCORL1	1	-1	-1		training_in_every_fold
+BPGM	1	-1	-1		training_in_every_fold
+BPGM+SAMD1	2	4	14	43ac801183ec76f6b1e0634c494b8eba15e6160b0f128795388caa36160b289f	out_of_fold_double
+C19orf26	1	-1	-1		training_in_every_fold
+C19orf26+TGFBR2	2	1	21	6615ceff253f2b3315c565b9c14585a4a4caf775afd38fb9f38989971088a5c7	out_of_fold_double
+C3orf72	1	-1	-1		training_in_every_fold
+CBFA2T3	1	-1	-1		training_in_every_fold
+CBL	1	-1	-1		training_in_every_fold
+CBL+TGFBR2	2	2	27	7c5f15040944204f9631cd8f3f93409daf4b0aa6c173ce7bf85e34da03f68a08	out_of_fold_double
+CDKN1A	1	-1	-1		training_in_every_fold
+CDKN1B	1	-1	-1		training_in_every_fold
+CDKN1C	1	-1	-1		training_in_every_fold
+CEBPA	1	-1	-1		training_in_every_fold
+CEBPA+CEBPE	2	4	39	b09346820e592dd1c893220fa40f61199926191149336fd91551325bd6c40e77	out_of_fold_double
+CEBPA+KLF1	2	0	15	4d419f7daff8a46dff207aa487e5bcedd9b61f971c9e29de113a8093a9b800d6	out_of_fold_double
+CEBPB	1	-1	-1		training_in_every_fold
+CEBPB+LYL1	2	4	34	969ba06fb09b6603f67b0a988b4451e8f8b081f253bfa883934de792e2f87364	out_of_fold_double
+CEBPB+OSR2	2	2	7	2083fec55e4d893d6f924b4a1808abf7c085be6ef3478282c21932dc0181037d	out_of_fold_double
+CEBPE	1	-1	-1		training_in_every_fold
+CEBPE+FOSB	2	1	26	75ffa92c26c7406eb582b5a88a89207cd880f4efaeb36eda8f18fcf8cdc6d1d5	out_of_fold_double
+CEBPE+KLF1	2	1	11	29739a01983a13b8a9cf06a3ca34f5dce3faf67ab774dbefd7e179390eac97ff	out_of_fold_double
+CEBPE+RUNX1T1	2	3	3	0bff878993b4496a54ad6fa49d02f5b578a5d45dcb55bdec3322fd60621016c4	out_of_fold_double
+CEBPE+SET	2	2	42	c3b2b327319a85545e9eabbda3e731c8b4b433fa4e0e8e84ba5db1c8b42a6b97	out_of_fold_double
+CEBPE+ZC3HAV1	2	4	9	24a8a4d1fd1351bdf6f7589792affef8dcc66fc2bc00193f7d5f29dffc1b3f72	out_of_fold_double
+CELF2	1	-1	-1		training_in_every_fold
+CITED1	1	-1	-1		training_in_every_fold
+CKS1B	1	-1	-1		training_in_every_fold
+CLDN6	1	-1	-1		training_in_every_fold
+CNN1	1	-1	-1		training_in_every_fold
+CNN1+MAPK1	2	4	54	f844fb9e6194bfc18d63fe982e35b74f9fd1f629ba4e67140e6aaf15545a97f6	out_of_fold_double
+CNN1+UBASH3B	2	3	53	f6f0067feaf665d32e968e10748fa3b0bda7398a1658a790dfbabb05144b190c	out_of_fold_double
+CNNM4	1	-1	-1		training_in_every_fold
+COL1A1	1	-1	-1		training_in_every_fold
+COL2A1	1	-1	-1		training_in_every_fold
+CSRNP1	1	-1	-1		training_in_every_fold
+DLX2	1	-1	-1		training_in_every_fold
+DUSP9	1	-1	-1		training_in_every_fold
+DUSP9+ETS2	2	0	45	db0a1655cb9c91f73356d7b85adf7224721f643cf42aa51c7471f356a3125d96	out_of_fold_double
+DUSP9+IGDCC3	2	0	20	6470047cc3a459ed04e9d8ead409c2514582e8548190a9b1ca0f545af0b2db4c	out_of_fold_double
+DUSP9+KLF1	2	2	47	e13bf65eea167a25162db3ee17aea6be0b5e35b439c05dba0bb5e729a5ad9032	out_of_fold_double
+DUSP9+MAPK1	2	2	52	f5bcb4af2e076a3289dde8d5c5c9d077a34f5ca8c37b8de4106bdd3692faf34c	out_of_fold_double
+EGR1	1	-1	-1		training_in_every_fold
+ELMSAN1	1	-1	-1		training_in_every_fold
+ELMSAN1+LHX1	2	0	5	178e4df4fa06ecda33b67df0fda40eb723bfe1303b3b33fa6796b2e258b7bf0a	out_of_fold_double
+ELMSAN1+MAP2K3	2	3	23	697ca515200ead65e884a6e3ef7e76d9b56795775124a91244fb29c7fdd056f2	out_of_fold_double
+ELMSAN1+MAP2K6	2	4	4	1600ccf0824e56c89778cecb704f6b54a44a80ee7ffcfc71614ae5b87988ef00	out_of_fold_double
+ETS2	1	-1	-1		training_in_every_fold
+ETS2+MAP7D1	2	2	12	32c7f1a5314f070fd8df80d425fc97959973d451c3de3c766915bc64a52b1894	out_of_fold_double
+ETS2+MAPK1	2	1	36	ab6e8e9eadac2c406958a71520a9b1b980c9c0b7dd063d86b34fbe7d2072c8d8	out_of_fold_double
+ETS2+PRTG	2	1	51	f50d1a05ed67c17202c80ab36f584949b195eeb7e0d0a1457a562fbe37cbb0a5	out_of_fold_double
+FEV	1	-1	-1		training_in_every_fold
+FEV+ISL2	2	1	1	032484b05aaed5bdaf0af17e428f83a596f5198137d334398caa26b430da7ee2	out_of_fold_double
+FEV+MAP7D1	2	0	10	271f7af44c8b811826854a4501c035aa25716eaded1fed9428c78e0fd5d14a0f	out_of_fold_double
+FOSB	1	-1	-1		training_in_every_fold
+FOXA1	1	-1	-1		training_in_every_fold
+FOXA1+FOXF1	2	4	49	ea3f8d7e553f1a86943808cd3fe2a222feca5848682052f8ff860e5f74c89d2c	out_of_fold_double
+FOXA1+KLF1	2	3	28	808ebecd857bb09e49c3c12808754e21d755b25b1e80494ea868510026c6fced	out_of_fold_double
+FOXA3	1	-1	-1		training_in_every_fold
+FOXA3+FOXF1	2	4	44	d4a9e136fce6ef782fb525eaea5df867be51cbff2f21b68484b51e69d717a588	out_of_fold_double
+FOXF1	1	-1	-1		training_in_every_fold
+FOXF1+FOXL2	2	1	6	1d6bd9ee0184302132824107aa64b304d7414baf5cbdd345dc0adbeb9938cf9c	out_of_fold_double
+FOXF1+HOXB9	2	2	2	0ae0af41f31ac43387c0e1f6dab147fab5c054a3437430017cf817765cf82ee8	out_of_fold_double
+FOXL2	1	-1	-1		training_in_every_fold
+FOXL2+MEIS1	2	1	31	86d9ddf7c160865689ffc4808782128d0457bba028b12be6d772b75be11e67fc	out_of_fold_double
+FOXO4	1	-1	-1		training_in_every_fold
+GLB1L2	1	-1	-1		training_in_every_fold
+HES7	1	-1	-1		training_in_every_fold
+HK2	1	-1	-1		training_in_every_fold
+HNF4A	1	-1	-1		training_in_every_fold
+HOXA13	1	-1	-1		training_in_every_fold
+HOXB9	1	-1	-1		training_in_every_fold
+HOXC13	1	-1	-1		training_in_every_fold
+IER5L	1	-1	-1		training_in_every_fold
+IER5L+LYL1	2	2	17	570eb0b7fc5295e20bffc58f4077fc8d74cc17efc486099a3c13b2ef1bef093e	out_of_fold_double
+IGDCC3	1	-1	-1		training_in_every_fold
+IGDCC3+MAPK1	2	0	35	9a73d060b254e14d61d5627ff95c6debcd09969a0e98292a3a50f426021744f4	out_of_fold_double
+IKZF3	1	-1	-1		training_in_every_fold
+IKZF3+MAP2K3	2	3	33	9467879a9916609b5064d63d59bf96b8bb5145dcf625dbc8972366e42a91b92f	out_of_fold_double
+IKZF3+MAP2K6	2	0	40	b49c384b60f9ded6364cf9750ee962d3f3b55a7b8bd713d3cb178096a9708e1c	out_of_fold_double
+IKZF3+MAPK1	2	2	37	ae2f5a0d2a9ef317c3c8dea48c356b537bf5eb4c1893a6e983cedc779713d941	out_of_fold_double
+IRF1	1	-1	-1		training_in_every_fold
+IRF1+SET	2	2	32	92585511ec1f642d3143f9011d4a57ea0f804728f3fd8cc4664b397a8f6f72ae	out_of_fold_double
+ISL2	1	-1	-1		training_in_every_fold
+JUN	1	-1	-1		training_in_every_fold
+KIAA1804	1	-1	-1		training_in_every_fold
+KIF18B	1	-1	-1		training_in_every_fold
+KIF2C	1	-1	-1		training_in_every_fold
+KLF1	1	-1	-1		training_in_every_fold
+KLF1+MAP2K6	2	3	18	59c9d1648bd1615cb9894432e0c8c0111ca8be4eef6b456133d7425063ad7d70	out_of_fold_double
+KLF1+SET	2	3	43	c3e89573e114ed2d35900c0559fe80c24fdebd4ee7cce3ce4176abb2b90336b9	out_of_fold_double
+KMT2A	1	-1	-1		training_in_every_fold
+LHX1	1	-1	-1		training_in_every_fold
+LYL1	1	-1	-1		training_in_every_fold
+MAML2	1	-1	-1		training_in_every_fold
+MAP2K3	1	-1	-1		training_in_every_fold
+MAP2K3+MAP2K6	2	1	46	e0123c4c2a95f7a689a5835f1e6bcc4fddf60f11bd44cdd4cd0cac223442187a	out_of_fold_double
+MAP2K3+SLC38A2	2	4	29	815a6ff1959bbf9fd5ec3c2eee0028fe3198dc8cc3e6e074753fcf60abf9c225	out_of_fold_double
+MAP2K6	1	-1	-1		training_in_every_fold
+MAP2K6+SPI1	2	0	0	020f0e4cd4418d8b9e8ff87baa2e0e6f68b15bf328935881ab1490f49288d8e4	out_of_fold_double
+MAP4K3	1	-1	-1		training_in_every_fold
+MAP4K5	1	-1	-1		training_in_every_fold
+MAP7D1	1	-1	-1		training_in_every_fold
+MAPK1	1	-1	-1		training_in_every_fold
+MAPK1+PRTG	2	4	19	5b65ebbc478fd352ae7c9febb10c46e61bb0d4beedc7e433b58184b0228fd7b0	out_of_fold_double
+MEIS1	1	-1	-1		training_in_every_fold
+MIDN	1	-1	-1		training_in_every_fold
+NCL	1	-1	-1		training_in_every_fold
+NIT1	1	-1	-1		training_in_every_fold
+OSR2	1	-1	-1		training_in_every_fold
+PLK4	1	-1	-1		training_in_every_fold
+POU3F2	1	-1	-1		training_in_every_fold
+PRDM1	1	-1	-1		training_in_every_fold
+PRTG	1	-1	-1		training_in_every_fold
+PTPN1	1	-1	-1		training_in_every_fold
+PTPN12	1	-1	-1		training_in_every_fold
+PTPN12+PTPN9	2	0	50	ed44ea8133892dde021a6e138749693aeaeb93b6e096aceedf49aff55a3389f3	out_of_fold_double
+PTPN12+UBASH3B	2	0	30	85113476234d169dbed4db51ff43ab5fc69d2030a0915e195934bc4d0c16c060	out_of_fold_double
+PTPN12+ZBTB25	2	3	48	e7a21f85fbbdf74ec944221654ca101a50b661a80e19384cee07af9d0dceceb7	out_of_fold_double
+PTPN13	1	-1	-1		training_in_every_fold
+PTPN9	1	-1	-1		training_in_every_fold
+PTPN9+UBASH3B	2	1	41	b7147e176a13a817540a62152e37c3291d9bc805b3db1db0b70660796910e923	out_of_fold_double
+RHOXF2B	1	-1	-1		training_in_every_fold
+RHOXF2B+SET	2	4	24	6cd3aea3167a6b32a28989496d148a640fa20df48797128854024491c5a5a916	out_of_fold_double
+RREB1	1	-1	-1		training_in_every_fold
+RUNX1T1	1	-1	-1		training_in_every_fold
+S1PR2	1	-1	-1		training_in_every_fold
+S1PR2+SGK1	2	3	13	3bec15e1ffc0b010d8e4c715fcc80a995c7cf017feeddd460895ea1d9f17375f	out_of_fold_double
+SAMD1	1	-1	-1		training_in_every_fold
+SET	1	-1	-1		training_in_every_fold
+SGK1	1	-1	-1		training_in_every_fold
+SLC38A2	1	-1	-1		training_in_every_fold
+SLC4A1	1	-1	-1		training_in_every_fold
+SLC6A9	1	-1	-1		training_in_every_fold
+SNAI1	1	-1	-1		training_in_every_fold
+SNAI1+UBASH3B	2	1	16	538f372b484475403db79f5a0659310cc1ef066df1177e0f2598a9871dce07a7	out_of_fold_double
+SPI1	1	-1	-1		training_in_every_fold
+STIL	1	-1	-1		training_in_every_fold
+TBX2	1	-1	-1		training_in_every_fold
+TBX3	1	-1	-1		training_in_every_fold
+TGFBR2	1	-1	-1		training_in_every_fold
+TMSB4X	1	-1	-1		training_in_every_fold
+TP73	1	-1	-1		training_in_every_fold
+TSC22D1	1	-1	-1		training_in_every_fold
+UBASH3A	1	-1	-1		training_in_every_fold
+UBASH3B	1	-1	-1		training_in_every_fold
+ZBTB1	1	-1	-1		training_in_every_fold
+ZBTB10	1	-1	-1		training_in_every_fold
+ZBTB25	1	-1	-1		training_in_every_fold
+ZC3HAV1	1	-1	-1		training_in_every_fold
+ZNF318	1	-1	-1		training_in_every_fold
+ctrl	0	-1	-1		training_in_every_fold

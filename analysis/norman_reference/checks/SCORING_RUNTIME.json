@@ -1,0 +1,11 @@
+{
+  "python": "3.10.17",
+  "numpy": "1.23.5",
+  "pandas": "2.3.3",
+  "scipy": "1.12.0",
+  "linear_algebra_threads": 1,
+  "baseline_fit": "analysis_code/norman_reference.py fit",
+  "full_score": "analysis_code/norman_reference.py score",
+  "aggregate_replay": "analysis_code/replay_norman_summary.py",
+  "environment_scope": "Scoring and aggregate replay only; data preparation and CPA training/inference have separate runtime specifications."
+}

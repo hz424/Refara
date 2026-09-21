@@ -1,0 +1,13 @@
+resource	minimum_gap	policy	assessment_cases	released	held	supported	unsupported	selected_budgets
+Norman	0.01	single_split	28	24	4	15	9	"{""d16"": 1, ""d8"": 23}"
+Norman	0.01	repeated_primary	28	2	26	2	0	"{""d64"": 1, ""d8"": 1}"
+Norman	0.01	geometry_scaled	28	2	26	2	0	"{""d64"": 1, ""d8"": 1}"
+Norman	0.0	single_split	28	28	0	23	5	"{""d8"": 28}"
+Norman	0.0	repeated_primary	28	5	23	4	1	"{""d16"": 1, ""d32"": 1, ""d64"": 1, ""d8"": 2}"
+Norman	0.0	geometry_scaled	28	5	23	4	1	"{""d16"": 1, ""d32"": 1, ""d64"": 1, ""d8"": 2}"
+Norman	0.005	single_split	28	26	2	22	4	"{""d16"": 1, ""d32"": 1, ""d8"": 24}"
+Norman	0.005	repeated_primary	28	4	24	3	1	"{""d128"": 1, ""d64"": 2, ""d8"": 1}"
+Norman	0.005	geometry_scaled	28	4	24	3	1	"{""d128"": 1, ""d64"": 2, ""d8"": 1}"
+Norman	0.02	single_split	28	2	26	1	1	"{""d8"": 2}"
+Norman	0.02	repeated_primary	28	1	27	1	0	"{""d128"": 1}"
+Norman	0.02	geometry_scaled	28	1	27	1	0	"{""d128"": 1}"

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "build_export.py": "e7a2ffc22c1989f63533fb3943b09c7a6351f13645061f26dcb17b90d0925795",
+    "model_contract.json": "2274a4e038e8d3bf234dcbf162454b099424e66341ec2bc9d592315b9e419514",
+    "paired_statistics.py": "0b8598c3a2d12763c32b96380ef00ccd06d4f0b0bc11454daa1f8641cd96a016",
+    "protocol.json": "854a02fb6d106ef0a60bdd88731587b1ed635b6769fb9452c5423a9e03b7defe",
+    "replay.py": "51e1613353d8a8ef2271cdb970e6878d0378949f573118ed508a1eceb16ca420",
+    "source_data/assessment_losses.tsv.gz": "750b6c2c03964ce04f008271819aba86a0edd574227ed184b5e4a88217130ef7",
+    "source_data/expected.json": "9ed5fc405acb13f0d6d8244f45c2067edebd303da1bc2527fe56f9e08ea92b11",
+    "source_data/selection_losses.tsv.gz": "087671833588995c76a9f030dd7ef65dfb659649b9d29f762b8726f724476f07",
+    "source_data/tasks.tsv.gz": "6a71b70399e38125d039c5e748c4e58c5b50832d30de436afc7e01b29bf57e29"
+  },
+  "schema": "REFARA_CAPSULE_MANIFEST_V1"
+}

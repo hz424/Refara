@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "atomic_checks": 864,
+  "pattern_checks": 160,
+  "max_absolute_error": 4.163336342344337e-17,
+  "tolerance": 1e-11,
+  "task_indices": [
+    0,
+    54
+  ],
+  "allocation_labels": [
+    0,
+    29
+  ],
+  "depths": [
+    8,
+    135
+  ],
+  "role_tuples": 27,
+  "scoring_module_imported": false
+}

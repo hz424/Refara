@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "reference": "scipy.stats.t.sf and scipy.stats.ttest_1samp; analytic Cauchy df=1",
+  "degrees_of_freedom": [
+    {
+      "df": 1,
+      "grid_points": 1603,
+      "maximum_absolute_error": 3.1830988955761086e-09,
+      "maximum_threshold_error": 2.7755575615628914e-17,
+      "old_bitwise_preserved": false
+    },
+    {
+      "df": 2,
+      "grid_points": 1603,
+      "maximum_absolute_error": 4.880395421125172e-09,
+      "maximum_threshold_error": 1.3877787807814457e-17,
+      "old_bitwise_preserved": false
+    },
+    {
+      "df": 3,
+      "grid_points": 1603,
+      "maximum_absolute_error": 5.07363828727847e-09,
+      "maximum_threshold_error": 4.163336342344337e-17,
+      "old_bitwise_preserved": false
+    },
+    {
+      "df": 5,
+      "grid_points": 1603,
+      "maximum_absolute_error": 7.84032128109402e-09,
+      "maximum_threshold_error": 2.7755575615628914e-17,
+      "old_bitwise_preserved": false
+    },
+    {
+      "df": 7,
+      "grid_points": 1603,
+      "maximum_absolute_error": 7.951537039918577e-09,
+      "maximum_threshold_error": 4.85722573273506e-17,
+      "old_bitwise_preserved": true
+    },
+    {
+      "df": 11,
+      "grid_points": 1603,
+      "maximum_absolute_error": 1.111867919956211e-08,
+      "maximum_threshold_error": 7.632783294297951e-17,
+      "old_bitwise_preserved": true
+    },
+    {
+      "df": 19,
+      "grid_points": 1603,
+      "maximum_absolute_error": 1.5495239535923133e-08,
+      "maximum_threshold_error": 2.5673907444456745e-16,
+      "old_bitwise_preserved": true
+    },
+    {
+      "df": 39,
+      "grid_points": 1603,
+      "maximum_absolute_error": 2.334137477744136e-08,
+      "maximum_threshold_error": 1.8318679906315083e-15,
+      "old_bitwise_preserved": true
+    }
+  ]
+}

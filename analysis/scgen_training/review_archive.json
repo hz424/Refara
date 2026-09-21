@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "archive_name": "SCGEN_TRAINING_ROBUSTNESS_20260910_V1.zip",
+  "archive_sha256": "63d79f95049424ad8a042e29fa39f43aae5e846fcb7983630715a08ede722e11",
+  "archive_bytes": 1738567664,
+  "members": 480,
+  "manifest_sha256": "dc04ec57d3f103e5d903de19b8d90d0af039e725600187546d95a39d9835f6dc",
+  "original_manifest_sha256": "969b39ed10ac9b982643de3933f4f371a3f8e4a2d2db7c55f7d5cfd39dd1e3dd",
+  "alternate_distributions": [
+    {
+      "archive_name": "SCGEN_TRAINING_ROBUSTNESS_20260910_V1.zip",
+      "archive_sha256": "9555f43ec08cc3d1f5d2efd4914e99b15c068288cab41e5483bdd8227ea856e7",
+      "archive_bytes": 1738567884,
+      "members": 480,
+      "manifest_sha256": "ac4c8cd440d11af0b9945d97c0a6ae372952066bf4368795332f62305e4efae2",
+      "original_manifest_sha256": "969b39ed10ac9b982643de3933f4f371a3f8e4a2d2db7c55f7d5cfd39dd1e3dd",
+      "distribution_id": "review-20260912"
+    }
+  ]
+}

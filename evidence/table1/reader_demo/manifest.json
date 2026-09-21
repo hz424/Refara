@@ -1,0 +1,390 @@
+{
+  "schema_version": 1,
+  "data_file": "profiles.npz",
+  "data_sha256": "62ba173134585845cf06795445ad6a32bb8c094c3ddc69310f5efa5de42e00bc",
+  "protocol_sha256": "e65613d2f393663cb324535fac93efbc01ebc818865c6f063626a61d02461689",
+  "pbmc_coverage_addendum_sha256": "bf1c1bc927321ea6abb62ccf3d0ca103d8e5fceb5e9236af0537f424f2455fef",
+  "resources": {
+    "Norman": {
+      "prefix": "norman",
+      "task": "BAK1+KLF1",
+      "task_id": "BAK1+KLF1",
+      "unit": "Norman_pooled_screen",
+      "allocation": 0,
+      "depth": 8,
+      "models": [
+        {
+          "name": "selected_CPA",
+          "kind": "state",
+          "input_conditioned": true,
+          "array_key": "norman_model_0",
+          "fits": 1
+        },
+        {
+          "name": "original_CPA_fixed",
+          "kind": "state",
+          "input_conditioned": false,
+          "array_key": "norman_model_1",
+          "fits": 1
+        },
+        {
+          "name": "additive",
+          "kind": "state",
+          "input_conditioned": false,
+          "array_key": "norman_model_2",
+          "fits": 1
+        },
+        {
+          "name": "compositional_ridge",
+          "kind": "state",
+          "input_conditioned": false,
+          "array_key": "norman_model_3",
+          "fits": 1
+        },
+        {
+          "name": "NC_native_effect",
+          "kind": "native_effect",
+          "input_conditioned": false,
+          "array_key": "norman_model_4",
+          "fits": 1
+        },
+        {
+          "name": "native_effect_ridge",
+          "kind": "native_effect",
+          "input_conditioned": false,
+          "array_key": "norman_model_5",
+          "fits": 1
+        }
+      ],
+      "correct_candidate_index": 0,
+      "source_bindings": {
+        "submission/work/systema_matched_norman_v1/results/fixed_profiles_and_references.npz": "a124615c1d9949f843b7d79c3900e46daebf26910d0f4a91414390662debc834",
+        "submission/work/systema_matched_norman_v1/results/selected_CPA_block_profiles.npy": "b3903b3564a073b8504285ef3b4c71a95bd0e4c1620c68d8a0ef1b4af18a1189",
+        "submission/work/reference_protocol_v2/software/analysis/norman_training_review/source_data/reference_results/control_block_means.npy": "d591ac5c5f761954978b967d2a88a6efaf7140bb33a321b1b0b4c283c0669b2b"
+      },
+      "metrics_available": [
+        "standardized_MSE",
+        "raw_RMSE",
+        "perturbation_centred_Pearson",
+        "centroid_accuracy"
+      ]
+    },
+    "Kang": {
+      "prefix": "kang",
+      "task": "ROOT_01:B",
+      "task_id": "B",
+      "unit": "ROOT_01",
+      "allocation": 0,
+      "depth": 4,
+      "models": [
+        {
+          "name": "ridge_state_terminal",
+          "kind": "state",
+          "input_conditioned": true,
+          "array_key": "kang_model_0",
+          "fits": 1
+        },
+        {
+          "name": "CellFlow_mean_score_five_fits",
+          "kind": "state",
+          "input_conditioned": true,
+          "array_key": "kang_model_1",
+          "fits": 5
+        }
+      ],
+      "correct_candidate_index": null,
+      "source_bindings": {
+        "submission/work/20260910_revision/science_r3/Kang_Reference_Mean_Arrays_for_Review/mean_arrays.npz": "3c74833a6bcf2a241d6e411070f410edb91db418f64e025134af934bc0d751db",
+        "submission/work/20260910_revision/science_r3/Kang_Reference_Mean_Arrays_for_Review/MANIFEST.json": "9c93cdb0020e993728b7fbafcdc28dabf87627ddbcaca323bc7f09e4ccf8ec45"
+      },
+      "metrics_available": [
+        "standardized_MSE",
+        "raw_RMSE"
+      ]
+    },
+    "PBMC": {
+      "prefix": "pbmc",
+      "task": "ROOT_01:T01",
+      "task_id": "T01",
+      "unit": "ROOT_01",
+      "allocation": 0,
+      "depth": 8,
+      "models": [
+        {
+          "name": "NO_CHANGE_DIRECT_V1",
+          "kind": "native_effect",
+          "input_conditioned": false,
+          "array_key": "pbmc_model_0",
+          "fits": 1
+        },
+        {
+          "name": "CONTEXT_MEAN_EFFECT_DIRECT_V1",
+          "kind": "native_effect",
+          "input_conditioned": false,
+          "array_key": "pbmc_model_1",
+          "fits": 1
+        },
+        {
+          "name": "TWO_WAY_ADDITIVE_RIDGE_DIRECT_V1",
+          "kind": "native_effect",
+          "input_conditioned": false,
+          "array_key": "pbmc_model_2",
+          "fits": 1
+        },
+        {
+          "name": "PCA64_ADDITIVE_RIDGE_DIRECT_V1",
+          "kind": "native_effect",
+          "input_conditioned": false,
+          "array_key": "pbmc_model_3",
+          "fits": 1
+        },
+        {
+          "name": "RBF_KERNEL_RIDGE_DIRECT_V1",
+          "kind": "native_effect",
+          "input_conditioned": false,
+          "array_key": "pbmc_model_4",
+          "fits": 1
+        },
+        {
+          "name": "CPA_0_8_8_ABSOLUTE_V1",
+          "kind": "state",
+          "input_conditioned": true,
+          "array_key": "pbmc_model_5",
+          "fits": 1
+        },
+        {
+          "name": "SCGEN_2_1_1_ABSOLUTE_V1",
+          "kind": "state",
+          "input_conditioned": true,
+          "array_key": "pbmc_model_6",
+          "fits": 1
+        },
+        {
+          "name": "CELLOT_522D2B9_ABSOLUTE_V1",
+          "kind": "state",
+          "input_conditioned": true,
+          "array_key": "pbmc_model_7",
+          "fits": 1
+        }
+      ],
+      "correct_candidate_index": null,
+      "source_bindings": {
+        "submission/work/20260911_biological_consequence_design/inputs/axes.json": "d1af44d74981bc45a9bfd9c27cc25d4fd5934fbfcb9264d959c09c58a0116c4b",
+        "submission/work/20260911_biological_consequence_design/inputs/benchmark_inputs.npz": "28758d37fa4c65392e753e8972c0d6884074d9d3c99db1e05f0c8cff98e001bb"
+      },
+      "metrics_available": [
+        "standardized_MSE",
+        "raw_RMSE"
+      ]
+    }
+  },
+  "array_manifest": {
+    "norman_controls": {
+      "shape": [
+        3,
+        2000
+      ],
+      "sha256": "b5d349c73a10a5a293f670d80b79013a46127391fea15991ecc0071bc5362c99"
+    },
+    "norman_scales": {
+      "shape": [
+        2000
+      ],
+      "sha256": "8382fe11d4236318abbe86601f2e1c32f0d1e1176608fc508dcf6ba2f9fc3bb1"
+    },
+    "norman_observed": {
+      "shape": [
+        2000
+      ],
+      "sha256": "55263712830b146546aa6969969dbc5c97d6088c5cb86dbf048ebad34fe4f95b"
+    },
+    "norman_model_0": {
+      "shape": [
+        1,
+        3,
+        2000
+      ],
+      "sha256": "6b1ce1410ba5b12e958eb680ae8aa89b3c34a759e0052b1de3870ecc0395246a"
+    },
+    "norman_model_1": {
+      "shape": [
+        1,
+        3,
+        2000
+      ],
+      "sha256": "45e561edaffa1ef54c5e61b5c9982d41e6bf08e747ea53200a736a4a555d3979"
+    },
+    "norman_model_2": {
+      "shape": [
+        1,
+        3,
+        2000
+      ],
+      "sha256": "4ab4c02fb8d6c8b6868310a1f7239ef11f49470a06128d475873a21554af1edd"
+    },
+    "norman_model_3": {
+      "shape": [
+        1,
+        3,
+        2000
+      ],
+      "sha256": "86926e6b923f98125c91e5cbe3f929baf487b531379a1302b7f47918a5622322"
+    },
+    "norman_model_4": {
+      "shape": [
+        1,
+        2000
+      ],
+      "sha256": "c3c9a957d381ea008d7683e552ee8e1e8121630556847b0ac289df241c056ed2"
+    },
+    "norman_model_5": {
+      "shape": [
+        1,
+        2000
+      ],
+      "sha256": "cfff229bd0eefb3f5795af39ca7ead01b8bcce0605cbfd30f450a8da45b58c5d"
+    },
+    "norman_candidates": {
+      "shape": [
+        55,
+        2000
+      ],
+      "sha256": "c1ceb721815490cb3a656959c6fb40d42714bcd74ee7ef1fe75a886303da8d1c"
+    },
+    "norman_TRAIN_control": {
+      "shape": [
+        2000
+      ],
+      "sha256": "e4a50de0327fa8847f6d46055fbfd680442225ce047f1da2ce1ab2bfb754d098"
+    },
+    "norman_TRAIN_perturbation": {
+      "shape": [
+        2000
+      ],
+      "sha256": "330124aa2d73787dc54cde7238f649ffca6b70218fe21bdfb1da8c71774c2fc4"
+    },
+    "norman_native_effect_training_baseline": {
+      "shape": [
+        2000
+      ],
+      "sha256": "ff5d279f659aead501f1aad9b9cdac8fcc205ca3d6295013d4a327b9402ee1c9"
+    },
+    "kang_controls": {
+      "shape": [
+        3,
+        5000
+      ],
+      "sha256": "5acc536e3ee30a4fe7aa0fee1602292ed5a1656015bea9a1c71e532f3977e832"
+    },
+    "kang_scales": {
+      "shape": [
+        5000
+      ],
+      "sha256": "d368205ffaf92273462074089e8241484569862888ea23c7ecc8f371ef2652d9"
+    },
+    "kang_observed": {
+      "shape": [
+        5000
+      ],
+      "sha256": "e72bc944e822ef83c902234e0cc0c5ff47786bdf1ac96399db64bf2b4f272666"
+    },
+    "kang_model_0": {
+      "shape": [
+        1,
+        3,
+        5000
+      ],
+      "sha256": "28e352bff80f9189764c012587e8244889154e9732811cbb66e13692bba8d561"
+    },
+    "kang_model_1": {
+      "shape": [
+        5,
+        3,
+        5000
+      ],
+      "sha256": "1a61b843b77c2598dd699940eacfa7d23170b5ee010210fcbe6171604c10c1f9"
+    },
+    "pbmc_controls": {
+      "shape": [
+        3,
+        2000
+      ],
+      "sha256": "b58bb92cf67bc6a627ae922b6a2ebd02a7630417f145187b393d378bf220dc83"
+    },
+    "pbmc_scales": {
+      "shape": [
+        2000
+      ],
+      "sha256": "b61f6d89cfec73d5db738295e5274936bab4a8885b6edf2329d45a94701c7363"
+    },
+    "pbmc_observed": {
+      "shape": [
+        2000
+      ],
+      "sha256": "b0cfc1d94b7f28f1580c84d0285553dbeee91571ed8a2c81a62bb05fb6289f18"
+    },
+    "pbmc_model_0": {
+      "shape": [
+        1,
+        2000
+      ],
+      "sha256": "c3c9a957d381ea008d7683e552ee8e1e8121630556847b0ac289df241c056ed2"
+    },
+    "pbmc_model_1": {
+      "shape": [
+        1,
+        2000
+      ],
+      "sha256": "7992ba6f92b6f3783132c4b71b6bb92a7e0bf64a12ce4e483b13656fb01013cb"
+    },
+    "pbmc_model_2": {
+      "shape": [
+        1,
+        2000
+      ],
+      "sha256": "1e2f34fcb204062de0c8650cbf0a2c58b1f2461428edefb34455b00e2a1e6e6d"
+    },
+    "pbmc_model_3": {
+      "shape": [
+        1,
+        2000
+      ],
+      "sha256": "98df459b955ff705258065d9657e3f6d18e94dc0741136fab062bdd55d2cced4"
+    },
+    "pbmc_model_4": {
+      "shape": [
+        1,
+        2000
+      ],
+      "sha256": "95475c320e4f5b4787f00603e25e7de4697af556526f82fdad86f5a694fe056d"
+    },
+    "pbmc_model_5": {
+      "shape": [
+        1,
+        3,
+        2000
+      ],
+      "sha256": "9d0bbb8428b89c675ad5d8b461e163b9fcfc01fd10319ea4dd4c2d54a2f8315d"
+    },
+    "pbmc_model_6": {
+      "shape": [
+        1,
+        3,
+        2000
+      ],
+      "sha256": "29a83e4d755e59b3b0b5f888597d3fc1f5514070651a3e3a0fd3a34daba4dbe7"
+    },
+    "pbmc_model_7": {
+      "shape": [
+        1,
+        3,
+        2000
+      ],
+      "sha256": "db5fc94163613f697caad21c084e91ee141e02d82362c6d5f233b464d71f101e"
+    }
+  },
+  "scope": "Genuine cached profiles selected by metadata, not known benchmark errors or a human usability study.",
+  "native_effect": "Native ridge removes its saved TRAIN lift in the original adapter; direct-state rendering uses TRAIN_control.",
+  "metric_coordinates": "Aligned state; fixed TRAIN_perturbation and all 55 observed Norman targets. Kang and PBMC have only the two distance metrics.",
+  "cellflow": "Calculate each of five fit scores, then average scores."
+}

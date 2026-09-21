@@ -1,0 +1,14 @@
+{
+  "errors": 0,
+  "failures": 0,
+  "files_sha256": {
+    "SCORING_PROTOCOL.json": "383503bb80247107bca6b862f7cd87414b2fc98417ff3d88e614f8b864bfdbef",
+    "SCORING_PROTOCOL_V2.json": "0f63b2c33bf13f49ddb106dbf5f639bf6a4fda08b9b60e3ea8069b3a5cb420cf",
+    "norman_reference.py": "ab137a00c9ba87af8d0c1e7d111df852ea86fab1011daeebf3987df9b4a32c58",
+    "test_norman_reference.py": "0b823a43e280fb58056d25de47947cd8afcd761a76894372984a85980ec10502"
+  },
+  "python": "3.10.17 | packaged by conda-forge | (main, Apr 10 2025, 22:19:12) [GCC 13.3.0]",
+  "status": "PASS",
+  "study_data_used": false,
+  "test_count": 5
+}

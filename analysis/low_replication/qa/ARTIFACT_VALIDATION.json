@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "canvas_pixels": [
+    4251,
+    3023
+  ],
+  "raster_dpi": 600,
+  "minimum_live_text_pt": 7,
+  "panel_a_and_b_pixels_unchanged": true,
+  "source_files_unchanged": 10,
+  "simulated_recovery_rows_retained": 24,
+  "analytic_zero_display": "caption_only",
+  "four_export_replay_identical": true,
+  "visual_review": "No overlapping text or clipping; panel c begins at eight roots."
+}

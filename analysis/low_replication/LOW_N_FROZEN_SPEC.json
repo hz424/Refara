@@ -1,0 +1,39 @@
+{
+  "alpha": 0.05,
+  "analysis": "Figure 5b low-independent-root extension",
+  "analytic_panel_c": "For integer R=1..7, exact sign/Holm cannot reject: min p=2^-R > alpha/12. Exact-family and true-edge recovery are zero with no MC interval.",
+  "bootstrap_resamples": 499,
+  "bound_sha256": {
+    "LOW_N_CELL_LEDGER.tsv": "a3af45b935d3bc9ed169f00b9bdecffae102e52d097304e27f2cfba19b2ab3c0",
+    "comparator_numerics_low_n.py": "b32c537b86db2faa29dadc6182630d302ebe974277d3ec70fdcfb99d0dc6e52e",
+    "frozen_original/COMPARATOR_CELL_LEDGER_V1.tsv": "ffa08beb00fd9ff36ee4bc0a48b1ff75d589388e72d043dbf8040992c13590f0",
+    "frozen_original/COMPARATOR_EXECUTABLE_SPEC_V1.json": "926095e65474be976366d931f0d54a09c1e28839aa9742a3cb54440b4b82d614",
+    "frozen_original/comparator_numerics_v1.py": "a7b7e4c4034d0d96ee50db32ece37f7b00571d9d99bfdddfa57b0b3870541cd8",
+    "frozen_original/general_directional_family_v3.py": "4da8f63a1f0b14d2101074becea0f9d719878e971b61a89dda5815ab97bd9b0e",
+    "frozen_original/run_comparator_v1.py": "aa086741bc9d39d74645d5b6d08b70bcb22fd4d927e55408b5090194fcba19ef",
+    "qa/NUMERICAL_VALIDATION.json": "9978b2d44d91c42b1c80f9c9a5db289c6b1ae8caef6ddfea5955fa822d0ff7bb",
+    "run_low_n.py": "0ebe7873e16935b743a584798ed529f9ca236ad87f4be320a31dca153c37823a",
+    "validate_numerics.py": "31bbf72603a624439dc67f4dbcc95926b3fe8bbd0e4c5805022a0834a058360f"
+  },
+  "family_size": 12,
+  "frozen_utc": "2026-09-11T17:21:08.276259+00:00",
+  "law": "C02 hierarchical Gaussian global null",
+  "methods": [
+    "EXACT_ROOT_SIGN_HOLM",
+    "ROOT_CR1_T_MEAN_CONTRAST_HOLM",
+    "ROOT_NONPARAMETRIC_BOOTSTRAP_MEAN_CONTRAST_HOLM",
+    "TASK_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM",
+    "CELL_NEGATIVE_CONTROL_BOOTSTRAP_MEAN_CONTRAST_HOLM"
+  ],
+  "old_grid": "All 20 archived rows at R=8,12,20,40 retained verbatim, not rerun or replaced",
+  "original_numerical_change": "Only SUPPORTED_T_DF whitelist extended to df 1,2,3,5; numerical algorithm unchanged",
+  "outer_replicates": 2500,
+  "primary_endpoint": "outer_replicates_any_null_direction_rejected",
+  "reporting": "All root counts and procedures retained; failures counted without replacement; pointwise two-sided 95% Clopper-Pearson intervals for simulated counts",
+  "root_counts": [
+    2,
+    3,
+    4,
+    6
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "source_sha256": "32cc993abad41336eb0f3635f97e802e13fe5721dd9277c1c55e7c13853782e0",
+  "frozen_protocol_sha256": "2c0c2c10b658e833b9e4a7451b0b3198bc56a5abc84c9c1293cf254a3cb1fb31",
+  "comparisons": {
+    "eval_controls.npy": "exact_array_equal",
+    "train_control_mean.npy": "exact_array_equal",
+    "scales.npy": "exact_array_equal",
+    "test_means.npz": "exact_arrays_equal",
+    "training_means.npz": "exact_arrays_equal"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "bound_input_files": 17,
+  "assignments": 30,
+  "gemgroups": 8,
+  "role_blocks_per_assignment_gemgroup": 3,
+  "max_cells_per_block": 135,
+  "all_depths_nested": true,
+  "all_role_blocks_disjoint": true,
+  "all_reference_cells_exclude_training": true,
+  "all_array_cell_and_gene_axes_match": true,
+  "all_mean_aggregations_match": true,
+  "frozen_protocol_sha256": "2c0c2c10b658e833b9e4a7451b0b3198bc56a5abc84c9c1293cf254a3cb1fb31"
+}

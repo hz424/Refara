@@ -1,0 +1,30 @@
+{
+  "scales": "scales.tsv",
+  "tasks": [
+    {
+      "id": "example",
+      "unit": "sample1",
+      "treated": "treated.tsv",
+      "references": "references/references.tsv",
+      "controls": "controls.tsv",
+      "membership": "references/membership.tsv",
+      "models": [
+        {
+          "name": "effect",
+          "kind": "effect",
+          "prediction": "effect.tsv"
+        },
+        {
+          "name": "state",
+          "kind": "state",
+          "prediction": "state.tsv"
+        },
+        {
+          "name": "state_shifted",
+          "kind": "state",
+          "prediction": "state_shifted.tsv"
+        }
+      ]
+    }
+  ]
+}

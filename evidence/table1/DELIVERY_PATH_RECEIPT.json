@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "meaning": "Final independently checked examples copied byte-for-byte to conventional reader_demo/action_results paths; original _final execution directories retained for QA provenance.",
+  "files": [
+    {
+      "path": "reader_demo/manifest.json",
+      "sha256": "fc7cfa743ad97751630d78c7dc68cd328e94d467a3238a4bcae5c2500e2769c3"
+    },
+    {
+      "path": "reader_demo/profiles.npz",
+      "sha256": "62ba173134585845cf06795445ad6a32bb8c094c3ddc69310f5efa5de42e00bc"
+    },
+    {
+      "path": "reader_demo/BUILD_BINDING.json",
+      "sha256": "9d6c005f07be254fc86960d9e9fc71f8ba37d09b0cbd60f86ec343449a69b1c6"
+    },
+    {
+      "path": "action_results/injected_stress_tests.json",
+      "sha256": "8bed3b32909767f7bc6397658ccdf7122fdf8e4176f3959ae658777e38a0c429"
+    },
+    {
+      "path": "action_results/components.npz",
+      "sha256": "c4721a3221207eb8eb80320bbfe9637f9aba300078d02346e945e09a9fc9e83a"
+    },
+    {
+      "path": "action_results/EXECUTION_BINDING.json",
+      "sha256": "4d9973511be8327970104e83584bda4cca982f9622dbfc62faa75d7de94a623f"
+    },
+    {
+      "path": "action_results/cases.json",
+      "sha256": "802d7e83d69c0908e670f957622e007dfac609580c4af66ddc136680e2bd6740"
+    },
+    {
+      "path": "action_results/report.md",
+      "sha256": "136515225e826aaf4c53c7f693b1193402d505330a61f26438e8e6f5bfc3af76"
+    },
+    {
+      "path": "action_results/action_summary.tsv",
+      "sha256": "98cff97b5a0905044394a5fcd9de0ccb019f92c463ee41946d3c0b48dcd80c31"
+    },
+    {
+      "path": "action_results/role_omission_checks.json",
+      "sha256": "01002b1ebdc55b6f6059ae30bd7b12ca45a174c8956fdef32fb729f108732842"
+    },
+    {
+      "path": "action_results/actions.json",
+      "sha256": "1bf4a3190bdb461d35dce382243d1da13ede2dd92e4a9817c14e65c7eeab0933"
+    },
+    {
+      "path": "action_results/RECEIPT.json",
+      "sha256": "e49249bb4ecbdef3b90873a920aaf44b81a1e5e618e5e5b61a341202296b230a"
+    }
+  ]
+}

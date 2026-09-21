@@ -1,0 +1,25 @@
+{
+  "all_pairs_retained": true,
+  "crossing_counts": {
+    "allocation_mean_pairs": 126,
+    "overall_mean_pairs": 4,
+    "task_allocation_pairs": 8152,
+    "task_mean_pairs": 269
+  },
+  "original_effect_utilities_exact": true,
+  "output_sha256": {
+    "allocation_mean_pairs.tsv": "4fd1e0a9abfba0c03faf497b9324ad1a705b0918be0851218e3434b986f26660",
+    "effect_utilities.npz": "3d6cf4383a044457285cdd7d6eed92832d2ed48d56daa8b945706f1039347bd0",
+    "overall_mean_pairs.tsv": "4676bb2e5daa2c76a72617c83dc50e183ad944792f19a70d496fddf78091a58d",
+    "task_allocation_pairs.tsv.gz": "f07de156363206f0d079d478d170b20eaa564dcb0f4a67d191b515fce49b00ff",
+    "task_mean_pairs.tsv": "65dbc191b7dcfe209ec10a5ea7c6de094f50f0f6cc74d9edd169242561405831"
+  },
+  "protocol_sha256": "1c9d59e737873af107a3bad5cb9ed5e8fb04b0d17eb985880f7619470264dd22",
+  "status": "PASS_DIRECT_EFFECT_COMPARISONS",
+  "table_rows": {
+    "allocation_mean_pairs": 540,
+    "overall_mean_pairs": 18,
+    "task_allocation_pairs": 29700,
+    "task_mean_pairs": 990
+  }
+}

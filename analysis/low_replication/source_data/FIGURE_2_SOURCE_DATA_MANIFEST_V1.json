@@ -1,0 +1,54 @@
+{
+  "cell_accounting": {
+    "complete_grid_cells_retained_upstream": 280,
+    "panel_selection_instances": 144,
+    "preexisting_negative_control_rows": 20,
+    "unique_new_simulation_cells": 136
+  },
+  "figure_id": "F2",
+  "interval_rules": {
+    "F2a_exact_family": "Clopper-Pearson after numerator/denominator pooling, N=10000",
+    "F2a_true_edge": "Hoeffding after bounded-score-sum/denominator pooling, N=10000",
+    "F2b": "Clopper-Pearson, N=5000 per cell",
+    "F2c": "Clopper-Pearson after numerator/denominator pooling, N=10000",
+    "F2d": "Pre-existing intervals copied without recomputation, N=2500 per row"
+  },
+  "outcome_selection": false,
+  "panel_order": [
+    "F2A_BASELINE_RECOVERY",
+    "F2B_GLOBAL_NULL_CALIBRATION",
+    "F2C_STRESS_RECOVERY_AND_ABSTENTION",
+    "F2D_EXISTING_HIERARCHICAL_NEGATIVE_CONTROLS"
+  ],
+  "panel_source_data": {
+    "F2A_BASE_RECOVERY_POOLED_V1.tsv": {
+      "rows": 24,
+      "sha256": "3e89e55ab97e3c7e9fc09493829b2082a42b3f8347958e6330fc9e987b84c67d"
+    },
+    "F2B_GLOBAL_NULL_CALIBRATION_V1.tsv": {
+      "rows": 40,
+      "sha256": "edb701c3117fc74483502e3f82236690f8d8dd04c00cc7519333f205444a708c"
+    },
+    "F2C_STRESS_RECOVERY_ABSTENTION_POOLED_V1.tsv": {
+      "rows": 160,
+      "sha256": "62bc66b13de78e4273ebf80a2b4e10a0e816a250da07dc70b68021eab0dbadbe"
+    },
+    "F2D_PREEXISTING_NEGATIVE_CONTROLS_V1.tsv": {
+      "rows": 20,
+      "sha256": "e414ea9827e3bceda6f003f6720ab97605805cfb97dc123068d50b807af5c629"
+    }
+  },
+  "schema_version": "1.0.0",
+  "status": "PASS_FIGURE_2_SOURCE_DATA_MATERIALIZED",
+  "terminal_status": "PASS_COMPLETE_GRID_SEALED_QC",
+  "upstream_provenance": {
+    "disposition": "HASH_ONLY_LOCATORS_FROM_THE_FROZEN_PRODUCTION_PACKAGE_NOT_REPOSITORY_PATHS",
+    "input_sha256": {
+      "05_SOURCE_DATA/results_v8/F2/F2_CELL_AGGREGATES_R0.tsv": "29bcfdbf152a89827f24ef9ffc1e4834203d23dce7f56af0e3df674a2f125cff",
+      "05_SOURCE_DATA/validation_table/F3C_PSEUDOREPLICATION_V1.tsv": "e414ea9827e3bceda6f003f6720ab97605805cfb97dc123068d50b807af5c629",
+      "07_PROVENANCE_AND_RECEIPTS/REGISTERED_BINDINGS/F2_MAIN_PANEL_BINDING_V1.json": "45d22962f7fce891db0fc58d42e435811ab8c0048ffdca63a0c30a4184824ea9",
+      "07_PROVENANCE_AND_RECEIPTS/REGISTERED_BINDINGS/SIMULATION_CELL_MANIFEST_V1.tsv": "e27efcab9c0ea70ae1c26215abb9c5a3d2367e6d5b06f46276bd9ecb5bb7a650",
+      "07_PROVENANCE_AND_RECEIPTS/V8_EXECUTION_BINDING/F2_COMPLETE_GRID_TERMINAL_RECEIPT_V1.json": "6048a27c7bdfce22b1b720b3a7ca9c0a7e2f5e620872eac34dec2e524a6f7a2a"
+    }
+  }
+}

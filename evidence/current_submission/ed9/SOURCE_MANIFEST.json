@@ -1,0 +1,56 @@
+{
+  "origin_release": "NATURE_METHODS_20260917_validation_reference_selection_local_review_v1",
+  "source_tables": [
+    {
+      "source_data_path": "CPA2560_selected/selected_2560/ed9/summary/gse162632/original8/ALL_MODEL_RANKS.tsv",
+      "sha256": "03e62555e35e9881c83de545a1951b79fff624aef1e21856a4c168edff1b5205",
+      "bytes": 4407158
+    },
+    {
+      "source_data_path": "CPA2560_selected/selected_2560/ed9/summary/gse162632/original8/ALL_METRIC_CONCORDANCE.tsv",
+      "sha256": "7e27a55dc5805492198fcae55c34283ba7dc12ca3e46b17776603051bb2e9290",
+      "bytes": 443797
+    },
+    {
+      "source_data_path": "CPA2560_selected/selected_2560/ed9/summary/gse162632/cap48/ALL_MODEL_RANKS.tsv",
+      "sha256": "eafc4cf7e050c2b7721f676b952f77fd8250465feb247eb980b2d5289d144cab",
+      "bytes": 4303898
+    },
+    {
+      "source_data_path": "CPA2560_selected/selected_2560/ed9/summary/gse162632/cap48/ALL_METRIC_CONCORDANCE.tsv",
+      "sha256": "b57f1b6b45e26d2ec20f99b1d966a0adbbb22f3c84cf8d155fae485432532f46",
+      "bytes": 435277
+    },
+    {
+      "source_data_path": "CPA2560_selected/selected_2560/ed9/summary/parse/common48/ALL_MODEL_RANKS.tsv",
+      "sha256": "2ee50f44b8d35f4eaa4dc62029867866a5078f8af1da644b2012b6d3a30c4352",
+      "bytes": 6039675
+    },
+    {
+      "source_data_path": "CPA2560_selected/selected_2560/ed9/summary/parse/common48/ALL_METRIC_CONCORDANCE.tsv",
+      "sha256": "34f8e8427b1fcc4201f6ab6a35858b5a2522c73dc6caeb8c6f0d92e1d5a17368",
+      "bytes": 584975
+    },
+    {
+      "source_data_path": "CPA2560_selected/selected_2560/ed9/summary/parse/common128/ALL_MODEL_RANKS.tsv",
+      "sha256": "fe70e5ccd0589dafec05036fa6b7f88436abe9db22871f0ea8e693a19c5b18f7",
+      "bytes": 7251168
+    },
+    {
+      "source_data_path": "CPA2560_selected/selected_2560/ed9/summary/parse/common128/ALL_METRIC_CONCORDANCE.tsv",
+      "sha256": "c2117abecdc8d524e948e34ade8c2e7ca8ead575fb017735e5e716d5feb73dfa",
+      "bytes": 701649
+    }
+  ],
+  "input_level": "Primary, mean-of-scored-seeds metric scores for all eight roots and their equal-weight aggregate at every depth.",
+  "files": {
+    "expected_concordance.tsv": {
+      "sha256": "828d620ed5de4332b354703224d06a3ebd6295b9f4e3faaef1ace6df8acd6faa",
+      "bytes": 103673
+    },
+    "primary_metric_scores.tsv": {
+      "sha256": "75de73f247d3097d6e79dd331f4fd3a513b8ef40993a5576bbed3dd07fcc884c",
+      "bytes": 1033613
+    }
+  }
+}

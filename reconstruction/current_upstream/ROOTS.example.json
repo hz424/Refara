@@ -1,0 +1,9 @@
+{
+  "submission": "../submission-files",
+  "training_study": "../author-supplied-assets/training_study",
+  "cpa_continuation": "../author-supplied-assets/cpa_continuation",
+  "evaluation_workspace": "../author-supplied-assets/evaluation_workspace",
+  "provider_influenza": "../author-supplied-assets/provider_influenza",
+  "provider_parse": "../author-supplied-assets/provider_parse",
+  "project_archive": "../author-supplied-assets/project_archive"
+}

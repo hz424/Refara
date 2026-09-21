@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "stage": "Development review after the initial synthetic action checker passed and before the final reader demonstration was sealed",
+  "unchanged_selection": "All 384 factorial edits, six task flips, twelve pipeline-contract rejections and the equal-score/different-target control in ACTION_CHECK_PLAN.json remain selected.",
+  "action_check_plan_sha256": "1614c18e9b27332edfc78c6d5559e4a8a2332303504275956850b5278ff48690",
+  "reason": "Use distinct fields for a change of task type, a new finite observed effect, and a change of predicted quantity. The initial API used 'task declaration' for all three, which obscured these differences.",
+  "final_semantics": {
+    "requires_task_declaration": "True only when task changes between treated_state and reference_effect",
+    "requires_reference_record_update": "True when an active Cpred or Cobs declaration changes",
+    "requires_prediction_definition_update": "True for a task switch, an active Cpred change, or an active native-effect state-lift change",
+    "native_state_lift_scope": "new_prediction_state; the observed treated target remains Y",
+    "observation_reference_scope": "new_observed_realization; the task type remains reference_effect",
+    "simultaneous_edits": "Separate change_flags retain every active change even when comparison_scope reports only its highest-priority label",
+    "prediction_shape": "Predictions and residuals have fits-by-genes shape; scores have fits-by-metrics shape; observed targets are gene vectors"
+  },
+  "additional_validation": "Reject a nonfinite candidate collection instead of silently treating an undefined candidate distance as a retrieval failure.",
+  "interpretation": "This is an API semantics refinement and a finite-input validation fix. It does not change datasets, metric formulas, intervention cases, score thresholds or outcome selection.",
+  "prior_check_receipt": "DEVELOPMENT_ACTION_CHECK.json"
+}

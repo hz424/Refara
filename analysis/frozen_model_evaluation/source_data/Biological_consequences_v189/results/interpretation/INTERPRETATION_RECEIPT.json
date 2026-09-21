@@ -1,0 +1,22 @@
+{
+  "analysis_timing": "Post hoc descriptive decomposition of previously frozen program readouts.",
+  "numpy_version": "1.26.4",
+  "outputs_sha256": {
+    "cell_type_attribution.tsv": "08f6f1f13963246a1f6a077c13aec9fb47111df648ee54de2c26ea95b8e59ac2",
+    "cell_type_attribution_sensitivity.tsv": "251f75829da227f384795ad8a85806ca1b96718abca9a0d72c0984ef91fd085e",
+    "direction_threshold_sensitivity.tsv": "e4aad8144e5930e195e61b3e3b63156e7dec66dbc15e3348c1e9f4ca218c34c2",
+    "interpretation_summary.json": "bd394adc1fdb9e30b144d8d13e8a6f42699c52c9764a2a6eaba4de1dca63e4cf",
+    "primary_observed_direction_alignment.tsv": "f44acb0dfd46caf5f68517d9760b1c2e28f6b9027342200c322ce853e6e99c65",
+    "primary_program_calls.tsv": "582cbea82a063d93a0785492281351bdb4394dc6cdf2f5e0f00c5a479685e947",
+    "primary_task_interpretation.tsv": "77c1b5253ecdc1cb63df4f552378258a7dbbd2b94c09830c569792097a29dd3a",
+    "program_priority_margin_sensitivity.tsv": "75834db5a8c88e4adb3f5f6151b347b04a53b55166ee6b9130c710d64685f3c4",
+    "program_priority_sensitivity.tsv": "c9fe0e0b931bc92cdf5eecc5ff059d78dd9da0051e03859ded71b7c409a04840"
+  },
+  "python_version": "3.10.17",
+  "source_sha256": {
+    "program_readouts.npz": "9484e44ec80b7393726526989dda060b2c467f0035e5b3258eb0b3c9bf015ab2",
+    "program_scores.tsv": "49da8c69966141b89bb92c7eb2467a45869fd63a5cd9ff31dbf492c7b5739dba",
+    "summarize_program_interpretation.py": "39a5025cec0089123118df4c71d2da046c39a35d9058b198bb77117106dbd3ff"
+  },
+  "status": "PASS"
+}

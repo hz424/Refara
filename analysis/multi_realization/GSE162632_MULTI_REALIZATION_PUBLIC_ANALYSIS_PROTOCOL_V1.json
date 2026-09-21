@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "record_type": "GSE162632_MULTI_REALIZATION_PUBLIC_ANALYSIS_PROTOCOL_V1",
+  "status": "PUBLIC_POST_HOC_MULTI_REALIZATION_ANALYSIS_PROTOCOL",
+  "protocol_id": "GSE162632_V21_MULTI_REALIZATION_SENSITIVITY_V1",
+  "analysis_timing": "POST_HOC_AFTER_PRIOR_OUTCOME_ACCESS",
+  "scope": {
+    "dataset_id": "GSE162632",
+    "fixed_direct_method_count": 5,
+    "stochastic_method_count": 3,
+    "training_realization_ids": [
+      "q1",
+      "q2",
+      "q3",
+      "q4",
+      "q5"
+    ],
+    "training_seeds": [
+      17,
+      29,
+      43,
+      763929762,
+      85508424
+    ],
+    "biological_root_count": 8,
+    "task_count_per_root": 5,
+    "construction_ids": [
+      "NAIVE_SHARED",
+      "INDEPENDENT_SPLIT",
+      "UNIT_AWARE_CROSSFIT"
+    ]
+  },
+  "aggregation": {
+    "task_mean_first": true,
+    "training_realization_mean_second_within_stochastic_method": true,
+    "training_realizations_are_biological_replicates": false,
+    "predictions_are_averaged": false,
+    "equal_realization_counts_create_cross_method_pairs": false,
+    "stochastic_cartesian_cross_method_results_are_descriptive_only": true
+  },
+  "working_law_families": {
+    "within_construction": {
+      "member_count": 84,
+      "ordering": "construction-major, then lexicographic method-pair order",
+      "multiplicity_scope": "SEPARATE_84_MEMBER_FAMILY"
+    },
+    "paired_construction_change": {
+      "member_count": 56,
+      "ordering": "all shared-to-split changes, then all shared-to-crossfit changes; lexicographic method-pair order within each block",
+      "multiplicity_scope": "SEPARATE_56_MEMBER_FAMILY"
+    },
+    "joint_140_member_multiplicity_claim": false,
+    "sign_schedule_count": 256,
+    "sign_schedule_seed": 1046527,
+    "sign_schedule_sha256": "12d6e0393ce9981498e8d9f37f0a04b3a7ce50584c200d9bc99658a26c98f3b7",
+    "interpretation": "SIMULTANEOUS_WORKING_LAW_SENSITIVITY_ONLY_NOT_RANDOMIZATION_OR_POPULATION_INTERVALS"
+  },
+  "outcome_branches": [
+    {
+      "branch_id": "STRICT_PASS",
+      "reporting_action": "retain the current title and report stability across five frozen training realizations"
+    },
+    {
+      "branch_id": "AGGREGATE_PASS_WITH_REALIZATION_HETEROGENEITY",
+      "reporting_action": "make training-realization dependence explicit in the title and text"
+    },
+    {
+      "branch_id": "AGGREGATE_OR_56_FAMILY_FAILURE",
+      "reporting_action": "narrow the title and abstract to the design audit without a general ranking-reversal claim"
+    }
+  ],
+  "structural_failure_policy": {
+    "branch_id": "STRUCTURAL_INCOMPLETE_RETAINED_FAILURE",
+    "reduced_panel_analysis_is_authorized": false,
+    "seed_or_checkpoint_substitution_is_authorized": false,
+    "complete_family_tables_are_released": false
+  },
+  "public_artifacts": {
+    "exact_count": 13,
+    "directory": "data/derived/v21_multi_realization_sensitivity",
+    "exact_files": [
+      "GSE162632_V21_ANALYSIS_SUMMARY_V1.json",
+      "GSE162632_V21_FOCAL_LEAVE_ONE_REALIZATION_OUT_V1.tsv",
+      "GSE162632_V21_FOCAL_PER_REALIZATION_V1.tsv",
+      "GSE162632_V21_FORMAL_ROOT_TASK_UTILITIES_2400_V1.tsv",
+      "GSE162632_V21_OUTCOME_BRANCH_V1.json",
+      "GSE162632_V21_PAIRED_CONSTRUCTION_ROOT_CHANGES_56_V1.tsv",
+      "GSE162632_V21_PAIRED_CONSTRUCTION_WORKING_LAW_56_V1.tsv",
+      "GSE162632_V21_PER_REALIZATION_ROOT_UTILITIES_V1.tsv",
+      "GSE162632_V21_REVERSAL_MEMBERSHIP_V1.tsv",
+      "GSE162632_V21_SEED_AVERAGED_ROOT_UTILITIES_V1.tsv",
+      "GSE162632_V21_STOCHASTIC_CARTESIAN_DESCRIPTIVE_V1.tsv",
+      "GSE162632_V21_WITHIN_CONSTRUCTION_ROOT_CONTRIBUTIONS_84_V1.tsv",
+      "GSE162632_V21_WITHIN_CONSTRUCTION_WORKING_LAW_84_V1.tsv"
+    ],
+    "exact_tsv_data_row_counts": {
+      "GSE162632_V21_FOCAL_LEAVE_ONE_REALIZATION_OUT_V1.tsv": 5,
+      "GSE162632_V21_FOCAL_PER_REALIZATION_V1.tsv": 5,
+      "GSE162632_V21_FORMAL_ROOT_TASK_UTILITIES_2400_V1.tsv": 2400,
+      "GSE162632_V21_PAIRED_CONSTRUCTION_ROOT_CHANGES_56_V1.tsv": 448,
+      "GSE162632_V21_PAIRED_CONSTRUCTION_WORKING_LAW_56_V1.tsv": 56,
+      "GSE162632_V21_PER_REALIZATION_ROOT_UTILITIES_V1.tsv": 960,
+      "GSE162632_V21_REVERSAL_MEMBERSHIP_V1.tsv": 28,
+      "GSE162632_V21_SEED_AVERAGED_ROOT_UTILITIES_V1.tsv": 192,
+      "GSE162632_V21_STOCHASTIC_CARTESIAN_DESCRIPTIVE_V1.tsv": 375,
+      "GSE162632_V21_WITHIN_CONSTRUCTION_ROOT_CONTRIBUTIONS_84_V1.tsv": 672,
+      "GSE162632_V21_WITHIN_CONSTRUCTION_WORKING_LAW_84_V1.tsv": 84
+    }
+  },
+  "public_release_boundary": {
+    "includes_analysis_core": true,
+    "includes_protocol": true,
+    "includes_complete_analysis_artifacts_only_for_a_complete_branch": true,
+    "includes_training_or_orchestration_code": false,
+    "includes_model_states_or_checkpoints": false,
+    "includes_prediction_or_score_input_arrays": false,
+    "includes_private_absolute_paths": false,
+    "includes_deterministic_selection_salts": false,
+    "includes_execution_claims_or_receipts": false,
+    "includes_logs_or_scheduler_artifacts": false
+  }
+}

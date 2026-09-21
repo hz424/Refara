@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this software and the associated paper."
+title: "Refara: Reference allocation and role analysis"
+type: software
+authors:
+  - family-names: "Zhou"
+    given-names: "Hao"
+    affiliation: "College of Medicine and Health Sciences, Department of Biological Sciences, Khalifa University, Abu Dhabi, United Arab Emirates; Center for Biotechnology (BTC), Khalifa University, Abu Dhabi, United Arab Emirates"
+    email: "hao.zhou@ku.ac.ae"
+version: "1.10.0"
+date-released: "2026-09-20"
+license: BSD-3-Clause
+repository-code: "https://github.com/hz424/Refara"
+url: "https://github.com/hz424/Refara"

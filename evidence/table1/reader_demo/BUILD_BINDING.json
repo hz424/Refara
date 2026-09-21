@@ -1,0 +1,9 @@
+{
+  "protocol_sha256": "e65613d2f393663cb324535fac93efbc01ebc818865c6f063626a61d02461689",
+  "pbmc_coverage_addendum_sha256": "bf1c1bc927321ea6abb62ccf3d0ca103d8e5fceb5e9236af0537f424f2455fef",
+  "prior_binding_sha256": "36db8b187b9cdfdc7c9fc434e855cd2d78bbad90123906e39b6fef1236b166ab",
+  "code_sha256": "ba362112577d6fd3bd452634b4c97280b85e3861994a5e91390beee06c922aea",
+  "input_adapter_sha256": "653d16a79d6dc23831bc512449b16f209a0ce182dc24d4612fd02e32f7137455",
+  "selection": "Metadata task 0, allocation 0; Norman depth 8 all six models; Kang both models/all fits; PBMC depth 8 all eight models under its coverage addendum.",
+  "access": "Retrospective existing-data extraction; protocol fixed before this script decoded targets."
+}

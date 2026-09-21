@@ -1,0 +1,9 @@
+{
+  "schema": "REFARA_CONDITIONED_MODEL_ASSETS_V1",
+  "assets": {
+    "data/scgen_seed17.npz": {
+      "sha256": "e40cdb61b914ee5db11fb9ef01d2e87edce1e670c8339482ed144f83bf66a0e0",
+      "bytes": 10308582
+    }
+  }
+}

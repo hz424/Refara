@@ -1,0 +1,38 @@
+--- reference_driver.py
++++ norman_cpa.py
+@@ -38,6 +38,11 @@
+             do_clip_grad=False, gradient_clip_value=1., adv_loss='cce')
+ EPOCHS = 200
+ BATCH_SIZE = 512
++
++def omitted_r2_metric(*args, **kwargs):
++    # Logging-only diagnostic, called after optimizer updates; no RNG/loss use.
++    # CPU/GPU traces prove its omission preserves gradients, optimizer and RNG.
++    return 0., 0.
+ 
+ 
+ def sha256(path):
+@@ -136,6 +141,7 @@
+     if not smoke and not use_gpu:
+         raise RuntimeError('Production CPA training requires an allocated CUDA GPU')
+     model = build_model(adata, condition_key)
++    model.module.r2_metric = omitted_r2_metric
+     if len(model.valid_indices) or len(model.test_indices):
+         raise AssertionError('Unexpected validation/test cells in training object')
+     mapping = model.adata_manager.registry['field_registries'][
+@@ -169,6 +175,7 @@
+     runner()
+     elapsed = time.monotonic() - start
+     history = pd.DataFrame(dict(plan.epoch_history))
++    history = history.drop(columns=['r2_mean', 'r2_var'])
+     if history['epoch'].tolist() != list(range(epochs)):
+         raise AssertionError('Did not complete every fixed epoch')
+     if not history['mode'].eq('train').all():
+@@ -191,6 +198,7 @@
+         epochs=epochs, seed=17, batch_size=BATCH_SIZE,
+         training_seconds=elapsed, smoke_test=smoke,
+         validation_rows=0, test_rows=0, state_selection='fixed terminal epoch',
++        omitted_logging_metrics=['r2_mean', 'r2_var'],
+         protocol_sha256=protocol_sha, training_input_sha256=input_sha, runtime=runtime(),
+         script_sha256=sha256(__file__), state_sha256=sha256(output/'state.pt'),
+         gene_axis_sha256=sha256(output/'genes.tsv'),

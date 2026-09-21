@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-09-12T17:38:55.208850+00:00",
+  "protocol_sha256": "e65613d2f393663cb324535fac93efbc01ebc818865c6f063626a61d02461689",
+  "plan_sha256": "1614c18e9b27332edfc78c6d5559e4a8a2332303504275956850b5278ff48690",
+  "factorial_cases": 384,
+  "comparison_counts": {
+    "planner_field_checks": 2304,
+    "encoded_values": 2688,
+    "decoded_native": 2688,
+    "canonical_prediction": 2688,
+    "canonical_target": 2688,
+    "canonical_residual": 2688,
+    "canonical_metric_prediction": 2688,
+    "canonical_metric_target": 2688,
+    "canonical_scores": 1536,
+    "task_switch_cases": 6,
+    "contract_changes_rejected": 12,
+    "equal_scores_changed_target": 4,
+    "equal_score_distinct_target_control": 1
+  },
+  "maximum_absolute_errors": {
+    "encoded_values": 0.0,
+    "decoded_native": 1.1102230246251565e-16,
+    "canonical_prediction": 2.220446049250313e-16,
+    "canonical_target": 0.0,
+    "canonical_residual": 2.220446049250313e-16,
+    "canonical_metric_prediction": 2.220446049250313e-16,
+    "canonical_metric_target": 0.0,
+    "canonical_scores": 8.881784197001252e-16,
+    "equal_scores_changed_target": 2.220446049250313e-16
+  },
+  "checker_sha256": "1105be1be96021abb431171e5e72d5bea4115aa5fbd9b517eb65e3a71e4ef5d4",
+  "tested_module_sha256": "4919c601a72a7f3d651aa2e2cca0f1b37de2d13b6e3fc02135d5d3439fdf46bc",
+  "elapsed_seconds": 0.3053031209856272,
+  "scope": "Independent software contract and numerical checks; synthetic values do not establish empirical error prevalence or method superiority."
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "test": "wrong_storage_baseline",
+    "origin": "injected_software_fault",
+    "result": "rejected_inconsistent_contract_or_payload",
+    "message": "Payload storage baseline differs from contract"
+  },
+  {
+    "test": "missing_storage_baseline",
+    "origin": "injected_software_fault",
+    "result": "rejected_inconsistent_contract_or_payload",
+    "message": "Missing active declaration: storage_baseline_id"
+  },
+  {
+    "test": "stale_model_input_id",
+    "origin": "injected_software_fault",
+    "result": "rejected_inconsistent_contract_or_payload",
+    "message": "Cached prediction has a stale or missing input ID"
+  },
+  {
+    "test": "inconsistent_metric_coordinates",
+    "origin": "injected_software_fault",
+    "result": "rejected_inconsistent_contract_or_payload",
+    "message": "Unsupported metric_coordinate_id: decode to aligned_state before scoring"
+  },
+  {
+    "test": "native_double_centring_with_self_consistent_payload",
+    "origin": "injected_software_fault",
+    "result": "accepted_provenance_consistency_check_but_failed_external_canonical_check",
+    "canonical_prediction_max_abs_error": 4.659544084221125,
+    "meaning": "Declarations and self-consistent hashes cannot identify arbitrary scientifically wrong values without a trusted expected output."
+  }
+]

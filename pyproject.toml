@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools==84.0.0", "wheel==0.48.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reference-cell-benchmark-design"
+version = "1.10.0"
+description = "Refara: reference-design auditing for single-cell perturbation prediction"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+license = {text = "BSD-3-Clause"}
+authors = [
+  {name = "Hao Zhou", email = "hao.zhou@ku.ac.ae"},
+]
+dependencies = [
+  "jsonschema>=4.25,<5",
+  "matplotlib>=3.10,<4",
+  "numpy>=1.26,<3",
+  "openpyxl>=3.1,<4",
+  "pandas>=2.3,<3",
+  "pillow>=11,<13",
+  "pypdf>=6,<7",
+  "PyYAML>=6,<7",
+  "scipy>=1.15,<2",
+  "statsmodels>=0.14,<1",
+]
+
+[project.urls]
+Repository = "https://github.com/hz424/Refara"
+Issues = "https://github.com/hz424/Refara/issues"
+
+[project.optional-dependencies]
+empirical = [
+  "anndata>=0.10,<1",
+  "h5py>=3.10,<4",
+]
+test = [
+  "pytest>=8,<9",
+]
+
+[project.scripts]
+reference-design = "reference_design.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["perturb_nuisance_contracts*", "perturb_nuisance_focal*", "reference_design*"]
+exclude = ["perturb_nuisance_model*"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers --strict-config"
+testpaths = ["tests", "analysis"]

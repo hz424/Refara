@@ -1,0 +1,5 @@
+# Build backend versions declared by the adapter; pip matches the observed 3.10 venv.
+pip==23.0.1
+setuptools==84.0.0
+wheel==0.48.0
+packaging==26.3

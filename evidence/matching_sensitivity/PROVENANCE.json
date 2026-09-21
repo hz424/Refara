@@ -1,0 +1,64 @@
+{
+  "schema": "MATCHING_AGGREGATE_PROVENANCE_V1",
+  "publication_sources": {
+    "data/derived/revision_v180/SOUND_LIFE_WITNESS_FAMILY_V180.tsv": "a90b85a9522d14a08c7f3db5dbeeb4b1d6ad96036e683f82a996ee9bf0deb624",
+    "data/derived/revision_v180/SOUND_LIFE_CAPSULE_AUDIT_V180.json": "0bacaa2321630135d18c73ac576306422a9a980ea01e8a53959d97bd8868c6df",
+    "data/derived/matching_robustness_public_display/SOUND_LIFE_LEADER_STATES_PUBLIC_V1.tsv": "08f10017b7e85c7fab54233e1c8e5b9e349626a805d2bbd3ce09137c0596824e"
+  },
+  "publication_manifest_sha256": "dea5d366a86a6d587e982416ba099311a8737620a40beec1caae83628ec985dc",
+  "historical_review_source": {
+    "archive_name": "Sound_Life_Graph_Utilities_for_Review.zip",
+    "archive_sha256": "591601aaeb51801d6de614dbaebe9e91a2449286e0207f7a54940681bc05dfb0",
+    "manifest_sha256": "44d4ffc9ae4e74b2c65baa3b1e926f41d12f3dd37bae989ea41f02059c8dd064",
+    "graph_member_sha256": "d0edbf60e43da9b5b5ebe11a7152b8451995c6bcb73d24e151720ac2452c740b",
+    "redistributed": false
+  },
+  "export_numerics": {
+    "code": "analysis/sound_life_review_capsule.py",
+    "sha256": "34d6e05c93fdaedc8d6afd958acfafa18c2e6698b1ddfb8cde43d7b1a8803382",
+    "functions": [
+      "matching",
+      "enumerate12",
+      "validate",
+      "analyze"
+    ],
+    "operation": "Enumerate the existing G12 graph internally, then sum fixed binary64 utility values with exact fractions for each model and matching."
+  },
+  "published_witness_to_anonymous_case": {
+    "G12_pair29_nonrejecting": "G12_W01",
+    "G12_pair29_rejecting": "G12_W02",
+    "G39_pair07_nonrejecting": "G39_W03",
+    "G39_pair14_nonrejecting": "G39_W04",
+    "G39_pair21_nonrejecting": "G39_W05",
+    "G39_pair28_nonrejecting": "G39_W06",
+    "G39_pair30_nonrejecting": "G39_W07",
+    "G39_pair30_rejecting": "G39_W08",
+    "G39_pair31_nonrejecting": "G39_W09",
+    "G39_pair31_rejecting": "G39_W10"
+  },
+  "aggregate_indexing": "G12 vectors sorted by their eight exact sums and assigned fresh M001..M144 indices; no graph membership or node ordering is exported.",
+  "inputs_excluded": [
+    "Expression matrices",
+    "Subject identifiers",
+    "Donor and batch pseudonyms",
+    "Graph edges",
+    "Matching membership",
+    "Per-edge utility vectors"
+  ],
+  "replay_starting_point": "Ten complete 56-direction sign-count families and 144 eight-model matching-level utility sums.",
+  "replay_does_not_recompute": [
+    "Graph maximum cardinality",
+    "Matching enumeration from raw graph",
+    "Wave utility generation",
+    "All-graph directional certificates"
+  ],
+  "provider": "Allen Institute Sound Life immune-aging resource",
+  "citation": "Gong et al. Multi-omic profiling reveals age-related immune dynamics in healthy adults. Nature 648, 696\u2013706 (2025).",
+  "citation_doi": "https://doi.org/10.1038/s41586-025-09686-5",
+  "license_id": "LicenseRef-Allen-Institute-Terms",
+  "terms_url": "https://alleninstitute.org/legal/terms-of-use",
+  "citation_policy_url": "https://alleninstitute.org/legal/citation-policy",
+  "terms_checked": "2026-09-15",
+  "redistribution_basis": "Research and noncommercial derivative use under the provider terms; retain attribution and all provider restrictions. No CC relicensing or commercial reuse permission is granted.",
+  "publisher_hosting_clearance": "The separate publication Source Data clearance flag is retained; this repository does not resolve publisher hosting clearance."
+}

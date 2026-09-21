@@ -1,0 +1,102 @@
+{
+  "schema": "current_reconstruction_verification.v1",
+  "date": "2026-09-19",
+  "asset_inventory": {
+    "assets": 1420,
+    "present_with_expected_size": 1420,
+    "sha256_verified": 1122,
+    "size_only_no_fresh_payload_hash": 298,
+    "hash_limit_mib": 1,
+    "full_training_input_inventory_claim": false
+  },
+  "cpa_continuation_input_check": {
+    "status": "PASS_CPA_CONTINUATION_INPUTS",
+    "regime": "original8",
+    "seed": 17,
+    "checkpoint_bytes_hashed": true,
+    "selected_bundle_payloads_hashed": true,
+    "model_training_rerun": false
+  },
+  "cpa_native_prediction": {
+    "status": "PASS_WITH_DECLARED_CPU_PARITY_TOLERANCE",
+    "regime": "original8",
+    "seed": 17,
+    "model_budget": 2560,
+    "controls": 24,
+    "scored_genes": 2000,
+    "native_inference_performed": true,
+    "training_performed": false,
+    "maximum_absolute_difference": 3.337860107421875e-06,
+    "absolute_tolerance": 1e-05,
+    "compared_with": "corresponding rows of the frozen original8 CPA2560 seed17 point bank",
+    "device": "cpu",
+    "runtime_clean_install_this_check": false
+  },
+  "sound_life_confidential_capsule": {
+    "status": "PASS_ANONYMOUS_GRAPH_UTILITY_REPLAY",
+    "candidate_edges": {
+      "G39": 93,
+      "G12": 23
+    },
+    "maximum_cardinalities": {
+      "G39": 39,
+      "G12": 12
+    },
+    "exhaustive_G12_matchings": 144,
+    "leader_counts": {
+      "RBF": 77,
+      "NC": 67
+    }
+  },
+  "sound_life_original_hash_bound_integration": {
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0,
+    "contains_original_integration_test": true,
+    "seconds": 19.30819845199585,
+    "restricted_inputs_published": false
+  },
+  "asset_tool_checks": {
+    "standard_library_tests_passed": 3,
+    "actual_code_subset_export_hashes": "PASS",
+    "actual_export_relocated_root_check": "PASS",
+    "deliberately_changed_export_rejected": true,
+    "large_bank_export_test": "DRY_RUN_ONLY_NO_COPY"
+  },
+  "not_executed": [
+    "New model training or CPA continuation",
+    "Full cell-level prediction banks",
+    "Complete relocation and execution of all eight model-family pipelines"
+  ],
+  "manifest_sha256": "46ef04970e4c03ea29623b685603ec8f9b09ea7ddc3379d131c58b8224ba7fff",
+  "confidential_native_source_attachment": {
+    "sha256": "2144c41ad61eff1411907dae688d42fac36541b72869742233c07a3f3a8dcf36",
+    "bytes": 819721,
+    "scientific_files": 26,
+    "code_export_hashes": "PASS",
+    "restricted_expression_or_weights_included": false
+  },
+  "cpa_relocated_prediction": {
+    "status": "PASS_RELOCATED_CPA_PREDICTION",
+    "profile": "cpa-predict",
+    "recipe": "original8:17",
+    "selected_assets": 5,
+    "selected_bytes": 80944044,
+    "controls": 24,
+    "scored_genes": 2000,
+    "compared_values": 48000,
+    "maximum_absolute_difference": 2.86102294921875e-06,
+    "absolute_tolerance": 1e-05,
+    "relative_tolerance": 0,
+    "device": "cpu",
+    "relative_export_roots": true,
+    "native_inference_performed": true,
+    "training_performed": false,
+    "training_inputs_exported": false,
+    "optimizer_checkpoints_exported": false,
+    "prediction_banks_exported": false,
+    "runtime_clean_install_this_check": false,
+    "restricted_inputs_published": false,
+    "standard_library_tests_passed": 10
+  }
+}

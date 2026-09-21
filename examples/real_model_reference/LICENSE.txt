@@ -1,0 +1,17 @@
+Code: BSD-3-Clause, as specified in the repository LICENSE.
+
+Bundled source data and data-derived artifacts: Parse Biosciences' 10 million
+human PBMC cytokine dataset, CC BY-NC 4.0. This includes raw-count excerpts,
+feature annotations, fitted training scales and the frozen PCA weights.
+The repository's code license does not grant broader rights to these assets.
+
+Source:
+https://www.parsebiosciences.com/datasets/10-million-human-pbmcs-in-a-single-experiment/
+License:
+https://creativecommons.org/licenses/by-nc/4.0/
+
+Changes: 32 previously used training cells were selected by a fixed metadata
+hash order, source cell identifiers were replaced by new aliases, and counts
+were stored as a sparse NPZ. The model checkpoint is byte-identical to the
+original frozen fit. Feature axis and scoring scales retain the original
+training values. No new model was trained for this example.

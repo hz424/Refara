@@ -1,0 +1,17 @@
+Refara 1.10.0
+
+Reference-design auditing for single-cell perturbation prediction.
+
+This release adds a control-dependent scGen example: normalize a small count
+matrix, run frozen fitted weights on each control allocation, and compare
+input changes with rescoring. It checks equivalent state/effect O scores and
+verifies NumPy predictions against the original Torch implementation.
+
+The release also corrects the historical Jerber scGen adapter to apply each
+cell-type shift to all 20 donors. Corrected scGen ranks are 5 under shared
+references and 6 under both independent-split and cross-fit scoring; RBF leads
+all three. Numerical inputs and the correction record accompany the code.
+
+The source ZIP contains the examples and paper replays. The wheel contains
+the APIs and command-line tools. See docs/REPRODUCING.md for analysis inputs
+and docs/DATA_ACCESS.md for data access and licence conditions.

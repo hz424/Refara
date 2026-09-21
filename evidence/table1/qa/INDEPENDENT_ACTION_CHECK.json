@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-09-12T17:43:59.665354+00:00",
+  "protocol_sha256": "e65613d2f393663cb324535fac93efbc01ebc818865c6f063626a61d02461689",
+  "plan_sha256": "1614c18e9b27332edfc78c6d5559e4a8a2332303504275956850b5278ff48690",
+  "api_refinement_sha256": "35f69e67d422b64c3fb1341c20678a07206fbe9eb3e6cc19686d178838e7e0be",
+  "factorial_cases": 384,
+  "comparison_counts": {
+    "planner_field_checks": 3072,
+    "independent_change_flags": 3456,
+    "encoded_values": 2688,
+    "decoded_native": 2688,
+    "canonical_prediction": 2688,
+    "canonical_target": 2688,
+    "canonical_residual": 2688,
+    "canonical_metric_prediction": 2688,
+    "canonical_metric_target": 2688,
+    "canonical_scores": 1536,
+    "task_switch_cases": 6,
+    "contract_changes_rejected": 12,
+    "equal_scores_changed_target": 4,
+    "equal_score_distinct_target_control": 1,
+    "nonfinite_candidates_rejected": 1
+  },
+  "maximum_absolute_errors": {
+    "encoded_values": 0.0,
+    "decoded_native": 1.1102230246251565e-16,
+    "canonical_prediction": 2.220446049250313e-16,
+    "canonical_target": 0.0,
+    "canonical_residual": 2.220446049250313e-16,
+    "canonical_metric_prediction": 2.220446049250313e-16,
+    "canonical_metric_target": 0.0,
+    "canonical_scores": 8.881784197001252e-16,
+    "equal_scores_changed_target": 2.220446049250313e-16
+  },
+  "checker_sha256": "18a8344fc33a03aa51e5c225c249af36afc8135bbd18605ecfb850641a4cc95f",
+  "tested_module_sha256": "ba362112577d6fd3bd452634b4c97280b85e3861994a5e91390beee06c922aea",
+  "elapsed_seconds": 0.30996924452483654,
+  "scope": "Independent software contract and numerical checks; synthetic values do not establish empirical error prevalence or method superiority."
+}

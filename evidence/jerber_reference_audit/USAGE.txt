@@ -1,0 +1,22 @@
+Run from any directory:
+  python /path/to/evidence/jerber_reference_audit/replay.py --output /new/output/directory
+
+Requires Python and NumPy. No network, weights or original filesystem is needed.
+The replay recomputes means, margins, directions, ties and allocation Monte
+Carlo errors from frozen losses. It checks all 7,680 root-task-pair-allocation
+rows, 384 task-pair-allocation rows and 24 integration summaries against the
+bundled tables. It does not rerun model inference or expression preprocessing.
+
+The diagnostic covers 20 previously analysed roots, 8 tasks and 16 prespecified
+allocations. Root indices preserve the original panel; shared pool and culture
+dependence remains. Results describe this fixed panel, with no independent
+experimental validation, population confidence interval or reporting-rule
+advantage claimed.
+
+Average the two complementary orientations before computing Monte Carlo errors.
+The mean O score and the mean two-fold crossfit score are equal by construction.
+
+The S24 versus O12/12 diagnostic uses corrected scGen context dispatch. The
+historical S24, D8/8/8 and three-rotation D correction is separate. The manifest
+records source hashes, attribution and expected counts. Source-data terms remain
+in force; see the repository LICENSE_SCOPE.md.

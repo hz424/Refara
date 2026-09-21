@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-09-12T17:32:31.470866+00:00",
+  "study_protocol_sha256": "e65613d2f393663cb324535fac93efbc01ebc818865c6f063626a61d02461689",
+  "engine_sha256": "f89384c09b6ff5e0abe451aba2224282e87326162ffee9fd62470d7466d7fb2b",
+  "previous_protocol_sha256": "e9bc0d97149657eb1b9957275e2e30c7d4e6fd2a649de0cec0abeb0b388e0d03",
+  "previous_forecast_binding_sha256": "36db8b187b9cdfdc7c9fc434e855cd2d78bbad90123906e39b6fef1236b166ab",
+  "input_adapter_sha256": "653d16a79d6dc23831bc512449b16f209a0ce182dc24d4612fd02e32f7137455",
+  "input_inventory_sha256": "2eb15dfb0a474ad52db41f96eb761ddbb48d4978525314546695f440c0672a08",
+  "source_bindings": {
+    "submission/work/systema_matched_norman_v1/results/fixed_profiles_and_references.npz": "a124615c1d9949f843b7d79c3900e46daebf26910d0f4a91414390662debc834",
+    "submission/work/systema_matched_norman_v1/results/selected_CPA_block_profiles.npy": "b3903b3564a073b8504285ef3b4c71a95bd0e4c1620c68d8a0ef1b4af18a1189",
+    "submission/work/reference_protocol_v2/software/analysis/norman_training_review/source_data/reference_results/control_block_means.npy": "d591ac5c5f761954978b967d2a88a6efaf7140bb33a321b1b0b4c283c0669b2b"
+  },
+  "target_decoding_begins_after_this_binding": true,
+  "design_status": "Retrospective replay; historical targets and results were previously inspected.",
+  "python": "3.10.17 | packaged by conda-forge | (main, Apr 10 2025, 22:19:12) [GCC 13.3.0]",
+  "numpy": "1.26.4",
+  "scipy": "1.15.3",
+  "blas_threads": 2,
+  "unique_prediction_profiles_per_task_depth_allocation": 50
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "MATCHING_AGGREGATE_REPLAY_V1",
+  "models": [
+    "NC",
+    "CM",
+    "TW",
+    "PCA",
+    "RBF",
+    "CPA",
+    "scGen",
+    "CellOT"
+  ],
+  "witness_cases": 10,
+  "witness_cases_by_graph": {
+    "G12": 2,
+    "G39": 8
+  },
+  "g12_matching_count": 144,
+  "files": {
+    "witness_counts.tsv": "9973bb78e66bf0328f7dddff9d3cfa12b05dbb035b746f2c8d8b216910a3e1dd",
+    "g12_matching_utility_sums.tsv": "ab770c56289a4801bfefe0279a10fae58f3e85b6ff18aec8699cae4b175204f2"
+  }
+}

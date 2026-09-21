@@ -1,0 +1,30 @@
+{
+  "dimensions": {
+    "depths": 6,
+    "genes": 7,
+    "labels": 30,
+    "models": 4,
+    "patterns": 5,
+    "tasks": 55
+  },
+  "identities": {
+    "D_minus_S_plus_V_max_abs": 1.7763568394002505e-15,
+    "M_minus_S_max_abs": 4.440892098500626e-16,
+    "O_minus_S_plus_V_minus_2K_max_abs": 1.7763568394002505e-15,
+    "P_minus_S_plus_V_plus_2K_max_abs": 1.7763568394002505e-15,
+    "atomic_to_pattern_max_abs": 0.0,
+    "direct_zero_pattern_spread_max_abs": 4.440892098500626e-16
+  },
+  "input_sha256": "94384c946b669b2a03b1ee3cb9785c0aa61de7f4b2e9e0b7284e086154d0afa9",
+  "note": "Synthetic aggregate replay through the production summary route; temporary data removed.",
+  "outputs_sha256": {
+    "allocation_pair_margins.tsv": "5e317dc6b8d65b36cfd65d7204619982994ff3138759aab31c81ae903f68652b",
+    "depth_pair_summary.tsv": "481b9022510d10cfe6c227f7b7064a0d1ff6ea27d98141b7a3b47e7a62ca907b",
+    "depth_utility_summary.tsv": "2c87018eb1868e0de603030913427ad7bde0c99c3e1dcd9b2b9e0b79e79f20a7",
+    "geometry_and_input_displacement.tsv.gz": "3769ebdf1403ab0feb8023ffbd82f4d5bc6b7ec6cc0f82c2ffe157b8a1cc38e6",
+    "task_depth_pair_summary.tsv": "065b9e9c8f63f05032479786ad336b9c50bb30c26663393b98499ccc886d1610"
+  },
+  "script_sha256": "ff6e1a2445f69d27108ac4cdc5fc06665ced0e22f618f74ec38a6ef9abd531b8",
+  "status": "PASS",
+  "study_data_used": false
+}

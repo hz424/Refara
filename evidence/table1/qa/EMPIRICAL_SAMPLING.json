@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "resource": "Norman",
+  "selection_basis": "Fixed indices selected before this study's new metric outputs exist; historical source targets and earlier study results have already been inspected.",
+  "task_indices_zero_based": [0, 27, 54],
+  "allocation_indices_zero_based": [0, 29],
+  "depths": [8, 16, 32, 64, 128, 135],
+  "models": ["selected_CPA", "original_CPA_fixed", "additive", "compositional_ridge", "NC_native_effect", "native_effect_ridge"],
+  "role_tuple_axes": ["Cobs", "Cpred", "Cmodel"],
+  "role_tuple_selection": "All 27 tuples in product(range(3), repeat=3)",
+  "direct_state_blocks": [0, 1, 2],
+  "metrics": ["standardized_MSE", "raw_RMSE", "perturbation_centred_Pearson", "centroid_accuracy"],
+  "scalar_score_rows_expected": 6480,
+  "scalar_metric_values_expected": 25920,
+  "full_cube_cross_checks": [
+    "All O aligned-effect rows against the previous independent two-view panel",
+    "All direct-state rows against the previous independent two-view panel",
+    "All five balanced-pattern standardized-MSE means against the earlier 59,400 Norman model-row checks",
+    "Global permutation of the three block labels leaves each balanced-pattern mean unchanged"
+  ],
+  "negative_controls": [
+    "Native effects are unchanged by the unused Cpred and Cmodel assignments",
+    "Fixed state outputs are unchanged by Cmodel assignment",
+    "For state outputs Cobs=Cpred gives the corresponding direct-state score regardless of the shared block identity",
+    "Pearson constant-vector output is undefined; centroid candidate ties receive zero credit"
+  ],
+  "raw_target_access": "Only after a new protocol file exists and its caller-supplied SHA256 is verified"
+}

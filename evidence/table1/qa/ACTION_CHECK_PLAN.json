@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "purpose": "Independent contract truth-table and numerical reconstruction checks; these are software checks, not observations of errors made by external benchmark organizers.",
+  "declaration_basis": "Declared before the new action planner outputs and the role metric cube were available.",
+  "base_contracts": {
+    "tasks": ["treated_state", "reference_effect"],
+    "pipelines": [
+      {"output_kind": "state", "input_conditioned": true},
+      {"output_kind": "state", "input_conditioned": false},
+      {"output_kind": "native_effect", "input_conditioned": false}
+    ]
+  },
+  "factorial_edits": {
+    "model_input_id": ["unchanged", "changed"],
+    "prediction_reference_id": ["unchanged", "changed"],
+    "observation_reference_id": ["unchanged", "changed"],
+    "storage_encoding": ["unchanged", "changed"],
+    "storage_baseline_id": ["unchanged", "changed"],
+    "native_state_baseline_id": ["unchanged", "changed"]
+  },
+  "factorial_cases_expected": 384,
+  "task_changes": "Flip each of the six base contracts to the other declared task.",
+  "contract_rejections": "Changing output_kind or input_conditioned is not a routine reference edit and must be rejected.",
+  "semantic_checks": [
+    "Model input replacement requires a matching prediction only for the declared input-conditioned pipeline",
+    "Prediction and observation references are unused by the treated-state primary",
+    "Prediction reference is unused by an emitted native effect",
+    "Observation-reference replacement changes the finite observed effect target even if a score happens to remain equal",
+    "Replacing a prediction baseline changes an effect prediction rather than its file representation",
+    "Re-encoding with its named storage baseline preserves the canonical prediction, target and every canonical metric",
+    "Changing an active native-effect-to-state lift requires a new declared mapping",
+    "Role and task identity are checked separately from scalar score equality"
+  ],
+  "numerical_checks": "Small synthetic arrays with distinct role baselines, plus available empirical action receipts when their schema is supplied. Independent arithmetic will check exports, canonical state lifts, raw target effects and dependency changes.",
+  "limitations": "Does not establish reduced analyst effort, model inference speed, error prevalence, prospective organizer success or superior information relative to the same metadata and exhaustive paired Systema scores."
+}

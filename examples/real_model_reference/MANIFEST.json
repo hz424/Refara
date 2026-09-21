@@ -1,0 +1,33 @@
+{
+  "schema": "REFARA_REAL_MODEL_ASSETS_V1",
+  "assets": {
+    "data/cells.tsv": {
+      "sha256": "0e17436e4a1a1d33608331e6affe37c3e968129f4de4a1177bcc996eee5bd2f3",
+      "bytes": 653
+    },
+    "data/counts.npz": {
+      "sha256": "4ef63c43e47b999322ba5ec2963fbe9398e7dbdf44a54bc7532b78406fb5dc54",
+      "bytes": 132133
+    },
+    "data/feature_axis.npy": {
+      "sha256": "06e17e701b0113126dd5b544bf66ba5b2790ca3d67612a920ffeacfabcc80f94",
+      "bytes": 16128
+    },
+    "data/input.json": {
+      "sha256": "924d7a2b945a45269ed9e43701bd58f83acd81855c1ba6b50ea7680effe66a8b",
+      "bytes": 353
+    },
+    "data/model.npz": {
+      "sha256": "c0016e968678b358dad919d8d721d49725575a0aa9d71724a88c6aba60e4e8b4",
+      "bytes": 2086702
+    },
+    "data/scales.npy": {
+      "sha256": "e7bc089264233af42bc282614c77862d8df7eb7defe6e1dcb0b0da1bc8dee047",
+      "bytes": 16128
+    },
+    "data/source_features.tsv": {
+      "sha256": "21b8c463a4813b56c5035742791bb4b6273e27f4fedb452546a272ea84d20368",
+      "bytes": 636100
+    }
+  }
+}

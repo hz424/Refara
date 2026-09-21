@@ -1,0 +1,501 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:benchmark-design-audit:config:1.0.0",
+  "title": "Benchmark design audit configuration, version 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "audit_id",
+    "dataset_ids",
+    "configurations",
+    "reference_declaration",
+    "reference_roles",
+    "allocations",
+    "unit_contract",
+    "utility_input_contract",
+    "analysis_timing",
+    "comparison_family",
+    "inference"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "audit_id": {
+      "$ref": "#/$defs/nonemptyString"
+    },
+    "dataset_ids": {
+      "$ref": "#/$defs/uniqueStringArray"
+    },
+    "configurations": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "configuration_id",
+          "implementation_identity",
+          "terminal_state_identity",
+          "output_semantics",
+          "active_reference_roles",
+          "training_evaluation_separation"
+        ],
+        "properties": {
+          "configuration_id": {
+            "$ref": "#/$defs/nonemptyString"
+          },
+          "implementation_identity": {
+            "$ref": "#/$defs/nonemptyString"
+          },
+          "terminal_state_identity": {
+            "$ref": "#/$defs/nonemptyString"
+          },
+          "output_semantics": {
+            "enum": [
+              "DIRECT_EFFECT",
+              "ABSOLUTE_STATE"
+            ]
+          },
+          "active_reference_roles": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "observed_effect",
+                "prediction_reference",
+                "model_conditioning"
+              ]
+            }
+          },
+          "training_evaluation_separation": {
+            "$ref": "#/$defs/expertAssertionTrainingEvaluation"
+          }
+        }
+      }
+    },
+    "reference_declaration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mapping_scope",
+        "block_label_semantics"
+      ],
+      "properties": {
+        "mapping_scope": {
+          "const": "DECLARED_BLOCK_ABSTRACTION_NO_CELL_MEMBERSHIP_VERIFICATION"
+        },
+        "block_label_semantics": {
+          "$ref": "#/$defs/nonemptyString"
+        }
+      }
+    },
+    "reference_roles": {
+      "const": [
+        "observed_effect",
+        "prediction_reference",
+        "model_conditioning"
+      ]
+    },
+    "allocations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "allocation_id",
+          "reference_depth_label",
+          "reference_depth_unit",
+          "aggregation_order",
+          "rotations"
+        ],
+        "properties": {
+          "allocation_id": {
+            "$ref": "#/$defs/nonemptyString"
+          },
+          "reference_depth_label": {
+            "$ref": "#/$defs/nonemptyString"
+          },
+          "reference_depth_unit": {
+            "$ref": "#/$defs/nonemptyString"
+          },
+          "aggregation_order": {
+            "const": "SCORE_WITHIN_ROTATION_THEN_EQUAL_WEIGHT_ROTATIONS"
+          },
+          "rotations": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "rotation_id",
+                "observed_effect",
+                "prediction_reference",
+                "model_conditioning",
+                "role_depth_labels",
+                "expected_overlap_pattern"
+              ],
+              "properties": {
+                "rotation_id": {
+                  "$ref": "#/$defs/nonemptyString"
+                },
+                "observed_effect": {
+                  "$ref": "#/$defs/nonemptyString"
+                },
+                "prediction_reference": {
+                  "$ref": "#/$defs/nonemptyString"
+                },
+                "model_conditioning": {
+                  "$ref": "#/$defs/nonemptyString"
+                },
+                "role_depth_labels": {
+                  "$ref": "#/$defs/roleDepthLabels"
+                },
+                "expected_overlap_pattern": {
+                  "enum": [
+                    "ALL_THREE_ROLES_SHARE_ONE_BLOCK",
+                    "ALL_THREE_ROLES_USE_DISTINCT_BLOCKS",
+                    "PARTIAL_ROLE_OVERLAP"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "unit_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dataset_column",
+        "object_id_column",
+        "unit_id_column",
+        "declared_unit_columns",
+        "candidate_acquisition_group_columns",
+        "independence_justification"
+      ],
+      "properties": {
+        "dataset_column": {
+          "$ref": "#/$defs/nonemptyString"
+        },
+        "object_id_column": {
+          "$ref": "#/$defs/nonemptyString"
+        },
+        "unit_id_column": {
+          "$ref": "#/$defs/nonemptyString"
+        },
+        "declared_unit_columns": {
+          "$ref": "#/$defs/uniqueStringArray"
+        },
+        "candidate_acquisition_group_columns": {
+          "$ref": "#/$defs/uniqueStringArrayMaybeEmpty"
+        },
+        "independence_justification": {
+          "$ref": "#/$defs/expertAssertionIndependence"
+        }
+      }
+    },
+    "utility_input_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "input_columns",
+        "dataset_id_column",
+        "allocation_id_column",
+        "unit_id_column",
+        "method_id_column",
+        "utility_column",
+        "required_constant_values",
+        "expected_input_sha256",
+        "provenance_scope"
+      ],
+      "properties": {
+        "input_columns": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/uniqueStringArray"
+            },
+            {
+              "minItems": 5
+            }
+          ]
+        },
+        "dataset_id_column": {
+          "$ref": "#/$defs/nonemptyString"
+        },
+        "allocation_id_column": {
+          "$ref": "#/$defs/nonemptyString"
+        },
+        "unit_id_column": {
+          "$ref": "#/$defs/nonemptyString"
+        },
+        "method_id_column": {
+          "$ref": "#/$defs/nonemptyString"
+        },
+        "utility_column": {
+          "$ref": "#/$defs/nonemptyString"
+        },
+        "required_constant_values": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "#/$defs/nonemptyString"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/nonemptyString"
+          }
+        },
+        "expected_input_sha256": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          ]
+        },
+        "provenance_scope": {
+          "const": "PREAGGREGATED_UNIT_UTILITIES_NO_UPSTREAM_CELL_OR_MODEL_PROVENANCE_VERIFICATION"
+        }
+      }
+    },
+    "analysis_timing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_timing_label",
+        "configuration_fixed_before_utility_access",
+        "outcome_access_status_at_configuration_fix"
+      ],
+      "properties": {
+        "evidence_timing_label": {
+          "$ref": "#/$defs/nonemptyString"
+        },
+        "configuration_fixed_before_utility_access": {
+          "type": "boolean"
+        },
+        "outcome_access_status_at_configuration_fix": {
+          "enum": [
+            "NOT_ACCESSED",
+            "ACCESSED",
+            "SYNTHETIC_NO_EMPIRICAL_OUTCOME"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "outcome_access_status_at_configuration_fix": {
+                "enum": [
+                  "NOT_ACCESSED",
+                  "SYNTHETIC_NO_EMPIRICAL_OUTCOME"
+                ]
+              }
+            },
+            "required": [
+              "outcome_access_status_at_configuration_fix"
+            ]
+          },
+          "then": {
+            "properties": {
+              "configuration_fixed_before_utility_access": {
+                "const": true
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "outcome_access_status_at_configuration_fix": {
+                "const": "ACCESSED"
+              }
+            },
+            "required": [
+              "outcome_access_status_at_configuration_fix"
+            ]
+          },
+          "then": {
+            "properties": {
+              "configuration_fixed_before_utility_access": {
+                "const": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    "comparison_family": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allocation_order",
+        "method_order",
+        "directionality",
+        "utility_orientation"
+      ],
+      "properties": {
+        "allocation_order": {
+          "$ref": "#/$defs/uniqueStringArray"
+        },
+        "method_order": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/uniqueStringArray"
+            },
+            {
+              "minItems": 2
+            }
+          ]
+        },
+        "directionality": {
+          "const": "ordered"
+        },
+        "utility_orientation": {
+          "enum": [
+            "higher_is_better",
+            "lower_is_better"
+          ]
+        }
+      }
+    },
+    "inference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision_rule_id",
+        "alpha",
+        "fair_binomial_probability",
+        "tie_rule",
+        "missing_unit_rule",
+        "holm_scope"
+      ],
+      "properties": {
+        "decision_rule_id": {
+          "const": "EXACT_ONE_SIDED_SIGN_HOLM_COMPLETE_ORDERED_V1"
+        },
+        "alpha": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "exclusiveMaximum": 1
+        },
+        "fair_binomial_probability": {
+          "const": 0.5
+        },
+        "tie_rule": {
+          "const": "LITERAL_IEEE754_BINARY64_ZERO"
+        },
+        "missing_unit_rule": {
+          "const": "FAIL_CLOSED_COMPLETE_UNIT_BY_METHOD_SUPPORT"
+        },
+        "holm_scope": {
+          "const": "WITHIN_DATASET_AND_ALLOCATION_COMPLETE_ORDERED_METHOD_FAMILY"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "nonemptyString": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^\\S(?:.*\\S)?$"
+    },
+    "uniqueStringArray": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/nonemptyString"
+      }
+    },
+    "uniqueStringArrayMaybeEmpty": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/nonemptyString"
+      }
+    },
+    "roleDepthLabels": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observed_effect",
+        "prediction_reference",
+        "model_conditioning"
+      ],
+      "properties": {
+        "observed_effect": {
+          "$ref": "#/$defs/nonemptyString"
+        },
+        "prediction_reference": {
+          "$ref": "#/$defs/nonemptyString"
+        },
+        "model_conditioning": {
+          "$ref": "#/$defs/nonemptyString"
+        }
+      }
+    },
+    "expertAssertionTrainingEvaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "basis",
+        "assertion_authority",
+        "machine_verified"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "ESTABLISHED_BY_EXPERT_ASSERTION",
+            "NOT_ESTABLISHED",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "basis": {
+          "$ref": "#/$defs/nonemptyString"
+        },
+        "assertion_authority": {
+          "$ref": "#/$defs/nonemptyString"
+        },
+        "machine_verified": {
+          "const": false
+        }
+      }
+    },
+    "expertAssertionIndependence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "basis",
+        "assertion_authority",
+        "machine_verified"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "ESTABLISHED_BY_EXPERT_ASSERTION",
+            "NOT_ESTABLISHED"
+          ]
+        },
+        "basis": {
+          "$ref": "#/$defs/nonemptyString"
+        },
+        "assertion_authority": {
+          "$ref": "#/$defs/nonemptyString"
+        },
+        "machine_verified": {
+          "const": false
+        }
+      }
+    }
+  }
+}

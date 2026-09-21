@@ -1,0 +1,28 @@
+{
+  "results_sha256": "389fb12170d186e87ccd96c6baee1249d48fcaad263a8229a162c6c6d0a4b719",
+  "script_sha256": "f28b21d81280320f94437cfed3768585e4e61ab6746655a281459ecef6fc4790",
+  "dimensions_mm": [
+    183,
+    85
+  ],
+  "donors_shown": 46,
+  "selection_designs": [
+    "shared_all_B",
+    "O_quarter",
+    "O_half",
+    "O_three_quarters",
+    "crossfit_2",
+    "crossfit_4"
+  ],
+  "models_shown": [
+    "NC",
+    "CM",
+    "TW",
+    "PCA",
+    "RBF",
+    "scGen",
+    "CellOT"
+  ],
+  "primary_donors_excluded": 0,
+  "joint_practical_benefit": "insufficient"
+}

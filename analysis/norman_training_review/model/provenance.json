@@ -1,0 +1,36 @@
+{
+  "checkpoint_file": "model/checkpoint_0400.pt",
+  "checkpoint_sha256": "d2cff5675234b37c0eeed6b81efa1e766468ecef1b5f734bf3642cd190d49585",
+  "checkpoint_state_sha256": "efce46a74b8123dad54afbbbd318b9205ad69c812bb06965fb4baf3384b5d604",
+  "evaluation": {
+    "common_target": "512 B1 input/prediction controls; separate 512 B2 observation controls; all 55 original test combinations",
+    "prediction_readout": "Normal.loc; the unused decoder sample is discarded. Evaluation restores RNG state.",
+    "reference_design": "3,639 EVAL controls; 30 original allocations; 6 depths; 27 tuples averaged into 5 patterns",
+    "test_status": "Previously examined original test tasks; no new test-driven model or checkpoint selection."
+  },
+  "figure_slot": "CPA_0.8.8 in the current Extended Data Figure 8 source denotes this checkpoint",
+  "fitting_seconds": 872.5985853355378,
+  "full_training_sample_order_sha256": "e40fff77b422800cd787a6119733537c3570d99f9a4673b74d0d01ce62c76c22",
+  "gene_panel_file": "model/gene_panel.tsv",
+  "gene_panel_sha256": "5490dd456ca4a20386e2094cc5491223e9532e6a402b046bf2e93af9966670d3",
+  "native_output": "Gaussian mean state, whole-transcriptome CP10K-log1p for the fixed 2,000 genes",
+  "original_initialization": {
+    "model_sha256": "f1a4ac18269342906a72362dec124fb21e76c9ffd5a086484e3f0ca32bacf03a",
+    "plan_sha256": "3c01d28060ba04ea1f1a030b45823a4990085142f6e0ee86b748f79827806667"
+  },
+  "original_refit_record_sha256": "1729c6d3973ca7cdae56a10846e97eb24f52c3bca043bbbd52610f050b72878d",
+  "original_selection_protocol_sha256": "30eafbee5b38233ef543dd751055f965c25f567ec336630acaaa0f83d94bb55f",
+  "previous_checkpoint": "Original fixed 200-epoch/native-scheduler CPA is a separate comparator; its trainer does not reproduce this selected fit.",
+  "scales_file": "model/scales.npy",
+  "scales_sha256": "a80c7097df93d329df7f671c51d85c5a24a6c8aa8b2d90a2e95fd6c000041d69",
+  "selected_configuration": {
+    "id": "per_epoch_adv10",
+    "reg_adv": 10.0,
+    "schedule": "per_epoch"
+  },
+  "selected_epoch": 400,
+  "selection_data": "source_data/validation_summary.tsv",
+  "training_cells": 68002,
+  "training_conditions": 161,
+  "training_configuration_file": "training_configuration.json"
+}

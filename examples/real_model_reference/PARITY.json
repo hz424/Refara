@@ -1,0 +1,11 @@
+{
+  "schema": "REFARA_REAL_MODEL_PARITY_V1",
+  "task_count": 24,
+  "max_absolute_error": 0.0,
+  "exact_values": true,
+  "checkpoint_sha256": "c0016e968678b358dad919d8d721d49725575a0aa9d71724a88c6aba60e4e8b4",
+  "original_numpy_version": "1.23.5",
+  "native_prediction_sha256": "3767f1208a5a51328f567e07cdd5fe5c93953ecba9d5d9e947662c2e66629e85",
+  "portable_prediction_sha256": "3767f1208a5a51328f567e07cdd5fe5c93953ecba9d5d9e947662c2e66629e85",
+  "contract": "One-row original additive design and PCA arithmetic; float64 output. Other BLAS/NumPy builds may differ at floating-point roundoff."
+}

@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "biological_experiments": 1,
+  "state_utility_shape": [
+    55,
+    30,
+    6,
+    4,
+    5
+  ],
+  "effect_utility_shape": [
+    55,
+    30,
+    6,
+    5
+  ],
+  "original_state_rows_preserved_exactly": true,
+  "unchanged_table_sha256": {
+    "all_depth_pair_summary.tsv": "649dbecddc824da663072bc9a0dbcfb3efd27ff776a11b4b0bfddff08a21712c",
+    "all_task_pair_summary.tsv": "ebafbbdb84c35a8d9dd4b7c9070cb7b549b7a51e21379689146fb9d99f454128",
+    "b_allocations.tsv": "359d9515371ed69cfac0b74cd2978e0b55b51c998333eff18bd66f0c205811fb",
+    "b_summary.tsv": "c3f97c2c9b5b56ed87eb8d2487980dce0a9eaf0ba7f9be050ae8d24f1a290cc5",
+    "c_allocations.tsv": "bb1bbef9efd0fd62fcb96b58dbc6edb73c12ae75347e3f75cedc3d72777b8e84",
+    "c_summary.tsv": "f975edf0d1565f125e1f830edee7bcf0ce5a622d658dd78c0630e95ad8a3ec48",
+    "crossings_after_mean.tsv": "077f24ae6880fde4c0616d60ca51fed5d2d8a969e485e9a27af6f7883f25e0d6"
+  },
+  "original_source_receipt_sha256": "c10f89d10c53d364ea221e9e359cb698388bab2984d1191ce215db1f00344662",
+  "source_utilities_sha256": "8eca8643697cac7aeb0fffc63d048b407a61bfbf6e185ccd3978eb6d09090cd4",
+  "source_record_sha256": "7999463421630ce50aa4bac63c4e7000887074dc734b1c82e18f929cfbd926de",
+  "effect_score_receipt_sha256": "b73ef42ecac4008e38f5f412cf003913805841d85f777e40bd0afdf430bd3401",
+  "effect_result_files_sha256": {
+    "allocation_mean_pairs.tsv": "4fd1e0a9abfba0c03faf497b9324ad1a705b0918be0851218e3434b986f26660",
+    "effect_utilities.npz": "3d6cf4383a044457285cdd7d6eed92832d2ed48d56daa8b945706f1039347bd0",
+    "overall_mean_pairs.tsv": "4676bb2e5daa2c76a72617c83dc50e183ad944792f19a70d496fddf78091a58d",
+    "task_allocation_pairs.tsv.gz": "f07de156363206f0d079d478d170b20eaa564dcb0f4a67d191b515fce49b00ff",
+    "task_mean_pairs.tsv": "65dbc191b7dcfe209ec10a5ea7c6de094f50f0f6cc74d9edd169242561405831"
+  },
+  "protocol_sha256": "1c9d59e737873af107a3bad5cb9ed5e8fb04b0d17eb985880f7619470264dd22",
+  "tables": {
+    "a_allocations": 4500,
+    "a_summary": 150,
+    "all_depth_pair_summary": 180,
+    "all_task_pair_summary": 9900,
+    "b_allocations": 180,
+    "b_summary": 6,
+    "c_allocations": 900,
+    "c_summary": 30,
+    "crossings_after_mean": 30,
+    "d_allocation_mean_pairs": 540,
+    "d_overall_pairs": 18,
+    "d_summary": 18,
+    "d_task_mean_pairs": 990
+  },
+  "panel_d_pairs": 18,
+  "panel_d_crossings": 4,
+  "panel_d_normalization": "ratio of aggregate d_S and aggregate V; not an average of allocation-level ratios",
+  "script_sha256": "c9f192335068af0a108fac8f2e2c77a4f1f9d431cdfdceee6b25118bb93e192f",
+  "output_sha256": {
+    "Extended_Data_Figure_8_Source_Data.xlsx": "b81822b43cf61c31f65efb0b355e7681988d2fb3b9fbd4afcb229602dd7f5274",
+    "a_allocations.tsv": "2c60efbbfc14f05883ff04e98f2e54a065c552e370c834f10d85217e2d8200be",
+    "a_summary.tsv": "daea5f3a742d392792769139edced60e15022dad443c73ff7e53aec0583fccb1",
+    "all_depth_pair_summary.tsv": "649dbecddc824da663072bc9a0dbcfb3efd27ff776a11b4b0bfddff08a21712c",
+    "all_task_pair_summary.tsv": "ebafbbdb84c35a8d9dd4b7c9070cb7b549b7a51e21379689146fb9d99f454128",
+    "b_allocations.tsv": "359d9515371ed69cfac0b74cd2978e0b55b51c998333eff18bd66f0c205811fb",
+    "b_summary.tsv": "c3f97c2c9b5b56ed87eb8d2487980dce0a9eaf0ba7f9be050ae8d24f1a290cc5",
+    "c_allocations.tsv": "bb1bbef9efd0fd62fcb96b58dbc6edb73c12ae75347e3f75cedc3d72777b8e84",
+    "c_summary.tsv": "f975edf0d1565f125e1f830edee7bcf0ce5a622d658dd78c0630e95ad8a3ec48",
+    "crossings_after_mean.tsv": "077f24ae6880fde4c0616d60ca51fed5d2d8a969e485e9a27af6f7883f25e0d6",
+    "d_allocation_mean_pairs.tsv": "4fd1e0a9abfba0c03faf497b9324ad1a705b0918be0851218e3434b986f26660",
+    "d_overall_pairs.tsv": "4676bb2e5daa2c76a72617c83dc50e183ad944792f19a70d496fddf78091a58d",
+    "d_summary.tsv": "cfadda118237edb06f9ee9703bdfdb9e2a71c5d734985af7d2931107412ca8e0",
+    "d_task_mean_pairs.tsv": "65dbc191b7dcfe209ec10a5ea7c6de094f50f0f6cc74d9edd169242561405831"
+  },
+  "CPA_configuration": "Validation-selected per_epoch_adv10 / epoch 400, sole full-TRAIN refit",
+  "source_metadata_revision": {
+    "input_workbook_sha256": "0ae1c8dc0aaf348c7ebe923a8bcfc2248ad24120f7ed193deeb5ee61940d7fbe",
+    "changes": [
+      {
+        "cell": "B9",
+        "before": "Unchanged CPA conditioning displacement: square root after averaging squared prediction differences across tasks, genes and ordered input-block pairs; then allocation mean/range.",
+        "after": "Conditioning displacement of the validation-selected CPA: square root after averaging squared prediction differences across tasks, genes and ordered input-block pairs; then allocation mean/range."
+      },
+      {
+        "cell": "B10",
+        "before": "Unchanged original state-model comparisons: count strict crossings among 165 task/pair comparisons within each allocation, then summarize the 30 counts. Only P and O are drawn; S, M and D remain in source.",
+        "after": "State-model comparisons using the validation-selected CPA: count strict crossings among 165 task/pair comparisons within each allocation, then summarize the 30 counts. Only P and O are drawn; S, M and D remain in source."
+      }
+    ],
+    "non_readme_sheets_unchanged": true
+  }
+}
