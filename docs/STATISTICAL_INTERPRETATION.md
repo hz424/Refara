@@ -24,7 +24,7 @@ within the same study.
 ## Low replication and genetic perturbations
 
 For the 12-direction exact-sign/Holm family at 5%, fewer than eight non-tied
-independent evaluation units cannot support any rejection. Extended Data Fig. 4
+independent evaluation units cannot support any rejection. Supplementary Fig. 6
 shows how unit count and testing procedure affect error and power. Resampling
 whole units with an unstudentized bootstrap did not ensure error control when
 few units were available; the unit-level t comparison was evaluated under a
@@ -60,7 +60,7 @@ reversed, and all eight margins shifted in the same direction.
 
 The separate historical interferon-γ B-cell–monocyte follow-up examined one
 fixed observed-response contrast, without applying the models selected for the
-current Figure 4 analysis. It failed its prespecified stability criterion.
+current Figure 6 analysis. It failed its prespecified stability criterion.
 Its allocation and batch-omission ranges describe sensitivity; a sign change
 between capture orientations prevented a stable cell-type ordering. This
 analysis is reported in Supplementary Table 5.

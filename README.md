@@ -5,8 +5,8 @@ single-cell perturbation prediction. It separates changes to model inputs from
 changes to scoring references, compares designs at a fixed control-cell budget,
 and identifies comparison directions that persist across specified allocations.
 
-This repository accompanies *Reference-cell design shapes model evaluation in
-single-cell perturbation prediction*.
+This repository accompanies *Control-cell references can decide whether deep
+models outperform baselines in single-cell perturbation benchmarks*.
 
 ![Control-cell roles in model prediction and evaluation.](docs/assets/figure-1.png)
 
@@ -59,10 +59,17 @@ Run the current PBMC numerical replay after installation:
 .venv/bin/python evidence/current_submission/replay.py --output outputs/current_submission
 ```
 
-It reconstructs the numerical summaries for Figures 2 and 3 and Extended Data
-Figure 1 from saved scores and summaries for each fitted seed and evaluation
+It reconstructs the numerical summaries for Figures 2 and 5 and Supplementary
+Fig. 1 from saved scores and summaries for each fitted seed and evaluation
 donor, including the 2,560-epoch Influenza CPA fits. It writes the results and
 checks to `RESULTS.json`.
+
+Display-item numbers in this repository's guides follow the current manuscript;
+[manuscript versions](docs/MANUSCRIPT_VERSIONS.md) maps them to the labels that
+remain in file names and earlier records. The reference-noise, cross-individual
+and model-generated-reference analyses of the current manuscript are in
+[`analysis/control_reference_noise`](analysis/control_reference_noise/README.md);
+they need study outputs that are not bundled here.
 
 The [reproduction guide](docs/REPRODUCING.md) lists the remaining analyses,
 commands and required inputs. [Data access](docs/DATA_ACCESS.md) covers public

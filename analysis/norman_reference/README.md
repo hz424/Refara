@@ -1,6 +1,6 @@
 # Genetic-perturbation reference sensitivity
 
-This directory retains the original 200-epoch CPA analysis. For the current Extended Data Figure 3 and Supplementary Table 8, use [the selected-CPA replay](../norman_training_review/README.md). The training and scoring commands below reproduce the earlier model and results.
+This directory retains the original 200-epoch CPA analysis. For the current Supplementary Fig. 5 and Supplementary Table 8, use [the selected-CPA replay](../norman_training_review/README.md). The training and scoring commands below reproduce the earlier model and results.
 
 This analysis predicts 55 held-out two-gene combinations in the Norman K562 CRISPRa screen. Additive, compositional ridge and CPA predictors return expression states; zero effect is a separate diagnostic baseline. Thirty fixed control allocations cover six reference depths. All model pairs and tasks are retained.
 

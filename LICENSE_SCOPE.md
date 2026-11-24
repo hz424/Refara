@@ -38,7 +38,7 @@ They are excluded from the CC BY 4.0 grant and are available only for
 noncommercial use under the source CC BY-NC 4.0 terms
 ([`LICENSES/CC-BY-NC-4.0.md`](LICENSES/CC-BY-NC-4.0.md)).
 
-The current Figure 3 capsule includes compact Parse-derived or mixed numerical
+The current Figure 5 capsule includes compact Parse-derived or mixed numerical
 summaries under `evidence/figure3/source/`, including `source/utility/parse/`.
 These retain the same CC BY-NC 4.0 scope. Influenza PBMC-only summaries retain
 their GSE162632 derivative scope above. The source manifest identifies each
@@ -103,7 +103,7 @@ is BSD-3-Clause. Cite Jerber et al. (2021), doi:10.1038/s41588-021-00801-6.
 
 `analysis/norman_reference/` and `analysis/norman_direct_effect/` contain author-written code, preparation or model-selection records and scored summaries derived from Norman et al., Science **365**, 786–793 (2019), GEO GSE133344. Their utility arrays store task-level scores and reference diagnostics; expression matrices, fitted coefficients and gene-level predictions use the separate reconstruction or review routes. Dataset derivatives retain the original source’s applicable terms and are not relicensed as analysis software. Cite the original study when reusing them. Each component has a `LICENSE_SCOPE.md` notice.
 
-`analysis/norman_training_review/` supplies the current selected CPA checkpoint, fixed-panel effect arrays, scales, membership records and scored utilities for Supplementary Table 8 and Extended Data Figure 3. These are Norman dataset derivatives under the same source terms; see its `LICENSE_SCOPE.md`.
+`analysis/norman_training_review/` supplies the current selected CPA checkpoint, fixed-panel effect arrays, scales, membership records and scored utilities for Supplementary Table 8 and Supplementary Fig. 5. These are Norman dataset derivatives under the same source terms; see its `LICENSE_SCOPE.md`.
 
 `analysis/low_replication/` contains author-generated simulations and numerical
 reconstruction code. Notices for its separately archived artwork fonts remain

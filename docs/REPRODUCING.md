@@ -2,7 +2,7 @@
 
 Use the Python 3.10 environment from the [installation instructions](../README.md#install).
 Run commands from the repository root and choose a new output directory.
-For Figures 2 and 3 and Extended Data Figure 1, run:
+For Figures 2 and 5 and Supplementary Fig. 1, run:
 
 ```bash
 .venv/bin/python evidence/current_submission/replay.py --output outputs/current_submission
@@ -13,7 +13,7 @@ This [replay](../evidence/current_submission/README.md) uses the completed
 and metric concordance from saved scores and summaries for each fitted seed and
 evaluation donor. Its manifest checks the inputs against the matching Source Data.
 The metric-concordance files retain the historical `ed9/` directory and output
-keys; they correspond to Extended Data Figure 1 in the current manuscript.
+keys; they correspond to Supplementary Fig. 1 in the current manuscript.
 
 ## Organizer reporting rules
 
@@ -135,7 +135,7 @@ matching graph require separate upstream inputs.
 - The [current PBMC replay](../evidence/current_submission/README.md) lists all
   reversed pairs, rankings, depths and exact ties. At the largest depth,
   separating prediction or observation references reverses 10 of 28 pairs in
-  each group. Figure 3 averages per-seed results and weights the eight evaluation donors equally;
+  each group. Figure 5 averages per-seed results and weights the eight evaluation donors equally;
   [representation checks](../evidence/figure3/README.md) are documented separately.
 - The [program replay](../evidence/program_responses/README.md) reproduces
   75/1,480 and 65/1,480 direction disagreements. It scores seeds separately before

@@ -1,6 +1,6 @@
 # Direct-effect comparisons in the Norman screen
 
-This directory retains the original 200-epoch CPA analysis. For the current Extended Data Figure 3 and Supplementary Table 8, use [the selected-CPA replay](../norman_training_review/README.md). The training and scoring commands below reproduce the earlier model and results.
+This directory retains the original 200-epoch CPA analysis. For the current Supplementary Fig. 5 and Supplementary Table 8, use [the selected-CPA replay](../norman_training_review/README.md). The training and scoring commands below reproduce the earlier model and results.
 
 This analysis compares a fixed direct-effect ridge predictor with three state-output predictors. Five-fold validation within the original training combinations selected its penalty. All 55 test combinations, 30 reference allocations and six control depths enter each effect/state comparison.
 

@@ -1,4 +1,6 @@
-# Figure 3: changing model inputs
+# Changing model inputs (Figure 5; earlier results)
+
+The directory name `figure3` is a stable identifier from an earlier figure numbering.
 
 This replay preserves the earlier 1,280-epoch Influenza CPA results. For the
 current 2,560-epoch results, use the [current PBMC replay](../current_submission/README.md).

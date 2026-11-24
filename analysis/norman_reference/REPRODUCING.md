@@ -1,6 +1,6 @@
 # Reproduction
 
-This directory retains the original 200-epoch CPA analysis. For the current Extended Data Figure 3 and Supplementary Table 8, use [the selected-CPA replay](../norman_training_review/README.md). The training and scoring commands below reproduce the earlier model and results.
+This directory retains the original 200-epoch CPA analysis. For the current Supplementary Fig. 5 and Supplementary Table 8, use [the selected-CPA replay](../norman_training_review/README.md). The training and scoring commands below reproduce the earlier model and results.
 
 Run these commands from this component directory. Set `NORMAN_DATA` to the accompanying Source Data component. Each route uses Python 3.10 and its listed requirements in a separate environment.
 

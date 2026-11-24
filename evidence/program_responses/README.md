@@ -6,7 +6,7 @@ Run from the repository root in the main toolkit environment:
 .venv/bin/python evidence/program_responses/replay.py --output outputs/program_responses
 ```
 
-Use a new output directory. The command recalculates the program-response comparisons in Figure 4 and writes numerical results.
+Use a new output directory. The command recalculates the program-response comparisons in Figure 6 and writes numerical results.
 
 For the eight original donors, the supplied table contains the observed and S-selected/D-selected predicted scores for every donor, five cell types, 37 Hallmark programs, three separately scored seeds, and both observation references. The replay checks that all combinations are present, predictions stay fixed between observation references, and seed means match the records. It calculates squared residuals for each seed before averaging seeds, programs, cell types and equally weighted donors.
 

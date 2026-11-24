@@ -1,6 +1,6 @@
 # Hierarchical-null simulations
 
-Regenerate the four original C02 hierarchical-null cells (CMP002, CMP006, CMP010 and CMP014) and all 20 procedure-by-root-count event counts from simulated data. The wrapper calls the original `run_cell` in `frozen_original/` with the same numerical defaults and random streams, using local execution paths. These simulations appear in Extended Data Fig. 4b; the output filenames retain the earlier Figure 5b numbering.
+Regenerate the four original C02 hierarchical-null cells (CMP002, CMP006, CMP010 and CMP014) and all 20 procedure-by-root-count event counts from simulated data. The wrapper calls the original `run_cell` in `frozen_original/` with the same numerical defaults and random streams, using local execution paths. These simulations appear in Supplementary Fig. 6 (panel b); the output filenames retain the earlier Figure 5b numbering.
 
 Use CPython 3.10 and NumPy 1.26.4. The completed exact replay used CPython 3.10.20. No SciPy, model training or biological data are needed.
 

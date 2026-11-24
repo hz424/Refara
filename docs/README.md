@@ -36,6 +36,8 @@ Start with the [demo](../README.md#quick-start), then
 | [Upstream reconstruction](../reconstruction/current_upstream/README.md) | Check required files and run native CPA continuation or prediction |
 | [Additional analyses](ADDITIONAL_ANALYSES.md) | Run simulations and training-sensitivity analyses with their required inputs |
 | [Evidence timing](EVIDENCE_TIMING.md) | Check when comparisons were specified and which data had already been examined |
+| [Manuscript versions](MANUSCRIPT_VERSIONS.md) | Map figure and table numbers between manuscript versions and file names |
+| [Control-reference noise](../analysis/control_reference_noise/README.md) | Rescore released predictions under alternative control references; inputs are not bundled |
 | [Contributing](../CONTRIBUTING.md) | Report a bug or test a change |
 
 ## Repository layout

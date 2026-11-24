@@ -1,13 +1,13 @@
 # Reproduce the numerical results
 
 Start with the [current PBMC replay](current_submission/README.md) for Figures
-2–3 and Extended Data Figure 1, including the completed 2,560-epoch CPA fits.
+2 and 5 and Supplementary Fig. 1, including the completed 2,560-epoch CPA fits.
 
 The [organizer workflow](../docs/organizer.md) reproduces the Norman reporting
 rules and compares them with a development-calibrated margin threshold.
 
 The six-component suite below covers the other study analyses and preserves
-the earlier 1,280-epoch CPA model-comparison and Figure 3 results. From the
+the earlier 1,280-epoch CPA model-comparison and input-change (Figure 5) results. From the
 repository root, run:
 
 ```bash
