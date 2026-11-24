@@ -15,7 +15,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, macos-15-intel]
+        # Python 3.10.17 is not provided for the Ubuntu 26.04 image that ubuntu-latest now selects.
+        os: [ubuntu-24.04, macos-15-intel]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 5
     steps:

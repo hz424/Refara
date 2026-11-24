@@ -2,6 +2,10 @@
 
 Start with the [current PBMC replay](current_submission/README.md) for Figures
 2 and 5 and Supplementary Fig. 1, including the completed 2,560-epoch CPA fits.
+That replay's own guide is part of a checksum-pinned record and keeps the
+numbers it was written with: its Figure 3 is Fig. 5 here, its Figure 4 is Fig. 6
+and its Extended Data Figure 1 is Supplementary Fig. 1
+([manuscript versions](../docs/MANUSCRIPT_VERSIONS.md)).
 
 The [organizer workflow](../docs/organizer.md) reproduces the Norman reporting
 rules and compares them with a development-calibrated margin threshold.

@@ -41,5 +41,12 @@ which current item it belongs to; documents that describe an "original",
 "earlier" or "historical" figure refer to the numbering in use when that
 analysis was first archived.
 
+The guide inside [`evidence/current_submission/`](../evidence/current_submission/README.md)
+is one of the files that replay verifies by checksum before it runs
+(`evidence/current_submission/MANIFEST.json`), so it is unchanged and uses the
+September 2026 numbers: its Figure 3, Figure 4 and Extended Data Figure 1 are
+Fig. 5, Fig. 6 and Supplementary Fig. 1 of the current manuscript. Its Figure 2
+is Fig. 2.
+
 The supplementary figures of the September 2026 version are not cited by number
 in this repository.
