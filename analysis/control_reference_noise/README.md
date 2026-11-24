@@ -2,7 +2,7 @@
 
 These scripts produce the reference-noise, disjoint-cell, cross-individual and
 model-generated-reference results of the current manuscript (Fig. 3, Fig. 4
-panels a and b, and Supplementary Tables 11–16). They rescore predictions that
+panels a and b, and Supplementary Tables 11–17). They rescore predictions that
 the study had already produced, or ask the fitted models for their output on
 control cells. Nothing is refitted and no treated value is used to form a
 prediction.
@@ -60,7 +60,7 @@ to `REFARA_OUTPUT_ROOT`; for steps 1, 5 and 6 pass the full path to `--out`.
 | 6 | `own_control_score.py --regime R --fit F --out own_control/per_fit/R__F.npz`, once per Parse state-output fit (18) | per-fit utilities with the raw control mean or the model's own control output as the prediction reference | Fig. 4a,b |
 | 7 | `own_control_aggregate.py` | `own_control/OWN_CONTROL_UTILITIES.tsv`, `OWN_CONTROL_PAIRS.tsv` | Fig. 4a,b, Supplementary Tables 15 and 16 |
 | 8 | `own_control_influenza.py` (about 25 minutes on one core) | `own_control/OWN_CONTROL_*_GSE162632.tsv` | Fig. 4b, Supplementary Tables 15 and 16 |
-| 9 | `control_reconstruction_error.py` | `own_control/CONTROL_RECONSTRUCTION_ERROR.tsv` | Results text |
+| 9 | `control_offset.py` | `own_control/CONTROL_OFFSET_NOISE_CORRECTED.tsv`: distance between each model's control output and the control mean, with and without the sampling variance of the measured mean | Supplementary Table 17 |
 
 A fit name is `<Family>__primary__<seed>` for scGen, CPA and CellOT (seeds 17,
 29 and 43) and `<Family>__primary__deterministic` for NC, CM, TW, PCA and RBF.

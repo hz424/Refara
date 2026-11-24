@@ -26,7 +26,7 @@ Its display items map to the current manuscript as follows.
 
 New in the current manuscript: Fig. 1 panel c, Fig. 3, Fig. 4 and Supplementary
 Tables 10 onward. The code for Fig. 3, Fig. 4 (panels a and b) and Supplementary
-Tables 11–16 is in
+Tables 11–17 is in
 [`analysis/control_reference_noise`](../analysis/control_reference_noise/README.md).
 
 ## Labels that were not renamed
