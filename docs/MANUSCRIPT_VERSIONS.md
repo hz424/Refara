@@ -1,11 +1,12 @@
 # Manuscript versions and display-item numbers
 
 The guides in this repository use the figure and table numbers of the current
-manuscript, *Reference-cell design shapes model evaluation in single-cell
+manuscript, *Reference-cell design can reverse model rankings in single-cell
 perturbation prediction* (November 2026 version).
 
-Release 1.10.0 accompanied the September 2026 version of the same study, which
-had the same title. The numerical evidence it reproduced is unchanged.
+Release 1.10.0 accompanied the September 2026 version of the same study, titled
+*Reference-cell design shapes model evaluation in single-cell perturbation
+prediction*. The numerical evidence it reproduced is unchanged.
 Its display items map to the current manuscript as follows.
 
 | September 2026 version | Current manuscript | Content |
