@@ -199,11 +199,11 @@ def test_reader_facing_title_is_current() -> None:
     readme = (REPO / "README.md").read_text(encoding="utf-8")
     normalized = " ".join(readme.split())
     assert (
-        "Control-cell references can decide whether deep models outperform baselines "
-        "in single-cell perturbation benchmarks"
+        "Reference-cell design shapes model evaluation in single-cell perturbation prediction"
     ) in normalized
     for superseded in (
-        "Reference-cell design shapes model evaluation in single-cell perturbation prediction",
+        "Control-cell references can decide whether deep models outperform baselines "
+        "in single-cell perturbation benchmarks",
         "Single-cell perturbation benchmark rankings can reverse across "
         "reference-cell constructions",
     ):

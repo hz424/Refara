@@ -5,8 +5,8 @@ single-cell perturbation prediction. It separates changes to model inputs from
 changes to scoring references, compares designs at a fixed control-cell budget,
 and identifies comparison directions that persist across specified allocations.
 
-This repository accompanies *Control-cell references can decide whether deep
-models outperform baselines in single-cell perturbation benchmarks*.
+This repository accompanies *Reference-cell design shapes model evaluation in
+single-cell perturbation prediction*.
 
 ![Control-cell roles in model prediction and evaluation.](docs/assets/figure-1.png)
 

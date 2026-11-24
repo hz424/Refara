@@ -58,7 +58,7 @@ comparison.
 ## Inspect the real Norman role audit
 
 The [`evidence/table1`](../evidence/table1/README.md) example contains the
-six-pipeline, 55-task Norman analysis in Table 1. Its
+six-pipeline, 55-task Norman analysis in Supplementary Table 23. Its
 `results/role_contrasts.tsv` and `results/role_interactions.tsv` include every
 model, depth and metric. `mean_abs_task_mean_change` first averages signed
 changes across tasks, then takes absolute values and averages over allocations
@@ -82,7 +82,7 @@ After installation, run from the repository root:
 Use a new output directory. This reproduces the summary tables and the small
 example that changes predictions and scoring references. Rebuilding the full
 score cube requires the upstream prediction files listed in the companion's
-source records. The rows and statistic used in Table 1 are specified in
+source records. The rows and statistic used in Supplementary Table 23 are specified in
 [`TABLE1_CURRENT_SELECTION.json`](../evidence/TABLE1_CURRENT_SELECTION.json).
 The primary scores match ordinary repeated evaluation; the additional
 comparisons change one reference role at a time.

@@ -1,12 +1,11 @@
 # Manuscript versions and display-item numbers
 
 The guides in this repository use the figure and table numbers of the current
-manuscript, *Control-cell references can decide whether deep models outperform
-baselines in single-cell perturbation benchmarks*.
+manuscript, *Reference-cell design shapes model evaluation in single-cell
+perturbation prediction* (November 2026 version).
 
-Release 1.10.0 accompanied an earlier version of the same study, titled
-*Reference-cell design shapes model evaluation in single-cell perturbation
-prediction* (September 2026). The numerical evidence it reproduced is unchanged.
+Release 1.10.0 accompanied the September 2026 version of the same study, which
+had the same title. The numerical evidence it reproduced is unchanged.
 Its display items map to the current manuscript as follows.
 
 | September 2026 version | Current manuscript | Content |
@@ -21,7 +20,7 @@ Its display items map to the current manuscript as follows.
 | Extended Data Figure 3 | Supplementary Fig. 5 | Genetic-perturbation prediction (Norman) |
 | Extended Data Figure 4 | Supplementary Fig. 6 | Simulations of replication and test choice |
 | Extended Data Figure 5 | Supplementary Fig. 7 | Acquisition geometry |
-| Table 1 | Table 1 | Score sensitivity to reference reassignment |
+| Table 1 | Supplementary Table 23 | Score sensitivity to reference reassignment |
 | Supplementary Tables 1–9 | Supplementary Tables 1–9 | Unchanged numbers |
 
 New in the current manuscript: Fig. 1 panel c, Fig. 3, Fig. 4 and Supplementary
