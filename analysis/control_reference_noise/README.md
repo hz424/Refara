@@ -1,8 +1,8 @@
 # Control-reference noise and prediction references
 
 These scripts produce the reference-noise, disjoint-cell, cross-individual and
-model-generated-reference results of the current manuscript (Fig. 3, Fig. 4
-panels a and b, and Supplementary Tables 11–17). They rescore predictions that
+model-generated-reference results of the current manuscript (Fig. 4 panels a and b,
+Fig. 5 panels b and c, and Supplementary Tables 11–17). They rescore predictions that
 the study had already produced, or ask the fitted models for their output on
 control cells. Nothing is refitted and no treated value is used to form a
 prediction.
@@ -52,9 +52,9 @@ to `REFARA_OUTPUT_ROOT`; for steps 1, 5 and 6 pass the full path to `--out`.
 
 | Step | Script | Writes | Manuscript item |
 |---|---|---|---|
-| 1 | `cross_individual_score.py --regime R --fit F --out cross_individual/per_fit/R__F.npz`, once per released Parse fit (28) | per-fit utilities for own-donor and cross-individual assignments | Fig. 3c |
-| 2 | `cross_individual_aggregate.py` | `cross_individual/XDONOR_UTILITIES.tsv`, `XDONOR_PAIRS.tsv`, `XDONOR_SUMMARY.json` | Fig. 3c, Supplementary Table 13 |
-| 3 | `reference_noise_decomposition.py` | `reference_noise/REFERENCE_NOISE_*.tsv` | Fig. 3a,b, Supplementary Tables 11 and 12 |
+| 1 | `cross_individual_score.py --regime R --fit F --out cross_individual/per_fit/R__F.npz`, once per released Parse fit (28) | per-fit utilities for own-donor and cross-individual assignments | Fig. 5c |
+| 2 | `cross_individual_aggregate.py` | `cross_individual/XDONOR_UTILITIES.tsv`, `XDONOR_PAIRS.tsv`, `XDONOR_SUMMARY.json` | Fig. 5c, Supplementary Table 13 |
+| 3 | `reference_noise_decomposition.py` | `reference_noise/REFERENCE_NOISE_*.tsv` | Fig. 5b, Supplementary Tables 11 and 12 |
 | 4 | `disjoint_cells.py` | `reference_noise/DISJOINT_CELL_TEST.tsv` | Supplementary Table 14 |
 | 5 | `control_bank.py --dataset D --regime R --fit-key F --out own_control/control_points/D/R__F.npy`, once per state-output fit (36) | the model's output for each control cell under the control condition | Fig. 4a,b |
 | 6 | `own_control_score.py --regime R --fit F --out own_control/per_fit/R__F.npz`, once per Parse state-output fit (18) | per-fit utilities with the raw control mean or the model's own control output as the prediction reference | Fig. 4a,b |

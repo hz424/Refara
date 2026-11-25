@@ -1,17 +1,17 @@
 # Reproduce the numerical results
 
-Start with the [current PBMC replay](current_submission/README.md) for Figures
-2 and 5 and Supplementary Fig. 1, including the completed 2,560-epoch CPA fits.
+Start with the [current PBMC replay](current_submission/README.md) for Fig. 5a,
+Supplementary Fig. 15 and Supplementary Fig. 1, including the completed 2,560-epoch CPA fits.
 That replay's own guide is part of a checksum-pinned record and keeps the
-numbers it was written with: its Figure 3 is Fig. 5 here, its Figure 4 is Fig. 6
-and its Extended Data Figure 1 is Supplementary Fig. 1
+numbers it was written with: its Figure 2 is Fig. 5a here, its Figure 3 is Supplementary Fig. 15,
+its Figure 4 is Supplementary Fig. 16 and its Extended Data Figure 1 is Supplementary Fig. 1
 ([manuscript versions](../docs/MANUSCRIPT_VERSIONS.md)).
 
 The [organizer workflow](../docs/organizer.md) reproduces the Norman reporting
 rules and compares them with a development-calibrated margin threshold.
 
 The six-component suite below covers the other study analyses and preserves
-the earlier 1,280-epoch CPA model-comparison and input-change (Figure 5) results. From the
+the earlier 1,280-epoch CPA model-comparison and input-change (Supplementary Fig. 15) results. From the
 repository root, run:
 
 ```bash

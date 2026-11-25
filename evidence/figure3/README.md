@@ -1,4 +1,4 @@
-# Changing model inputs (Figure 5; earlier results)
+# Changing model inputs (Supplementary Fig. 15; earlier results)
 
 The directory name `figure3` is a stable identifier from an earlier figure numbering.
 

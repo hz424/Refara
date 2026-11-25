@@ -36,10 +36,10 @@ preregistrations.
   memberships, allocations, aggregation and stability criterion were fixed
   before expression was extracted from 39 additional donors. The test failed
   its prespecified stability criterion (Supplementary Table 5).
-- The later selected-model program analysis (Figure 6) was specified after
+- The later selected-model program analysis (Supplementary Fig. 16) was specified after
   earlier analyses and updated gene-level rankings, before calculating its new
   program outcomes. It reused expression data and cell memberships already
-  examined in the measured-response follow-up. Figure 4c compares selected
+  examined in the measured-response follow-up. Supplementary Fig. 16c compares selected
   models' errors in those 39 donors; the earlier test assessed the measured
   cell-type contrast without running these selected models.
 

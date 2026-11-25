@@ -38,14 +38,14 @@ that input.
 
 ## Inspect how changing model inputs changes predictions
 
-Figure 5 evaluates the Figure 2 scGen, CPA and CellOT fits across four training
+Supplementary Fig. 15 evaluates the Fig. 5a scGen, CPA and CellOT fits across four training
 groups. Each dataset uses the same eight evaluation donors in both training
 regimes. Changing model-input controls changed predicted expression even with
 both scoring references held fixed. The mean model order stayed the same in all
 48 pair–depth comparisons for each of the two input changes. Each seed was scored
 before averaging; seeds and allocations are computational repeats.
 
-The [current Figure 5 replay](../evidence/current_submission/README.md) reconstructs
+The [current Supplementary Fig. 15 replay](../evidence/current_submission/README.md) reconstructs
 all 576 plotted values and 48 pair–depth comparisons for each input change from
 seed/root summaries. A separate representation check covered 15,552 cases;
 equivalent state and effect representations agreed to within about `2.2e-16`

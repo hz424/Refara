@@ -7,12 +7,12 @@ the units used for statistical testing.
 
 ## Current program-response comparisons
 
-Figure 4a,b evaluates eight donors across five cell types, giving 40 tasks.
+Supplementary Fig. 16a,b evaluates eight donors across five cell types, giving 40 tasks.
 Model-family selection leaves out the evaluation donor. Cell-type tasks within
 a donor and the 37 overlapping Hallmark programs share information, so counts
 of changed directions or priorities describe this task panel.
 
-Figure 4c evaluates 78 B-cell and monocyte tasks in 39 additional donors from
+Supplementary Fig. 16c evaluates 78 B-cell and monocyte tasks in 39 additional donors from
 the same study, using models selected from the original eight-donor cohort.
 Predictions and treated observations stay fixed while the observation controls
 change between B1 and B2. This reverses the O-selected-minus-S-selected mean
@@ -60,7 +60,7 @@ reversed, and all eight margins shifted in the same direction.
 
 The separate historical interferon-γ B-cell–monocyte follow-up examined one
 fixed observed-response contrast, without applying the models selected for the
-current Figure 6 analysis. It failed its prespecified stability criterion.
+current Supplementary Fig. 16 analysis. It failed its prespecified stability criterion.
 Its allocation and batch-omission ranges describe sensitivity; a sign change
 between capture orientations prevented a stable cell-type ordering. This
 analysis is reported in Supplementary Table 5.

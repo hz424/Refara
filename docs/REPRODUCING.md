@@ -2,7 +2,7 @@
 
 Use the Python 3.10 environment from the [installation instructions](../README.md#install).
 Run commands from the repository root and choose a new output directory.
-For Figures 2 and 5 and Supplementary Fig. 1, run:
+For Fig. 5a, Supplementary Fig. 15 and Supplementary Fig. 1, run:
 
 ```bash
 .venv/bin/python evidence/current_submission/replay.py --output outputs/current_submission

@@ -19,7 +19,7 @@ separate submission package.
 
 | Starting inputs | Where to start | Reproduced quantities |
 |---|---|---|
-| Current seed/root score and displacement summaries | `06_CODE_RELEASE/current_submission_replay/replay.py` | Current Figures 2 and 5 and Supplementary Fig. 1 summaries, including CPA2560. Starts after allocation scoring. |
+| Current seed/root score and displacement summaries | `06_CODE_RELEASE/current_submission_replay/replay.py` | Current Fig. 5a, Supplementary Fig. 15 and Supplementary Fig. 1 summaries, including CPA2560. Starts after allocation scoring. |
 | Current allocation-level utility arrays | `05_SOURCE_DATA/CPA2560_selected/selected_2560/mse/` | Model means, pair margins, depth-dependent reversals and seed/root aggregation. Model fitting and cell-level scoring are upstream. |
 | Validation donor risks and evaluation utility arrays | `05_SOURCE_DATA/Validation_reference_selection/replay.py` | All 128 configuration choices and six complete external comparison tables. |
 | Derived CellFlow prediction, treated and control means | `05_SOURCE_DATA/Supplementary_Figure_7_Kang_selected/replay_selected.py` | 960 input-change rows, five utility tensors and 32 donor endpoints. Training and generation are upstream. |

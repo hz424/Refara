@@ -38,7 +38,7 @@ They are excluded from the CC BY 4.0 grant and are available only for
 noncommercial use under the source CC BY-NC 4.0 terms
 ([`LICENSES/CC-BY-NC-4.0.md`](LICENSES/CC-BY-NC-4.0.md)).
 
-The current Figure 5 capsule includes compact Parse-derived or mixed numerical
+The current Supplementary Fig. 15 capsule includes compact Parse-derived or mixed numerical
 summaries under `evidence/figure3/source/`, including `source/utility/parse/`.
 These retain the same CC BY-NC 4.0 scope. Influenza PBMC-only summaries retain
 their GSE162632 derivative scope above. The source manifest identifies each
